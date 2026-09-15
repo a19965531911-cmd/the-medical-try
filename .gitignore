@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+
+# Data
+data/
+datasets/
+*.xlsx
+*.xls
+*.csv
+*.tsv
+
+# Competition outputs
+submission/
+submissions/
+a_test_message_bundle*.json
+
+# Logs and build output
+*.log
+logs/
+dist/
+build/
+coverage/
+
+# Local audit working file
+GITHUB_UPLOAD_AUDIT.md
+docs/superpowers/
+
+# Local and IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.tmp
+*.bak

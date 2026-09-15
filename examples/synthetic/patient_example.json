@@ -1,0 +1,10 @@
+{
+  "patient_id": "synthetic-001",
+  "synthetic": true,
+  "reports": [
+    {
+      "timestamp": "2026-01-01",
+      "text": "患者56岁，诊断面部带状疱疹。"
+    }
+  ]
+}
