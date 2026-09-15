@@ -86,7 +86,7 @@ def test_fallback_selects_at_most_one_span_per_report():
 def test_primary_tiers_deduplicate_spans_and_preserve_all_score_metadata():
     packet = retrieve(
         _ir(aliases=("神志",), query=("神志",)),
-        [{"text": "神志朦胧。"}, {"text": "饮食正常。"}],
+        [{"text": "神志朦胧。"}],
     )
 
     assert len(packet.spans) == 1
@@ -100,6 +100,30 @@ def test_primary_tiers_deduplicate_spans_and_preserve_all_score_metadata():
     assert packet.trace.tier1_count == 1
     assert packet.trace.tier2_count == 1
     assert packet.trace.fallback_used is False
+
+
+def test_incomplete_primary_is_supplemented_when_distractor_hides_critical_span():
+    packet = retrieve(
+        _ir(aliases=("伊立替康",), query=("伊立替康",)),
+        [
+            {"text": "家属未使用伊立替康。", "topic": "家族史"},
+            {"text": "呼之能应，神志朦胧。", "topic": "查房"},
+        ],
+    )
+
+    assert {span.report_index for span in packet.spans} == {0, 1}
+    distractor = next(span for span in packet.spans if span.report_index == 0)
+    critical = next(span for span in packet.spans if span.report_index == 1)
+    assert distractor.retrieval_tier == 1
+    assert distractor.lexical_score > 0
+    assert distractor.bm25_score > 0
+    assert critical.retrieval_tier == 3
+    assert packet.retrieval_reason == "PRIMARY_WITH_FALLBACK"
+    assert packet.trace.fallback_used is True
+    assert packet.trace.tier3_count == 1
+    assert [span.final_rank for span in packet.spans] == list(
+        range(1, len(packet.spans) + 1)
+    )
 
 
 @pytest.mark.parametrize("case", CASES, ids=lambda case: case["criterion_id"])

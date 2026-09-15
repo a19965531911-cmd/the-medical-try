@@ -30,6 +30,33 @@ def _merge_primary(
     )
 
 
+def _primary_is_complete(
+    primary: list[EvidenceSpan],
+    all_spans: tuple[EvidenceSpan, ...],
+    fallback_k: int,
+) -> bool:
+    available_reports = {span.report_index for span in all_spans}
+    primary_reports = {span.report_index for span in primary}
+    required_coverage = min(max(fallback_k, 0), len(available_reports))
+    return len(primary_reports) >= required_coverage
+
+
+def _supplement_with_fallback(
+    primary: list[EvidenceSpan], fallback: list[EvidenceSpan]
+) -> list[EvidenceSpan]:
+    merged = {span.span_id: span for span in primary}
+    for span in fallback:
+        existing = merged.get(span.span_id)
+        if existing is None:
+            merged[span.span_id] = span
+        else:
+            merged[span.span_id] = replace(
+                existing, metadata_boost=span.metadata_boost
+            )
+    primary_ids = {span.span_id for span in primary}
+    return [*primary, *(span for span in merged.values() if span.span_id not in primary_ids)]
+
+
 def retrieve(ir: CriterionIR, reports: list[dict[str, Any]]) -> EvidencePacket:
     spans = segment_reports(reports)
     if not spans:
@@ -39,16 +66,28 @@ def retrieve(ir: CriterionIR, reports: list[dict[str, Any]]) -> EvidencePacket:
     tier2 = rank_tier2(ir, spans)
     primary = _merge_primary(tier1, tier2)
     if primary:
+        fallback: list[EvidenceSpan] = []
+        if not _primary_is_complete(
+            primary, spans, ir.retrieval_policy.fallback_k
+        ):
+            fallback = rank_fallback(spans, k=ir.retrieval_policy.fallback_k)
+            primary = _supplement_with_fallback(primary, fallback)
         ranked = tuple(
             replace(span, final_rank=index)
             for index, span in enumerate(primary, start=1)
         )
         return EvidencePacket(
             spans=ranked,
-            retrieval_reason="PRIMARY_RETRIEVAL",
+            retrieval_reason=(
+                "PRIMARY_WITH_FALLBACK" if fallback else "PRIMARY_RETRIEVAL"
+            ),
             trace=RetrievalTrace(
                 tier1_count=len(tier1),
                 tier2_count=len(tier2),
+                tier3_count=sum(
+                    span.retrieval_tier == 3 for span in ranked
+                ),
+                fallback_used=bool(fallback),
             ),
         )
 
