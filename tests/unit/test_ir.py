@@ -76,8 +76,22 @@ def test_rejects_incomplete_contract_fields(tmp_path: Path):
     with pytest.raises(ValueError, match="FHIR_contract.profiles"):
         load_criterion_ir(path, ("185",))
 
-    criterion["FHIR_contract"]["profiles"] = ["restored"]
-    criterion["service_query_contract"].pop("coding_paths")
-    path.write_text(yaml.safe_dump(source, allow_unicode=True), encoding="utf-8")
-    with pytest.raises(ValueError, match="service_query_contract.coding_paths"):
+
+@pytest.mark.parametrize("field", ["subject_rules", "time_rules", "cardinality", "extensions"])
+def test_requires_fhir_contract_fields(tmp_path: Path, field: str):
+    source = yaml.safe_load(frozen_reference_paths()["criterion_ir_draft"].read_text(encoding="utf-8"))
+    criterion = next(item for item in source["criteria"] if item["criterion_id"] == "185")
+    criterion["FHIR_contract"].pop(field, None)
+    path = tmp_path / "bad.yaml"; path.write_text(yaml.safe_dump(source, allow_unicode=True), encoding="utf-8")
+    with pytest.raises(ValueError, match=f"FHIR_contract.{field}"):
+        load_criterion_ir(path, ("185",))
+
+
+@pytest.mark.parametrize("field", ["queried_resource_type", "required_profile_match", "query_parameters", "coding_paths", "systems", "codes", "value_paths", "extensions", "reference_behavior", "patient_identity_resolution", "JSON_assumptions"])
+def test_requires_service_contract_fields(tmp_path: Path, field: str):
+    source = yaml.safe_load(frozen_reference_paths()["criterion_ir_draft"].read_text(encoding="utf-8"))
+    criterion = next(item for item in source["criteria"] if item["criterion_id"] == "185")
+    criterion["service_query_contract"].pop(field, None)
+    path = tmp_path / "bad.yaml"; path.write_text(yaml.safe_dump(source, allow_unicode=True), encoding="utf-8")
+    with pytest.raises(ValueError, match=f"service_query_contract.{field}"):
         load_criterion_ir(path, ("185",))
