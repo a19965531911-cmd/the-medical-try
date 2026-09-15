@@ -1,5 +1,11 @@
 from dataclasses import dataclass
 from typing import Any
+from enum import Enum
+
+class CriterionType(str, Enum):
+    eligibility = "eligibility"
+    exclusion = "exclusion"
+    inclusion = "inclusion"
 
 
 @dataclass(frozen=True)
@@ -37,7 +43,7 @@ class CriterionIR:
     criterion_id: str
     title: str
     original_text: str
-    criterion_type: str
+    criterion_type: CriterionType
     clinical_domain: str
     retrieval_policy: RetrievalPolicy
     fhir_contract: FHIRContract
