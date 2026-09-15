@@ -19,5 +19,15 @@ class EvidenceSpan:
 
 
 @dataclass(frozen=True, slots=True)
+class RetrievalTrace:
+    tier1_count: int = 0
+    tier2_count: int = 0
+    tier3_count: int = 0
+    fallback_used: bool = False
+
+
+@dataclass(frozen=True, slots=True)
 class EvidencePacket:
     spans: tuple[EvidenceSpan, ...]
+    retrieval_reason: str | None = None
+    trace: RetrievalTrace = RetrievalTrace()

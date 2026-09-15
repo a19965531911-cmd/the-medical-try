@@ -1,0 +1,20 @@
+[
+  {
+    "criterion_id": "185",
+    "query": ["伊立替康", "化疗", "用药"],
+    "reports": [
+      {"text": "今日一般情况平稳。"},
+      {"text": "本周期采用CPT-11化疗，药物已经给予。"}
+    ],
+    "critical_report_index": 1
+  },
+  {
+    "criterion_id": "875",
+    "query": ["意识", "神志", "昏迷", "谵妄"],
+    "reports": [
+      {"text": "患者饮食正常。"},
+      {"text": "呼之能应，神志朦胧。"}
+    ],
+    "critical_report_index": 1
+  }
+]
