@@ -2,3 +2,8 @@
 
 Ruling: standalone repository used because the parent Git repository had no commits and could not provide a valid worktree base.
 Preflight: plan commit commands corrected; CriterionRun, RuntimeServices, full ShadowDecisionRecord, YAML dependency strategy, and ClinicalStore provenance contract defined.
+
+Task 1: complete
+commit: a344a7d6463a119f307b53ece5534207ba16693b
+tests: `pytest tests/unit/test_scaffold.py -q` -> 3 passed
+review: approved by independent task1_reviewer
