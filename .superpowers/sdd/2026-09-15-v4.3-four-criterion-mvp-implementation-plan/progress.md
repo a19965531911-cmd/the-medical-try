@@ -7,3 +7,8 @@ Task 1: complete
 commit: a344a7d6463a119f307b53ece5534207ba16693b
 tests: `pytest tests/unit/test_scaffold.py -q` -> 3 passed
 review: approved by independent task1_reviewer
+
+Task 2: complete
+commit: 7c72226 (cleanup 9d6a47b)
+tests: `pytest tests/unit/test_ir.py tests/unit/test_scaffold.py -q` -> 6 passed
+review: pending independent task2_reviewer
