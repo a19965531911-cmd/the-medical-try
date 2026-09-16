@@ -3,11 +3,13 @@ from types import SimpleNamespace
 
 import pytest
 
-from v43.clinical.models import AssertionState, ClinicalFact
+from v43.clinical.models import AssertionState, ClinicalFact, ClinicalRelation
 from v43.clinical.store import ClinicalStore
 from v43.constraints.executor import execute
 from v43.constraints.trace import DecisionTrace, TraceNode
 from v43.constraints.values import EligibilityResult, TruthValue, to_eligibility_result
+from v43.ir.loader import load_criterion_ir
+from v43.references import frozen_reference_paths
 
 
 def test_root_truth_maps_to_eligibility_result():
@@ -68,3 +70,28 @@ def test_executor_recursively_evaluates_typed_leaves_and_boolean_nodes():
     assert len(trace.nodes) == 5
     with pytest.raises(FrozenInstanceError):
         trace.nodes[-1].reason_code = "changed"
+
+
+def test_executor_normalizes_loaded_frozen_ir_sections_into_executable_nodes():
+    ir = load_criterion_ir(frozen_reference_paths()["criterion_ir_draft"], ("675",))["675"]
+    ir.raw["root_truth"] = TruthValue.FALSE
+    store = ClinicalStore(frozenset({"age-span", "diagnosis-span", "relation-span"}))
+    store.add_fact(ClinicalFact(
+        "age", "measurement", "patient_age", 52, "year", AssertionState.PRESENT,
+        "patient", "current", "2026-01-01", "age-span", 0, 1.0, "test",
+    ))
+    store.add_fact(ClinicalFact(
+        "diagnosis", "assertion", "herpes_zoster_diagnosis", None, None,
+        AssertionState.PRESENT, "patient", "current", "2026-01-01",
+        "diagnosis-span", 0, 1.0, "test",
+    ))
+    store.add_relation(ClinicalRelation(
+        "location", "zoster_event", "head_face_site", "LOCATED_AT",
+        AssertionState.PRESENT, ("relation-span",), (0,), 1.0, "test",
+    ))
+
+    trace = execute(ir, store)
+
+    assert trace.root_result is TruthValue.TRUE
+    assert trace.eligibility_result is EligibilityResult.SATISFIED
+    assert trace.unknown_node_ids == ()
