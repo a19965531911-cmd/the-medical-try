@@ -41,7 +41,9 @@ V2.4.3 and V4.2.2 adapters are read-only observers. Their proxy decision is expl
 - Milestone A+B integration: 67 passed.
 - Milestone C unit and criterion integration: 134 passed.
 - Milestone D harvested focused suite: 23 passed; post-audit FHIR/shadow focused suite: 22 passed.
-- Final fresh full-suite and compile/import counts are recorded in the final ledger entry after this report is generated.
+- Final fresh full suite: 159 passed in 8.94 seconds.
+- Python compile/import: PASS; all four frozen CriterionIR objects validate; sampled emitted reason codes validate against the frozen registry.
+- Raw-text boundary, persistent semantic one-call ceiling, and 875 JSON1 targeted suite: 24 passed.
 
 ## Limitations and rulings
 

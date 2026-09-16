@@ -31,9 +31,14 @@ Commits: 94d6279, 3ee3304, ac73da1, d1d1197
 Tests: unit + criterion integration -> 134 passed
 Reviewer: APPROVED after negation, persistent call guard, reason-code, and raw-text-boundary fixes
 
-Milestone D: COMPLETE PENDING FINAL VERIFICATION
+Milestone D: COMPLETE
 Tasks: 13, 14
 Commits: f62be09 plus final direct-mode corrections
 Tests: harvested focused suite -> 23 passed; post-audit FHIR/shadow suite -> 22 passed
 Review: final branch self-review retained; intermediate reviewers disabled by user checkpoint ruling
 Ruling: switched to direct fast continuation after harvesting valid in-flight Milestone D work — reduces orchestration overhead — cost if wrong is less independent review coverage before final verification.
+
+Final verification: COMPLETE
+tests: `pytest tests/unit tests/integration tests/shadow -q` -> 159 passed
+checks: compile/import PASS; 4 frozen IRs PASS; reason-code registry PASS; raw-text/one-call/875 JSON1 targeted suite -> 24 passed
+report: reports/V4_3_MVP_IMPLEMENTATION_REPORT.md
