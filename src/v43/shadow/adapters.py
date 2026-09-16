@@ -33,6 +33,5 @@ class LegacyAdapter:
                          if r.get("resourceType") == contract.resource_type
                          and set(r.get("meta", {}).get("profile", ())) & set(contract.profiles))
         decision = "SATISFIED" if matching else "NOT_SATISFIED"
-        service = str(self._replay_service(deepcopy(matching), criterion)) if matching else "SERVICE_MISS"
+        service = str(self._replay_service(deepcopy(emitted), criterion)) if matching else "SERVICE_MISS"
         return LegacyObservation(self.version, decision, len(matching), service)
-
