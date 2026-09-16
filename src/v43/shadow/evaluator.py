@@ -1,7 +1,7 @@
 from dataclasses import asdict, dataclass
 from enum import Enum
+from hashlib import sha256
 from typing import Any, Iterable, Mapping
-from uuid import uuid4
 
 
 @dataclass(frozen=True, slots=True)
@@ -80,8 +80,11 @@ def compare_case(adapter243, adapter422, v43_run: V43ShadowInput, reports: list[
     old422 = adapter422.observe(run.criterion_id, run.patient_run_id, reports)
     decision = _value(run.decision_trace.eligibility_result)
     delta = _delta(old243, decision, v43_run.resource_count, v43_run.service_hit)
+    case_digest = sha256(
+        f"v43-shadow|{run.criterion_id}|{run.patient_run_id}".encode("utf-8")
+    ).hexdigest()[:24]
     return ShadowDecisionRecord(
-        run.criterion_id, "case-" + uuid4().hex, old243.decision, old422.decision, decision,
+        run.criterion_id, "case-" + case_digest, old243.decision, old422.decision, decision,
         old243.resource_count, old422.resource_count, v43_run.resource_count,
         old243.service_hit, old422.service_hit, v43_run.service_hit,
         len(run.evidence_packet.spans), run.fact_count, run.event_count, run.relation_count,
@@ -98,4 +101,3 @@ def run_ablation(case_set: Iterable[Mapping[str, Any]], modes: Iterable[str]) ->
         result[mode] = {"cases": len(cases), "critical_hits": hits,
                         "recall_at_k": hits / len(cases) if cases else 0.0}
     return result
-

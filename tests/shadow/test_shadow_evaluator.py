@@ -68,3 +68,10 @@ def test_adapter_is_observer_only_and_cannot_ensemble_a_legacy_positive_into_v43
     assert record.v43_decision == "INSUFFICIENT_EVIDENCE"
     assert record.delta_type == "REGRESSION"
 
+
+def test_shadow_case_id_is_anonymized_and_reproducible_for_same_run():
+    adapter = _adapter("legacy")
+    first = compare_case(adapter, adapter, _v43(), reports=[])
+    second = compare_case(adapter, adapter, _v43(), reports=[])
+    assert first.anonymized_case_id == second.anonymized_case_id
+    assert "private-patient" not in first.anonymized_case_id

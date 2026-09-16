@@ -22,6 +22,15 @@ def test_service_replay_has_positive_hit_and_structurally_valid_query_miss(crite
     assert wrong_identity.status == "SERVICE_MISS"
 
 
+def test_745_service_replay_resolves_partof_surgery_reference():
+    contract = contract_for_criterion("745")
+    compiled = compile_fhir(_trace("745"), _store("745"), contract, "Patient/p1")
+    resources = list(compiled.resources)
+    ventilation = next(resource for resource in resources if resource.get("meta"))
+    ventilation["partOf"] = [{"reference": "Procedure/missing-surgery"}]
+    assert replay_service(tuple(resources), contract.service, "fixture://fhir", {"p1": "doc-1"}).status == "SERVICE_MISS"
+
+
 def test_875_official_style_json1_query_uses_valid_json_each_and_extract():
     contract = contract_for_criterion("875")
     valid = validate_fhir(compile_fhir(_trace("875"), _store("875"), contract, "Patient/p1"), contract)

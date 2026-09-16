@@ -21,6 +21,11 @@ def _codings(resource: dict, path: str) -> list[dict]:
 def replay_service(resources: tuple[dict, ...], contract: ServiceContract, base_url: str,
                    identity: Mapping[str, str]) -> ServiceValidationResult:
     matches = []
+    procedure_ids = {
+        "Procedure/" + str(resource["id"])
+        for resource in resources
+        if resource.get("resourceType") == "Procedure" and resource.get("id")
+    }
     for resource in resources:
         if resource.get("resourceType") != contract.resource_type:
             continue
@@ -37,6 +42,10 @@ def replay_service(resources: tuple[dict, ...], contract: ServiceContract, base_
             e.get("url", "").endswith("cnwqk185-application-order") and e.get("valueCode") == "cnwqk185-application-first"
             for e in resource.get("extension", ())):
             continue
+        if contract.resource_type == "Procedure" and contract.code == "invasive_mechanical_ventilation":
+            parent_refs = {item.get("reference") for item in resource.get("partOf", ())}
+            if not parent_refs & procedure_ids:
+                continue
         patient = resource.get("subject", {}).get("reference", "").removeprefix("Patient/")
         if patient in identity:
             matches.append(patient)
@@ -56,4 +65,3 @@ def official_875_sql() -> str:
         AND json_extract(c.value, '$.code') = ?
     )
     """
-
