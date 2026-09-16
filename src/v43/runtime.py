@@ -112,7 +112,7 @@ def evaluate_criterion(
     _add_objects(store, plugin.extract(packet))
     reason_codes: list[str] = []
     extraction_status = "DETERMINISTIC"
-    if services.semantic_transport is not None:
+    if services.semantic_transport is not None and criterion_id in {"185", "675", "745", "875"}:
         try:
             semantic = extract_semantic(
                 ir,

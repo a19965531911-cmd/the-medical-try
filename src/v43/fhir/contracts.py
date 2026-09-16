@@ -47,6 +47,8 @@ def _profile(name: str) -> str:
 
 
 CONTRACTS = {
+    "165": CompiledContract("165", "Procedure", (_profile("cnwqk165-chemotherapy-history"),),
+        ("status", "subject", "code", "extension"), ServiceContract("Procedure", (_profile("cnwqk165-chemotherapy-history"),))),
     "185": CompiledContract("185", "MedicationAdministration", (_profile("cnwqk185-chemotherapy-administration"),),
         ("status", "subject", "medicationCodeableConcept", "effectiveDateTime", "dosage", "extension"),
         ServiceContract("MedicationAdministration", (_profile("cnwqk185-chemotherapy-administration"),),
@@ -67,9 +69,30 @@ CONTRACTS = {
             _profile("cnwqk875-intracranialhypertension-profile"),
             _profile("cnwqk875-unconsciousness-profile")),
             value_system=BASE + "CodeSystem/cnwqk875-presence-cs", value_code="present")),
+    "265": CompiledContract("265", "Observation", (_profile("cnwqk265-serum-cardiac-troponin-observation"),),
+        ("status", "subject", "code", "effectiveDateTime", "valueQuantity"), ServiceContract("Observation", (_profile("cnwqk265-serum-cardiac-troponin-observation"),))),
+    "485": CompiledContract("485", "Observation", (_profile("cnwqk485-popq-assessment"),),
+        ("status", "subject", "code", "valueCodeableConcept"), ServiceContract("Observation", (_profile("cnwqk485-popq-assessment"),), value_system=BASE+"CodeSystem/cnwqk485-popq-grade-cs", value_code="III")),
+    "555": CompiledContract("555", "Procedure", (_profile("cnwqk555-SurgeryHistoryProfile"),),
+        ("status", "subject", "code", "performedDateTime"), ServiceContract("Procedure", (_profile("cnwqk555-SurgeryHistoryProfile"),))),
+    "565": CompiledContract("565", "Observation", (_profile("cnwqk565-symptomobservation"),),
+        ("status", "subject", "code", "extension"), ServiceContract("Observation", (_profile("cnwqk565-symptomobservation"),))),
+    "615": CompiledContract("615", "Observation", (_profile("cnwqk615-gleason-score-observation"),),
+        ("status", "subject", "code", "valueQuantity"), ServiceContract("Observation", (_profile("cnwqk615-gleason-score-observation"),))),
+    "635": CompiledContract("635", "Observation", (_profile("cnwqk635-LaboratoryExaminationProfile"),),
+        ("status", "subject", "code", "valueQuantity", "referenceRange"), ServiceContract("Observation", (_profile("cnwqk635-LaboratoryExaminationProfile"),))),
+    "735": CompiledContract("735", "Condition", (BASE+"StructureDefinition/cnwqk735-nonneoplasm-disease-stage",),
+        ("subject", "code", "clinicalStatus"), ServiceContract("Condition", (BASE+"StructureDefinition/cnwqk735-nonneoplasm-disease-stage",))),
+    "755": CompiledContract("755", "Procedure", (_profile("cnwqk755-MechanicalVentilationProcedure"),),
+        ("status", "subject", "code", "performedPeriod"), ServiceContract("Procedure", (_profile("cnwqk755-MechanicalVentilationProcedure"),))),
+    "805": CompiledContract("805", "Observation", (_profile("cnwqk805-SmokingStatusObservation"),),
+        ("status", "subject", "code", "valueCodeableConcept"), ServiceContract("Observation", (_profile("cnwqk805-SmokingStatusObservation"),))),
+    "835": CompiledContract("835", "Observation", (_profile("cnwqk835-OrganOrTissueStatus"),),
+        ("status", "subject", "code", "valueCodeableConcept"), ServiceContract("Observation", (_profile("cnwqk835-OrganOrTissueStatus"),))),
+    "855": CompiledContract("855", "Observation", (_profile("cnwqk855-serum-creatinine-observation"),),
+        ("status", "subject", "code", "valueQuantity"), ServiceContract("Observation", (_profile("cnwqk855-serum-creatinine-observation"),))),
 }
 
 
 def contract_for_criterion(criterion_id: str) -> CompiledContract:
     return CONTRACTS[str(criterion_id)]
-

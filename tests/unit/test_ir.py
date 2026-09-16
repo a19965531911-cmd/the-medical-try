@@ -77,6 +77,13 @@ def test_rejects_incomplete_contract_fields(tmp_path: Path):
         load_criterion_ir(path, ("185",))
 
 
+def test_loads_all_sixteen_frozen_criteria():
+    ids = ("165", "185", "265", "485", "555", "565", "615", "635",
+           "675", "735", "745", "755", "805", "835", "855", "875")
+    loaded = load_criterion_ir(frozen_reference_paths()["criterion_ir_draft"], ids)
+    assert tuple(loaded) == ids
+
+
 @pytest.mark.parametrize("field", ["subject_rules", "time_rules", "cardinality", "extensions"])
 def test_requires_fhir_contract_fields(tmp_path: Path, field: str):
     source = yaml.safe_load(frozen_reference_paths()["criterion_ir_draft"].read_text(encoding="utf-8"))

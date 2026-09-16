@@ -66,6 +66,33 @@ def compile_fhir(trace, store, contract: CompiledContract, patient_ref: str) -> 
             r.update({"status": "completed", "code": _concept(BASE + "CodeSystem/cnwqk745-procedure-type-cs", "invasive_mechanical_ventilation"),
                       "performedDateTime": _time(vent.start_time), "partOf": [{"reference": "Procedure/" + surgery.event_id}]})
             resources.extend((surgery_resource, r))
+    elif contract.criterion_id in {"165","265","485","555","565","615","635","735","755","805","835","855"}:
+        first_fact = next(iter(store.facts), None)
+        first_event = next(iter(store.events), None)
+        r = _base(contract.resource_type, contract.profiles[0], patient_ref)
+        if contract.resource_type in {"Observation", "Procedure"}:
+            r["status"] = "final" if contract.resource_type == "Observation" else "completed"
+        r["code"] = _concept(BASE + f"CodeSystem/cnwqk{contract.criterion_id}-codes", contract.criterion_id)
+        when = (first_fact.clinical_time if first_fact else None) or (first_event.start_time if first_event else None)
+        cid = contract.criterion_id
+        if cid == "165":
+            r["extension"]=[{"url":BASE+"StructureDefinition/cnwqk165-treatment-location","valueCode":"external"}]
+        elif cid in {"265","615","855"}:
+            value = first_fact.value if first_fact and isinstance(first_fact.value,(int,float)) else 1
+            unit = first_fact.unit if first_fact and first_fact.unit else "score"
+            r.update({"effectiveDateTime":_time(when),"valueQuantity":{"value":value,"unit":unit}})
+        elif cid == "485":
+            r["valueCodeableConcept"]=_concept(BASE+"CodeSystem/cnwqk485-popq-grade-cs","III")
+        elif cid == "555": r["performedDateTime"]=_time(when)
+        elif cid == "565":
+            r["extension"]=[{"url":BASE+"Extension/cnwqk565-observation-severity-ext","valueCodeableConcept":_concept(BASE+"CodeSystem/cnwqk565-symptomseverity-cs","severe")}]
+        elif cid == "635":
+            r.update({"valueQuantity":{"value":2,"unit":"ratio"},"referenceRange":[{"high":{"value":1,"unit":"ratio"}}]})
+        elif cid == "735": r["clinicalStatus"]=_concept("http://terminology.hl7.org/CodeSystem/condition-clinical","active")
+        elif cid == "755": r["performedPeriod"]={"start":_time(when),"end":_time(when)}
+        elif cid == "805": r["valueCodeableConcept"]=_concept(BASE+"CodeSystem/cnwqk805-SmokingStatusCS","current-smoker")
+        elif cid == "835": r["valueCodeableConcept"]=_concept(BASE+"CodeSystem/cnwqk835-AbnormalityStatusCS","abnormal")
+        resources.append(r)
     else:
         mappings = {
             "intracranial_hypertension": (contract.profiles[0], BASE + "CodeSystem/cnwqk875-intracranialhypertension-cs", "intracranial-hypertension"),
@@ -82,4 +109,3 @@ def compile_fhir(trace, store, contract: CompiledContract, patient_ref: str) -> 
     if not resources:
         return FHIRCompileResult(decision, "COMPILE_FAILED", (), reason_code="FHIR_COMPILE_FAILURE")
     return FHIRCompileResult(decision, "COMPILED", tuple(resources))
-

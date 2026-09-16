@@ -103,8 +103,67 @@ def _extract_875(packet):
     return tuple(facts), (), ()
 
 
+def _phase2_facts(packet, criterion):
+    facts=[]; events=[]
+    for span in packet.spans:
+        text=span.text
+        if subject_of(text)!="patient" or is_negated(text): continue
+        def fact(concept, value=True, unit=None): facts.append(_fact(span, len(facts), concept, value=value, unit=unit))
+        if criterion=="265" and re.search(r"术前", text):
+            for concept, marker in (("ctni", r"cTnI"), ("ctnt", r"cTnT")):
+                match=re.search(marker+r"\s*[:：]?\s*(\d+(?:\.\d+)?)\s*(?:μ|u)g/L", text, re.I)
+                if match: fact(concept, float(match.group(1)), "ug/L")
+        elif criterion=="615":
+            if re.search(r"pT(?:3a|3b|4)", text, re.I): fact("pt_high")
+            if re.search(r"(?:切缘\s*)?R1", text, re.I): fact("margin_r1")
+            if re.search(r"pN1", text, re.I): fact("pn1")
+            match=re.search(r"(?:Gleason|GS)(?:评分)?\s*[:：]?\s*(\d+)", text, re.I)
+            if match: fact("gleason_score", int(match.group(1)), "score")
+            match=re.search(r"PSA\s*[:：]?\s*(\d+(?:\.\d+)?)\s*ng/mL", text, re.I)
+            if match: fact("psa", float(match.group(1)), "ng/mL")
+        elif criterion=="635":
+            for lab in ("AST","ALT","BUN","Cr"):
+                match=re.search(lab+r"\s*(\d+(?:\.\d+)?)\s*[A-Za-zμ/]+.*?(?:参考)?上限\s*(\d+(?:\.\d+)?)", text, re.I)
+                if match and float(match.group(1))>float(match.group(2)): fact("lab_above_reference")
+        elif criterion=="755":
+            match=re.search(r"机械通气(?:持续)?\s*(\d+(?:\.\d+)?)\s*(小时|h)", text, re.I)
+            if match: fact("ventilation_duration", float(match.group(1)), "h")
+        elif criterion=="855":
+            patterns=(("Scr",r"Scr\s*(\d+(?:\.\d+)?)\s*(?:μ|u)mol/L","umol/L"),("BUN",r"BUN\s*(\d+(?:\.\d+)?)\s*mmol/L","mmol/L"))
+            for concept,pattern,unit in patterns:
+                match=re.search(pattern,text,re.I)
+                if match: fact(concept,float(match.group(1)),unit)
+            for lab in ("ALT","AST"):
+                match=re.search(lab+r"\s*(\d+(?:\.\d+)?)\s*U/L\s*(?:参考)?上限\s*(\d+(?:\.\d+)?)",text,re.I)
+                if match: fact(lab+"_ratio",float(match.group(1))/float(match.group(2)),"ratio")
+        elif criterion=="805":
+            if re.search(r"目前|当前|每日",text) and re.search(r"吸烟|烟民",text) and not re.search(r"戒烟|从不",text): fact("current_smoker")
+            match=re.search(r"戒烟\s*(\d+(?:\.\d+)?)\s*年",text)
+            if match: fact("cessation_elapsed",float(match.group(1)),"year")
+        elif criterion=="555":
+            match=re.search(r"(\d+(?:\.\d+)?)\s*个月前.*(?:手术|切除术)",text)
+            if match: fact("surgery_months",float(match.group(1)),"month")
+        elif criterion=="485":
+            if re.search(r"盆腔器官脱垂|子宫脱垂",text): fact("pelvic_organ_prolapse")
+            if re.search(r"POP-?Q\s*(?:分期)?\s*(?:III|IV|3|4)(?:期|度)?",text,re.I): fact("popq_high_grade")
+        elif criterion=="735":
+            disease=r"甲型肝炎|乙型肝炎|甲肝|乙肝|HIV|AIDS|艾滋|结核|传染(?:性)?疾病|结缔组织病"
+            if re.search(disease,text,re.I) and re.search(r"活动性|活动期|正在治疗|未控制",text) and not re.search(r"稳定|缓解|治愈|既往",text): fact("active_target_disease")
+        elif criterion=="835":
+            if re.search(r"凝血(?:功能)?(?:异常|障碍|紊乱)",text) and not re.search(r"正常|未见异常",text): fact("coagulation_abnormality")
+        elif criterion=="565":
+            if re.search(r"严重|重度",text) and re.search(r"腹泻",text): fact("severe_diarrhea")
+            if re.search(r"严重|重度",text) and re.search(r"便秘",text): fact("severe_constipation")
+        elif criterion=="165":
+            if re.search(r"化疗",text) and re.search(r"外院|当地医院|转入我院前",text) and re.search(r"完成|接受|已行|治疗",text) and not is_planned(text):
+                outside=_fact(span,"outside","outside_hospital")
+                events.append(_event(span,0,"Chemotherapy","chemotherapy",{"outside_hospital":outside}))
+    return tuple(facts),tuple(events),()
+
+
 _EXTRACTORS={"185":_extract_185,"675":_extract_675,"745":_extract_745,"875":_extract_875}
 
 
 def extract_deterministic(ir, packet):
-    return _EXTRACTORS[str(ir.criterion_id)](packet)
+    criterion=str(ir.criterion_id)
+    return _EXTRACTORS[criterion](packet) if criterion in _EXTRACTORS else _phase2_facts(packet,criterion)

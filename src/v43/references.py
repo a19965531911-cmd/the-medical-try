@@ -2,7 +2,8 @@
 
 from pathlib import Path
 
-CRITERION_IDS = ("185", "675", "745", "875")
+CRITERION_IDS = ("165", "185", "265", "485", "555", "565", "615", "635",
+                 "675", "735", "745", "755", "805", "835", "855", "875")
 REFERENCE_ROOT = Path(__file__).resolve().parents[3] / "CHIP2026_CP2_A_architecture_research_v4_3"
 
 

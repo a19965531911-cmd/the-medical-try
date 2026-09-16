@@ -32,12 +32,15 @@ def _criterion(raw: dict) -> CriterionIR:
     policy = RetrievalPolicy(_tuple(rp.get("primary_aliases")), _tuple(rp.get("expanded_terms")), _tuple(rp.get("bm25_query")), bool(fallback.get("enabled", True)), int(fallback.get("k", 3)), bool(rp.get("hard_gate", False)))
     profiles = _tuple(fc.get("profiles") or fc.get("profile"))
     if not profiles: raise ValueError("FHIR_contract.profiles is required")
+    compact = "profile" in fc and "profiles" not in fc
     for key in ("required_fields", "coding_systems", "coding_codes", "value_types", "subject_rules", "time_rules", "cardinality", "extensions"):
-        if key not in fc and not (key == "value_types" and "value_type" in fc): raise ValueError(f"FHIR_contract.{key} is required")
+        if key not in fc and not (key == "value_types" and "value_type" in fc) and not compact:
+            raise ValueError(f"FHIR_contract.{key} is required")
     contract = FHIRContract(str(fc.get("resource_type", "")), profiles, _tuple(fc.get("required_fields")), _tuple(fc.get("optional_fields")), _tuple(fc.get("coding_systems")), _tuple(fc.get("coding_codes")), _tuple(fc.get("value_types") or fc.get("value_type")), dict(fc))
     service_required = ("queried_resource_type", "required_profile_match", "query_parameters", "coding_paths", "systems", "codes", "value_paths", "extensions", "reference_behavior", "patient_identity_resolution", "JSON_assumptions")
+    compact_service = "query_resource" in sc and "queried_resource_type" not in sc
     for key in service_required:
-        if key not in sc:
+        if key not in sc and not compact_service:
             raise ValueError(f"service_query_contract.{key} is required")
     service = ServiceQueryContract(str(sc.get("queried_resource_type") or sc.get("query_resource") or ""), sc.get("required_profile_match"), _tuple(sc.get("query_parameters")), dict(sc))
     try: ctype = CriterionType(raw.get("criterion_type"))

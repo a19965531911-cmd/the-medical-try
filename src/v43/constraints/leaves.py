@@ -30,7 +30,8 @@ def evaluate_explicit_absence(state: AssertionState | None) -> TruthValue:
 
 _OPERATORS = {">=": operator.ge, ">": operator.gt, "<=": operator.le, "<": operator.lt,
               "==": operator.eq, "!=": operator.ne}
-_NUMERIC_UNITS = {"year", "years", "yr", "y", "mg", "g", "kg", "mmHg", "%"}
+_NUMERIC_UNITS = {"year", "years", "yr", "y", "month", "h", "ug/L", "ng/mL",
+                  "umol/L", "mmol/L", "U/L", "ratio", "score", "mg", "g", "kg", "mmHg", "%"}
 
 
 def evaluate_numeric(value: Any, op: str, threshold: Any, unit: str | None) -> TruthValue:
