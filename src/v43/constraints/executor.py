@@ -151,6 +151,8 @@ def _fact_state(store: Any, concept: str) -> Any:
 
 def _attribute_state(value: Any) -> Any:
     from v43.clinical.models import AssertionState
+    if hasattr(value, "state"):
+        return value.state
     if isinstance(value, AssertionState):
         return value
     if value is True or (isinstance(value, str) and value.upper() == "PRESENT"):
@@ -177,7 +179,7 @@ def _event_bindings(ir: Any, constraints: tuple[Any, ...],
     for entity in raw.get("entities", ()) if isinstance(raw, dict) else ():
         alias = str(entity.get("id", ""))
         event_type = str(entity.get("type", ""))
-        if alias in referenced and event_type:
+        if alias in referenced and event_type and alias not in declarations:
             declarations[alias] = event_type
     if not declarations:
         return ({},)
@@ -204,6 +206,16 @@ def _bound_relation(store: Any, bindings: dict[str, str | None], source: str,
                     target: str, relation_type: str, closed_world: bool) -> TruthValue:
     a = bindings.get(source, source)
     b = bindings.get(target, target)
+    if a == source:
+        events = store.find_events(concept=source)
+        if len(events) == 1:
+            a = events[0].event_id
+    if b == target:
+        facts = store.find_facts(concept=target)
+        events = store.find_events(concept=target)
+        candidates = (*facts, *events)
+        if len(candidates) == 1:
+            b = getattr(candidates[0], "fact_id", getattr(candidates[0], "event_id", b))
     if a is None or b is None:
         return TruthValue.FALSE if closed_world else TruthValue.UNKNOWN
     return evaluate_relation(store, a, b, relation_type, closed_world=closed_world)
@@ -232,6 +244,16 @@ def _leaf(node: Any, store: Any,
         return ((TruthValue.UNKNOWN, "REQUIRED_MISSING") if state is None
                 else (evaluate_required_present(state), "REQUIRED_EVALUATED"))
     if operator == "blocking_if_present":
+        alias = str(_get(node, "event_alias", ""))
+        attribute = str(_get(node, "event_attribute", ""))
+        if alias and attribute:
+            event_id = bindings.get(alias)
+            event = store.get_event(event_id) if event_id is not None else None
+            if event is None:
+                return TruthValue.TRUE, "BLOCKER_EVENT_NOT_PROVEN"
+            return evaluate_blocking_if_present(_attribute_state(
+                event.attributes.get(attribute) if isinstance(event.attributes, dict) else None
+            )), "BLOCKER_EVENT_ATTRIBUTE_EVALUATED"
         return ((TruthValue.TRUE, "BLOCKER_NOT_PROVEN") if state is None
                 else (evaluate_blocking_if_present(state), "BLOCKER_EVALUATED"))
     if operator == "must_be_absent":
