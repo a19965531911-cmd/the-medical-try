@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from itertools import product
 import re
 from typing import Any
 
@@ -160,36 +161,56 @@ def _attribute_state(value: Any) -> Any:
 
 
 def _event_bindings(ir: Any, constraints: tuple[Any, ...],
-                    store: Any) -> dict[str, tuple[str, ...]]:
-    bindings: dict[str, tuple[str, ...]] = {}
+                    store: Any) -> tuple[dict[str, str | None], ...]:
+    declarations: dict[str, str] = {}
     raw = _get(ir, "raw", {})
-    for entity in raw.get("entities", ()) if isinstance(raw, dict) else ():
-        alias = str(entity.get("id", ""))
-        event_type = str(entity.get("type", ""))
-        if alias and event_type:
-            bindings[alias] = tuple(event.event_id for event in store.events
-                                    if event.event_type == event_type)
     for node in constraints:
         alias = str(_get(node, "event_alias", ""))
         event_type = str(_get(node, "event_type", ""))
         if alias and event_type:
-            bindings[alias] = tuple(event.event_id for event in store.events
-                                    if event.event_type == event_type)
-    return bindings
+            declarations[alias] = event_type
+    referenced = {
+        str(value) for node in constraints
+        for value in (_get(node, "source_node", ""), _get(node, "target_node", ""),
+                      _get(node, "event_alias", "")) if value
+    }
+    for entity in raw.get("entities", ()) if isinstance(raw, dict) else ():
+        alias = str(entity.get("id", ""))
+        event_type = str(entity.get("type", ""))
+        if alias in referenced and event_type:
+            declarations[alias] = event_type
+    if not declarations:
+        return ({},)
+    required_subject = None
+    if isinstance(raw, dict):
+        required_subject = (raw.get("subject_constraints") or {}).get("subject")
+    aliases = tuple(declarations)
+    candidates = tuple(
+        tuple(event.event_id for event in store.events
+              if event.event_type == declarations[alias]
+              and (required_subject is None or event.subject == required_subject)) or (None,)
+        for alias in aliases
+    )
+    environments = []
+    for values in product(*candidates):
+        events = tuple(store.get_event(event_id) for event_id in values if event_id is not None)
+        subjects = {event.subject for event in events if event.subject is not None}
+        if len(subjects) <= 1:
+            environments.append(dict(zip(aliases, values)))
+    return tuple(environments) or ({alias: None for alias in aliases},)
 
 
-def _bound_relation(store: Any, bindings: dict[str, tuple[str, ...]], source: str,
+def _bound_relation(store: Any, bindings: dict[str, str | None], source: str,
                     target: str, relation_type: str, closed_world: bool) -> TruthValue:
-    sources = bindings.get(source, (source,))
-    targets = bindings.get(target, (target,))
-    if not sources or not targets:
+    a = bindings.get(source, source)
+    b = bindings.get(target, target)
+    if a is None or b is None:
         return TruthValue.FALSE if closed_world else TruthValue.UNKNOWN
-    return evaluate_any(evaluate_relation(store, a, b, relation_type, closed_world=closed_world)
-                        for a in sources for b in targets)
+    return evaluate_relation(store, a, b, relation_type, closed_world=closed_world)
 
 
 def _leaf(node: Any, store: Any,
-          bindings: dict[str, tuple[str, ...]]) -> tuple[TruthValue, str]:
+          bindings: dict[str, str | None]) -> tuple[TruthValue, str]:
     operator = str(_get(node, "operator", "unknown")).lower()
     state = _fact_state(store, str(_get(node, "concept", _get(node, "fact", ""))))
     if operator == "required_present":
@@ -197,16 +218,17 @@ def _leaf(node: Any, store: Any,
         event_type = str(_get(node, "event_type", ""))
         attribute = str(_get(node, "event_attribute", ""))
         if event_type:
-            return ((TruthValue.TRUE, "REQUIRED_EVENT_PRESENT") if bindings.get(alias)
+            return ((TruthValue.TRUE, "REQUIRED_EVENT_PRESENT") if bindings.get(alias) is not None
                     else (TruthValue.UNKNOWN, "REQUIRED_EVENT_MISSING"))
         if alias and attribute:
-            events = tuple(store.get_event(event_id) for event_id in bindings.get(alias, ()))
-            if not events:
+            event_id = bindings.get(alias)
+            event = store.get_event(event_id) if event_id is not None else None
+            if event is None:
                 return TruthValue.UNKNOWN, "REQUIRED_EVENT_MISSING"
-            results = [evaluate_required_present(_attribute_state(
+            result = evaluate_required_present(_attribute_state(
                 event.attributes.get(attribute) if isinstance(event.attributes, dict) else None
-            )) for event in events]
-            return evaluate_any(results), "REQUIRED_EVENT_ATTRIBUTE_EVALUATED"
+            ))
+            return result, "REQUIRED_EVENT_ATTRIBUTE_EVALUATED"
         return ((TruthValue.UNKNOWN, "REQUIRED_MISSING") if state is None
                 else (evaluate_required_present(state), "REQUIRED_EVALUATED"))
     if operator == "blocking_if_present":
@@ -240,31 +262,8 @@ def _leaf(node: Any, store: Any,
 def execute(ir: Any, store: Any) -> DecisionTrace:
     """Evaluate typed constraint nodes against the clinical store and emit an immutable trace."""
     constraints, normalized_root = _execution_nodes(ir)
-    bindings = _event_bindings(ir, constraints, store)
+    environments = _event_bindings(ir, constraints, store)
     nodes_by_id = {_get(node, "constraint_id", str(node)): node for node in constraints}
-    trace_by_id: dict[str, TraceNode] = {}
-
-    def evaluate(node_id: str) -> TraceNode:
-        if node_id in trace_by_id:
-            return trace_by_id[node_id]
-        node = nodes_by_id.get(node_id, {"constraint_id": node_id, "operator": "unknown"})
-        operator = str(_get(node, "operator", "unknown"))
-        inputs = tuple(_get(node, "input_node_ids", _get(node, "inputs", ())) or ())
-        if operator.upper() in {"AND", "OR"}:
-            children = tuple(evaluate(str(item)) for item in inputs)
-            result = (evaluate_all(child.result for child in children) if operator.upper() == "AND"
-                      else evaluate_any(child.result for child in children))
-            reason = f"BOOLEAN_{operator.upper()}_{result.value}"
-        else:
-            children = ()
-            result, reason = _leaf(node, store, bindings)
-        supporting = tuple(child.constraint_id for child in children if child.result is TruthValue.TRUE)
-        blocking = tuple(child.constraint_id for child in children if child.result is TruthValue.FALSE)
-        unknown = tuple(child.constraint_id for child in children if child.result is TruthValue.UNKNOWN)
-        trace = TraceNode(str(node_id), operator, inputs, supporting, blocking, unknown,
-                          f"{operator}({','.join(inputs)})", result, reason)
-        trace_by_id[node_id] = trace
-        return trace
 
     synthetic_root = False
     if constraints:
@@ -274,9 +273,68 @@ def execute(ir: Any, store: Any) -> DecisionTrace:
             synthetic_root = True
             nodes_by_id[requested_root] = {"constraint_id": requested_root, "operator": "AND",
                                            "input_node_ids": tuple(nodes_by_id)}
-        root_node = evaluate(str(requested_root))
     else:
-        root_node = evaluate("root")
+        requested_root = "root"
+
+    traces_by_environment: list[dict[str, TraceNode]] = []
+    for bindings in environments:
+        trace_by_id: dict[str, TraceNode] = {}
+
+        def evaluate(node_id: str) -> TraceNode:
+            if node_id in trace_by_id:
+                return trace_by_id[node_id]
+            node = nodes_by_id.get(node_id, {"constraint_id": node_id, "operator": "unknown"})
+            operator = str(_get(node, "operator", "unknown"))
+            inputs = tuple(_get(node, "input_node_ids", _get(node, "inputs", ())) or ())
+            if operator.upper() in {"AND", "OR"}:
+                children = tuple(evaluate(str(item)) for item in inputs)
+                result = (evaluate_all(child.result for child in children)
+                          if operator.upper() == "AND"
+                          else evaluate_any(child.result for child in children))
+                reason = f"BOOLEAN_{operator.upper()}_{result.value}"
+            else:
+                children = ()
+                result, reason = _leaf(node, store, bindings)
+            supporting = tuple(child.constraint_id for child in children
+                               if child.result is TruthValue.TRUE)
+            blocking = tuple(child.constraint_id for child in children
+                             if child.result is TruthValue.FALSE)
+            unknown = tuple(child.constraint_id for child in children
+                            if child.result is TruthValue.UNKNOWN)
+            trace = TraceNode(str(node_id), operator, inputs, supporting, blocking, unknown,
+                              f"{operator}({','.join(inputs)})", result, reason)
+            trace_by_id[node_id] = trace
+            return trace
+
+        evaluate(str(requested_root))
+        traces_by_environment.append(trace_by_id)
+
+    trace_by_id: dict[str, TraceNode] = {}
+
+    def aggregate(node_id: str) -> TraceNode:
+        if node_id in trace_by_id:
+            return trace_by_id[node_id]
+        candidates = tuple(trace[node_id] for trace in traces_by_environment if node_id in trace)
+        if not candidates:
+            raise KeyError(node_id)
+        exemplar = candidates[0]
+        result = evaluate_any(candidate.result for candidate in candidates)
+        inputs = exemplar.input_node_ids
+        supporting = tuple(item for item in inputs
+                           if aggregate(item).result is TruthValue.TRUE)
+        blocking = tuple(item for item in inputs
+                         if aggregate(item).result is TruthValue.FALSE)
+        unknown = tuple(item for item in inputs
+                        if aggregate(item).result is TruthValue.UNKNOWN)
+        reason = (f"BOOLEAN_{exemplar.operator.upper()}_{result.value}"
+                  if exemplar.operator.upper() in {"AND", "OR"} else exemplar.reason_code)
+        trace_by_id[node_id] = TraceNode(
+            exemplar.constraint_id, exemplar.operator, inputs, supporting, blocking, unknown,
+            exemplar.normalized_calculation, result, reason,
+        )
+        return trace_by_id[node_id]
+
+    root_node = aggregate(str(requested_root))
     ordered = tuple(trace_by_id[node_id] for node_id in nodes_by_id if node_id in trace_by_id)
     classified = tuple(node for node in ordered
                        if not (synthetic_root and node.constraint_id == root_node.constraint_id))

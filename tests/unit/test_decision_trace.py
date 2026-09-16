@@ -149,3 +149,20 @@ def test_loaded_criterion_745_rejects_noninvasive_or_unbound_relations(
     trace = execute(ir, _criterion_745_store(invasive=invasive, relations=relations))
 
     assert trace.eligibility_result is expected
+
+
+def test_loaded_criterion_745_does_not_split_alias_binding_across_events():
+    ir = load_criterion_ir(frozen_reference_paths()["criterion_ir_draft"], ("745",))["745"]
+    store = _criterion_745_store(relations=(
+        ("ventilation-2", "surgery", "POSTOPERATIVE_TO"),
+    ))
+    store.add_event(ClinicalEvent(
+        "ventilation-2", "MechanicalVentilation", "mechanical_ventilation", "active",
+        {"invasive": AssertionState.ABSENT}, "patient", "2026-01-03", None, "current",
+        "perioperative-1", ("ventilation-span",), (1,), 1.0, "test",
+    ))
+
+    trace = execute(ir, store)
+
+    assert trace.root_result is TruthValue.UNKNOWN
+    assert trace.eligibility_result is EligibilityResult.INSUFFICIENT_EVIDENCE
