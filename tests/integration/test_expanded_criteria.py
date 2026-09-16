@@ -1,3 +1,5 @@
+import pytest
+
 from v43.constraints.values import EligibilityResult
 from v43.runtime import RuntimeServices, evaluate_criterion
 
@@ -69,3 +71,24 @@ def test_structured_phase2_criteria_do_not_call_semantic_transport():
                             ("805", "目前吸烟"), ("555", "3个月前手术")):
         reports = [{"text": text, "timestamp": "2026-01-01", "fixture_source": "synthetic"}]
         evaluate_criterion(criterion, "no-llm", reports, RuntimeServices(FailingTransport(), 1.0))
+
+
+@pytest.mark.parametrize("criterion, paraphrase, negatives", [
+    ("265", "术前检查cTnT 0.04 ug/L", ("术后cTnT 0.04 ug/L", "术前cTnT 0.02 ug/L")),
+    ("615", "术后病理提示pN1", ("pN0，Gleason评分7分", "PSA 0.05 ng/mL")),
+    ("635", "ALT 80 U/L，参考上限40 U/L", ("ALT 30 U/L，参考上限40 U/L", "ALT 80 U/L")),
+    ("755", "机械通气25h", ("机械通气20小时", "仅记录机械通气")),
+    ("855", "Scr 100 umol/L，BUN 6 mmol/L，ALT 20 U/L上限40，AST 20 U/L上限40", ("Scr 180 μmol/L，BUN 6 mmol/L，ALT 20 U/L上限40，AST 20 U/L上限40", "Scr 100 μmol/L")),
+    ("805", "当前吸烟", ("戒烟2年", "从未吸烟")),
+    ("555", "5个月前接受手术", ("7个月前接受手术", "患者母亲3个月前手术")),
+    ("485", "子宫脱垂，POP-Q IV度", ("POP-Q评估完成但未记录分期", "盆腔器官脱垂POP-Q II期")),
+    ("735", "乙肝活动期", ("既往乙肝已稳定", "家族有活动性乙肝")),
+    ("835", "现有凝血功能障碍", ("凝血功能正常", "曾有凝血异常，目前正常")),
+    ("565", "现为重度便秘", ("轻度便秘", "严重腹泻已缓解")),
+    ("165", "在外院已行三周期化疗", ("计划在外院化疗", "父亲在当地医院完成化疗")),
+])
+def test_expanded_paraphrase_hard_negatives_and_missing_evidence(criterion, paraphrase, negatives):
+    assert_sat(criterion, paraphrase)
+    for text in negatives:
+        assert_not_sat(criterion, text)
+    assert_not_sat(criterion, "资料未提供相关信息")

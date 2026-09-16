@@ -152,8 +152,9 @@ def _phase2_facts(packet, criterion):
         elif criterion=="835":
             if re.search(r"凝血(?:功能)?(?:异常|障碍|紊乱)",text) and not re.search(r"正常|未见异常",text): fact("coagulation_abnormality")
         elif criterion=="565":
-            if re.search(r"严重|重度",text) and re.search(r"腹泻",text): fact("severe_diarrhea")
-            if re.search(r"严重|重度",text) and re.search(r"便秘",text): fact("severe_constipation")
+            resolved=bool(re.search(r"已?缓解|已恢复|既往",text))
+            if not resolved and re.search(r"严重|重度",text) and re.search(r"腹泻",text): fact("severe_diarrhea")
+            if not resolved and re.search(r"严重|重度",text) and re.search(r"便秘",text): fact("severe_constipation")
         elif criterion=="165":
             if re.search(r"化疗",text) and re.search(r"外院|当地医院|转入我院前",text) and re.search(r"完成|接受|已行|治疗",text) and not is_planned(text):
                 outside=_fact(span,"outside","outside_hospital")

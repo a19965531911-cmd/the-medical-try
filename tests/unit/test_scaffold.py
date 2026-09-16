@@ -10,7 +10,8 @@ def test_fixture_loader_returns_reports_from_json():
 
 
 def test_frozen_reference_configuration_points_to_existing_external_files():
-    assert CRITERION_IDS == ("185", "675", "745", "875")
+    assert CRITERION_IDS == ("165", "185", "265", "485", "555", "565", "615", "635",
+                             "675", "735", "745", "755", "805", "835", "855", "875")
     assert REFERENCE_ROOT.resolve() != Path.cwd().resolve()
     assert all(path.is_file() for path in frozen_reference_paths().values())
 
