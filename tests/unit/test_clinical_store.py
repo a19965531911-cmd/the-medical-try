@@ -79,3 +79,35 @@ def test_store_owns_events_relations_and_episodes_with_all_provenance_checked():
     assert store.find_relations(source_node="e2", relation_type="POSTOPERATIVE_TO") == (relation,)
     assert store.get_episode("ep1") == episode
 
+
+def test_store_rejects_duplicate_semantic_identity_for_every_owned_kind():
+    store = ClinicalStore(frozenset({"s1", "s2"}))
+    event = ClinicalEvent("e1", "procedure", "Surgery", "occurred", (), "patient",
+                          "2026-01-01", None, "past", None, ("s1",), (0,), 1.0, "parser")
+    relation = ClinicalRelation("r1", "vent", "e1", "POSTOPERATIVE_TO",
+                                AssertionState.PRESENT, ("s1",), (0,), 1.0, "parser")
+    episode = ClinicalEpisode("ep1", "perioperative", "2026-01-01", "2026-01-02",
+                              (0,), ("s1",), 1.0)
+    store.add_event(event)
+    store.add_relation(relation)
+    store.add_episode(episode)
+    with pytest.raises(ValueError, match="duplicate"):
+        store.add_event(ClinicalEvent("e2", *event.__getstate__()[1:]))
+    with pytest.raises(ValueError, match="duplicate"):
+        store.add_relation(ClinicalRelation("r2", *relation.__getstate__()[1:]))
+    with pytest.raises(ValueError, match="duplicate"):
+        store.add_episode(ClinicalEpisode("ep2", *episode.__getstate__()[1:]))
+
+
+def test_store_duplicate_id_failure_does_not_poison_semantic_identity_index():
+    store = ClinicalStore(frozenset({"s1", "s2"}))
+    original = ClinicalEvent("e1", "procedure", "Surgery", "occurred", (), "patient",
+                             "2026-01-01", None, "past", None, ("s1",), (0,), 1.0, "parser")
+    candidate = ClinicalEvent("e1", "procedure", "MechanicalVentilation", "occurred", (),
+                              "patient", "2026-01-02", None, "current", None,
+                              ("s2",), (1,), 1.0, "parser")
+    store.add_event(original)
+    with pytest.raises(ValueError, match="already exists"):
+        store.add_event(candidate)
+    store.add_event(ClinicalEvent("e2", *candidate.__getstate__()[1:]))
+    assert store.get_event("e2").concept == "MechanicalVentilation"

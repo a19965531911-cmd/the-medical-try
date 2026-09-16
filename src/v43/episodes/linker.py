@@ -32,14 +32,31 @@ def link_episode(events: tuple[ClinicalEvent, ...], relations: tuple[ClinicalRel
                and r.source_node in by_id and r.target_node in by_id]
     qualifying: list[ClinicalRelation] = []
     if _policy_name(policy) == "745":
-        kinds_by_pair: dict[frozenset[str], set[str]] = defaultdict(set)
-        for relation in present:
-            kinds_by_pair[frozenset((relation.source_node, relation.target_node))].add(relation.relation_type)
-        for relation in present:
-            kinds = kinds_by_pair[frozenset((relation.source_node, relation.target_node))]
-            if relation.relation_type == "POSTOPERATIVE_TO" or {"AFTER", "SAME_EPISODE"} <= kinds:
-                union(relation.source_node, relation.target_node)
-                qualifying.append(relation)
+        same_episode_pairs = {
+            frozenset((relation.source_node, relation.target_node))
+            for relation in present if relation.relation_type == "SAME_EPISODE"
+        }
+        for ventilation in events:
+            if ventilation.concept != "MechanicalVentilation":
+                continue
+            for surgery in events:
+                if (surgery.concept != "Surgery" or ventilation.subject is None
+                        or ventilation.subject != surgery.subject):
+                    continue
+                directed = [relation for relation in present
+                            if relation.source_node == ventilation.event_id
+                            and relation.target_node == surgery.event_id]
+                postoperative = [relation for relation in directed
+                                 if relation.relation_type == "POSTOPERATIVE_TO"]
+                after = [relation for relation in directed if relation.relation_type == "AFTER"]
+                same_pair = frozenset((ventilation.event_id, surgery.event_id))
+                same = [relation for relation in present
+                        if relation.relation_type == "SAME_EPISODE"
+                        and frozenset((relation.source_node, relation.target_node)) == same_pair]
+                matched = postoperative or (after + same if after and same_pair in same_episode_pairs else [])
+                if matched:
+                    union(ventilation.event_id, surgery.event_id)
+                    qualifying.extend(matched)
     else:
         for relation in present:
             if relation.relation_type in {"POSTOPERATIVE_TO", "SAME_EPISODE"}:

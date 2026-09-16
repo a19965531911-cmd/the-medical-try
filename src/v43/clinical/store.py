@@ -13,6 +13,9 @@ class ClinicalStore:
         self._relations: dict[str, ClinicalRelation] = {}
         self._episodes: dict[str, ClinicalEpisode] = {}
         self._fact_identities: set[tuple[object, ...]] = set()
+        self._event_identities: set[tuple[object, ...]] = set()
+        self._relation_identities: set[tuple[object, ...]] = set()
+        self._episode_identities: set[tuple[object, ...]] = set()
 
     @classmethod
     def from_packet(cls, packet: EvidencePacket) -> "ClinicalStore":
@@ -29,25 +32,40 @@ class ClinicalStore:
             raise ValueError(f"ID already exists: {object_id}")
         collection[object_id] = item
 
+    @staticmethod
+    def _add_unique(collection: dict[str, object], identities: set[tuple[object, ...]],
+                    object_id: str, item: object, identity: tuple[object, ...]) -> None:
+        if object_id in collection:
+            raise ValueError(f"ID already exists: {object_id}")
+        if identity in identities:
+            raise ValueError(f"duplicate clinical identity: {identity}")
+        collection[object_id] = item
+        identities.add(identity)
+
     def add_fact(self, fact: ClinicalFact) -> None:
         self._validate_spans((fact.evidence_span_id,))
         identity = ("fact", fact.concept, fact.subject, fact.clinical_time, fact.evidence_span_id)
-        if identity in self._fact_identities:
-            raise ValueError(f"duplicate clinical identity: {identity}")
-        self._add_by_id(self._facts, fact.fact_id, fact)
-        self._fact_identities.add(identity)
+        self._add_unique(self._facts, self._fact_identities, fact.fact_id, fact, identity)
 
     def add_event(self, event: ClinicalEvent) -> None:
         self._validate_spans(event.evidence_span_ids)
-        self._add_by_id(self._events, event.event_id, event)
+        identity = ("event", event.event_type, event.concept, event.subject,
+                    event.start_time, event.end_time, event.evidence_span_ids)
+        self._add_unique(self._events, self._event_identities, event.event_id, event, identity)
 
     def add_relation(self, relation: ClinicalRelation) -> None:
         self._validate_spans(relation.evidence_span_ids)
-        self._add_by_id(self._relations, relation.relation_id, relation)
+        identity = ("relation", relation.source_node, relation.target_node,
+                    relation.relation_type, relation.evidence_span_ids)
+        self._add_unique(self._relations, self._relation_identities,
+                         relation.relation_id, relation, identity)
 
     def add_episode(self, episode: ClinicalEpisode) -> None:
         self._validate_spans(episode.evidence_span_ids)
-        self._add_by_id(self._episodes, episode.episode_id, episode)
+        identity = ("episode", episode.episode_type, episode.start_time, episode.end_time,
+                    episode.report_indices, episode.evidence_span_ids)
+        self._add_unique(self._episodes, self._episode_identities,
+                         episode.episode_id, episode, identity)
 
     def get_fact(self, fact_id: str) -> ClinicalFact | None:
         return self._facts.get(fact_id)
