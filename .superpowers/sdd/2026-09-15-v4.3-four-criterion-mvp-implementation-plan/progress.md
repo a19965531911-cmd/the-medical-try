@@ -24,3 +24,9 @@ Tasks: 7, 8, 9
 Commits: deb3bb3, af1fb4e, 22201ca, f00f239, fa6680e, 7f8fd7c, 410d439
 Tests: A+B integration -> 67 passed; final scoped review -> 26 passed
 Reviewer: APPROVED after executor, provenance identity, episode direction, real-IR, and correlated-binding fixes
+
+Milestone C: COMPLETE
+Tasks: 10, 11, 12
+Commits: 94d6279, 3ee3304, ac73da1, d1d1197
+Tests: unit + criterion integration -> 134 passed
+Reviewer: APPROVED after negation, persistent call guard, reason-code, and raw-text-boundary fixes
