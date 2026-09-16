@@ -123,8 +123,10 @@ def _phase2_facts(packet, criterion):
             if match: fact("psa", float(match.group(1)), "ng/mL")
         elif criterion=="635":
             for lab in ("AST","ALT","BUN","Cr"):
-                match=re.search(lab+r"\s*(\d+(?:\.\d+)?)\s*[A-Za-zμ/]+.*?(?:参考)?上限\s*(\d+(?:\.\d+)?)", text, re.I)
-                if match and float(match.group(1))>float(match.group(2)): fact("lab_above_reference")
+                match=re.search(lab+r"\s*(\d+(?:\.\d+)?)\s*([A-Za-zμ/]+).*?(?:参考)?上限\s*(\d+(?:\.\d+)?)", text, re.I)
+                if match and float(match.group(3))>0:
+                    value,unit,high=float(match.group(1)),match.group(2),float(match.group(3))
+                    fact(lab,value,unit); fact(lab+"_high",high,unit); fact(lab+"_ratio",value/high,"ratio")
         elif criterion=="755":
             match=re.search(r"机械通气(?:持续)?\s*(\d+(?:\.\d+)?)\s*(小时|h)", text, re.I)
             if match: fact("ventilation_duration", float(match.group(1)), "h")
@@ -158,7 +160,7 @@ def _phase2_facts(packet, criterion):
         elif criterion=="165":
             if re.search(r"化疗",text) and re.search(r"外院|当地医院|转入我院前",text) and re.search(r"完成|接受|已行|治疗",text) and not is_planned(text):
                 outside=_fact(span,"outside","outside_hospital")
-                events.append(_event(span,0,"Chemotherapy","chemotherapy",{"outside_hospital":outside}))
+                events.append(_event(span,0,"MedicationAdministration","chemotherapy",{"outside_hospital":outside}))
     return tuple(facts),tuple(events),()
 
 

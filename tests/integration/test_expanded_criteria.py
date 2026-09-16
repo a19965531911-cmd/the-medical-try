@@ -26,9 +26,9 @@ def test_block_a_numeric_and_temporal_criteria():
     for positive in ("病理pT3a", "切缘R1", "pN1", "Gleason评分8分", "PSA 0.2 ng/mL"):
         assert_sat("615", positive)
     assert_not_sat("615", "Gleason评分7分，PSA 0.1 ng/mL")
-    assert_sat("635", "AST 50 U/L，参考上限40 U/L")
-    assert_not_sat("635", "AST 30 U/L，参考上限40 U/L")
-    assert_not_sat("635", "AST 50 U/L")
+    assert_sat("635", "AST 30 U/L上限40，ALT 50 U/L上限40，BUN 12 mmol/L上限9，Cr 180 umol/L上限100")
+    assert_not_sat("635", "AST 30 U/L上限40，ALT 50 U/L上限40，BUN 12 mmol/L上限9，Cr 201 umol/L上限100")
+    assert_not_sat("635", "AST 30 U/L上限40")
     assert_sat("755", "机械通气持续30小时")
     assert_not_sat("755", "机械通气持续12小时")
     assert_sat("855", "Scr 120 μmol/L，BUN 7 mmol/L，ALT 30 U/L上限40，AST 25 U/L上限40")
@@ -76,7 +76,7 @@ def test_structured_phase2_criteria_do_not_call_semantic_transport():
 @pytest.mark.parametrize("criterion, paraphrase, negatives", [
     ("265", "术前检查cTnT 0.04 ug/L", ("术后cTnT 0.04 ug/L", "术前cTnT 0.02 ug/L")),
     ("615", "术后病理提示pN1", ("pN0，Gleason评分7分", "PSA 0.05 ng/mL")),
-    ("635", "ALT 80 U/L，参考上限40 U/L", ("ALT 30 U/L，参考上限40 U/L", "ALT 80 U/L")),
+    ("635", "AST 30 U/L上限40，ALT 50 U/L上限40，BUN 12 mmol/L上限9，Cr 180 umol/L上限100", ("AST 30 U/L上限40，ALT 50 U/L上限40，BUN 12 mmol/L上限9，Cr 201 umol/L上限100", "ALT 50 U/L上限40")),
     ("755", "机械通气25h", ("机械通气20小时", "仅记录机械通气")),
     ("855", "Scr 100 umol/L，BUN 6 mmol/L，ALT 20 U/L上限40，AST 20 U/L上限40", ("Scr 180 μmol/L，BUN 6 mmol/L，ALT 20 U/L上限40，AST 20 U/L上限40", "Scr 100 μmol/L")),
     ("805", "当前吸烟", ("戒烟2年", "从未吸烟")),

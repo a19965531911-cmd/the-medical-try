@@ -16,7 +16,7 @@ from v43.runtime import RuntimeServices, evaluate_criterion
 CASES = {
     "165":"转入我院前于当地医院完成2周期化疗", "265":"术前cTnI 0.08 μg/L",
     "485":"盆腔器官脱垂，POP-Q III期", "555":"3个月前行胆囊切除术",
-    "565":"目前严重腹泻", "615":"Gleason评分8分", "635":"AST 50 U/L，参考上限40 U/L",
+    "565":"目前严重腹泻", "615":"Gleason评分8分", "635":"AST 30 U/L上限40，ALT 50 U/L上限40，BUN 12 mmol/L上限9，Cr 180 umol/L上限100",
     "735":"活动性乙型肝炎", "755":"机械通气持续30小时", "805":"目前每日吸烟",
     "835":"目前凝血功能异常", "855":"Scr 120 μmol/L，BUN 7 mmol/L，ALT 30 U/L上限40，AST 25 U/L上限40",
 }

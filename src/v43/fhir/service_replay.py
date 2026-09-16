@@ -20,6 +20,27 @@ def _codings(resource: dict, path: str) -> list[dict]:
 
 def replay_service(resources: tuple[dict, ...], contract: ServiceContract, base_url: str,
                    identity: Mapping[str, str]) -> ServiceValidationResult:
+    if any(profile.endswith("cnwqk635-LaboratoryExaminationProfile") for profile in contract.profiles):
+        patient_labs: dict[str, set[str]] = {}
+        for resource in resources:
+            if resource.get("resourceType") != "Observation":
+                continue
+            if not set(resource.get("meta", {}).get("profile", ())) & set(contract.profiles):
+                continue
+            patient = resource.get("subject", {}).get("reference", "").removeprefix("Patient/")
+            code = next((coding.get("code") for coding in _codings(resource, "code.coding")), None)
+            value = resource.get("valueQuantity", {}).get("value")
+            high = (resource.get("referenceRange") or [{}])[0].get("high", {}).get("value")
+            try:
+                qualifies = float(value) <= 2 * float(high) and float(high) > 0
+            except (TypeError, ValueError):
+                qualifies = False
+            if patient in identity and code in {"AST", "ALT", "BUN", "Cr"} and qualifies:
+                patient_labs.setdefault(patient, set()).add(code)
+        matches = tuple(patient for patient, labs in patient_labs.items()
+                        if labs == {"AST", "ALT", "BUN", "Cr"})
+        return ServiceValidationResult("SERVICE_HIT" if matches else "SERVICE_MISS", matches,
+                                       None if matches else "SERVICE_MISS")
     matches = []
     procedure_ids = {
         "Procedure/" + str(resource["id"])

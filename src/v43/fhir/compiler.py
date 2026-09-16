@@ -87,12 +87,25 @@ def compile_fhir(trace, store, contract: CompiledContract, patient_ref: str) -> 
         elif cid == "565":
             r["extension"]=[{"url":BASE+"Extension/cnwqk565-observation-severity-ext","valueCodeableConcept":_concept(BASE+"CodeSystem/cnwqk565-symptomseverity-cs","severe")}]
         elif cid == "635":
-            r.update({"valueQuantity":{"value":2,"unit":"ratio"},"referenceRange":[{"high":{"value":1,"unit":"ratio"}}]})
+            resources = []
+            for lab in ("AST", "ALT", "BUN", "Cr"):
+                measurement = next((fact for fact in store.facts if fact.concept == lab), None)
+                high = next((fact for fact in store.facts if fact.concept == lab + "_high"), None)
+                if measurement is None or high is None:
+                    continue
+                item = _base("Observation", contract.profiles[0], patient_ref)
+                item.update({"status": "final",
+                             "code": _concept(BASE + "CodeSystem/cnwqk635-LaboratoryTestsCS", lab),
+                             "effectiveDateTime": _time(measurement.clinical_time),
+                             "valueQuantity": {"value": measurement.value, "unit": measurement.unit},
+                             "referenceRange": [{"high": {"value": high.value, "unit": high.unit}}]})
+                resources.append(item)
         elif cid == "735": r["clinicalStatus"]=_concept("http://terminology.hl7.org/CodeSystem/condition-clinical","active")
         elif cid == "755": r["performedPeriod"]={"start":_time(when),"end":_time(when)}
         elif cid == "805": r["valueCodeableConcept"]=_concept(BASE+"CodeSystem/cnwqk805-SmokingStatusCS","current-smoker")
         elif cid == "835": r["valueCodeableConcept"]=_concept(BASE+"CodeSystem/cnwqk835-AbnormalityStatusCS","abnormal")
-        resources.append(r)
+        if cid != "635":
+            resources.append(r)
     else:
         mappings = {
             "intracranial_hypertension": (contract.profiles[0], BASE + "CodeSystem/cnwqk875-intracranialhypertension-cs", "intracranial-hypertension"),
