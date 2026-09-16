@@ -74,3 +74,29 @@ def test_semantic_rejects_unknown_span_without_fuzzy_substitution():
         extract_semantic(ir(), packet(), FakeTransport(valid_response("S1")), CallGuard(), patient_id="p1")
     assert exc.value.reason_code == "GROUNDING_REJECT"
 
+
+@pytest.mark.parametrize("response", [
+    {"eligible": True, "facts": [], "events": [], "relations": []},
+    valid_response("missing"),
+])
+def test_semantic_rejection_is_terminal_without_second_post(response):
+    transport = FakeTransport(response)
+    guard = CallGuard()
+    for _ in range(2):
+        with pytest.raises(SemanticExtractionError):
+            extract_semantic(ir(), packet(), transport, guard, patient_id="p1")
+    assert len(transport.calls) == 1
+
+
+def test_semantic_transport_failure_is_terminal_without_second_post():
+    class FailingTransport(FakeTransport):
+        def post(self, payload, timeout):
+            self.calls.append((payload, timeout))
+            raise TimeoutError("offline")
+
+    transport = FailingTransport(None)
+    guard = CallGuard()
+    for _ in range(2):
+        with pytest.raises(TimeoutError, match="offline"):
+            extract_semantic(ir(), packet(), transport, guard, patient_id="p1")
+    assert len(transport.calls) == 1

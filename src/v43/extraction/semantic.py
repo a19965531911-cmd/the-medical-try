@@ -21,6 +21,12 @@ class CallGuard:
     def put(self, key, value):
         self._cache[key] = value
 
+    def reserve(self, key):
+        if key in self._cache:
+            return False
+        self._cache[key] = RuntimeError("semantic call already in progress")
+        return True
+
 
 _FORBIDDEN = {"eligible", "match", "qualified", "final_decision"}
 
@@ -62,7 +68,10 @@ def extract_semantic(ir, packet, transport, call_guard, *, patient_id: str, time
     key = (patient_id, ir.criterion_id)
     cached = call_guard.get(key)
     if cached is not None:
+        if isinstance(cached, BaseException):
+            raise cached
         return cached
+    call_guard.reserve(key)
     prompt = {
         "criterion_ir": ir.raw,
         "criterion_summary": {"title": ir.title, "original_text": ir.original_text},
@@ -72,10 +81,18 @@ def extract_semantic(ir, packet, transport, call_guard, *, patient_id: str, time
     }
     payload = {"model": "local-model", "temperature": 0,
                "messages": [{"role": "user", "content": json.dumps(prompt, ensure_ascii=False)}]}
-    result = _parse(_content(transport.post(payload, timeout)))
     try:
+        result = _parse(_content(transport.post(payload, timeout)))
         validate_grounding((*result[0], *result[1], *result[2]), packet)
+    except SemanticExtractionError as exc:
+        call_guard.put(key, exc)
+        raise
     except ValueError as exc:
-        raise SemanticExtractionError("GROUNDING_REJECT", str(exc)) from exc
+        error = SemanticExtractionError("GROUNDING_REJECT", str(exc))
+        call_guard.put(key, error)
+        raise error from exc
+    except BaseException as exc:
+        call_guard.put(key, exc)
+        raise
     call_guard.put(key, result)
     return result
