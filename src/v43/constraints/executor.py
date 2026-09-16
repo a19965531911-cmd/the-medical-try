@@ -27,6 +27,9 @@ class _ExecutableNode:
     source_node: str = ""
     target_node: str = ""
     relation_type: str = ""
+    event_type: str = ""
+    event_alias: str = ""
+    event_attribute: str = ""
 
 
 def _split_expression(expression: str, operator: str) -> tuple[str, ...]:
@@ -107,7 +110,15 @@ def _nodes_from_raw(raw: dict[str, Any]) -> tuple[tuple[_ExecutableNode, ...], s
                 relation_type=arguments[2],
             ))
         else:
-            nodes.append(_ExecutableNode(node_id, operator, concept=arguments[0] if arguments else ""))
+            concept = arguments[0] if arguments else ""
+            declaration = re.fullmatch(r"([A-Za-z_][A-Za-z0-9_]*)\s+([A-Za-z_][A-Za-z0-9_]*)", concept)
+            attribute = re.fullmatch(r"([A-Za-z_][A-Za-z0-9_]*)\.([A-Za-z_][A-Za-z0-9_]*)", concept)
+            nodes.append(_ExecutableNode(
+                node_id, operator, concept=concept,
+                event_type=declaration.group(1) if declaration else "",
+                event_alias=declaration.group(2) if declaration else (attribute.group(1) if attribute else ""),
+                event_attribute=attribute.group(2) if attribute else "",
+            ))
         return node_id
 
     root_id = parse(expression)
@@ -137,10 +148,65 @@ def _fact_state(store: Any, concept: str) -> Any:
     return AssertionState.ABSENT
 
 
-def _leaf(node: Any, store: Any) -> tuple[TruthValue, str]:
+def _attribute_state(value: Any) -> Any:
+    from v43.clinical.models import AssertionState
+    if isinstance(value, AssertionState):
+        return value
+    if value is True or (isinstance(value, str) and value.upper() == "PRESENT"):
+        return AssertionState.PRESENT
+    if value is False or (isinstance(value, str) and value.upper() == "ABSENT"):
+        return AssertionState.ABSENT
+    return AssertionState.UNKNOWN
+
+
+def _event_bindings(ir: Any, constraints: tuple[Any, ...],
+                    store: Any) -> dict[str, tuple[str, ...]]:
+    bindings: dict[str, tuple[str, ...]] = {}
+    raw = _get(ir, "raw", {})
+    for entity in raw.get("entities", ()) if isinstance(raw, dict) else ():
+        alias = str(entity.get("id", ""))
+        event_type = str(entity.get("type", ""))
+        if alias and event_type:
+            bindings[alias] = tuple(event.event_id for event in store.events
+                                    if event.event_type == event_type)
+    for node in constraints:
+        alias = str(_get(node, "event_alias", ""))
+        event_type = str(_get(node, "event_type", ""))
+        if alias and event_type:
+            bindings[alias] = tuple(event.event_id for event in store.events
+                                    if event.event_type == event_type)
+    return bindings
+
+
+def _bound_relation(store: Any, bindings: dict[str, tuple[str, ...]], source: str,
+                    target: str, relation_type: str, closed_world: bool) -> TruthValue:
+    sources = bindings.get(source, (source,))
+    targets = bindings.get(target, (target,))
+    if not sources or not targets:
+        return TruthValue.FALSE if closed_world else TruthValue.UNKNOWN
+    return evaluate_any(evaluate_relation(store, a, b, relation_type, closed_world=closed_world)
+                        for a in sources for b in targets)
+
+
+def _leaf(node: Any, store: Any,
+          bindings: dict[str, tuple[str, ...]]) -> tuple[TruthValue, str]:
     operator = str(_get(node, "operator", "unknown")).lower()
     state = _fact_state(store, str(_get(node, "concept", _get(node, "fact", ""))))
     if operator == "required_present":
+        alias = str(_get(node, "event_alias", ""))
+        event_type = str(_get(node, "event_type", ""))
+        attribute = str(_get(node, "event_attribute", ""))
+        if event_type:
+            return ((TruthValue.TRUE, "REQUIRED_EVENT_PRESENT") if bindings.get(alias)
+                    else (TruthValue.UNKNOWN, "REQUIRED_EVENT_MISSING"))
+        if alias and attribute:
+            events = tuple(store.get_event(event_id) for event_id in bindings.get(alias, ()))
+            if not events:
+                return TruthValue.UNKNOWN, "REQUIRED_EVENT_MISSING"
+            results = [evaluate_required_present(_attribute_state(
+                event.attributes.get(attribute) if isinstance(event.attributes, dict) else None
+            )) for event in events]
+            return evaluate_any(results), "REQUIRED_EVENT_ATTRIBUTE_EVALUATED"
         return ((TruthValue.UNKNOWN, "REQUIRED_MISSING") if state is None
                 else (evaluate_required_present(state), "REQUIRED_EVALUATED"))
     if operator == "blocking_if_present":
@@ -163,16 +229,18 @@ def _leaf(node: Any, store: Any) -> tuple[TruthValue, str]:
     if operator == "temporal_required":
         return evaluate_temporal(_get(node, "within_scope")), "TEMPORAL_EVALUATED"
     if operator == "relation_required":
-        return evaluate_relation(store, str(_get(node, "source_node", _get(node, "a", ""))),
-                                 str(_get(node, "target_node", _get(node, "b", ""))),
-                                 str(_get(node, "relation_type")),
-                                 closed_world=bool(_get(node, "closed_world", False))), "RELATION_EVALUATED"
+        return _bound_relation(
+            store, bindings, str(_get(node, "source_node", _get(node, "a", ""))),
+            str(_get(node, "target_node", _get(node, "b", ""))),
+            str(_get(node, "relation_type")), bool(_get(node, "closed_world", False)),
+        ), "RELATION_EVALUATED"
     return TruthValue.UNKNOWN, "UNSUPPORTED_CONSTRAINT"
 
 
 def execute(ir: Any, store: Any) -> DecisionTrace:
     """Evaluate typed constraint nodes against the clinical store and emit an immutable trace."""
     constraints, normalized_root = _execution_nodes(ir)
+    bindings = _event_bindings(ir, constraints, store)
     nodes_by_id = {_get(node, "constraint_id", str(node)): node for node in constraints}
     trace_by_id: dict[str, TraceNode] = {}
 
@@ -189,7 +257,7 @@ def execute(ir: Any, store: Any) -> DecisionTrace:
             reason = f"BOOLEAN_{operator.upper()}_{result.value}"
         else:
             children = ()
-            result, reason = _leaf(node, store)
+            result, reason = _leaf(node, store, bindings)
         supporting = tuple(child.constraint_id for child in children if child.result is TruthValue.TRUE)
         blocking = tuple(child.constraint_id for child in children if child.result is TruthValue.FALSE)
         unknown = tuple(child.constraint_id for child in children if child.result is TruthValue.UNKNOWN)

@@ -3,7 +3,7 @@ from types import SimpleNamespace
 
 import pytest
 
-from v43.clinical.models import AssertionState, ClinicalFact, ClinicalRelation
+from v43.clinical.models import AssertionState, ClinicalEvent, ClinicalFact, ClinicalRelation
 from v43.clinical.store import ClinicalStore
 from v43.constraints.executor import execute
 from v43.constraints.trace import DecisionTrace, TraceNode
@@ -95,3 +95,57 @@ def test_executor_normalizes_loaded_frozen_ir_sections_into_executable_nodes():
     assert trace.root_result is TruthValue.TRUE
     assert trace.eligibility_result is EligibilityResult.SATISFIED
     assert trace.unknown_node_ids == ()
+
+
+def _criterion_745_store(*, invasive=AssertionState.PRESENT,
+                         relations=(("ventilation", "surgery", "POSTOPERATIVE_TO"),)):
+    span_ids = {"surgery-span", "ventilation-span"}
+    span_ids.update(f"relation-{index}" for index, _ in enumerate(relations))
+    store = ClinicalStore(frozenset(span_ids))
+    store.add_event(ClinicalEvent(
+        "surgery", "Surgery", "completed_surgery", "completed", {}, "patient",
+        "2026-01-01", None, "past", "perioperative-1", ("surgery-span",),
+        (0,), 1.0, "test",
+    ))
+    store.add_event(ClinicalEvent(
+        "ventilation", "MechanicalVentilation", "mechanical_ventilation", "active",
+        {"invasive": invasive}, "patient", "2026-01-02", None, "current",
+        "perioperative-1", ("ventilation-span",), (1,), 1.0, "test",
+    ))
+    for index, (source, target, relation_type) in enumerate(relations):
+        store.add_relation(ClinicalRelation(
+            f"relation-{index}", source, target, relation_type, AssertionState.PRESENT,
+            (f"relation-{index}",), (1,), 1.0, "test",
+        ))
+    return store
+
+
+@pytest.mark.parametrize("relations", [
+    (("ventilation", "surgery", "POSTOPERATIVE_TO"),),
+    (("ventilation", "surgery", "AFTER"),
+     ("ventilation", "surgery", "SAME_EPISODE")),
+])
+def test_loaded_criterion_745_binds_typed_event_aliases_and_relations(relations):
+    ir = load_criterion_ir(frozen_reference_paths()["criterion_ir_draft"], ("745",))["745"]
+
+    trace = execute(ir, _criterion_745_store(relations=relations))
+
+    assert trace.root_result is TruthValue.TRUE
+    assert trace.eligibility_result is EligibilityResult.SATISFIED
+
+
+@pytest.mark.parametrize(("invasive", "relations", "expected"), [
+    (AssertionState.ABSENT, (("ventilation", "surgery", "POSTOPERATIVE_TO"),),
+     EligibilityResult.NOT_SATISFIED),
+    (AssertionState.PRESENT, (("surgery", "ventilation", "POSTOPERATIVE_TO"),),
+     EligibilityResult.INSUFFICIENT_EVIDENCE),
+    (AssertionState.PRESENT, (("unrelated", "surgery", "POSTOPERATIVE_TO"),),
+     EligibilityResult.INSUFFICIENT_EVIDENCE),
+])
+def test_loaded_criterion_745_rejects_noninvasive_or_unbound_relations(
+        invasive, relations, expected):
+    ir = load_criterion_ir(frozen_reference_paths()["criterion_ir_draft"], ("745",))["745"]
+
+    trace = execute(ir, _criterion_745_store(invasive=invasive, relations=relations))
+
+    assert trace.eligibility_result is expected
