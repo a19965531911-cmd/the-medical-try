@@ -58,3 +58,26 @@ Path: `C:\Users\32433\Documents\ChatGPT\clip\CHIP2026_CP2_A_baseline_v4_3_mvp\su
 - Criterion 855 retains documented fixed threshold behavior where present in the official legacy implementation; V4.3 clinical evaluation uses explicit reference/high values.
 - Criterion 745 may emit parent-surgery plus ventilation procedures, so shadow comparison can report an expected FHIR delta.
 - The candidate is for local A-test validation and manual online submission only. No Tianchi upload or leaderboard claim was made.
+
+## Production parity correction
+
+External decode review reproduced a real defect in the original candidate: its Library payloads were generated from a second builder-local runtime containing `AtomState`, `EvidenceLedger`, `CriterionCompiler`, local `SPECS`, and `TEMPORAL_POLICY_875="EVER_PRESENT"`. The verified `src/v43` engine was not part of that generation path. The root cause was `scripts/build_v43_submission.py:main()`, which concatenated `constants(old) + TITLE + RUNTIME` for every Library.
+
+The corrected builder embeds the verified V4.3 module closure and uses a loader-backed adapter. Clinical decisions now flow through `ClinicalFact`, `ClinicalEvent`, `ClinicalRelation`, `ClinicalEpisode`, the typed constraint executor, and the verified FHIR compiler. The adapter owns only dependency flattening and message/FHIR packaging.
+
+Parity evidence for `a_test_message_bundle_v4_3_candidate_v2.json`:
+
+- Shell unchanged: YES (MessageHeader 1, Library 16, frozen IDs/titles preserved).
+- Library metadata unchanged; only embedded source payloads changed.
+- Parallel runtime classes: NO.
+- Verified clinical classes present: YES.
+- Verified engine decision parity: 16/16 positive and 16/16 hard-negative fixtures.
+- Criterion 635: verified four-item ALL with each ratio `<= 2`; production emits four observations on the positive fixture.
+- Criterion 745: verified surgery/ventilation relation preserved; production emits the two scorer-compatible Procedure resources.
+- Criterion 875: `REVIEW_REQUIRED` remains in the verified source; candidate execution uses the explicit documented `EVER_PRESENT` configuration and does not silently claim semantic resolution.
+
+New candidate:
+
+- Path: `submission/a_test_message_bundle_v4_3_candidate_v2.json`
+- Size: 1,549,440 bytes
+- SHA256: `EB1580D91E847CF46D57CBA85A96CCE6C215BE89FD99C9078D4009F66681C090`
