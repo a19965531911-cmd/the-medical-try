@@ -1,4 +1,4 @@
-from dataclasses import dataclass, replace
+from dataclasses import dataclass, field, replace
 from importlib import import_module
 from types import MappingProxyType, SimpleNamespace
 from typing import Any, Mapping
@@ -20,7 +20,13 @@ from v43.temporal.reconcile import reconcile
 class RuntimeServices:
     semantic_transport: object | None
     timeout_seconds: float
-    temporal_policy: str
+    temporal_policy: str = "REVIEW_REQUIRED"
+    _semantic_guard: CallGuard = field(
+        default_factory=CallGuard,
+        init=False,
+        repr=False,
+        compare=False,
+    )
 
 
 @dataclass(frozen=True, slots=True)
@@ -73,7 +79,7 @@ def _review_required(trace: DecisionTrace) -> DecisionTrace:
 
 def _current_875_store(
     store: ClinicalStore,
-    packet: EvidencePacket,
+    valid_span_ids: frozenset[str],
     temporal_views: Mapping[str, Mapping[str, tuple[str, ...]]],
 ) -> ClinicalStore:
     current_ids = {
@@ -81,7 +87,7 @@ def _current_875_store(
         for concept in ("intracranial_hypertension", "consciousness_impairment")
         for fact_id in temporal_views.get(concept, {}).get("CURRENT", ())
     }
-    current = ClinicalStore.from_packet(packet)
+    current = ClinicalStore(valid_span_ids)
     for fact in store.facts:
         if fact.fact_id in current_ids:
             current.add_fact(fact)
@@ -112,7 +118,7 @@ def evaluate_criterion(
                 ir,
                 packet,
                 services.semantic_transport,
-                CallGuard(),
+                services._semantic_guard,
                 patient_id=patient_id,
                 timeout=services.timeout_seconds,
             )
@@ -134,7 +140,7 @@ def evaluate_criterion(
         root_constraint_id="root",
     )
     execution_store = (
-        _current_875_store(store, packet, temporal_views)
+        _current_875_store(store, store.valid_span_ids, temporal_views)
         if criterion_id == "875" and services.temporal_policy == "CURRENT_ACTIVE"
         else store
     )

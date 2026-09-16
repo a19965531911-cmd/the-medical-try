@@ -46,12 +46,12 @@ def _content(response):
         value = response["choices"][0]["message"]["content"]
         return json.loads(value) if isinstance(value, str) else value
     except (KeyError, IndexError, TypeError, json.JSONDecodeError) as exc:
-        raise SemanticExtractionError("SCHEMA_REJECT", "invalid semantic response envelope") from exc
+        raise SemanticExtractionError("SEMANTIC_SCHEMA_REJECT", "invalid semantic response envelope") from exc
 
 
 def _parse(data):
     if not isinstance(data, dict) or set(data) != {"facts", "events", "relations"} or _contains_forbidden(data):
-        raise SemanticExtractionError("SCHEMA_REJECT", "semantic output violates allowed schema")
+        raise SemanticExtractionError("SEMANTIC_SCHEMA_REJECT", "semantic output violates allowed schema")
     try:
         facts = tuple(ClinicalFact(**{**item, "state": AssertionState(item["state"]), "source": "semantic"}) for item in data["facts"])
         events = tuple(ClinicalEvent(**{**item, "evidence_span_ids": tuple(item["evidence_span_ids"]),
@@ -60,7 +60,7 @@ def _parse(data):
                                               "evidence_span_ids": tuple(item["evidence_span_ids"]),
                                               "report_indices": tuple(item["report_indices"]), "source": "semantic"}) for item in data["relations"])
     except (KeyError, TypeError, ValueError) as exc:
-        raise SemanticExtractionError("SCHEMA_REJECT", "invalid typed semantic object") from exc
+        raise SemanticExtractionError("SEMANTIC_SCHEMA_REJECT", "invalid typed semantic object") from exc
     return facts, events, relations
 
 

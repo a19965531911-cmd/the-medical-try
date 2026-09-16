@@ -41,9 +41,15 @@ def test_185_distinguishes_actual_planned_prior_family_and_mention():
 
 
 def test_negation_and_family_subject_never_create_positive_875_facts():
-    for text in ("否认颅内高压", "母亲曾意识不清"):
+    for text in ("否认颅内高压", "已排除颅内高压", "母亲曾意识不清"):
         facts = extract_deterministic(IR("875"), pkt(text))[0]
         assert not any(fact.state.value == "PRESENT" for fact in facts)
+
+
+def test_explicit_negation_is_target_scoped_without_broad_substring_matches():
+    for text in ("未接受伊立替康给药", "未确诊头面部带状疱疹", "未行气管插管有创机械通气", "已排除颅内高压"):
+        assert is_negated(text)
+    assert not is_negated("无明显不适，后确诊头面部带状疱疹")
 
 
 def test_675_emits_age_diagnosis_and_only_corresponding_location_relation():

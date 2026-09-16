@@ -66,7 +66,7 @@ def test_semantic_calls_transport_at_most_once_per_patient_criterion():
 def test_semantic_rejects_forbidden_decision_keys_anywhere(response):
     with pytest.raises(SemanticExtractionError) as exc:
         extract_semantic(ir(), packet(), FakeTransport(response), CallGuard(), patient_id="p1")
-    assert exc.value.reason_code == "SCHEMA_REJECT"
+    assert exc.value.reason_code == "SEMANTIC_SCHEMA_REJECT"
 
 
 def test_semantic_rejects_unknown_span_without_fuzzy_substitution():

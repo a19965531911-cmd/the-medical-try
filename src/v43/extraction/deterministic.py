@@ -25,7 +25,9 @@ def subject_of(text: str) -> str:
 
 
 def is_negated(text: str) -> bool:
-    return bool(re.search(r"否认|未见|没有|无(?!明显诱因)", text))
+    explicit = r"否认|未见|没有|未(?:接受|确诊|行|予|使用)|(?:已)?排除"
+    target_absence = r"(?:目前)?无(?:颅内高压|颅内压升高|意识不清|神志朦胧|带状疱疹)"
+    return bool(re.search(rf"{explicit}|{target_absence}", text))
 
 
 def is_planned(text: str) -> bool:
