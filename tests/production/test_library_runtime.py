@@ -16,7 +16,7 @@ from v43.fhir.validator import validate_fhir
 
 
 ROOT = Path(__file__).resolve().parents[2]
-CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate.json"
+CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate_v3.json"
 SHELL = ROOT.parent / "CHIP2026_CP2_A_baseline_v2_4_3" / "submission" / "a_test_message_bundle_v2_4_3.json"
 IDS = ("8", "20", "21", "22", "24", "30", "31", "32", "33", "35", "37", "39", "41", "46", "49", "51")
 TITLES = ("485", "615", "265", "635", "675", "735", "745", "755", "855", "835", "875", "805", "565", "555", "185", "165")
@@ -124,6 +124,20 @@ def test_each_positive_library_bundle_replays_against_audited_service_contract(l
     contract = contract_for_criterion(TITLE_BY_ID[identifier])
     assert replay_service(resources, contract.service, "fixture://fhir", {"p1": "doc"}).status == "SERVICE_HIT"
     assert replay_service(resources, contract.service, "fixture://fhir", {"other": "doc"}).status == "SERVICE_MISS"
+
+
+@pytest.mark.parametrize("criterion,text", (
+    ("615", "病理分期pT3a"), ("615", "切缘R1"), ("615", "术后病理pN1"),
+    ("615", "Gleason评分8分"), ("615", "PSA 0.2 ng/mL"),
+    ("805", "目前每日吸烟"), ("805", "戒烟1年"),
+))
+def test_branch_specific_service_replay(libraries, criterion, text):
+    _, libs = libraries
+    resource = next(x for x in libs if str(x["content"][0]["title"]) == criterion)
+    bundle = _run(resource, text)
+    resources = tuple(entry["resource"] for entry in bundle["entry"])
+    contract = contract_for_criterion(criterion)
+    assert replay_service(resources, contract.service, "fixture://fhir", {"p1": "doc"}).status == "SERVICE_HIT"
 
 
 @pytest.mark.parametrize("identifier", IDS)

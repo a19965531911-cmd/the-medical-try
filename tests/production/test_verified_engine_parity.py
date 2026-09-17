@@ -13,7 +13,7 @@ from v43.runtime import RuntimeServices, evaluate_criterion
 
 
 ROOT = Path(__file__).resolve().parents[2]
-CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate.json"
+CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate_v3.json"
 IDS = ("8", "20", "21", "22", "24", "30", "31", "32", "33", "35", "37", "39", "41", "46", "49", "51")
 TITLE_BY_ID = dict(zip(IDS, ("485", "615", "265", "635", "675", "735", "745", "755", "855", "835", "875", "805", "565", "555", "185", "165")))
 
@@ -78,4 +78,3 @@ def test_production_source_is_verified_engine_not_parallel_runtime():
         assert "ClinicalRelation" in source
         assert "ClinicalEpisode" in source
         assert "REVIEW_REQUIRED" in source
-

@@ -60,7 +60,7 @@ def _parse(data):
                                               "evidence_span_ids": tuple(item["evidence_span_ids"]),
                                               "report_indices": tuple(item["report_indices"]), "source": "semantic"}) for item in data["relations"])
     except (KeyError, TypeError, ValueError) as exc:
-        raise SemanticExtractionError("SEMANTIC_SCHEMA_REJECT", "invalid typed semantic object") from exc
+        raise SemanticExtractionError("SEMANTIC_SCHEMA_REJECT", f"invalid typed semantic object: {exc}") from exc
     return facts, events, relations
 
 
