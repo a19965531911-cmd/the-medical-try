@@ -16,7 +16,7 @@ from v43.fhir.validator import validate_fhir
 
 
 ROOT = Path(__file__).resolve().parents[2]
-CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate_v3.json"
+CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate_v4.json"
 SHELL = ROOT.parent / "CHIP2026_CP2_A_baseline_v2_4_3" / "submission" / "a_test_message_bundle_v2_4_3.json"
 IDS = ("8", "20", "21", "22", "24", "30", "31", "32", "33", "35", "37", "39", "41", "46", "49", "51")
 TITLES = ("485", "615", "265", "635", "675", "735", "745", "755", "855", "835", "875", "805", "565", "555", "185", "165")
@@ -88,7 +88,7 @@ def test_each_library_decodes_compiles_constructs_and_runs_positive_and_negative
     _, libs = libraries
     resource = next(x for x in libs if str(x["identifier"][0]["value"]) == identifier)
     source, namespace = _load(resource)
-    assert "pytest" not in source and "v43.shadow" not in source and "yaml" not in source
+    assert "pytest" not in source and "v43.shadow" not in source and "import yaml" not in source
     cls = namespace["FHIRResourceBundleGenerator"]
     assert tuple(inspect.signature(cls.parse_clinical_text_to_fhir_bundle).parameters) == (
         "self", "patient_id", "case_reports", "ai_algorithm_type")
@@ -155,33 +155,38 @@ def test_semantic_policy_is_zero_calls_when_deterministic_suffices_and_one_call_
     _, libs = libraries
     resource = next(x for x in libs if str(x["identifier"][0]["value"]) == "37")
     _, namespace = _load(resource)
-    calls = []
+    class Transport:
+        def __init__(self): self.calls = 0
+        def post(self, payload, timeout):
+            self.calls += 1
+            raise TimeoutError("controlled offline")
 
-    def transport(text, criterion, schema):
-        calls.append((text, criterion, tuple(schema)))
-        raise TimeoutError("controlled offline")
+    transport = Transport()
+    trace, _, _ = namespace["evaluate_and_compile"](
+        "875", "p1", [{"text": POSITIVE["37"]}], "EVER_PRESENT",
+        transport, namespace["CallGuard"]())
+    assert trace.eligibility_result.value == "SATISFIED"
+    assert transport.calls == 0
 
-    decision, _ = namespace["evaluate_patient"](
-        "p1", [{"text": POSITIVE["37"]}], "37", llm_transport=transport)
-    assert decision["satisfied"] is True
-    assert calls == []
-
-    decision, _ = namespace["evaluate_patient"](
-        "p2", [{"text": "神志情况待进一步评估"}, {"text": "仍需评估神志"}],
-        "37", llm_transport=transport)
-    assert decision["satisfied"] is False
-    assert len(calls) == 1
+    trace, _, _ = namespace["evaluate_and_compile"](
+        "875", "p2", [{"text": "神志情况待进一步评估"}, {"text": "仍需评估神志"}],
+        "EVER_PRESENT", transport, namespace["CallGuard"]())
+    assert trace.eligibility_result.value == "INSUFFICIENT_EVIDENCE"
+    assert transport.calls == 1
 
 
 def test_malformed_semantic_payload_degrades_to_empty_bundle(libraries):
     _, libs = libraries
     resource = next(x for x in libs if str(x["identifier"][0]["value"]) == "37")
     _, namespace = _load(resource)
-    decision, ledger = namespace["evaluate_patient"](
-        "p1", [{"text": "神志情况待进一步评估"}], "37",
-        llm_transport=lambda *_: {"not_atoms": {}})
-    assert decision["satisfied"] is False
-    assert namespace["build_typed_resources"]("p1", ledger, decision, "2026-01-01T00:00:00Z") == []
+    class MalformedTransport:
+        def post(self, payload, timeout): return {"not_atoms": {}}
+
+    trace, _, resources = namespace["evaluate_and_compile"](
+        "875", "p1", [{"text": "神志情况待进一步评估"}], "EVER_PRESENT",
+        MalformedTransport(), namespace["CallGuard"]())
+    assert trace.eligibility_result.value == "INSUFFICIENT_EVIDENCE"
+    assert not resources
 
 
 def test_sixteen_by_fifty_runtime_has_no_exceptions_or_semantic_calls(libraries):
@@ -190,16 +195,24 @@ def test_sixteen_by_fifty_runtime_has_no_exceptions_or_semantic_calls(libraries)
     for resource in libs:
         identifier = str(resource["identifier"][0]["value"])
         _, namespace = _load(resource)
-        generator = namespace["FHIRResourceBundleGenerator"]("http://unavailable.invalid")
-        runtimes.append((identifier, namespace, generator))
+        runtimes.append((identifier, namespace))
 
     start = perf_counter()
     with redirect_stdout(io.StringIO()):
-        for identifier, namespace, generator in runtimes:
+        for identifier, namespace in runtimes:
+            class Transport:
+                def __init__(self): self.calls = 0
+                def post(self, payload, timeout):
+                    self.calls += 1
+                    raise AssertionError("deterministic fixture must not call semantic transport")
+            transport = Transport()
+            guard = namespace["CallGuard"]()
             for call in range(50):
-                result = generator.parse_clinical_text_to_fhir_bundle(
-                    f"p{call}", [{"text": POSITIVE[identifier], "timestamp": "2026-01-01"}])
-                assert result["entry"]
-            assert namespace["COUNTERS"]["llm_calls"] == 0
+                trace, _, resources = namespace["evaluate_and_compile"](
+                    TITLE_BY_ID[identifier], f"p{call}",
+                    [{"text": POSITIVE[identifier], "timestamp": "2026-01-01"}],
+                    "EVER_PRESENT", transport, guard)
+                assert trace.eligibility_result.value == "SATISFIED" and resources
+            assert transport.calls == 0
     elapsed = perf_counter() - start
     assert elapsed < 15

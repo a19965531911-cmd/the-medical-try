@@ -87,6 +87,9 @@ def extract_semantic(ir, packet, transport, call_guard, *, patient_id: str, time
     except SemanticExtractionError as exc:
         call_guard.put(key, exc)
         raise
+    except json.JSONDecodeError as exc:
+        call_guard.put(key, exc)
+        raise
     except ValueError as exc:
         error = SemanticExtractionError("GROUNDING_REJECT", str(exc))
         call_guard.put(key, error)

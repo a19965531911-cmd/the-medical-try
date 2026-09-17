@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate_v3.json"
+CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate_v4.json"
 HOST_LIKE = re.compile(r"['\"]([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})['\"]")
 ALLOWED_LOCAL = ("127.0.0.1", "localhost")
 

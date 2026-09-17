@@ -10,7 +10,7 @@ from v43.production_runtime import evaluate_and_compile as evaluate_development
 
 
 ROOT = Path(__file__).resolve().parents[2]
-CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate_v3.json"
+CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate_v4.json"
 PARAPHRASES = {
     "185": ("患者已完成该拓扑异构酶抑制剂的首剂治疗", "记录显示这是此抗肿瘤方案的首次实际实施"),
     "675": ("患者年逾五旬，颜面出现水痘病毒再激活性皮疹", "高龄患者此次成簇疱性皮损沿面部神经分布"),

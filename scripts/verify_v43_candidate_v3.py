@@ -7,6 +7,7 @@ import dataclasses
 import hashlib
 import inspect
 import json
+import os
 from pathlib import Path
 import re
 import sys
@@ -23,7 +24,10 @@ from v43.extraction.semantic import CallGuard
 from v43.production_runtime import evaluate_and_compile as evaluate_development
 
 
-CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate_v3.json"
+CANDIDATE = Path(os.environ.get(
+    "V43_CANDIDATE",
+    ROOT / "submission" / "a_test_message_bundle_v4_3_candidate_v3.json",
+))
 SHELL = ROOT.parent / "CHIP2026_CP2_A_baseline_v2_4_3" / "submission" / "a_test_message_bundle_v2_4_3.json"
 CRITERIA = ("485", "615", "265", "635", "675", "735", "745", "755", "855", "835", "875", "805", "565", "555", "185", "165")
 SEMANTIC = {"185", "675", "745", "875"}

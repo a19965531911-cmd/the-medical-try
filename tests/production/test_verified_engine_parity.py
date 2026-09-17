@@ -13,7 +13,7 @@ from v43.runtime import RuntimeServices, evaluate_criterion
 
 
 ROOT = Path(__file__).resolve().parents[2]
-CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate_v3.json"
+CANDIDATE = ROOT / "submission" / "a_test_message_bundle_v4_3_candidate_v4.json"
 IDS = ("8", "20", "21", "22", "24", "30", "31", "32", "33", "35", "37", "39", "41", "46", "49", "51")
 TITLE_BY_ID = dict(zip(IDS, ("485", "615", "265", "635", "675", "735", "745", "755", "855", "835", "875", "805", "565", "555", "185", "165")))
 
@@ -53,7 +53,7 @@ def _production(resource, text):
 def test_production_decision_matches_verified_engine(criterion_id):
     criterion = TITLE_BY_ID[criterion_id]
     reports = [{"text": POSITIVE[criterion_id], "timestamp": "2026-01-01"}]
-    verified = evaluate_criterion(criterion, "p1", reports, RuntimeServices(None, 1.0)).decision_trace.eligibility_result.value == "ELIGIBLE"
+    verified = evaluate_criterion(criterion, "p1", reports, RuntimeServices(None, 1.0, "EVER_PRESENT")).decision_trace.eligibility_result.value == "SATISFIED"
     _, bundle = _production(_libraries()[criterion_id], POSITIVE[criterion_id])
     assert bool(bundle["entry"]) == verified
 
@@ -62,7 +62,7 @@ def test_production_decision_matches_verified_engine(criterion_id):
 def test_production_hard_negative_matches_verified_engine(criterion_id):
     criterion = TITLE_BY_ID[criterion_id]
     reports = [{"text": NEGATIVE[criterion_id], "timestamp": "2026-01-01"}]
-    verified = evaluate_criterion(criterion, "p1", reports, RuntimeServices(None, 1.0)).decision_trace.eligibility_result.value == "ELIGIBLE"
+    verified = evaluate_criterion(criterion, "p1", reports, RuntimeServices(None, 1.0, "EVER_PRESENT")).decision_trace.eligibility_result.value == "SATISFIED"
     _, bundle = _production(_libraries()[criterion_id], NEGATIVE[criterion_id])
     assert bool(bundle["entry"]) == verified
 

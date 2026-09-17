@@ -1,5 +1,7 @@
 """Self-contained production entrypoint backed by the verified V4.3 core."""
+import json
 from types import SimpleNamespace
+from urllib.error import HTTPError, URLError
 
 from v43.clinical.store import ClinicalStore
 from v43.constraints.executor import execute
@@ -29,6 +31,8 @@ from v43.criteria.c875 import build_constraints as build_875, extract as extract
 REVIEW_REQUIRED = "REVIEW_REQUIRED"
 PRODUCTION_TEMPORAL_POLICY_875 = "EVER_PRESENT"
 SEMANTIC_CAPABLE_CRITERIA = {"185", "675", "745", "875"}
+PRODUCTION_SEMANTIC_TIMEOUT_SECONDS = 30.0
+PRODUCTION_SEMANTIC_IR = {}
 CRITERION_PLUGINS = {
     cid: SimpleNamespace(build_constraints=build, extract=extract) for cid, build, extract in (
         ("165", build_165, extract_165), ("185", build_185, extract_185),
@@ -53,19 +57,50 @@ def evaluate_and_compile(criterion_id, patient_id, reports, temporal_policy_875=
     for fact in facts: store.add_fact(fact)
     for event in events: store.add_event(event)
     for relation in relations: store.add_relation(relation)
-    ir = SimpleNamespace(criterion_id=criterion_id, title=criterion_id, original_text=criterion_id, raw={})
+    semantic_context = PRODUCTION_SEMANTIC_IR.get(criterion_id)
+    ir = SimpleNamespace(
+        criterion_id=criterion_id,
+        title=str((semantic_context or {}).get("title", criterion_id)),
+        original_text=str((semantic_context or {}).get("original_text", criterion_id)),
+        raw=dict(semantic_context or {}),
+    )
     trace = execute(SimpleNamespace(criterion_id=criterion_id, raw={}, constraints=constraints, root_constraint_id="root"), store)
+    semantic_called = 0
+    semantic_success = 0
+    semantic_reason = "NOT_NEEDED"
     if criterion_id in SEMANTIC_CAPABLE_CRITERIA and trace.root_result.value == "UNKNOWN":
         transport = semantic_transport or SemanticTransport()
         guard = call_guard or CallGuard()
+        semantic_called = 1
         try:
-            semantic = extract_semantic(ir, packet, transport, guard, patient_id=str(patient_id), timeout=1.5)
+            semantic = extract_semantic(
+                ir, packet, transport, guard, patient_id=str(patient_id),
+                timeout=PRODUCTION_SEMANTIC_TIMEOUT_SECONDS,
+            )
             for fact in semantic[0]: store.add_fact(fact)
             for event in semantic[1]: store.add_event(event)
             for relation in semantic[2]: store.add_relation(relation)
             trace = execute(SimpleNamespace(criterion_id=criterion_id, raw={}, constraints=constraints, root_constraint_id="root"), store)
-        except Exception:
-            pass
+            semantic_success = 1
+            semantic_reason = "SUCCESS"
+        except TimeoutError:
+            semantic_reason = "TIMEOUT"
+        except (HTTPError, URLError):
+            semantic_reason = "HTTP_ERROR"
+        except json.JSONDecodeError:
+            semantic_reason = "INVALID_JSON"
+        except Exception as exc:
+            reason_code = getattr(exc, "reason_code", "")
+            semantic_reason = {
+                "SEMANTIC_SCHEMA_REJECT": "SCHEMA_REJECT",
+                "GROUNDING_REJECT": "GROUNDING_REJECT",
+            }.get(reason_code, "SCHEMA_REJECT")
+    print(
+        "V43_SEMANTIC_METRICS|criterion=" + criterion_id
+        + "|semantic_called=" + str(semantic_called)
+        + "|semantic_success=" + str(semantic_success)
+        + "|semantic_reason=" + semantic_reason
+    )
     if criterion_id == "875" and temporal_policy_875 == REVIEW_REQUIRED:
         return trace, store, ()
     if criterion_id == "875" and temporal_policy_875 not in {"EVER_PRESENT", "CURRENT_ACTIVE"}:
