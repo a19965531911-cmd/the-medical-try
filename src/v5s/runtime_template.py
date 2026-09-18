@@ -25,22 +25,50 @@ def normalize_reports(reports):
 def split_text(text):
     return [x.strip() for x in re.split(r"(?:\r?\n|。|！|？|!|\?|；|;)",text) if x.strip()] or [text]
 
+class EvidenceWindows(list):
+    def __init__(self, items, metrics):
+        super().__init__(items)
+        self.metrics=metrics
+
+
 def retrieve_evidence(reports,spec):
-    out=[]; seen=set()
+    groups=spec.get("groups") or [spec.get("aliases",[])]
+    candidates={}
+    order=[]
     for r in reports:
         ss=split_text(r["text"])
-        for gi,aliases in enumerate(spec.get("groups",[spec.get("aliases",[])])):
+        for gi,aliases in enumerate(groups):
             for i,s in enumerate(ss):
-                if any(a.lower() in s.lower() for a in aliases):
-                    for j in range(max(0,i-1),min(len(ss),i+2)):
-                        if (r["index"],j) not in seen:
-                            out.append({"text":ss[j],"report":r["index"],"group":gi}); seen.add((r["index"],j))
+                if any(str(a).lower() in s.lower() for a in aliases):
+                    nearby=[i]+[j for j in range(max(0,i-1),min(len(ss),i+2)) if j!=i]
+                    for j in nearby:
+                        key=(r["index"],ss[j])
+                        if key not in candidates:
+                            candidates[key]={"text":ss[j],"report":r["index"],"group":gi,"groups":[gi]}
+                            order.append(key)
+                        elif gi not in candidates[key]["groups"]:
+                            candidates[key]["groups"].append(gi)
                     break
-    if not out:
+    selected=[]; selected_keys=set()
+    for gi in range(len(groups)):
+        key=next((key for key in order if gi in candidates[key]["groups"]),None)
+        if key is not None and key not in selected_keys:
+            selected.append(candidates[key]); selected_keys.add(key)
+    for key in order:
+        if len(selected)>=8: break
+        if key not in selected_keys:
+            selected.append(candidates[key]); selected_keys.add(key)
+    fallback=False
+    if not selected:
+        fallback=True
         for r in reports:
             ss=split_text(r["text"])
-            if ss: out.append({"text":ss[0],"report":r["index"],"group":-1})
-    return out[:8]
+            if ss:
+                selected.append({"text":ss[0],"report":r["index"],"group":-1,"groups":[]})
+                if len(selected)>=8: break
+    group_ids=sorted({gi for item in selected for gi in item.get("groups",[])})
+    metrics={"groups_required":len(groups),"groups_hit":len(group_ids),"group_ids_hit":group_ids,"true_anchor_hits":len(group_ids),"fallback_used":fallback,"evidence_windows":len(selected)}
+    return EvidenceWindows(selected,metrics)
 
 def _lab_high(text,names):
     name="|".join(names if isinstance(names,(list,tuple)) else (names,))
@@ -143,7 +171,7 @@ def extract_payload(cid,reports,decision,windows):
         labs=_labs_855(t)
         if all(labs.values()):v.update(number=labs["Scr"],unit="umol/L")
     if cid=="675":v["site"]="head-face"
-    if cid=="875":v["condition"]="intracranial" if "颅内" in t else "consciousness"
+    if cid=="875":v["condition"]="intracranial" if re.search(r"颅内高压|intracranial",t,re.I) else "consciousness"
     return v
 
 def _concept(system,code):return {"coding":[{"system":system,"code":code}]}
@@ -167,7 +195,14 @@ def build_resources(cid,patient,v):
     if cid=="555":r["performedDateTime"]=v.get("time") or SCORER_TIME
     if cid=="565":r["extension"]=[{"url":BASE+"Extension/cnwqk565-observation-severity-ext","valueCodeableConcept":_concept(BASE+"CodeSystem/cnwqk565-symptomseverity-cs","severe")}]
     if cid=="835":r["valueCodeableConcept"]=_concept(BASE+"CodeSystem/cnwqk835-AbnormalityStatusCS","abnormal")
-    if cid=="875":r["effectiveDateTime"]=v.get("time") or SCORER_TIME
+    if cid=="875":
+        condition=v.get("condition")
+        if condition in PROFILES:r["meta"]["profile"]=[PROFILES[condition]]
+        if condition=="consciousness":
+            r["code"]=_concept(BASE+"CodeSystem/cnwqk875-unconsciousness-cs","unconsciousness")
+        else:
+            r["code"]=_concept(BASE+"CodeSystem/cnwqk875-intracranialhypertension-cs","intracranial-hypertension")
+        r["effectiveDateTime"]=v.get("time") or SCORER_TIME
     if cid=="635" and "labs" not in v:return []
     if cid=="635" and "labs" in v:
         out=[]
@@ -196,7 +231,11 @@ class FHIRResourceBundleGenerator:
         reports=normalize_reports(case_reports);windows=retrieve_evidence(reports,SPEC);decision,reason=rule_decide(TITLE,windows);route="RULE";attempts=0;parse="NA";transport="NA";prompt_len=0
         if decision is not None: decision="MATCH" if decision else "NO_MATCH"
         if decision is None:route="LLM";decision,parse,attempts,prompt_len,transport=llm_decide(SPEC,windows,self.transport)
-        values=extract_payload(TITLE,reports,decision,windows);resources=build_resources(TITLE,str(patient_id),values)
+        values=extract_payload(TITLE,reports,decision,windows)
+        if decision=="MATCH" and ((TITLE in ("265","855") and "number" not in values) or (TITLE=="635" and "labs" not in values)):
+            decision="NO_MATCH";reason="MISSING_GROUNDED_PAYLOAD";values=extract_payload(TITLE,reports,decision,windows)
+        resources=build_resources(TITLE,str(patient_id),values)
         reason=reason or ("MATCH" if decision=="MATCH" else "NO_MATCH")
-        print("V5S_METRICS|criterion="+str(TITLE)+"|route="+route+"|evidence_windows="+str(len(windows))+"|anchor_hits="+str(len(windows))+"|llm_called="+str(int(attempts>0))+"|attempts="+str(attempts)+"|transport="+str(transport)+"|parse="+str(parse)+"|decision="+decision+"|resources="+str(len(resources))+"|reason="+reason+"|prompt_length="+str(prompt_len))
+        rm=windows.metrics
+        print("V5S_METRICS|criterion="+str(TITLE)+"|route="+route+"|evidence_windows="+str(len(windows))+"|anchor_hits="+str(rm["true_anchor_hits"])+"|groups_required="+str(rm["groups_required"])+"|groups_hit="+str(rm["groups_hit"])+"|group_ids_hit="+json.dumps(rm["group_ids_hit"])+"|true_anchor_hits="+str(rm["true_anchor_hits"])+"|fallback_used="+str(int(rm["fallback_used"]))+"|llm_called="+str(int(attempts>0))+"|attempts="+str(attempts)+"|transport="+str(transport)+"|parse="+str(parse)+"|decision="+decision+"|resources="+str(len(resources))+"|reason="+reason+"|prompt_length="+str(prompt_len))
         return {"resourceType":"Bundle","type":"transaction","entry":[{"resource":r,"request":{"method":"POST","url":r["resourceType"]}} for r in resources]}

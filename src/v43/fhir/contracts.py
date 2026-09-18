@@ -72,7 +72,7 @@ CONTRACTS = {
     "265": CompiledContract("265", "Observation", (_profile("cnwqk265-serum-cardiac-troponin-observation"),),
         ("status", "subject", "code", "effectiveDateTime", "valueQuantity"), ServiceContract("Observation", (_profile("cnwqk265-serum-cardiac-troponin-observation"),))),
     "485": CompiledContract("485", "Observation", (_profile("cnwqk485-popq-assessment"),),
-        ("status", "subject", "code", "valueCodeableConcept"), ServiceContract("Observation", (_profile("cnwqk485-popq-assessment"),), value_system=BASE+"CodeSystem/cnwqk485-popq-grade-cs", value_code="III")),
+        ("status", "subject", "code", "valueCodeableConcept"), ServiceContract("Observation", (_profile("cnwqk485-popq-assessment"),), value_system=BASE+"CodeSystem/cnwqk485-popq-grade-cs", value_code="III,IV")),
     "555": CompiledContract("555", "Procedure", (_profile("cnwqk555-SurgeryHistoryProfile"),),
         ("status", "subject", "code", "performedDateTime"), ServiceContract("Procedure", (_profile("cnwqk555-SurgeryHistoryProfile"),))),
     "565": CompiledContract("565", "Observation", (_profile("cnwqk565-symptomobservation"),),

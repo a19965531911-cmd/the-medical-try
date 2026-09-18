@@ -56,7 +56,8 @@ def replay_service(resources: tuple[dict, ...], contract: ServiceContract, base_
                                      for c in _codings(resource, "medicationCodeableConcept.coding")
                                      + _codings(resource, "code.coding")):
             continue
-        if contract.value_code and not any(c.get("system") == contract.value_system and c.get("code") == contract.value_code
+        allowed_value_codes = set(contract.value_code.split(",")) if contract.value_code else set()
+        if allowed_value_codes and not any(c.get("system") == contract.value_system and c.get("code") in allowed_value_codes
                                            for c in _codings(resource, "valueCodeableConcept.coding")):
             continue
         if contract.resource_type == "MedicationAdministration" and not any(
