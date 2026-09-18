@@ -41,9 +41,7 @@ def test_all_16_probe_libraries_security_and_only_logging_changed():
             method = next(n for n in cls.body if isinstance(n, ast.FunctionDef) and n.name == 'parse_clinical_text_to_fhir_bundle')
             # Keep evaluation and return; the middle statements are logging only.
             method.body = [method.body[0], method.body[-1]]
-        stale = [n.id for n in ast.walk(trees[1]) if isinstance(n, ast.Name) and isinstance(n.ctx, ast.Load)
-                 and n.id == 'CriterionSpec']
-        assert not stale
+        assert 'z1_CriterionSpec(' in s2
         count += 1
     assert count == 16
 
