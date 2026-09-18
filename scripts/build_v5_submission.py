@@ -66,7 +66,15 @@ class FHIRResourceBundleGenerator:
  def __init__(self,fhir_api_base): self.fhir_api_base=fhir_api_base; self.transport=LocalModelTransport()
  def parse_clinical_text_to_fhir_bundle(self,patient_id,case_reports,ai_algorithm_type="nlp"):
   result=evaluate_and_compile(str(TITLE),str(patient_id),case_reports,self.transport)
-  print("V5_METRICS criterion="+str(TITLE)+" decision="+result.match.final_decision.value+" resources="+str(len(result.resources))+" reason="+str(result.reason_code))
+  metric=lambda value: "NA" if value is None else str(getattr(value,"value",value))
+  match=result.match
+  print("V5_METRICS|"+"|".join(key+"="+metric(value) for key,value in (
+   ("criterion",TITLE),("deterministic",match.deterministic_decision),
+   ("llm_called",int((match.attempts or 0)>0)),("attempts",match.attempts),
+   ("transport",match.transport_status),("parse",match.parse_method),
+   ("model",match.model_decision),("guarded",match.guarded_decision),
+   ("final",match.final_decision),("resources",len(result.resources)),
+   ("reason",result.reason_code),("prompt_length",match.prompt_length))))
   return {"resourceType":"Bundle","type":"transaction","entry":[{"resource":r,"request":{"method":"POST","url":r["resourceType"]}} for r in result.resources]}
 '''
 def constants(source):
