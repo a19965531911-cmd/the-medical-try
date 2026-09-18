@@ -9,7 +9,7 @@ def _base(kind, profile, patient): return {"resourceType":kind,"meta":{"profile"
 
 def build_resources(criterion_id: str, patient_id: str, payload: PayloadResult) -> tuple[dict, ...]:
     if payload.status != "READY": return ()
-    cid=str(criterion_id); contract=contract_for_criterion(cid); profile=contract.profiles[0]; t=payload.values.get("time","2026-01-01T00:00:00Z")
+    cid=str(criterion_id); contract=contract_for_criterion(cid); profile=contract.profiles[0]; t=payload.values.get("time")
     r=_base(contract.resource_type,profile,patient_id)
     if contract.resource_type == "Observation": r["status"]="final"
     elif contract.resource_type in {"Procedure","MedicationAdministration"}: r["status"]="completed"
@@ -18,6 +18,7 @@ def build_resources(criterion_id: str, patient_id: str, payload: PayloadResult) 
     elif cid == "675":
         r.update({"clinicalStatus":_concept("http://terminology.hl7.org/CodeSystem/condition-clinical","active"),"verificationStatus":_concept("http://terminology.hl7.org/CodeSystem/condition-ver-status","confirmed"),"code":_concept(BASE+"CodeSystem/icd10","B02.9"),"bodySite":[_concept(BASE+"CodeSystem/cnwqk675-head-facial-body-site-cs",payload.values["site"])]})
     elif cid == "745":
+        if not t: return ()
         parent=_base("Procedure","",patient_id); parent.pop("meta"); parent.update({"id":"surgery-1","status":"completed","code":{"text":"surgery"},"performedDateTime":t})
         r.update({"code":_concept(BASE+"CodeSystem/cnwqk745-procedure-type-cs","invasive_mechanical_ventilation"),"performedDateTime":t,"partOf":[{"reference":"Procedure/surgery-1"}]})
         return (parent,r)
@@ -33,15 +34,26 @@ def build_resources(criterion_id: str, patient_id: str, payload: PayloadResult) 
     else:
         r["code"]=_concept(BASE+f"CodeSystem/cnwqk{cid}-codes",cid)
         if cid == "165": r["extension"]=[{"url":BASE+"StructureDefinition/cnwqk165-treatment-location","valueCode":"external"}]
-        elif cid in {"265","855"}: r.update({"effectiveDateTime":t,"valueQuantity":{"value":payload.values.get("number",1),"unit":"score"}})
+        elif cid in {"265","855"}:
+            if "number" not in payload.values: return ()
+            r.update({"valueQuantity":{"value":payload.values["number"],"unit":payload.values.get("unit","unit")}})
+            if t: r["effectiveDateTime"]=t
         elif cid == "485": r["valueCodeableConcept"]=_concept(BASE+"CodeSystem/cnwqk485-popq-grade-cs","III")
-        elif cid == "555": r["performedDateTime"]=t
+        elif cid == "555":
+            date = payload.values.get("surgery_date") or t
+            if not date: return ()
+            r["performedDateTime"] = date
         elif cid == "565": r["extension"]=[{"url":BASE+"Extension/cnwqk565-observation-severity-ext","valueCodeableConcept":_concept(BASE+"CodeSystem/cnwqk565-symptomseverity-cs","severe")}]
         elif cid == "615":
-            index={"pT":0,"R1":1,"pN1":2,"GS":3,"PSA":4}[payload.values["branch"]]; r["meta"]["profile"]=[contract.profiles[index]]; r["valueQuantity"]={"value":payload.values.get("number",1),"unit":"score"}
+            index={"pT":0,"R1":1,"pN1":2,"GS":3,"PSA":4}[payload.values["branch"]]; r["meta"]["profile"]=[contract.profiles[index]]
+            if "number" in payload.values: r["valueQuantity"]={"value":payload.values["number"],"unit":payload.values.get("unit","score")}
         elif cid == "735": r["clinicalStatus"]=_concept("http://terminology.hl7.org/CodeSystem/condition-clinical","active")
-        elif cid == "755": r["performedPeriod"]={"start":t,"end":t}
+        elif cid == "755":
+            if "duration_hours" not in payload.values: return ()
+            r["performedPeriod"]={"duration_hours":payload.values["duration_hours"]}
+            if t: r["performedPeriod"]["start"] = t
         elif cid == "805": r["valueCodeableConcept"]=_concept(BASE+"CodeSystem/cnwqk805-SmokingStatusCS",payload.values["smoking"])
         elif cid == "835": r["valueCodeableConcept"]=_concept(BASE+"CodeSystem/cnwqk835-AbnormalityStatusCS","abnormal")
     return (r,)
+
 
