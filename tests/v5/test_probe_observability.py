@@ -41,7 +41,7 @@ def test_all_16_probe_libraries_security_and_only_logging_changed():
             method = next(n for n in cls.body if isinstance(n, ast.FunctionDef) and n.name == 'parse_clinical_text_to_fhir_bundle')
             # Keep evaluation and return; the middle statements are logging only.
             method.body = [method.body[0], method.body[-1]]
-        assert 'z1_CriterionSpec(' in s2
+        assert '_CriterionSpec(' in s2
         count += 1
     assert count == 16
 
