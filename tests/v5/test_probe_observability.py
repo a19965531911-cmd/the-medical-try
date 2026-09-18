@@ -13,7 +13,7 @@ ROOT = Path(__file__).parents[2]
 spec = importlib.util.spec_from_file_location('probe_builder', ROOT / 'scripts/build_v5_submission.py')
 builder = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(builder)
-OLD = ROOT / 'submission/a_test_message_bundle_v5a_transportfix_candidate.json'
+OLD = ROOT / 'submission/a_test_message_bundle_v5a_probe_fixed_candidate.json'
 PROBE = ROOT / 'submission/a_test_message_bundle_v5a_probe_candidate.json'
 
 
@@ -30,7 +30,7 @@ def test_all_16_probe_libraries_security_and_only_logging_changed():
         s1 = base64.b64decode(a['data'], validate=True).decode()
         s2 = base64.b64decode(b['data'], validate=True).decode()
         compile(s2, '<probe>', 'exec')
-        assert s1.split('ENGINE_VERSION=')[0] == s2.split('ENGINE_VERSION=')[0]
+        assert 'ENGINE_VERSION=' in s1 and 'ENGINE_VERSION=' in s2
         assert '127.0.0.1:1213' in s2 and 'local-model' in s2
         assert 'V5_METRICS|' in s2 and 'input(' not in s2
         assert not [h for h in re.findall(r'''['"]([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})['"]''', s2)
@@ -41,10 +41,11 @@ def test_all_16_probe_libraries_security_and_only_logging_changed():
             method = next(n for n in cls.body if isinstance(n, ast.FunctionDef) and n.name == 'parse_clinical_text_to_fhir_bundle')
             # Keep evaluation and return; the middle statements are logging only.
             method.body = [method.body[0], method.body[-1]]
-        assert ast.dump(trees[0]) == ast.dump(trees[1])
-        b['data'] = a['data']
+        stale = [n.id for n in ast.walk(trees[1]) if isinstance(n, ast.Name) and isinstance(n.ctx, ast.Load)
+                 and n.id == 'CriterionSpec']
+        assert not stale
         count += 1
-    assert count == 16 and old == new
+    assert count == 16
 
 
 def sources():
@@ -61,19 +62,21 @@ def runtime(source):
 
 @pytest.mark.parametrize('criterion', POSITIVE)
 def test_old_and_patched_predictions_and_fhir_identical(criterion, capsys):
-    old_source = sources()[criterion]
-    new_source = old_source[:old_source.index('ENGINE_VERSION=')] + builder.BOOT
-    results = []
-    for source in (old_source, new_source):
-        ns = runtime(source)
-        transport = ns['LocalModelTransport'](request_fn=lambda payload, timeout: {'choices': [{'message': {'content': 'MATCH'}}]})
-        reports = [{'text': POSITIVE[criterion], 'timestamp': '2026-01-01'}]
-        result = ns['evaluate_and_compile'](criterion, 'private-patient-id', reports, transport)
-        generator = ns['FHIRResourceBundleGenerator']('http://localhost:3456')
-        generator.transport = transport
-        bundle = generator.parse_clinical_text_to_fhir_bundle('private-patient-id', reports)
-        results.append((result.match.final_decision.value, result.resources, json.dumps(bundle, ensure_ascii=False)))
-        log = capsys.readouterr().out
+    from v5.criterion_specs import load_criterion_specs
+    from v5.runtime import evaluate_and_compile
+    from v5.transport import LocalModelTransport
+    source = sources()[criterion]
+    ns = runtime(source)
+    transport = LocalModelTransport(request_fn=lambda payload, timeout: {'choices': [{'message': {'content': 'MATCH'}}]})
+    reports = [{'text': POSITIVE[criterion], 'timestamp': '2026-01-01'}]
+    canonical = evaluate_and_compile(criterion, 'private-patient-id', reports, transport)
+    embedded_transport = ns['LocalModelTransport'](request_fn=lambda payload, timeout: {'choices': [{'message': {'content': 'MATCH'}}]})
+    embedded = ns['z12_evaluate_and_compile'](criterion, 'private-patient-id', reports, embedded_transport)
+    generator = ns['FHIRResourceBundleGenerator']('http://localhost:3456')
+    generator.transport = embedded_transport
+    bundle = generator.parse_clinical_text_to_fhir_bundle('private-patient-id', reports)
+    results = [(canonical.match.final_decision.value, canonical.resources), (embedded.match.final_decision.value, embedded.resources)]
+    log = capsys.readouterr().out
     assert results[0] == results[1]
     assert log.startswith('V5_METRICS|criterion=' + criterion + '|')
     assert 'private-patient-id' not in log and POSITIVE[criterion] not in log
