@@ -15,7 +15,9 @@ def source_for(module):
   specs=load_criterion_specs(); args=[]
   for cid in CRITERION_IDS:
    s=specs[cid]; args.append(repr(cid)+":CriterionSpec("+",".join(repr(getattr(s,f)) for f in s.__dataclass_fields__)+")")
-  return "CRITERION_IDS="+repr(CRITERION_IDS)+"\ndef load_criterion_specs():\n return {"+",".join(args)+"}\n"
+  # Keep the synthetic module's dependency explicit so the flattener can
+  # namespace-rewrite CriterionSpec just like every other imported symbol.
+  return "from .models import CriterionSpec\nCRITERION_IDS="+repr(CRITERION_IDS)+"\ndef load_criterion_specs():\n return {"+",".join(args)+"}\n"
  return (ROOT/"src"/Path(*module.split(".")).with_suffix(".py")).read_text(encoding="utf-8")
 
 def definitions(tree):
