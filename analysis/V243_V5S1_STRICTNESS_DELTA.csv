@@ -1,0 +1,17 @@
+criterion,v243_minimum_positive_evidence,v5s1_minimum_positive_evidence,which_is_stricter,new_hard_gate,new_payload_gate,new_relation_gate,possible_recall_cost
+165,external institution + chemotherapy + received/completed in one report,same concepts in retrieved windows and conservative LLM YES,V5S.1,LLM sufficient-evidence gate,none,external-location/completion semantics,implicit statements may be rejected
+185,first/initial irinotecan regimen; no prior-use evidence,same relation in windows and LLM YES,V5S.1,LLM sufficient-evidence gate,none,first-use relation,implicit first-line wording may be rejected
+265,one threshold-positive analyte with unit,same plus analyte-bound numeric payload,V5S.1,MATCH revoked on missing payload,YES,analyte-value binding,format variants can lose positives
+485,POP-Q III or IV; non-negated,same,SAME,none,stage required,none,low
+555,relative surgery interval parseable and <=6 months,recent surgery selected; explicit date needed for scorer-visible date,V5S.1 transport,none,date extraction affects visibility,event-time relation,relative dates may serialize as 1970
+565,explicit severe diarrhea OR constipation,same through conservative LLM,V5S.1,LLM sufficient-evidence gate,none,severity-symptom relation,elliptical severity may be rejected
+615,any one of five exact branches,any one branch in retrieved windows,MIXED,none,branch payload,none,direction unresolved
+635,all four value/ULN pairs; every value<=ULN,same plus explicit post-MATCH completeness gate,V5S.1 serialization,MATCH revoked on missing payload,YES,four analyte-value-ULN bindings,dispersed labs/window cap can suppress positives
+675,age>=50 + diagnosis + head/face relation in one report,all groups; LLM; cross-report fusion allowed,MIXED,LLM sufficient-evidence gate,none,diagnosis-site relation,fusion may increase recall; prompt may reduce it
+735,listed disease + active stage in one report,disease/activity groups with LLM,V5S.1,LLM sufficient-evidence gate,none,disease-active relation,implicit activity may be rejected
+745,postoperative marker + invasive ventilation in same report/clause,surgery + ventilation windows; LLM may fuse reports,MIXED,LLM sufficient-evidence gate,none,postoperative relation,V2 loses cross-report; V5S.1 loses omitted context
+755,ventilation duration >=24h,same threshold in windows,SAME,none,duration required,ventilation-duration binding,low except retrieval separation
+805,current smoking OR quit <24 months,same decision in windows,SAME decision,none,duration for former smoker,smoking-duration binding,transport omits cessation resource
+835,explicit coagulation abnormality,same plus LLM sufficient-evidence decision,V5S.1,LLM sufficient-evidence gate,none,abnormality relation,shorthand may be rejected
+855,"Scr<178, BUN<9, qualitative ALT/AST not elevated",all four numeric components grounded,V5S.1,MATCH revoked on missing payload,YES,four analyte-value bindings,qualitative-normal/partial records cannot match
+875,either branch term; non-negated,either branch selected and LLM YES,V5S.1,LLM sufficient-evidence gate,none,branch assertion,shorthand may be rejected
