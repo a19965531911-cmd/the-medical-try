@@ -1,0 +1,1234 @@
+[
+  {
+    "criterion": "165",
+    "case_id": "165-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "已在外院完成两周期化疗"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "165",
+    "case_id": "165-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "已在外院完成两周期化疗。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "165",
+    "case_id": "165-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "已在外院完成两周期化疗。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "165",
+    "case_id": "165-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "仅计划转外院化疗"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "165",
+    "case_id": "165-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "仅计划转外院化疗。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "165",
+    "case_id": "165-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "仅计划转外院化疗。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "165",
+    "case_id": "165-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "185",
+    "case_id": "185-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "首次接受伊立替康化疗"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "185",
+    "case_id": "185-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "首次接受伊立替康化疗。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "185",
+    "case_id": "185-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "首次接受伊立替康化疗。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "185",
+    "case_id": "185-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "拟首次使用伊立替康，尚未给药"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "185",
+    "case_id": "185-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "拟首次使用伊立替康，尚未给药。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "185",
+    "case_id": "185-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "拟首次使用伊立替康，尚未给药。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "185",
+    "case_id": "185-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "265",
+    "case_id": "265-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "术前cTnI 0.08 ug/L"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "265",
+    "case_id": "265-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "术前cTnI 0.08 ug/L。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "265",
+    "case_id": "265-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "术前cTnI 0.08 ug/L。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "265",
+    "case_id": "265-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "术后cTnI 0.08 ug/L"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "265",
+    "case_id": "265-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "术后cTnI 0.08 ug/L。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "265",
+    "case_id": "265-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "术后cTnI 0.08 ug/L。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "265",
+    "case_id": "265-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "485",
+    "case_id": "485-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "盆腔器官脱垂 POP-Q III期"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "485",
+    "case_id": "485-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "盆腔器官脱垂 POP-Q III期。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "485",
+    "case_id": "485-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "盆腔器官脱垂 POP-Q III期。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "485",
+    "case_id": "485-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "POP-Q II期"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "485",
+    "case_id": "485-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "POP-Q II期。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "485",
+    "case_id": "485-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "POP-Q II期。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "485",
+    "case_id": "485-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "555",
+    "case_id": "555-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "3个月前完成胆囊切除术"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "555",
+    "case_id": "555-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "3个月前完成胆囊切除术。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "555",
+    "case_id": "555-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "3个月前完成胆囊切除术。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "555",
+    "case_id": "555-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "手术距今8个月"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "555",
+    "case_id": "555-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "手术距今8个月。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "555",
+    "case_id": "555-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "手术距今8个月。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "555",
+    "case_id": "555-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "565",
+    "case_id": "565-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "目前严重腹泻"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "565",
+    "case_id": "565-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "目前严重腹泻。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "565",
+    "case_id": "565-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "目前严重腹泻。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "565",
+    "case_id": "565-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "严重腹泻已缓解"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "565",
+    "case_id": "565-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "严重腹泻已缓解。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "565",
+    "case_id": "565-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "严重腹泻已缓解。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "565",
+    "case_id": "565-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "615",
+    "case_id": "615-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "术后病理 pN1"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "615",
+    "case_id": "615-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "术后病理 pN1。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "615",
+    "case_id": "615-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "术后病理 pN1。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "615",
+    "case_id": "615-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "pN0且GS 7，PSA 0.05"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "615",
+    "case_id": "615-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "pN0且GS 7，PSA 0.05。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "615",
+    "case_id": "615-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "pN0且GS 7，PSA 0.05。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "615",
+    "case_id": "615-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "635",
+    "case_id": "635-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "AST 30上限40 ALT 30上限40 BUN 8上限9 Cr 80上限100"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "635",
+    "case_id": "635-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "AST 30上限40 ALT 30上限40 BUN 8上限9 Cr 80上限100。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "635",
+    "case_id": "635-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "AST 30上限40 ALT 30上限40 BUN 8上限9 Cr 80上限100。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "635",
+    "case_id": "635-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "AST 30上限40 ALT 30上限40 BUN 8上限9 Cr 250上限100"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "635",
+    "case_id": "635-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "AST 30上限40 ALT 30上限40 BUN 8上限9 Cr 250上限100。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "635",
+    "case_id": "635-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "AST 30上限40 ALT 30上限40 BUN 8上限9 Cr 250上限100。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "635",
+    "case_id": "635-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "675",
+    "case_id": "675-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "患者70岁确诊头面部带状疱疹"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "675",
+    "case_id": "675-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "患者70岁确诊头面部带状疱疹。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "675",
+    "case_id": "675-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "患者70岁确诊头面部带状疱疹。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "675",
+    "case_id": "675-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "躯干部带状疱疹，非头面部"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "675",
+    "case_id": "675-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "躯干部带状疱疹，非头面部。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "675",
+    "case_id": "675-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "躯干部带状疱疹，非头面部。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "675",
+    "case_id": "675-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "735",
+    "case_id": "735-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "活动性乙型肝炎"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "735",
+    "case_id": "735-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "活动性乙型肝炎。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "735",
+    "case_id": "735-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "活动性乙型肝炎。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "735",
+    "case_id": "735-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "乙肝病情稳定"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "735",
+    "case_id": "735-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "乙肝病情稳定。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "735",
+    "case_id": "735-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "乙肝病情稳定。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "735",
+    "case_id": "735-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "745",
+    "case_id": "745-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "术后行有创机械通气"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "745",
+    "case_id": "745-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "术后行有创机械通气。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "745",
+    "case_id": "745-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "术后行有创机械通气。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "745",
+    "case_id": "745-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "术后仅无创通气"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "745",
+    "case_id": "745-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "术后仅无创通气。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "745",
+    "case_id": "745-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "术后仅无创通气。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "745",
+    "case_id": "745-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "755",
+    "case_id": "755-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "机械通气持续30小时"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "755",
+    "case_id": "755-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "机械通气持续30小时。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "755",
+    "case_id": "755-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "机械通气持续30小时。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "755",
+    "case_id": "755-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "机械通气持续3天但仅12小时"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "755",
+    "case_id": "755-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "机械通气持续3天但仅12小时。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "755",
+    "case_id": "755-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "机械通气持续3天但仅12小时。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "755",
+    "case_id": "755-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "805",
+    "case_id": "805-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "目前每日吸烟"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "805",
+    "case_id": "805-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "目前每日吸烟。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "805",
+    "case_id": "805-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "目前每日吸烟。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "805",
+    "case_id": "805-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "从不吸烟"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "805",
+    "case_id": "805-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "从不吸烟。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "805",
+    "case_id": "805-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "从不吸烟。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "805",
+    "case_id": "805-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "835",
+    "case_id": "835-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "目前凝血功能异常"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "835",
+    "case_id": "835-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "目前凝血功能异常。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "835",
+    "case_id": "835-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "目前凝血功能异常。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "835",
+    "case_id": "835-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "凝血功能正常"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "835",
+    "case_id": "835-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "凝血功能正常。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "835",
+    "case_id": "835-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "凝血功能正常。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "835",
+    "case_id": "835-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "855",
+    "case_id": "855-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "Scr 120 umol/L"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "855",
+    "case_id": "855-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "Scr 120 umol/L。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "855",
+    "case_id": "855-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "Scr 120 umol/L。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "855",
+    "case_id": "855-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "Scr 80 umol/L"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "855",
+    "case_id": "855-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "Scr 80 umol/L。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "855",
+    "case_id": "855-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "Scr 80 umol/L。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "855",
+    "case_id": "855-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  },
+  {
+    "criterion": "875",
+    "case_id": "875-p1",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "既往发生颅内高压"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "875",
+    "case_id": "875-p2",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "既往发生颅内高压。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "875",
+    "case_id": "875-p3",
+    "class": "positive",
+    "reports": [
+      {
+        "text": "既往发生颅内高压。。"
+      }
+    ],
+    "expected": "MATCH"
+  },
+  {
+    "criterion": "875",
+    "case_id": "875-n1",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "否认颅内高压且意识清楚"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "875",
+    "case_id": "875-n2",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "否认颅内高压且意识清楚。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "875",
+    "case_id": "875-n3",
+    "class": "negative",
+    "reports": [
+      {
+        "text": "否认颅内高压且意识清楚。。"
+      }
+    ],
+    "expected": "NO_MATCH"
+  },
+  {
+    "criterion": "875",
+    "case_id": "875-u1",
+    "class": "ambiguous",
+    "reports": [
+      {
+        "text": "相关病史存在，但关键细节未记录"
+      }
+    ],
+    "expected": "UNKNOWN"
+  }
+]

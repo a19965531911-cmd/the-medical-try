@@ -1,0 +1,642 @@
+[
+  {
+    "criterion": "165",
+    "case_id": "165-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1127.83,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "165",
+    "case_id": "165-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1077.62,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "165",
+    "case_id": "165-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1069.39,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "165",
+    "case_id": "165-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1071.23,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "185",
+    "case_id": "185-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1071.45,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "185",
+    "case_id": "185-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1071.53,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "185",
+    "case_id": "185-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1070.55,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "185",
+    "case_id": "185-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1070.22,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "265",
+    "case_id": "265-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1077.26,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "265",
+    "case_id": "265-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1070.57,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "265",
+    "case_id": "265-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1068.14,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "265",
+    "case_id": "265-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1073.51,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "485",
+    "case_id": "485-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1074.84,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "485",
+    "case_id": "485-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1070.98,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "485",
+    "case_id": "485-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1068.25,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "485",
+    "case_id": "485-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1074.65,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "555",
+    "case_id": "555-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1060.29,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "555",
+    "case_id": "555-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1074.79,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "555",
+    "case_id": "555-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1072.55,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "555",
+    "case_id": "555-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1073.41,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "565",
+    "case_id": "565-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1074.23,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "565",
+    "case_id": "565-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1078.19,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "565",
+    "case_id": "565-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1064.75,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "565",
+    "case_id": "565-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1078.12,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "615",
+    "case_id": "615-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1067.22,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "615",
+    "case_id": "615-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1072.23,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "615",
+    "case_id": "615-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1071.98,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "615",
+    "case_id": "615-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1073.1,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "635",
+    "case_id": "635-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1075.09,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "635",
+    "case_id": "635-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1061.87,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "635",
+    "case_id": "635-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1078.26,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "635",
+    "case_id": "635-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1073.18,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "675",
+    "case_id": "675-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1073.0,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "675",
+    "case_id": "675-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1077.73,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "675",
+    "case_id": "675-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1077.09,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "675",
+    "case_id": "675-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1068.04,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "735",
+    "case_id": "735-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1071.48,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "735",
+    "case_id": "735-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1072.87,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "735",
+    "case_id": "735-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1069.87,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "735",
+    "case_id": "735-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1074.79,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "745",
+    "case_id": "745-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1069.78,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "745",
+    "case_id": "745-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1074.25,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "745",
+    "case_id": "745-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1074.61,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "745",
+    "case_id": "745-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1077.24,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "755",
+    "case_id": "755-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1071.7,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "755",
+    "case_id": "755-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1074.12,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "755",
+    "case_id": "755-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1062.86,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "755",
+    "case_id": "755-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1074.89,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "805",
+    "case_id": "805-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1074.06,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "805",
+    "case_id": "805-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1063.11,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "805",
+    "case_id": "805-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1077.44,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "805",
+    "case_id": "805-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1071.13,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "835",
+    "case_id": "835-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1074.25,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "835",
+    "case_id": "835-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1075.94,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "835",
+    "case_id": "835-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1071.86,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "835",
+    "case_id": "835-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1070.32,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "855",
+    "case_id": "855-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1073.09,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "855",
+    "case_id": "855-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1075.24,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "855",
+    "case_id": "855-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1069.07,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "855",
+    "case_id": "855-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1073.42,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "875",
+    "case_id": "875-p1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1073.19,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "875",
+    "case_id": "875-p2",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1073.92,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "875",
+    "case_id": "875-p3",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1070.59,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  },
+  {
+    "criterion": "875",
+    "case_id": "875-n1",
+    "status": "CONNECT_ERROR",
+    "attempts": 2,
+    "latency_ms": 1068.82,
+    "shape": "error",
+    "parse_method": "PARSE_UNKNOWN",
+    "decision": "UNKNOWN"
+  }
+]

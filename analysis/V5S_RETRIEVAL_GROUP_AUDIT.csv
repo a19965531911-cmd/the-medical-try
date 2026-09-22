@@ -1,0 +1,6 @@
+﻿criterion,true_anchor_hits,groups_required,groups_hit,group_ids_hit,windows,fallback_used,cap_dropped_required_groups
+635,4,4,1,[0],8,False,True
+675,3,3,1,[0],8,False,True
+745,2,2,1,[0],8,False,True
+755,2,2,1,[0],8,False,True
+855,4,4,1,[0],8,False,True
