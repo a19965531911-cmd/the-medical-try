@@ -1,0 +1,352 @@
+{
+  "candidate": "submission/a_test_message_bundle_v5s2_expe_aggressive_candidate.json",
+  "size": 702059,
+  "sha256": "40457de3149c7db34daf9c3545199c7c8f409ec65b6ae4412f6ca6a77df6d96e",
+  "v5s1_sha256": "4ea0165cdae6a5c665bc1afafd920e32430b5867998c642eccc832f54eb829b9",
+  "hard_gates": {
+    "decode": 16,
+    "compile": 16,
+    "exec": 16,
+    "embedded_positive": 16,
+    "embedded_negative": 16,
+    "fhir": 16,
+    "service": 16,
+    "security": 16,
+    "transport_parity": 16,
+    "zero_anchor_fallback_positives": 0
+  },
+  "counts": {
+    "decode": 16,
+    "compile": 16,
+    "exec": 16,
+    "security": 16,
+    "dataclasses": 0,
+    "enums": 0,
+    "flatten_rename": 0,
+    "unresolved_symbols": 0
+  },
+  "positive": {
+    "485": {
+      "decision": "MATCH",
+      "resources": 1
+    },
+    "615": {
+      "decision": "MATCH",
+      "resources": 1
+    },
+    "265": {
+      "decision": "MATCH",
+      "resources": 1
+    },
+    "635": {
+      "decision": "MATCH",
+      "resources": 4
+    },
+    "675": {
+      "decision": "MATCH",
+      "resources": 1
+    },
+    "735": {
+      "decision": "MATCH",
+      "resources": 1
+    },
+    "745": {
+      "decision": "MATCH",
+      "resources": 2
+    },
+    "755": {
+      "decision": "MATCH",
+      "resources": 1
+    },
+    "855": {
+      "decision": "MATCH",
+      "resources": 4
+    },
+    "835": {
+      "decision": "MATCH",
+      "resources": 1
+    },
+    "875": {
+      "decision": "MATCH",
+      "resources": 1
+    },
+    "805": {
+      "decision": "MATCH",
+      "resources": 1
+    },
+    "565": {
+      "decision": "MATCH",
+      "resources": 1
+    },
+    "555": {
+      "decision": "MATCH",
+      "resources": 1
+    },
+    "185": {
+      "decision": "MATCH",
+      "resources": 1
+    },
+    "165": {
+      "decision": "MATCH",
+      "resources": 1
+    }
+  },
+  "negative": {
+    "485": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "615": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "265": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "635": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "675": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "735": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "745": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "755": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "855": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "835": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "875": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "805": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "565": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "555": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "185": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    },
+    "165": {
+      "decision": "NO_MATCH",
+      "resources": 0
+    }
+  },
+  "fhir": {
+    "485": "VALID",
+    "615": "VALID",
+    "265": "VALID",
+    "635": "VALID",
+    "675": "VALID",
+    "735": "VALID",
+    "745": "VALID",
+    "755": "VALID",
+    "855": "VALID",
+    "835": "VALID",
+    "875": "VALID",
+    "805": "VALID",
+    "565": "VALID",
+    "555": "VALID",
+    "185": "VALID",
+    "165": "VALID"
+  },
+  "service": {
+    "485": "SERVICE_HIT",
+    "615": "SERVICE_HIT",
+    "265": "SERVICE_HIT",
+    "635": "SERVICE_HIT",
+    "675": "SERVICE_HIT",
+    "735": "SERVICE_HIT",
+    "745": "SERVICE_HIT",
+    "755": "SERVICE_HIT",
+    "855": "SERVICE_HIT",
+    "835": "SERVICE_HIT",
+    "875": "SERVICE_HIT",
+    "805": "SERVICE_HIT",
+    "565": "SERVICE_HIT",
+    "555": "SERVICE_HIT",
+    "185": "SERVICE_HIT",
+    "165": "SERVICE_HIT"
+  },
+  "transport": {
+    "485": true,
+    "615": true,
+    "265": true,
+    "635": true,
+    "675": true,
+    "735": true,
+    "745": true,
+    "755": true,
+    "855": true,
+    "835": true,
+    "875": true,
+    "805": true,
+    "565": true,
+    "555": true,
+    "185": true,
+    "165": true
+  },
+  "recovery": {
+    "old_match": 12,
+    "new_match": 15,
+    "delta": 3,
+    "partial_grounded": 15,
+    "one_anchor_semantic_positive": 11,
+    "per_criterion": {
+      "485": {
+        "old": "NO_MATCH",
+        "new": "MATCH",
+        "delta": 1,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "1",
+        "resources": 1
+      },
+      "615": {
+        "old": "MATCH",
+        "new": "MATCH",
+        "delta": 0,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "1",
+        "resources": 1
+      },
+      "265": {
+        "old": "NO_MATCH",
+        "new": "MATCH",
+        "delta": 1,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "1",
+        "resources": 0
+      },
+      "635": {
+        "old": "NO_MATCH",
+        "new": "MATCH",
+        "delta": 1,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "1",
+        "resources": 0
+      },
+      "675": {
+        "old": "MATCH",
+        "new": "MATCH",
+        "delta": 0,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "1",
+        "resources": 1
+      },
+      "735": {
+        "old": "MATCH",
+        "new": "MATCH",
+        "delta": 0,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "1",
+        "resources": 1
+      },
+      "745": {
+        "old": "MATCH",
+        "new": "MATCH",
+        "delta": 0,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "1",
+        "resources": 2
+      },
+      "755": {
+        "old": "MATCH",
+        "new": "MATCH",
+        "delta": 0,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "1",
+        "resources": 0
+      },
+      "855": {
+        "old": "NO_MATCH",
+        "new": "NO_MATCH",
+        "delta": 0,
+        "mode": "RULE",
+        "anchors": "1",
+        "resources": 0
+      },
+      "835": {
+        "old": "MATCH",
+        "new": "MATCH",
+        "delta": 0,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "2",
+        "resources": 1
+      },
+      "875": {
+        "old": "MATCH",
+        "new": "MATCH",
+        "delta": 0,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "1",
+        "resources": 1
+      },
+      "805": {
+        "old": "MATCH",
+        "new": "MATCH",
+        "delta": 0,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "1",
+        "resources": 1
+      },
+      "565": {
+        "old": "MATCH",
+        "new": "MATCH",
+        "delta": 0,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "2",
+        "resources": 1
+      },
+      "555": {
+        "old": "MATCH",
+        "new": "MATCH",
+        "delta": 0,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "1",
+        "resources": 0
+      },
+      "185": {
+        "old": "MATCH",
+        "new": "MATCH",
+        "delta": 0,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "2",
+        "resources": 1
+      },
+      "165": {
+        "old": "MATCH",
+        "new": "MATCH",
+        "delta": 0,
+        "mode": "PARTIAL_GROUNDED",
+        "anchors": "2",
+        "resources": 1
+      }
+    }
+  },
+  "fallback_only_blocks": 16
+}

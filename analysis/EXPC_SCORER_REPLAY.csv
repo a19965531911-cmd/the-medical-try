@@ -1,0 +1,9 @@
+criterion,branch,V5S1_SERVICE_HIT,EXPC_SERVICE_HIT,V243_SERVICE_HIT,shape_delta
+265,265_ctni,MISS,HIT,HIT,1->1;legacy=1
+265,265_ctnt,MISS,HIT,HIT,1->1;legacy=1
+555,555_three_months,MISS,HIT,HIT,1->1;legacy=1
+755,755_thirty_hours,MISS,HIT,HIT,1->1;legacy=1
+805,805_current,HIT,HIT,HIT,1->1;legacy=1
+805,805_former_one_year,MISS,HIT,HIT,1->2;legacy=2
+855,855_normal,MISS,HIT,HIT,1->4;legacy=4
+855,855_alt_45_uln_50,MISS,MISS,MISS,1->4;legacy=4

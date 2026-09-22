@@ -1,90 +1,93 @@
-# CHIP2026 CP2 Clinical Eligibility Engine
+# CHIP2026 CP2 临床入组资格判定引擎
 
-## Overview
+## 项目简介
 
-This repository preserves sanitized research code for transforming Chinese clinical text into eligibility-criterion decisions, FHIR R4 resources, and service-query validation inputs.
+本仓库保存了一套经过脱敏整理的研究代码，用于将中文临床文本转换为入组资格标准判定、FHIR R4 资源以及服务查询验证输入。
 
-The core pipeline evolved from rule-based matching toward criterion-aware evidence extraction and deterministic constraint execution:
-
-`Chinese clinical text -> criterion matching -> typed FHIR R4 resources -> service-query validation`
-
-## Competition Context
-
-The project was developed for the CHIP2026 CP2 clinical NLP task. It is an independent research and competition project and does not imply endorsement by or partnership with the competition organizers.
-
-Official competition datasets and generated submission artifacts are not included.
-
-## Architecture Evolution
-
-- **V2.4.3:** best proven legacy rule-based baseline, retained as a sanitized source snapshot.
-- **V3.x:** introduced grounded semantic rescue with subject, negation, planning, uncertainty, and evidence checks.
-- **V4.2.x:** introduced patient-level `EvidenceLedger`, criterion specifications, semantic atom extraction, deterministic compilation, and typed builder boundaries.
-- **V4.3:** criterion-centric architecture research based on typed criterion IR, retrieval, fact/event/relation modeling, temporal reasoning, deterministic constraints, FHIR compilation, and service validation.
-
-## V4.3 Architecture
+核心处理流程从早期的规则匹配逐步演进为面向标准的证据抽取和确定性约束执行：
 
 ```text
-Natural Criterion
-  -> Criterion IR
-  -> Criterion-aware Retrieval
-  -> Fact / Event / Relation
-  -> Temporal / Episode Reasoning
-  -> Constraint Executor
-  -> FHIR Compiler
-  -> Service Validation
+中文临床文本 -> 标准匹配 -> 类型化 FHIR R4 资源 -> 服务查询验证
 ```
 
-V4.3 is represented by design documentation only; this repository does not claim that the full V4.3 runtime has been implemented.
+## 竞赛背景
 
-## Repository Structure
+本项目用于 CHIP2026 CP2 临床自然语言处理任务的研究和实验。项目为独立研究与竞赛代码，不代表竞赛组织方的认可、合作或背书。
+
+官方竞赛数据集以及生成的正式提交产物不包含在本仓库中。
+
+## 架构演进
+
+- **V2.4.3**：经过验证的传统规则基线，作为脱敏源码快照保留。
+- **V3.x**：加入带依据的语义补救机制，覆盖主体、否定、计划、未知状态和证据校验。
+- **V4.2.x**：加入患者级 `EvidenceLedger`、标准规格、语义原子抽取、确定性编译以及类型化构建边界。
+- **V4.3**：围绕类型化标准中间表示、标准感知检索、事实/事件/关系建模、时间推理、确定性约束、FHIR 编译和服务验证开展架构研究。
+- **V5/V5S**：在 V4.3 基础上继续验证标准匹配、检索、传输、评分可见性以及候选提交构建流程。
+
+## 当前架构
 
 ```text
-docs/                     Architecture, history, and release audit
-examples/synthetic/       Synthetic-only demonstration input
-legacy/v2_4_3/src/        Sanitized V2.4.3 rule-based snapshot
-scripts/                  Metadata-only release auditing tool
-src/v3_engine/            Grounded semantic safety layer
-src/v4_engine/            V4.2 evidence and constraint components
-tests/                    Synthetic-only unit tests
+自然语言标准
+  -> 标准中间表示（Criterion IR）
+  -> 标准感知检索
+  -> 事实 / 事件 / 关系
+  -> 时间与就诊片段推理
+  -> 约束执行器
+  -> FHIR 编译器
+  -> 服务验证
 ```
 
-## Installation
+V4.3 仍属于架构研究阶段。本仓库不声称已经实现完整的生产级 V4.3 运行时。
 
-Python 3.10 or newer is required.
+## 目录结构
+
+```text
+analysis/                 实验分析结果和差异矩阵
+docs/                     架构、历史和开发计划文档
+reports/                  实验审计、可行性和就绪度报告
+scripts/                  候选构建、审计和验证脚本
+src/v43/                  V4.3 标准、检索、时间、FHIR 和运行时组件
+src/v5/                   V5 运行时、匹配、传输和 FHIR 组件
+src/v5s/                  V5S 实验 overlay 和运行时模板
+submission/               合成测试提交候选文件
+tests/                    仅使用合成输入的单元、集成和生产审计测试
+```
+
+## 安装
+
+要求 Python 3.10 或更高版本。
 
 ```bash
 python -m venv .venv
-python -m pip install -r requirements-dev.txt
+python -m pip install -r requirements.txt
 ```
 
-The retained runtime modules use the Python standard library. `pytest` is required only for tests.
+核心运行模块主要使用 Python 标准库。运行测试还需要安装开发依赖（如果项目环境提供 `requirements-dev.txt`，请一并安装）。
 
-## Testing
+## 测试
 
-From the repository root:
+在仓库根目录执行：
 
 ```bash
 python -m pytest -q
 ```
 
-All repository tests use synthetic inputs and do not require competition datasets or network services.
+仓库中的测试使用合成输入，不依赖官方竞赛数据集、患者记录或外部临床服务。
 
-## Data
+## 数据与隐私
 
-Official competition datasets, official test inputs, patient records, and generated submission bundles are **not included**. The example under `examples/synthetic/` was written specifically for this repository and is marked synthetic.
+官方竞赛数据、官方测试输入、患者记录和正式提交数据包均不包含在仓库中。示例数据仅用于合成测试，不能代表真实患者数据。
 
-## Privacy
+本仓库排除患者级临床数据。历史文件如可能包含患者标识符、完整病例文本或竞赛输入，则直接排除，而不是假定其已经完成匿名化。
 
-This repository excludes patient-level clinical data. Historical files that might contain patient identifiers, full case text, or competition inputs were excluded rather than assumed to be anonymized.
+## 项目状态
 
-## Status
+本项目属于研究和竞赛用途。Git 历史经过整理，不保证复现原始开发时间线。
 
-Research and competition project. Historical snapshots were curated into Git after development; the Git history does not claim to reproduce the original development timeline.
+## 免责声明
 
-## Disclaimer
+本项目仅供研究和竞赛使用，不得用于临床决策、诊断、治疗建议或患者管理。
 
-For research and competition purposes only. Not for clinical decision-making.
+## 许可证
 
-## License
-
-No open-source license has been selected. See [LICENSE_POLICY.md](LICENSE_POLICY.md).
+本项目尚未选择开源许可证。具体说明请参阅 `LICENSE_POLICY.md`。

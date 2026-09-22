@@ -1,0 +1,1 @@
+"""Criterion-aware evidence retrieval."""
