@@ -19,7 +19,7 @@ from v43.fhir.contracts import BASE, contract_for_criterion
 from v43.fhir.service_replay import replay_service
 
 
-MVP_CRITERIA = ("555", "565", "615", "675", "735", "745")
+MVP_CRITERIA = ("555", "565", "675", "735", "745")
 
 
 def normalize_reports(case_reports):
@@ -49,7 +49,7 @@ def _report_date(value):
 
 def _flags(text):
     return {
-        "negated": bool(re.search(r"否认|未见|没有|无(?:腹泻|便秘|带状疱疹|机械通气|乙肝|结核)", text)),
+        "negated": False,
         "planned": bool(re.search(r"计划|拟(?:行|予|用|接受)?|准备|待(?:行|予)?|将行|尚未", text)),
         "historical": bool(re.search(r"既往|曾经|曾有|病史", text)),
         "current": bool(re.search(r"目前|当前|现为|活动期|活动性|正在治疗|未控制", text)),
@@ -57,7 +57,22 @@ def _flags(text):
     }
 
 
+def _concept_negated(text, concept):
+    patterns = {
+        "smoking": r"否认吸烟|无吸烟(?:史)?|不吸烟",
+        "mechanical_ventilation": r"否认(?:有创)?机械通气|未见(?:有创)?机械通气|(?<!创)无机械通气",
+        "diarrhea": r"否认腹泻|未见腹泻|无腹泻",
+        "constipation": r"否认便秘|未见便秘|无便秘",
+        "herpes_zoster": r"否认[^。；，,]{0,8}带状疱疹|未见[^。；，,]{0,8}带状疱疹|无[^。；，,]{0,8}带状疱疹",
+        "surgery": r"否认手术|无手术史|未行手术",
+    }
+    pattern = patterns.get(concept)
+    return bool(pattern and re.search(pattern, text, re.I))
+
+
 def _add(facts, fact_type, concept, report, evidence, flags, **values):
+    flags = dict(flags)
+    flags["negated"] = _concept_negated(evidence, concept)
     fact = {
         "id": f"f{len(facts) + 1}", "type": fact_type, "concept": concept,
         "value": values.pop("value", None), "unit": values.pop("unit", None),
@@ -96,7 +111,7 @@ def extract_facts(case_reports):
             if gs:
                 _add(facts, "staging", "gleason_score", report, text, flags,
                      value=int(gs.group(1)), unit="score")
-            psa = re.search(r"\bPSA\b\s*[:：=]?\s*(\d+(?:\.\d+)?)\s*(ng/mL)?", text, re.I)
+            psa = re.search(r"(?<![A-Za-z0-9])PSA(?![A-Za-z0-9])\s*[:：=]?\s*(\d+(?:\.\d+)?)\s*(ng/mL)?", text, re.I)
             if psa:
                 _add(facts, "lab", "PSA", report, text, flags,
                      value=float(psa.group(1)), unit=psa.group(2) or "ng/mL")
@@ -112,6 +127,37 @@ def extract_facts(case_reports):
                                 value="head_face")
                     relations.append({"type": "LOCATED_AT", "source": diagnosis["id"],
                                       "target": site["id"], "evidence_text": text})
+            if re.search(r"吸烟|抽烟|smoking", text, re.I):
+                _add(facts, "behavior", "smoking", report, text, flags,
+                     status="active" if flags["current"] else "documented")
+            for concept, pattern, unit in (
+                ("AST", r"\bAST\b\s*[:：=]?\s*(\d+(?:\.\d+)?)", "U/L"),
+                ("ALT", r"\bALT\b\s*[:：=]?\s*(\d+(?:\.\d+)?)", "U/L"),
+                ("BUN", r"\bBUN\b\s*[:：=]?\s*(\d+(?:\.\d+)?)", "mmol/L"),
+                ("Cr", r"\b(?:Cr|Scr)\b\s*[:：=]?\s*(\d+(?:\.\d+)?)", "umol/L"),
+                ("cTnI", r"\bcTnI\b\s*[:：=]?\s*(\d+(?:\.\d+)?)", "ug/L"),
+                ("cTnT", r"\bcTnT\b\s*[:：=]?\s*(\d+(?:\.\d+)?)", "ug/L"),
+            ):
+                match = re.search(pattern, text, re.I)
+                if match:
+                    _add(facts, "lab", concept, report, text, flags,
+                         value=float(match.group(1)), unit=unit)
+            if re.search(r"吸烟|烟草|smok", text, re.I):
+                _add(facts, "smoking", "smoking", report, text, flags,
+                     status="current" if flags["current"] else "documented")
+            if re.search(r"化疗|化学治疗", text):
+                _add(facts, "treatment", "chemotherapy", report, text, flags,
+                     status="planned" if flags["planned"] else "performed")
+            if re.search(r"伊立替康|irinotecan", text, re.I):
+                _add(facts, "treatment", "irinotecan", report, text, flags,
+                     status="planned" if flags["planned"] else "performed",
+                     first_use=bool(re.search(r"首次|初次|第一次", text)))
+            if re.search(r"凝血功能异常|凝血异常", text):
+                _add(facts, "organ_status", "coagulation_abnormal", report, text, flags,
+                     status="active" if flags["current"] else "documented")
+            if re.search(r"颅内高压|意识不清|昏迷", text):
+                _add(facts, "symptom", "intracranial_or_consciousness", report, text, flags,
+                     status="active" if flags["current"] else "documented")
             disease = re.search(r"甲肝|乙肝|乙型肝炎|HIV|艾滋病|结核|结缔组织病", text, re.I)
             if disease:
                 status = "resolved" if flags["resolved"] else "active" if flags["current"] else "documented"
@@ -190,7 +236,8 @@ def _eval_615(store):
 
 
 def _eval_675(store):
-    if any(fact["negated"] for fact in _facts(store, "herpes_zoster", usable=False)):
+    zoster_facts = _facts(store, "herpes_zoster", usable=False)
+    if zoster_facts and zoster_facts[-1]["negated"]:
         return _result("675", "NO_MATCH", "EXPLICIT_ZOSTER_NEGATION")
     ages = [fact for fact in _facts(store, "age") if fact["value"] is not None]
     diagnoses = [fact for fact in _facts(store, "herpes_zoster") if fact["status"] == "confirmed"]
@@ -226,8 +273,12 @@ def _eval_735(store):
 
 
 def _eval_745(store):
-    surgeries = [fact for fact in _facts(store, "surgery") if fact["status"] == "performed"]
-    vents = [fact for fact in _facts(store, "mechanical_ventilation") if fact["status"] == "performed"]
+    surgeries = [fact for fact in store["facts"]
+                 if fact["concept"] == "surgery" and fact["status"] == "performed"
+                 and not fact["negated"] and not fact["planned"]]
+    vents = [fact for fact in store["facts"]
+             if fact["concept"] == "mechanical_ventilation" and fact["status"] == "performed"
+             and not fact["negated"] and not fact["planned"]]
     invasive = [fact for fact in vents if fact.get("invasive")]
     if vents and not invasive:
         return _result("745", "NO_MATCH", "NONINVASIVE_ONLY", vents)

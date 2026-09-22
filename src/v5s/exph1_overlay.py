@@ -4,6 +4,11 @@ EXPH1_SOURCE = r'''
 _exph1_original_retrieve_evidence = retrieve_evidence
 _EXPH1_485_ALIASES = ("子宫脱垂", "盆底器官脱垂", "阴道前壁脱垂", "阴道后壁脱垂", "阴道穹隆脱垂")
 
+class _EXPH1Metrics(dict):
+    @property
+    def metrics(self):
+        return self
+
 def retrieve_evidence(reports, spec):
     if str(TITLE) != "485":
         return _exph1_original_retrieve_evidence(reports, spec)
@@ -19,5 +24,7 @@ def retrieve_evidence(reports, spec):
             groups[0].append(alias)
     aligned["aliases"] = aliases
     aligned["groups"] = groups
-    return _exph1_original_retrieve_evidence(reports, aligned)
+    windows = _exph1_original_retrieve_evidence(reports, aligned)
+    windows.metrics = _EXPH1Metrics(windows.metrics)
+    return windows
 '''

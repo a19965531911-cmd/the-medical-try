@@ -1,0 +1,204 @@
+{
+  "prototype": "scripts/v6_offline_prototype.py",
+  "mvp_criteria": [
+    "555",
+    "565",
+    "675",
+    "735",
+    "745"
+  ],
+  "positive": [
+    {
+      "criterion": "555",
+      "facts": 1,
+      "decision": "MATCH",
+      "resources": 1,
+      "service": "SERVICE_HIT"
+    },
+    {
+      "criterion": "565",
+      "facts": 1,
+      "decision": "MATCH",
+      "resources": 1,
+      "service": "SERVICE_HIT"
+    },
+    {
+      "criterion": "675",
+      "facts": 3,
+      "decision": "MATCH",
+      "resources": 1,
+      "service": "SERVICE_HIT"
+    },
+    {
+      "criterion": "735",
+      "facts": 1,
+      "decision": "MATCH",
+      "resources": 1,
+      "service": "SERVICE_HIT"
+    },
+    {
+      "criterion": "745",
+      "facts": 3,
+      "decision": "MATCH",
+      "resources": 2,
+      "service": "SERVICE_HIT"
+    }
+  ],
+  "negative": [
+    {
+      "criterion": "555",
+      "decision": "NO_MATCH",
+      "reason": "SURGERY_OVER_6_MONTHS",
+      "service": "SERVICE_MISS"
+    },
+    {
+      "criterion": "555",
+      "decision": "UNKNOWN",
+      "reason": "MISSING_GROUNDED_TIME",
+      "service": "SERVICE_MISS"
+    },
+    {
+      "criterion": "565",
+      "decision": "NO_MATCH",
+      "reason": "SYMPTOM_RESOLVED",
+      "service": "SERVICE_MISS"
+    },
+    {
+      "criterion": "615",
+      "decision": "UNKNOWN",
+      "reason": "NO_SATISFYING_ONCOLOGY_BRANCH",
+      "service": "SERVICE_MISS"
+    },
+    {
+      "criterion": "675",
+      "decision": "UNKNOWN",
+      "reason": "MISSING_AGE_DIAGNOSIS_OR_SITE",
+      "service": "SERVICE_MISS"
+    },
+    {
+      "criterion": "675",
+      "decision": "NO_MATCH",
+      "reason": "EXPLICIT_ZOSTER_NEGATION",
+      "service": "SERVICE_MISS"
+    },
+    {
+      "criterion": "735",
+      "decision": "NO_MATCH",
+      "reason": "TARGET_DISEASE_RESOLVED",
+      "service": "SERVICE_MISS"
+    },
+    {
+      "criterion": "735",
+      "decision": "UNKNOWN",
+      "reason": "ACTIVITY_STATE_MISSING",
+      "service": "SERVICE_MISS"
+    },
+    {
+      "criterion": "745",
+      "decision": "NO_MATCH",
+      "reason": "NONINVASIVE_ONLY",
+      "service": "SERVICE_MISS"
+    },
+    {
+      "criterion": "745",
+      "decision": "UNKNOWN",
+      "reason": "POSTOPERATIVE_RELATION_UNRESOLVED",
+      "service": "SERVICE_MISS"
+    }
+  ],
+  "admission_stability": [
+    {
+      "case": "745_complete_cross_report",
+      "criterion": "745",
+      "facts_gained": 3,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "MATCH",
+      "reason": "POSTOPERATIVE_INVASIVE_VENTILATION",
+      "required_facts_grounded": true,
+      "classification": "SAFE_COMPLETION"
+    },
+    {
+      "case": "745_missing_relation",
+      "criterion": "745",
+      "facts_gained": 2,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "UNKNOWN",
+      "reason": "POSTOPERATIVE_RELATION_UNRESOLVED",
+      "required_facts_grounded": false,
+      "classification": "NO_CHANGE"
+    },
+    {
+      "case": "675_complete_facts",
+      "criterion": "675",
+      "facts_gained": 3,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "MATCH",
+      "reason": "AGE_CONFIRMED_ZOSTER_SITE",
+      "required_facts_grounded": true,
+      "classification": "SAFE_COMPLETION"
+    },
+    {
+      "case": "675_missing_site",
+      "criterion": "675",
+      "facts_gained": 2,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "UNKNOWN",
+      "reason": "MISSING_AGE_DIAGNOSIS_OR_SITE",
+      "required_facts_grounded": false,
+      "classification": "NO_CHANGE"
+    },
+    {
+      "case": "735_current_state",
+      "criterion": "735",
+      "facts_gained": 1,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "MATCH",
+      "reason": "ACTIVE_TARGET_DISEASE",
+      "required_facts_grounded": true,
+      "classification": "SAFE_COMPLETION"
+    },
+    {
+      "case": "735_history_only",
+      "criterion": "735",
+      "facts_gained": 1,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "UNKNOWN",
+      "reason": "ACTIVITY_STATE_MISSING",
+      "required_facts_grounded": false,
+      "classification": "NO_CHANGE"
+    },
+    {
+      "case": "565_missing_severity",
+      "criterion": "565",
+      "facts_gained": 1,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "UNKNOWN",
+      "reason": "SEVERITY_OR_CURRENT_STATE_MISSING",
+      "required_facts_grounded": false,
+      "classification": "NO_CHANGE"
+    },
+    {
+      "case": "615_non_satisfying_branch",
+      "criterion": "615",
+      "facts_gained": 2,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "UNKNOWN",
+      "reason": "NO_SATISFYING_ONCOLOGY_BRANCH",
+      "required_facts_grounded": false,
+      "classification": "NO_CHANGE"
+    }
+  ],
+  "unsafe_relaxation": 0,
+  "compile": "PASS",
+  "semantic_calls": 0,
+  "service_replay": "PASS",
+  "train_official_library_count": 16,
+  "test_a_criterion_definition_file": "C:\\Users\\32433\\Documents\\ChatGPT\\clip\\CHIP2026_CP2_A_baseline_v2_4_3\\data\\CHIP2026-CP2-data-test_a.xlsx",
+  "test_a_patient_text_available": false,
+  "test_a_fact_coverage": "NOT_AVAILABLE_NOT_CHECKED",
+  "experiment_e_sha256": "831385ec9deab93d19e54c8319027978eee4b6843c32ddbc5714795b50ad27e8",
+  "expected_experiment_e_sha256": "40457de3149c7db34daf9c3545199c7c8f409ec65b6ae4412f6ca6a77df6d96e",
+  "experiment_e_artifact_match": false,
+  "candidate_generated": false,
+  "tianchi": "NOT_SUBMITTED"
+}

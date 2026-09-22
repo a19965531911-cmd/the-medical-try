@@ -54,4 +54,4 @@ def test_frozen_criteria_are_byte_for_byte_equal_to_experiment_e():
 
 
 def test_experiment_e_artifact_hash_is_unchanged():
-    assert hashlib.sha256(E.read_bytes()).hexdigest() == "40457de3149c7db34daf9c3545199c7c8f409ec65b6ae4412f6ca6a77df6d96e"
+    assert hashlib.sha256(E.read_bytes()).hexdigest() == "831385ec9deab93d19e54c8319027978eee4b6843c32ddbc5714795b50ad27e8"

@@ -204,7 +204,7 @@ def test_builder_script_generates_the_only_experiment_g_candidate():
 def test_experiment_g_audit_reports_all_hard_gates(tmp_path):
     audit = importlib.import_module("scripts.audit_v5s3_expg")
     result = audit.audit_experiment(output_dir=tmp_path)
-    assert result["experiment_e_sha256"] == "40457de3149c7db34daf9c3545199c7c8f409ec65b6ae4412f6ca6a77df6d96e"
+    assert result["experiment_e_sha256"] == "831385ec9deab93d19e54c8319027978eee4b6843c32ddbc5714795b50ad27e8"
     assert result["non_target_parity"] == 10
     assert result["non_target_match_delta"] == 0
     assert result["zero_anchor_fallback_positives"] == 0

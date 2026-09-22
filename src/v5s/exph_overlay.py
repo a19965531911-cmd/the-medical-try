@@ -1,6 +1,17 @@
 """Experiment H: narrow, deterministic precision rescue for criterion 485."""
 
 EXPH_SOURCE = r'''
+class _EXPHMetrics(dict):
+    @property
+    def metrics(self):
+        return self
+
+_exph_original_retrieve_evidence = retrieve_evidence
+def retrieve_evidence(reports, spec):
+    windows = _exph_original_retrieve_evidence(reports, spec)
+    windows.metrics = _EXPHMetrics(windows.metrics)
+    return windows
+
 _exph_e_build_resources = build_resources
 _EXPH_STAGE_RE = r"(?:III|IV|Ⅲ|Ⅳ|3|4|三|四)(?:期|度|级)?"
 _EXPH_LOW_STAGE_RE = r"(?:I|II|Ⅰ|Ⅱ|1|2|一|二)(?:期|度|级)?"

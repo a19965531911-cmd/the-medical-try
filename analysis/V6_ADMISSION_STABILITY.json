@@ -1,0 +1,89 @@
+{
+  "scope": "synthetic_and_existing_fixture_only",
+  "online_labels_used": false,
+  "test_a_patient_text_available": false,
+  "rows": [
+    {
+      "case": "745_complete_cross_report",
+      "criterion": "745",
+      "facts_gained": 3,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "MATCH",
+      "reason": "POSTOPERATIVE_INVASIVE_VENTILATION",
+      "required_facts_grounded": true,
+      "classification": "SAFE_COMPLETION"
+    },
+    {
+      "case": "745_missing_relation",
+      "criterion": "745",
+      "facts_gained": 2,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "UNKNOWN",
+      "reason": "POSTOPERATIVE_RELATION_UNRESOLVED",
+      "required_facts_grounded": false,
+      "classification": "NO_CHANGE"
+    },
+    {
+      "case": "675_complete_facts",
+      "criterion": "675",
+      "facts_gained": 3,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "MATCH",
+      "reason": "AGE_CONFIRMED_ZOSTER_SITE",
+      "required_facts_grounded": true,
+      "classification": "SAFE_COMPLETION"
+    },
+    {
+      "case": "675_missing_site",
+      "criterion": "675",
+      "facts_gained": 2,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "UNKNOWN",
+      "reason": "MISSING_AGE_DIAGNOSIS_OR_SITE",
+      "required_facts_grounded": false,
+      "classification": "NO_CHANGE"
+    },
+    {
+      "case": "735_current_state",
+      "criterion": "735",
+      "facts_gained": 1,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "MATCH",
+      "reason": "ACTIVE_TARGET_DISEASE",
+      "required_facts_grounded": true,
+      "classification": "SAFE_COMPLETION"
+    },
+    {
+      "case": "735_history_only",
+      "criterion": "735",
+      "facts_gained": 1,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "UNKNOWN",
+      "reason": "ACTIVITY_STATE_MISSING",
+      "required_facts_grounded": false,
+      "classification": "NO_CHANGE"
+    },
+    {
+      "case": "565_missing_severity",
+      "criterion": "565",
+      "facts_gained": 1,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "UNKNOWN",
+      "reason": "SEVERITY_OR_CURRENT_STATE_MISSING",
+      "required_facts_grounded": false,
+      "classification": "NO_CHANGE"
+    },
+    {
+      "case": "615_non_satisfying_branch",
+      "criterion": "615",
+      "facts_gained": 2,
+      "decision_e": "NOT_REPLAYED",
+      "decision_v6": "UNKNOWN",
+      "reason": "NO_SATISFYING_ONCOLOGY_BRANCH",
+      "required_facts_grounded": false,
+      "classification": "NO_CHANGE"
+    }
+  ],
+  "unsafe_relaxation": 0,
+  "verdict": "PASS"
+}

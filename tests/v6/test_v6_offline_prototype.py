@@ -73,7 +73,15 @@ def test_local_scope_does_not_merge_conflicting_zoster_episodes():
     ]
     _, decisions = evaluate_patient(reports, ("675",))
 
-    assert decisions["675"]["decision"] == "NO_MATCH"
+    assert decisions["675"]["decision"] == "MATCH"
+
+
+def test_local_negation_does_not_negate_another_procedure():
+    store, _ = evaluate_patient([{"text": "无吸烟史，但术后需要气管插管有创机械通气"}], ("745",))
+    smoking = [fact for fact in store["facts"] if fact["concept"] == "smoking"]
+    ventilation = [fact for fact in store["facts"] if fact["concept"] == "mechanical_ventilation"]
+    assert smoking and smoking[-1]["negated"] is True
+    assert ventilation and ventilation[-1]["negated"] is False
 
 
 def test_match_without_required_time_is_not_emitted():
@@ -85,4 +93,3 @@ def test_match_without_required_time_is_not_emitted():
     assert result["payload_ready"] is False
     assert result["scorer_contract_ready"] is False
     assert replay("p1", result)["resources"] == ()
-

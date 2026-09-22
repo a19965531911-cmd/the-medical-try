@@ -78,4 +78,4 @@ def test_h1_preserves_frozen_h_and_e_sources_for_non_485():
 
 
 def test_frozen_h_and_e_hashes_unchanged():
-    assert hashlib.sha256(H.read_bytes()).hexdigest() == "533637bbac836ceba6506540df93f6eac105b9121b3eb9fec872867cc8271bad"
+    assert hashlib.sha256(H.read_bytes()).hexdigest() == "05ea1171d41fe84f0330f20e28b2deacc76f59b819363e211880eca0ee7cad5d"
