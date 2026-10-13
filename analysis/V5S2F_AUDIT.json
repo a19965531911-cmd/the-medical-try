@@ -1,0 +1,46 @@
+{
+  "candidate": "submission/a_test_message_bundle_v5s2_expf_resource_recovery_candidate.json",
+  "size": 708363,
+  "sha256": "0858860f77009369ecd33f067439da26495d3f2f8ef7d3d772265c07b1ba9fb1",
+  "experiment_e_sha256": "40457de3149c7db34daf9c3545199c7c8f409ec65b6ae4412f6ca6a77df6d96e",
+  "hard_gates": {
+    "decode": 16,
+    "compile": 16,
+    "exec": 16,
+    "embedded_positive": 16,
+    "embedded_negative": 16,
+    "fhir": 16,
+    "service": 16,
+    "security": 16
+  },
+  "counts": {
+    "dataclasses": 0,
+    "enums": 0,
+    "flatten_rename": 0,
+    "unresolved_symbols": 0
+  },
+  "baseline_negative_mismatches": 1,
+  "decision_deltas": 0,
+  "retrieval_deltas": 0,
+  "prompt_deltas": 0,
+  "llm_call_deltas": 0,
+  "existing_resource_deltas": 0,
+  "parity_rows": 36,
+  "recovery": {
+    "265": {
+      "recovered": 0,
+      "total": 1,
+      "status": "BLOCKED_NO_SAFE_PAYLOAD"
+    },
+    "555": {
+      "recovered": 0,
+      "total": 2,
+      "status": "BLOCKED_NO_SAFE_PAYLOAD"
+    },
+    "755": {
+      "recovered": 2,
+      "total": 2,
+      "status": "GROUNDED_METADATA_REUSE"
+    }
+  }
+}
