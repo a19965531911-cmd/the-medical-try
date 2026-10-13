@@ -1,0 +1,21 @@
+{
+  "status": "BLOCKED",
+  "official_checker": "UNAVAILABLE",
+  "identity_error": "Publication blocked: official tbd/null routing contract unverified",
+  "header": {
+    "resource": {
+      "resourceType": "MessageHeader",
+      "id": "08613a9f-444f-47f0-a8e1-45dd0ac89aa9",
+      "eventCoding": {
+        "system": "chip2025.cn.medcodegpt.www",
+        "code": "library-publish"
+      },
+      "source": {
+        "name": "ChooView2026",
+        "software": "CNWQK",
+        "version": "1.0",
+        "challenge_id": "train_set"
+      }
+    }
+  }
+}

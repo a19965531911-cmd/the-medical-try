@@ -1,0 +1,6946 @@
+[
+  {
+    "profile_id": "2",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "3",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "85",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "205",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "225",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "255",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "295",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "465",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "475",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "495",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "525",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "585",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "625",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "695",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "715",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  },
+  {
+    "profile_id": "765",
+    "definitions": {
+      "normalize_reports": {
+        "first": 8,
+        "overrides": [],
+        "last": 8
+      },
+      "split_text": {
+        "first": 16,
+        "overrides": [],
+        "last": 16
+      },
+      "EvidenceWindows.__init__": {
+        "first": 21,
+        "overrides": [],
+        "last": 21
+      },
+      "_expe_spec": {
+        "first": 25,
+        "overrides": [],
+        "last": 25
+      },
+      "retrieve_evidence": {
+        "first": 32,
+        "overrides": [],
+        "last": 32
+      },
+      "_has": {
+        "first": 128,
+        "overrides": [],
+        "last": 128
+      },
+      "_normal": {
+        "first": 132,
+        "overrides": [],
+        "last": 132
+      },
+      "_fact": {
+        "first": 136,
+        "overrides": [],
+        "last": 136
+      },
+      "_state": {
+        "first": 140,
+        "overrides": [],
+        "last": 140
+      },
+      "_duration_facts": {
+        "first": 162,
+        "overrides": [],
+        "last": 162
+      },
+      "_smoking": {
+        "first": 199,
+        "overrides": [],
+        "last": 199
+      },
+      "_vessels": {
+        "first": 221,
+        "overrides": [],
+        "last": 221
+      },
+      "_labs": {
+        "first": 240,
+        "overrides": [],
+        "last": 240
+      },
+      "extract_facts": {
+        "first": 266,
+        "overrides": [],
+        "last": 266
+      },
+      "evaluate": {
+        "first": 309,
+        "overrides": [
+          732
+        ],
+        "last": 732
+      },
+      "semantic_rescue": {
+        "first": 323,
+        "overrides": [],
+        "last": 323
+      },
+      "concept": {
+        "first": 360,
+        "overrides": [],
+        "last": 360
+      },
+      "resource": {
+        "first": 369,
+        "overrides": [],
+        "last": 369
+      },
+      "extension": {
+        "first": 380,
+        "overrides": [],
+        "last": 380
+      },
+      "build_b_resources": {
+        "first": 384,
+        "overrides": [
+          735
+        ],
+        "last": 735
+      },
+      "FHIRResourceBundleGenerator.__init__": {
+        "first": 485,
+        "overrides": [],
+        "last": 485
+      },
+      "FHIRResourceBundleGenerator._transport": {
+        "first": 489,
+        "overrides": [],
+        "last": 489
+      },
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle": {
+        "first": 498,
+        "overrides": [],
+        "last": 498
+      },
+      "event_groups": {
+        "first": 531,
+        "overrides": [],
+        "last": 531
+      },
+      "_restore_indexes": {
+        "first": 550,
+        "overrides": [],
+        "last": 550
+      },
+      "bound_event_evaluate": {
+        "first": 564,
+        "overrides": [],
+        "last": 564
+      },
+      "_date": {
+        "first": 584,
+        "overrides": [],
+        "last": 584
+      },
+      "smoking_b2": {
+        "first": 590,
+        "overrides": [],
+        "last": 590
+      },
+      "lab_observations": {
+        "first": 636,
+        "overrides": [],
+        "last": 636
+      },
+      "labs_b2": {
+        "first": 659,
+        "overrides": [],
+        "last": 659
+      },
+      "evaluate_b2": {
+        "first": 684,
+        "overrides": [],
+        "last": 684
+      },
+      "build_b2_resources": {
+        "first": 696,
+        "overrides": [],
+        "last": 696
+      },
+      "_b4_unique": {
+        "first": 767,
+        "overrides": [],
+        "last": 767
+      },
+      "_b4_invalid": {
+        "first": 776,
+        "overrides": [],
+        "last": 776
+      },
+      "_b4_decode": {
+        "first": 780,
+        "overrides": [
+          1184,
+          1269,
+          1300,
+          1345
+        ],
+        "last": 1345
+      },
+      "_b4_quote_safe": {
+        "first": 823,
+        "overrides": [],
+        "last": 823
+      },
+      "_b4_prompt": {
+        "first": 840,
+        "overrides": [
+          1261,
+          1294,
+          1338
+        ],
+        "last": 1338
+      },
+      "_b4_call": {
+        "first": 850,
+        "overrides": [
+          1059,
+          1326
+        ],
+        "last": 1326
+      },
+      "_b4_evaluate": {
+        "first": 872,
+        "overrides": [
+          1079
+        ],
+        "last": 1079
+      },
+      "_b4_transport": {
+        "first": 932,
+        "overrides": [],
+        "last": 932
+      },
+      "_b4_entry": {
+        "first": 966,
+        "overrides": [],
+        "last": 966
+      },
+      "_b5_transport": {
+        "first": 1019,
+        "overrides": [],
+        "last": 1019
+      },
+      "_b5_core_evaluate": {
+        "first": 1069,
+        "overrides": [],
+        "last": 1069
+      },
+      "_b5_entry": {
+        "first": 1095,
+        "overrides": [],
+        "last": 1095
+      },
+      "_b6_transport": {
+        "first": 1133,
+        "overrides": [],
+        "last": 1133
+      },
+      "_b7_transport": {
+        "first": 1206,
+        "overrides": [],
+        "last": 1206
+      },
+      "_b7_entry": {
+        "first": 1243,
+        "overrides": [],
+        "last": 1243
+      }
+    },
+    "captures": [
+      {
+        "line": 522,
+        "targets": [
+          "_B1_EVALUATE"
+        ],
+        "captured": "evaluate"
+      },
+      {
+        "line": 523,
+        "targets": [
+          "_B1_BUILD"
+        ],
+        "captured": "build_b_resources"
+      },
+      {
+        "line": 524,
+        "targets": [
+          "_B1_SMOKING"
+        ],
+        "captured": "_smoking"
+      },
+      {
+        "line": 988,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b4_transport"
+      },
+      {
+        "line": 989,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 997,
+        "targets": [
+          "_B5_B4_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 998,
+        "targets": [
+          "_B5_B4_ENTRY"
+        ],
+        "captured": "_b4_entry"
+      },
+      {
+        "line": 999,
+        "targets": [
+          "_B5_B4_EVALUATE"
+        ],
+        "captured": "_b4_evaluate"
+      },
+      {
+        "line": 1122,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b5_transport"
+      },
+      {
+        "line": 1123,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b5_entry"
+      },
+      {
+        "line": 1174,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1177,
+        "targets": [
+          "_B7_TRANSPORT"
+        ],
+        "captured": "_b6_transport"
+      },
+      {
+        "line": 1178,
+        "targets": [
+          "_B7_ENTRY"
+        ],
+        "captured": "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+      },
+      {
+        "line": 1180,
+        "targets": [
+          "_B7_POST"
+        ],
+        "captured": "_b6_requests.Session.post"
+      },
+      {
+        "line": 1181,
+        "targets": [
+          "_B7_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1253,
+        "targets": [
+          "FHIRResourceBundleGenerator._transport"
+        ],
+        "captured": "_b7_transport"
+      },
+      {
+        "line": 1254,
+        "targets": [
+          "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle"
+        ],
+        "captured": "_b7_entry"
+      },
+      {
+        "line": 1257,
+        "targets": [
+          "_B71_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1258,
+        "targets": [
+          "_B71_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      },
+      {
+        "line": 1290,
+        "targets": [
+          "_B72_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1291,
+        "targets": [
+          "_B72_CALL"
+        ],
+        "captured": "_b4_call"
+      },
+      {
+        "line": 1334,
+        "targets": [
+          "_B73_DECODE"
+        ],
+        "captured": "_b4_decode"
+      },
+      {
+        "line": 1335,
+        "targets": [
+          "_B73_PROMPT"
+        ],
+        "captured": "_b4_prompt"
+      }
+    ],
+    "class_bindings": [
+      "FHIRResourceBundleGenerator._transport = _b4_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b4_entry",
+      "FHIRResourceBundleGenerator._transport = _b5_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b5_entry",
+      "FHIRResourceBundleGenerator._transport = _b6_transport",
+      "FHIRResourceBundleGenerator._transport = _b7_transport",
+      "FHIRResourceBundleGenerator.parse_clinical_text_to_fhir_bundle = _b7_entry"
+    ],
+    "protocol": {
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "max_tokens": 2048
+    }
+  }
+]

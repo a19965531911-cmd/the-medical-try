@@ -1,0 +1,10 @@
+{
+  "trigger_rate": 0.5813953488372093,
+  "http_rate": 1.0,
+  "json_rate": 0.72,
+  "grounding_rate": 0.72,
+  "accepted_facts": 8,
+  "unproductive": 20,
+  "service_rate": 1.0,
+  "p95_synthetic_http": 0.02912100008688867
+}

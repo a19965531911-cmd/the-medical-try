@@ -1,0 +1,11 @@
+{
+  "variant": "B5L",
+  "sha256": "3705722a85396bfaf0d3c8df7ce4dfcee10df5096b7e5e9d426d22ac7eb272bd",
+  "mode": "llm_first",
+  "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+  "model": "local-model",
+  "total_model_budget_seconds": 4,
+  "max_calls": 1,
+  "baseline_source_sha256": "690690d3f4e52a6bcccad3d30f4b2c147b227a54d90a28fd2697a20e4e23096b",
+  "publication": "BLOCKED"
+}

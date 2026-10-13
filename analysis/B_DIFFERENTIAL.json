@@ -1,0 +1,5780 @@
+{
+  "summary": {
+    "comparison": "Offline official B NLP/service vs candidate; E has no B routes",
+    "synthetic_only": true,
+    "cases": 151,
+    "new_positives": [
+      "3_positive_0",
+      "85_positive_2",
+      "205_positive_0",
+      "205_positive_2",
+      "225_positive_1",
+      "255_positive_0",
+      "255_positive_1",
+      "255_positive_2",
+      "295_positive_1",
+      "295_positive_2",
+      "295_positive_attack_14",
+      "295_positive_attack_17",
+      "475_positive_1",
+      "475_positive_2",
+      "585_positive_0",
+      "585_positive_1",
+      "585_positive_2",
+      "585_positive_attack_9",
+      "585_positive_attack_10",
+      "585_positive_attack_11",
+      "625_positive_0",
+      "625_positive_1",
+      "625_positive_2",
+      "625_positive_attack_18",
+      "625_positive_boundary_ALT_3",
+      "625_positive_boundary_AST_3",
+      "695_positive_1",
+      "695_positive_2",
+      "715_positive_0",
+      "715_positive_attack_13"
+    ],
+    "lost_positives": [
+      "2_negative_2",
+      "2_negative_3",
+      "2_negative_4",
+      "2_negative_attack_5",
+      "85_negative_1",
+      "85_negative_3",
+      "225_negative_3",
+      "225_negative_4",
+      "465_negative_1",
+      "465_negative_3",
+      "465_negative_4",
+      "475_negative_1",
+      "495_negative_1",
+      "495_negative_3",
+      "495_negative_4",
+      "495_negative_attack_4",
+      "525_negative_2",
+      "525_negative_3",
+      "525_negative_4",
+      "715_negative_0",
+      "715_negative_1",
+      "715_negative_3",
+      "715_negative_4",
+      "715_negative_attack_12",
+      "765_negative_1",
+      "765_negative_3",
+      "765_negative_4"
+    ],
+    "unchanged_positives": [
+      "2_positive_0",
+      "2_positive_1",
+      "2_positive_2",
+      "3_positive_1",
+      "3_positive_2",
+      "85_positive_0",
+      "85_positive_1",
+      "205_positive_1",
+      "225_positive_0",
+      "225_positive_2",
+      "465_positive_0",
+      "465_positive_1",
+      "465_positive_2",
+      "475_positive_0",
+      "495_positive_0",
+      "495_positive_1",
+      "495_positive_2",
+      "525_positive_0",
+      "525_positive_1",
+      "525_positive_2",
+      "695_positive_0",
+      "715_positive_1",
+      "715_positive_2",
+      "765_positive_0",
+      "765_positive_1",
+      "765_positive_2"
+    ],
+    "new_negatives": [
+      "2_negative_2",
+      "2_negative_3",
+      "2_negative_4",
+      "2_negative_attack_5",
+      "85_negative_1",
+      "85_negative_3",
+      "225_negative_3",
+      "225_negative_4",
+      "465_negative_1",
+      "465_negative_3",
+      "465_negative_4",
+      "475_negative_1",
+      "495_negative_1",
+      "495_negative_3",
+      "495_negative_4",
+      "495_negative_attack_4",
+      "525_negative_2",
+      "525_negative_3",
+      "525_negative_4",
+      "715_negative_0",
+      "715_negative_1",
+      "715_negative_3",
+      "715_negative_4",
+      "715_negative_attack_12",
+      "765_negative_1",
+      "765_negative_3",
+      "765_negative_4"
+    ],
+    "unresolved": [
+      "295_positive_0",
+      "295_positive_attack_15"
+    ],
+    "service_mismatches": [],
+    "candidate_logic_failures": [],
+    "real_patient_differential": "NOT_AVAILABLE",
+    "local_schema": {
+      "libraries": 16,
+      "unique_ids": 16,
+      "deepquery_ids": 16,
+      "local_schema": "PASS",
+      "platform_mapping": "UNVERIFIED_FOR_TBD"
+    },
+    "baseline_match_set": [
+      "2_positive_0",
+      "2_positive_1",
+      "2_positive_2",
+      "2_negative_2",
+      "2_negative_3",
+      "2_negative_4",
+      "2_negative_attack_5",
+      "3_positive_1",
+      "3_positive_2",
+      "85_positive_0",
+      "85_positive_1",
+      "85_negative_1",
+      "85_negative_3",
+      "205_positive_1",
+      "225_positive_0",
+      "225_positive_2",
+      "225_negative_3",
+      "225_negative_4",
+      "465_positive_0",
+      "465_positive_1",
+      "465_positive_2",
+      "465_negative_1",
+      "465_negative_3",
+      "465_negative_4",
+      "475_positive_0",
+      "475_negative_1",
+      "495_positive_0",
+      "495_positive_1",
+      "495_positive_2",
+      "495_negative_1",
+      "495_negative_3",
+      "495_negative_4",
+      "495_negative_attack_4",
+      "525_positive_0",
+      "525_positive_1",
+      "525_positive_2",
+      "525_negative_2",
+      "525_negative_3",
+      "525_negative_4",
+      "695_positive_0",
+      "715_positive_1",
+      "715_positive_2",
+      "715_negative_0",
+      "715_negative_1",
+      "715_negative_3",
+      "715_negative_4",
+      "715_negative_attack_12",
+      "765_positive_0",
+      "765_positive_1",
+      "765_positive_2",
+      "765_negative_1",
+      "765_negative_3",
+      "765_negative_4"
+    ],
+    "new_match_set": [
+      "2_positive_0",
+      "2_positive_1",
+      "2_positive_2",
+      "3_positive_0",
+      "3_positive_1",
+      "3_positive_2",
+      "85_positive_0",
+      "85_positive_1",
+      "85_positive_2",
+      "205_positive_0",
+      "205_positive_1",
+      "205_positive_2",
+      "225_positive_0",
+      "225_positive_1",
+      "225_positive_2",
+      "255_positive_0",
+      "255_positive_1",
+      "255_positive_2",
+      "295_positive_0",
+      "295_positive_1",
+      "295_positive_2",
+      "295_positive_attack_14",
+      "295_positive_attack_15",
+      "295_positive_attack_17",
+      "465_positive_0",
+      "465_positive_1",
+      "465_positive_2",
+      "475_positive_0",
+      "475_positive_1",
+      "475_positive_2",
+      "495_positive_0",
+      "495_positive_1",
+      "495_positive_2",
+      "525_positive_0",
+      "525_positive_1",
+      "525_positive_2",
+      "585_positive_0",
+      "585_positive_1",
+      "585_positive_2",
+      "585_positive_attack_9",
+      "585_positive_attack_10",
+      "585_positive_attack_11",
+      "625_positive_0",
+      "625_positive_1",
+      "625_positive_2",
+      "625_positive_attack_18",
+      "625_positive_boundary_ALT_3",
+      "625_positive_boundary_AST_3",
+      "695_positive_0",
+      "695_positive_1",
+      "695_positive_2",
+      "715_positive_0",
+      "715_positive_1",
+      "715_positive_2",
+      "715_positive_attack_13",
+      "765_positive_0",
+      "765_positive_1",
+      "765_positive_2"
+    ]
+  },
+  "rows": [
+    {
+      "case": "2_positive_0",
+      "profile_id": "2",
+      "text": "患者咳嗽",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "respiratory": {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "患者咳嗽",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "2_positive_1",
+      "profile_id": "2",
+      "text": "活动后喘憋",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "respiratory": {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后喘憋",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "2_positive_2",
+      "profile_id": "2",
+      "text": "无发热。\n气促明显",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "respiratory": {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "气促明显",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "2_negative_0",
+      "profile_id": "2",
+      "text": "头痛",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "respiratory": {
+          "atom": "respiratory",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "2_negative_1",
+      "profile_id": "2",
+      "text": "无咳嗽、胸闷、气短",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "respiratory": {
+          "atom": "respiratory",
+          "state": "NEGATED",
+          "evidence": "无咳嗽、胸闷、气短",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "2_negative_2",
+      "profile_id": "2",
+      "text": "胸痛",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "respiratory": {
+          "atom": "respiratory",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "2_negative_3",
+      "profile_id": "2",
+      "text": "可能气短",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "respiratory": {
+          "atom": "respiratory",
+          "state": "UNCERTAIN",
+          "evidence": "可能气短",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "2_negative_4",
+      "profile_id": "2",
+      "text": "既往咳嗽已完全消失",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "respiratory": {
+          "atom": "respiratory",
+          "state": "ABSENT",
+          "evidence": "既往咳嗽已完全消失",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "2_negative_attack_5",
+      "profile_id": "2",
+      "text": "母亲咳嗽，患者无症状",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "respiratory": {
+          "atom": "respiratory",
+          "state": "ABSENT",
+          "evidence": "母亲咳嗽，患者无症状",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "3_positive_0",
+      "profile_id": "3",
+      "text": "病理证实肝细胞癌，已行肝癌根治性切除R0",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "hcc": {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "病理证实肝细胞癌，已行肝癌根治性切除R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "病理证实肝细胞癌，已行肝癌根治性切除R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "resection": {
+          "atom": "resection",
+          "state": "HISTORICAL",
+          "evidence": "病理证实肝细胞癌，已行肝癌根治性切除R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "r0": {
+          "atom": "r0",
+          "state": "HISTORICAL",
+          "evidence": "病理证实肝细胞癌，已行肝癌根治性切除R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 2
+    },
+    {
+      "case": "3_positive_1",
+      "profile_id": "3",
+      "text": "病理HCC。肝切除术后，切缘阴性",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "hcc": {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "病理HCC。肝切除术后，切缘阴性",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "病理HCC。肝切除术后，切缘阴性",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "resection": {
+          "atom": "resection",
+          "state": "HISTORICAL",
+          "evidence": "病理HCC。肝切除术后，切缘阴性",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "r0": {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "病理HCC。肝切除术后，切缘阴性",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 2,
+      "candidate_resources": 2
+    },
+    {
+      "case": "3_positive_2",
+      "profile_id": "3",
+      "text": "病理提示肝细胞癌。\n患者此前接受肝癌根治切除，切缘阴性（R0）",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "hcc": {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "病理提示肝细胞癌。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "病理提示肝细胞癌。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "resection": {
+          "atom": "resection",
+          "state": "HISTORICAL",
+          "evidence": "患者此前接受肝癌根治切除，切缘阴性（R0）",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        },
+        "r0": {
+          "atom": "r0",
+          "state": "HISTORICAL",
+          "evidence": "患者此前接受肝癌根治切除，切缘阴性（R0）",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 2,
+      "candidate_resources": 2
+    },
+    {
+      "case": "3_negative_0",
+      "profile_id": "3",
+      "text": "肝细胞癌",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 1,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "hcc": {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "肝细胞癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "resection": {
+          "atom": "resection",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "r0": {
+          "atom": "r0",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "3_negative_1",
+      "profile_id": "3",
+      "text": "病理未证实肝细胞癌，已行肝切除R0",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "hcc": {
+          "atom": "hcc",
+          "state": "NEGATED",
+          "evidence": "病理未证实肝细胞癌，已行肝切除R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "NEGATED",
+          "evidence": "病理未证实肝细胞癌，已行肝切除R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "resection": {
+          "atom": "resection",
+          "state": "HISTORICAL",
+          "evidence": "病理未证实肝细胞癌，已行肝切除R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "r0": {
+          "atom": "r0",
+          "state": "HISTORICAL",
+          "evidence": "病理未证实肝细胞癌，已行肝切除R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "3_negative_2",
+      "profile_id": "3",
+      "text": "病理肝细胞癌，肝切除术后R1",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 1,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "hcc": {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "病理肝细胞癌，肝切除术后R1",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "病理肝细胞癌，肝切除术后R1",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "resection": {
+          "atom": "resection",
+          "state": "HISTORICAL",
+          "evidence": "病理肝细胞癌，肝切除术后R1",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "r0": {
+          "atom": "r0",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "3_negative_3",
+      "profile_id": "3",
+      "text": "病理疑似HCC，已行根治性切除",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "hcc": {
+          "atom": "hcc",
+          "state": "UNCERTAIN",
+          "evidence": "病理疑似HCC，已行根治性切除",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "病理疑似HCC，已行根治性切除",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "resection": {
+          "atom": "resection",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "r0": {
+          "atom": "r0",
+          "state": "HISTORICAL",
+          "evidence": "病理疑似HCC，已行根治性切除",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "3_negative_4",
+      "profile_id": "3",
+      "text": "肝细胞癌，拟行根治性肝切除术",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "hcc": {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "肝细胞癌，拟行根治性肝切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "resection": {
+          "atom": "resection",
+          "state": "PLANNED",
+          "evidence": "肝细胞癌，拟行根治性肝切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "r0": {
+          "atom": "r0",
+          "state": "PLANNED",
+          "evidence": "肝细胞癌，拟行根治性肝切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "3_negative_attack_0",
+      "profile_id": "3",
+      "text": "确诊肝细胞癌，病理未明确。已行肝癌根治切除R0",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "hcc": {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "确诊肝细胞癌，病理未明确。已行肝癌根治切除R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "UNCERTAIN",
+          "evidence": "确诊肝细胞癌，病理未明确。已行肝癌根治切除R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "resection": {
+          "atom": "resection",
+          "state": "HISTORICAL",
+          "evidence": "确诊肝细胞癌，病理未明确。已行肝癌根治切除R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "r0": {
+          "atom": "r0",
+          "state": "HISTORICAL",
+          "evidence": "确诊肝细胞癌，病理未明确。已行肝癌根治切除R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "3_negative_attack_1",
+      "profile_id": "3",
+      "text": "病理证实肝细胞癌，拟行肝切除，R0切缘为目标",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "hcc": {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "病理证实肝细胞癌，拟行肝切除，R0切缘为目标",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "病理证实肝细胞癌，拟行肝切除，R0切缘为目标",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "resection": {
+          "atom": "resection",
+          "state": "PLANNED",
+          "evidence": "病理证实肝细胞癌，拟行肝切除，R0切缘为目标",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "r0": {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "病理证实肝细胞癌，拟行肝切除，R0切缘为目标",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "3_negative_attack_2",
+      "profile_id": "3",
+      "text": "病理证实肝细胞癌。已行肝切除，切缘阳性R1",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 1,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "hcc": {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "病理证实肝细胞癌。已行肝切除，切缘阳性R1",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "病理证实肝细胞癌。已行肝切除，切缘阳性R1",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "resection": {
+          "atom": "resection",
+          "state": "HISTORICAL",
+          "evidence": "病理证实肝细胞癌。已行肝切除，切缘阳性R1",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "r0": {
+          "atom": "r0",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "3_negative_attack_3",
+      "profile_id": "3",
+      "text": "病理证实胃癌。临床诊断肝细胞癌，肝切除术后R0",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "hcc": {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "病理证实胃癌。临床诊断肝细胞癌，肝切除术后R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "UNCERTAIN",
+          "evidence": "病理证实胃癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "resection": {
+          "atom": "resection",
+          "state": "HISTORICAL",
+          "evidence": "病理证实胃癌。临床诊断肝细胞癌，肝切除术后R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "r0": {
+          "atom": "r0",
+          "state": "HISTORICAL",
+          "evidence": "病理证实胃癌。临床诊断肝细胞癌，肝切除术后R0",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "85_positive_0",
+      "profile_id": "85",
+      "text": "拟择期行胸腔镜肺叶切除术",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "HISTORICAL",
+          "evidence": "拟择期行胸腔镜肺叶切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracoscopy": {
+          "atom": "thoracoscopy",
+          "state": "PRESENT",
+          "evidence": "拟择期行胸腔镜肺叶切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "lung_resection": {
+          "atom": "lung_resection",
+          "state": "PRESENT",
+          "evidence": "拟择期行胸腔镜肺叶切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "85_positive_1",
+      "profile_id": "85",
+      "text": "计划VATS肺段切除术",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "HISTORICAL",
+          "evidence": "计划VATS肺段切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracoscopy": {
+          "atom": "thoracoscopy",
+          "state": "PRESENT",
+          "evidence": "计划VATS肺段切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "lung_resection": {
+          "atom": "lung_resection",
+          "state": "PRESENT",
+          "evidence": "计划VATS肺段切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "85_positive_2",
+      "profile_id": "85",
+      "text": "拟择期手术。\n胸腔镜入路。\n肺叶切除术",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "HISTORICAL",
+          "evidence": "拟择期手术。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracoscopy": {
+          "atom": "thoracoscopy",
+          "state": "HISTORICAL",
+          "evidence": "胸腔镜入路。",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        },
+        "lung_resection": {
+          "atom": "lung_resection",
+          "state": "HISTORICAL",
+          "evidence": "肺叶切除术",
+          "report": 2,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "85_negative_0",
+      "profile_id": "85",
+      "text": "急诊胸腔镜肺叶切除术",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracoscopy": {
+          "atom": "thoracoscopy",
+          "state": "NEGATED",
+          "evidence": "急诊胸腔镜肺叶切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "lung_resection": {
+          "atom": "lung_resection",
+          "state": "NEGATED",
+          "evidence": "急诊胸腔镜肺叶切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "85_negative_1",
+      "profile_id": "85",
+      "text": "不行胸腔镜肺切除术",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracoscopy": {
+          "atom": "thoracoscopy",
+          "state": "NEGATED",
+          "evidence": "不行胸腔镜肺切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "lung_resection": {
+          "atom": "lung_resection",
+          "state": "NEGATED",
+          "evidence": "不行胸腔镜肺切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "85_negative_2",
+      "profile_id": "85",
+      "text": "择期开胸肺叶切除术",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 1,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "HISTORICAL",
+          "evidence": "择期开胸肺叶切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracoscopy": {
+          "atom": "thoracoscopy",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "lung_resection": {
+          "atom": "lung_resection",
+          "state": "HISTORICAL",
+          "evidence": "择期开胸肺叶切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "85_negative_3",
+      "profile_id": "85",
+      "text": "考虑胸腔镜肺切除术",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracoscopy": {
+          "atom": "thoracoscopy",
+          "state": "UNCERTAIN",
+          "evidence": "考虑胸腔镜肺切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "lung_resection": {
+          "atom": "lung_resection",
+          "state": "UNCERTAIN",
+          "evidence": "考虑胸腔镜肺切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "85_negative_4",
+      "profile_id": "85",
+      "text": "既往行开胸肺叶切除术",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracoscopy": {
+          "atom": "thoracoscopy",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "lung_resection": {
+          "atom": "lung_resection",
+          "state": "HISTORICAL",
+          "evidence": "既往行开胸肺叶切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "205_positive_0",
+      "profile_id": "205",
+      "text": "拟择期全麻下胸部手术",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "HISTORICAL",
+          "evidence": "拟择期全麻下胸部手术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracic_surgery": {
+          "atom": "thoracic_surgery",
+          "state": "PRESENT",
+          "evidence": "拟择期全麻下胸部手术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "general_anesthesia": {
+          "atom": "general_anesthesia",
+          "state": "PRESENT",
+          "evidence": "拟择期全麻下胸部手术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "205_positive_1",
+      "profile_id": "205",
+      "text": "计划全身麻醉下肺叶切除术",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "HISTORICAL",
+          "evidence": "计划全身麻醉下肺叶切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracic_surgery": {
+          "atom": "thoracic_surgery",
+          "state": "PRESENT",
+          "evidence": "计划全身麻醉下肺叶切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "general_anesthesia": {
+          "atom": "general_anesthesia",
+          "state": "PRESENT",
+          "evidence": "计划全身麻醉下肺叶切除术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "205_positive_2",
+      "profile_id": "205",
+      "text": "择期肺切除手术。\n麻醉方式为全麻",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "HISTORICAL",
+          "evidence": "择期肺切除手术。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracic_surgery": {
+          "atom": "thoracic_surgery",
+          "state": "HISTORICAL",
+          "evidence": "择期肺切除手术。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "general_anesthesia": {
+          "atom": "general_anesthesia",
+          "state": "HISTORICAL",
+          "evidence": "麻醉方式为全麻",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "205_negative_0",
+      "profile_id": "205",
+      "text": "急诊全麻胸部手术",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracic_surgery": {
+          "atom": "thoracic_surgery",
+          "state": "NEGATED",
+          "evidence": "急诊全麻胸部手术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "general_anesthesia": {
+          "atom": "general_anesthesia",
+          "state": "NEGATED",
+          "evidence": "急诊全麻胸部手术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "205_negative_1",
+      "profile_id": "205",
+      "text": "不行全麻胸部手术",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracic_surgery": {
+          "atom": "thoracic_surgery",
+          "state": "NEGATED",
+          "evidence": "不行全麻胸部手术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "general_anesthesia": {
+          "atom": "general_anesthesia",
+          "state": "NEGATED",
+          "evidence": "不行全麻胸部手术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "205_negative_2",
+      "profile_id": "205",
+      "text": "择期局麻胸部手术",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 1,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "HISTORICAL",
+          "evidence": "择期局麻胸部手术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracic_surgery": {
+          "atom": "thoracic_surgery",
+          "state": "HISTORICAL",
+          "evidence": "择期局麻胸部手术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "general_anesthesia": {
+          "atom": "general_anesthesia",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "205_negative_3",
+      "profile_id": "205",
+      "text": "考虑全麻胸部手术",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracic_surgery": {
+          "atom": "thoracic_surgery",
+          "state": "UNCERTAIN",
+          "evidence": "考虑全麻胸部手术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "general_anesthesia": {
+          "atom": "general_anesthesia",
+          "state": "UNCERTAIN",
+          "evidence": "考虑全麻胸部手术",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "205_negative_4",
+      "profile_id": "205",
+      "text": "全麻阑尾切除术后",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 1,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "elective": {
+          "atom": "elective",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "thoracic_surgery": {
+          "atom": "thoracic_surgery",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "general_anesthesia": {
+          "atom": "general_anesthesia",
+          "state": "HISTORICAL",
+          "evidence": "全麻阑尾切除术后",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "225_positive_0",
+      "profile_id": "225",
+      "text": "已接受放疗",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "radiotherapy": {
+          "atom": "radiotherapy",
+          "state": "PRESENT",
+          "evidence": "已接受放疗",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "225_positive_1",
+      "profile_id": "225",
+      "text": "曾接受radiotherapy",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "radiotherapy": {
+          "atom": "radiotherapy",
+          "state": "HISTORICAL",
+          "evidence": "曾接受radiotherapy",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "225_positive_2",
+      "profile_id": "225",
+      "text": "肿瘤治疗。\n放射治疗已完成",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "radiotherapy": {
+          "atom": "radiotherapy",
+          "state": "HISTORICAL",
+          "evidence": "放射治疗已完成",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "225_negative_0",
+      "profile_id": "225",
+      "text": "仅化疗",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "radiotherapy": {
+          "atom": "radiotherapy",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "225_negative_1",
+      "profile_id": "225",
+      "text": "未接受放疗",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "radiotherapy": {
+          "atom": "radiotherapy",
+          "state": "NEGATED",
+          "evidence": "未接受放疗",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "225_negative_2",
+      "profile_id": "225",
+      "text": "放射检查",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "radiotherapy": {
+          "atom": "radiotherapy",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "225_negative_3",
+      "profile_id": "225",
+      "text": "考虑放疗",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "radiotherapy": {
+          "atom": "radiotherapy",
+          "state": "UNCERTAIN",
+          "evidence": "考虑放疗",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "225_negative_4",
+      "profile_id": "225",
+      "text": "拟行放疗",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "radiotherapy": {
+          "atom": "radiotherapy",
+          "state": "PLANNED",
+          "evidence": "拟行放疗",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "255_positive_0",
+      "profile_id": "255",
+      "text": "确诊2型糖尿病",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "t2dm": {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "确诊2型糖尿病",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "255_positive_1",
+      "profile_id": "255",
+      "text": "T2DM",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "t2dm": {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "T2DM",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "255_positive_2",
+      "profile_id": "255",
+      "text": "出院诊断。\nII型糖尿病",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "t2dm": {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "II型糖尿病",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "255_negative_0",
+      "profile_id": "255",
+      "text": "1型糖尿病",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "t2dm": {
+          "atom": "t2dm",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "255_negative_1",
+      "profile_id": "255",
+      "text": "否认2型糖尿病",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "t2dm": {
+          "atom": "t2dm",
+          "state": "NEGATED",
+          "evidence": "否认2型糖尿病",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "255_negative_2",
+      "profile_id": "255",
+      "text": "糖耐量异常",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "t2dm": {
+          "atom": "t2dm",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "255_negative_3",
+      "profile_id": "255",
+      "text": "疑似T2DM",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "t2dm": {
+          "atom": "t2dm",
+          "state": "UNCERTAIN",
+          "evidence": "疑似T2DM",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "255_negative_4",
+      "profile_id": "255",
+      "text": "拟排查2型糖尿病",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "t2dm": {
+          "atom": "t2dm",
+          "state": "PLANNED",
+          "evidence": "拟排查2型糖尿病",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "255_negative_attack_6",
+      "profile_id": "255",
+      "text": "母亲2型糖尿病，患者仅高血糖",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "t2dm": {
+          "atom": "t2dm",
+          "state": "ABSENT",
+          "evidence": "母亲2型糖尿病，患者仅高血糖",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "295_positive_0",
+      "profile_id": "295",
+      "text": "目前每天吸烟20支",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "UNRESOLVED",
+      "baseline_error": "TypeError: can't compare offset-naive and offset-aware datetimes",
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNRESOLVED -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "smoking_eligible": {
+          "atom": "smoking_eligible",
+          "state": "PRESENT",
+          "evidence": "目前每天吸烟20支",
+          "report": 0,
+          "value": {
+            "cigarettes_per_day": 20.0
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "295_positive_1",
+      "profile_id": "295",
+      "text": "现吸烟1包/日",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "smoking_eligible": {
+          "atom": "smoking_eligible",
+          "state": "PRESENT",
+          "evidence": "现吸烟1包/日",
+          "report": 0,
+          "value": {
+            "cigarettes_per_day": 20.0
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "295_positive_2",
+      "profile_id": "295",
+      "text": "目前吸烟。\n每日20支",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "smoking_eligible": {
+          "atom": "smoking_eligible",
+          "state": "PRESENT",
+          "evidence": "每日20支",
+          "report": 1,
+          "value": {
+            "cigarettes_per_day": 20.0
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "295_negative_0",
+      "profile_id": "295",
+      "text": "从不吸烟",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "smoking_eligible": {
+          "atom": "smoking_eligible",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "295_negative_1",
+      "profile_id": "295",
+      "text": "否认吸烟，每日20支",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "smoking_eligible": {
+          "atom": "smoking_eligible",
+          "state": "NEGATED",
+          "evidence": "否认吸烟，每日20支",
+          "report": 0,
+          "value": {
+            "cigarettes_per_day": 20.0
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "295_negative_2",
+      "profile_id": "295",
+      "text": "目前每日5支",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "smoking_eligible": {
+          "atom": "smoking_eligible",
+          "state": "NEGATED",
+          "evidence": "目前每日5支",
+          "report": 0,
+          "value": {
+            "cigarettes_per_day": 5.0
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "295_negative_3",
+      "profile_id": "295",
+      "text": "可能每日20支吸烟",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "smoking_eligible": {
+          "atom": "smoking_eligible",
+          "state": "UNCERTAIN",
+          "evidence": "可能每日20支吸烟",
+          "report": 0,
+          "value": {
+            "cigarettes_per_day": 20.0
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "295_negative_4",
+      "profile_id": "295",
+      "text": "曾每天20支，戒烟5年",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "smoking_eligible": {
+          "atom": "smoking_eligible",
+          "state": "NEGATED",
+          "evidence": "曾每天20支，戒烟5年",
+          "report": 0,
+          "value": {
+            "cigarettes_per_day": 20.0
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "295_positive_attack_14",
+      "profile_id": "295",
+      "text": "目前每日5.01支吸烟",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "smoking_eligible": {
+          "atom": "smoking_eligible",
+          "state": "PRESENT",
+          "evidence": "目前每日5.01支吸烟",
+          "report": 0,
+          "value": {
+            "cigarettes_per_day": 5.01
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "295_positive_attack_15",
+      "profile_id": "295",
+      "text": "吸烟20支/日，持续30年",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "UNRESOLVED",
+      "baseline_error": "TypeError: can't compare offset-naive and offset-aware datetimes",
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNRESOLVED -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "smoking_eligible": {
+          "atom": "smoking_eligible",
+          "state": "PRESENT",
+          "evidence": "吸烟20支/日，持续30年",
+          "report": 0,
+          "value": {
+            "cigarettes_per_day": 20.0
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "295_negative_attack_16",
+      "profile_id": "295",
+      "text": "有吸烟史，曾每日20支",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "smoking_eligible": {
+          "atom": "smoking_eligible",
+          "state": "UNKNOWN",
+          "evidence": "有吸烟史，曾每日20支",
+          "report": 0,
+          "value": {
+            "cigarettes_per_day": 20.0
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "295_positive_attack_17",
+      "profile_id": "295",
+      "text": "不能保证试验期间停止吸烟",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "smoking_eligible": {
+          "atom": "smoking_eligible",
+          "state": "PRESENT",
+          "evidence": "不能保证试验期间停止吸烟",
+          "report": 0,
+          "value": {
+            "cannot_guarantee": true
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "465_positive_0",
+      "profile_id": "465",
+      "text": "肾活检病理提示IgA肾病",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "renal_biopsy": {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾活检病理提示IgA肾病",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "autoimmune_renal": {
+          "atom": "autoimmune_renal",
+          "state": "PRESENT",
+          "evidence": "肾活检病理提示IgA肾病",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 2,
+      "candidate_resources": 2
+    },
+    {
+      "case": "465_positive_1",
+      "profile_id": "465",
+      "text": "肾穿刺病理证实狼疮性肾炎",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "renal_biopsy": {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾穿刺病理证实狼疮性肾炎",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "autoimmune_renal": {
+          "atom": "autoimmune_renal",
+          "state": "PRESENT",
+          "evidence": "肾穿刺病理证实狼疮性肾炎",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 2,
+      "candidate_resources": 2
+    },
+    {
+      "case": "465_positive_2",
+      "profile_id": "465",
+      "text": "肾活检已完成。\n病理诊断原发性膜性肾病",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "renal_biopsy": {
+          "atom": "renal_biopsy",
+          "state": "HISTORICAL",
+          "evidence": "肾活检已完成。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "autoimmune_renal": {
+          "atom": "autoimmune_renal",
+          "state": "PRESENT",
+          "evidence": "病理诊断原发性膜性肾病",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 2,
+      "candidate_resources": 2
+    },
+    {
+      "case": "465_negative_0",
+      "profile_id": "465",
+      "text": "糖尿病肾病",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "renal_biopsy": {
+          "atom": "renal_biopsy",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "autoimmune_renal": {
+          "atom": "autoimmune_renal",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "465_negative_1",
+      "profile_id": "465",
+      "text": "肾活检未提示IgA肾病",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "renal_biopsy": {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾活检未提示IgA肾病",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "autoimmune_renal": {
+          "atom": "autoimmune_renal",
+          "state": "NEGATED",
+          "evidence": "肾活检未提示IgA肾病",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 2,
+      "candidate_resources": 0
+    },
+    {
+      "case": "465_negative_2",
+      "profile_id": "465",
+      "text": "确诊IgA肾病",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "renal_biopsy": {
+          "atom": "renal_biopsy",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "autoimmune_renal": {
+          "atom": "autoimmune_renal",
+          "state": "PRESENT",
+          "evidence": "确诊IgA肾病",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "465_negative_3",
+      "profile_id": "465",
+      "text": "肾活检疑似狼疮性肾炎",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "renal_biopsy": {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾活检疑似狼疮性肾炎",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "autoimmune_renal": {
+          "atom": "autoimmune_renal",
+          "state": "UNCERTAIN",
+          "evidence": "肾活检疑似狼疮性肾炎",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 2,
+      "candidate_resources": 0
+    },
+    {
+      "case": "465_negative_4",
+      "profile_id": "465",
+      "text": "拟肾活检，诊断IgA肾病",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "renal_biopsy": {
+          "atom": "renal_biopsy",
+          "state": "PLANNED",
+          "evidence": "拟肾活检，诊断IgA肾病",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "autoimmune_renal": {
+          "atom": "autoimmune_renal",
+          "state": "PRESENT",
+          "evidence": "拟肾活检，诊断IgA肾病",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 2,
+      "candidate_resources": 0
+    },
+    {
+      "case": "475_positive_0",
+      "profile_id": "475",
+      "text": "腰椎间盘突出导致腰痛3个月",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "pain": {
+          "atom": "pain",
+          "state": "PRESENT",
+          "evidence": "腰椎间盘突出导致腰痛3个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "spinal_cause": {
+          "atom": "spinal_cause",
+          "state": "PRESENT",
+          "evidence": "腰椎间盘突出导致腰痛3个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pain_relation": {
+          "atom": "pain_relation",
+          "state": "PRESENT",
+          "evidence": "腰椎间盘突出导致腰痛3个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "腰椎间盘突出导致腰痛3个月",
+          "report": 0,
+          "value": 3.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "475_positive_1",
+      "profile_id": "475",
+      "text": "脊柱病变所致疼痛半年",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "pain": {
+          "atom": "pain",
+          "state": "PRESENT",
+          "evidence": "脊柱病变所致疼痛半年",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "spinal_cause": {
+          "atom": "spinal_cause",
+          "state": "PRESENT",
+          "evidence": "脊柱病变所致疼痛半年",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pain_relation": {
+          "atom": "pain_relation",
+          "state": "PRESENT",
+          "evidence": "脊柱病变所致疼痛半年",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "脊柱病变所致疼痛半年",
+          "report": 0,
+          "value": 6.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "475_positive_2",
+      "profile_id": "475",
+      "text": "腰椎间盘突出导致疼痛。\n疼痛持续3个月",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "pain": {
+          "atom": "pain",
+          "state": "PRESENT",
+          "evidence": "腰椎间盘突出导致疼痛。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "spinal_cause": {
+          "atom": "spinal_cause",
+          "state": "PRESENT",
+          "evidence": "腰椎间盘突出导致疼痛。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pain_relation": {
+          "atom": "pain_relation",
+          "state": "PRESENT",
+          "evidence": "腰椎间盘突出导致疼痛。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "疼痛持续3个月",
+          "report": 1,
+          "value": 3.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "475_negative_0",
+      "profile_id": "475",
+      "text": "膝痛半年",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "pain": {
+          "atom": "pain",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "spinal_cause": {
+          "atom": "spinal_cause",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pain_relation": {
+          "atom": "pain_relation",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "475_negative_1",
+      "profile_id": "475",
+      "text": "无腰痛，腰椎间盘突出3个月",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "pain": {
+          "atom": "pain",
+          "state": "NEGATED",
+          "evidence": "无腰痛，腰椎间盘突出3个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "spinal_cause": {
+          "atom": "spinal_cause",
+          "state": "PRESENT",
+          "evidence": "无腰痛，腰椎间盘突出3个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pain_relation": {
+          "atom": "pain_relation",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "无腰痛，腰椎间盘突出3个月",
+          "report": 0,
+          "value": 3.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "475_negative_2",
+      "profile_id": "475",
+      "text": "腰痛3个月",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "pain": {
+          "atom": "pain",
+          "state": "PRESENT",
+          "evidence": "腰痛3个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "spinal_cause": {
+          "atom": "spinal_cause",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pain_relation": {
+          "atom": "pain_relation",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "腰痛3个月",
+          "report": 0,
+          "value": 3.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "475_negative_3",
+      "profile_id": "475",
+      "text": "疑似脊柱源性疼痛半年",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "pain": {
+          "atom": "pain",
+          "state": "UNCERTAIN",
+          "evidence": "疑似脊柱源性疼痛半年",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "spinal_cause": {
+          "atom": "spinal_cause",
+          "state": "UNCERTAIN",
+          "evidence": "疑似脊柱源性疼痛半年",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pain_relation": {
+          "atom": "pain_relation",
+          "state": "UNCERTAIN",
+          "evidence": "疑似脊柱源性疼痛半年",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "UNCERTAIN",
+          "evidence": "疑似脊柱源性疼痛半年",
+          "report": 0,
+          "value": 6.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "475_negative_4",
+      "profile_id": "475",
+      "text": "腰椎间盘突出导致疼痛2个月",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "pain": {
+          "atom": "pain",
+          "state": "PRESENT",
+          "evidence": "腰椎间盘突出导致疼痛2个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "spinal_cause": {
+          "atom": "spinal_cause",
+          "state": "PRESENT",
+          "evidence": "腰椎间盘突出导致疼痛2个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pain_relation": {
+          "atom": "pain_relation",
+          "state": "PRESENT",
+          "evidence": "腰椎间盘突出导致疼痛2个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "NEGATED",
+          "evidence": "腰椎间盘突出导致疼痛2个月",
+          "report": 0,
+          "value": 2.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "475_negative_attack_7",
+      "profile_id": "475",
+      "text": "腰痛半年。腰椎间盘突出。头痛导致失眠",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "pain": {
+          "atom": "pain",
+          "state": "PRESENT",
+          "evidence": "腰痛半年。腰椎间盘突出。头痛导致失眠",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "spinal_cause": {
+          "atom": "spinal_cause",
+          "state": "PRESENT",
+          "evidence": "腰痛半年。腰椎间盘突出。头痛导致失眠",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pain_relation": {
+          "atom": "pain_relation",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "腰痛半年",
+          "report": 0,
+          "value": 6.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "495_positive_0",
+      "profile_id": "495",
+      "text": "病理诊断弥漫大B细胞淋巴瘤",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "dlbcl": {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理诊断弥漫大B细胞淋巴瘤",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "病理诊断弥漫大B细胞淋巴瘤",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "495_positive_1",
+      "profile_id": "495",
+      "text": "活检证实DLBCL",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "dlbcl": {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "活检证实DLBCL",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "活检证实DLBCL",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "495_positive_2",
+      "profile_id": "495",
+      "text": "病理报告。\n结论DLBCL",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "dlbcl": {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "结论DLBCL",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "病理报告。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "495_negative_0",
+      "profile_id": "495",
+      "text": "NHL",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "dlbcl": {
+          "atom": "dlbcl",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "495_negative_1",
+      "profile_id": "495",
+      "text": "病理排除DLBCL",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "dlbcl": {
+          "atom": "dlbcl",
+          "state": "NEGATED",
+          "evidence": "病理排除DLBCL",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "病理排除DLBCL",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "495_negative_2",
+      "profile_id": "495",
+      "text": "B细胞淋巴瘤NOS",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "dlbcl": {
+          "atom": "dlbcl",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "495_negative_3",
+      "profile_id": "495",
+      "text": "病理疑似DLBCL",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "dlbcl": {
+          "atom": "dlbcl",
+          "state": "UNCERTAIN",
+          "evidence": "病理疑似DLBCL",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "病理疑似DLBCL",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "495_negative_4",
+      "profile_id": "495",
+      "text": "拟活检排查DLBCL",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "dlbcl": {
+          "atom": "dlbcl",
+          "state": "PLANNED",
+          "evidence": "拟活检排查DLBCL",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "495_negative_attack_4",
+      "profile_id": "495",
+      "text": "病理诊断肺腺癌。临床诊断DLBCL",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "dlbcl": {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理诊断肺腺癌。临床诊断DLBCL",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "pathology": {
+          "atom": "pathology",
+          "state": "UNCERTAIN",
+          "evidence": "病理诊断肺腺癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "525_positive_0",
+      "profile_id": "525",
+      "text": "术前诊断胸中段食管癌",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "esophageal": {
+          "atom": "esophageal",
+          "state": "PRESENT",
+          "evidence": "术前诊断胸中段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "middle_lower": {
+          "atom": "middle_lower",
+          "state": "PRESENT",
+          "evidence": "术前诊断胸中段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "preoperative": {
+          "atom": "preoperative",
+          "state": "PRESENT",
+          "evidence": "术前诊断胸中段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "525_positive_1",
+      "profile_id": "525",
+      "text": "拟手术，诊断胸下段食管癌",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "esophageal": {
+          "atom": "esophageal",
+          "state": "PRESENT",
+          "evidence": "拟手术，诊断胸下段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "middle_lower": {
+          "atom": "middle_lower",
+          "state": "PRESENT",
+          "evidence": "拟手术，诊断胸下段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "preoperative": {
+          "atom": "preoperative",
+          "state": "PRESENT",
+          "evidence": "拟手术，诊断胸下段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "525_positive_2",
+      "profile_id": "525",
+      "text": "术前诊断食管癌。\n肿瘤位于中下段",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "esophageal": {
+          "atom": "esophageal",
+          "state": "PRESENT",
+          "evidence": "术前诊断食管癌。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "middle_lower": {
+          "atom": "middle_lower",
+          "state": "PRESENT",
+          "evidence": "肿瘤位于中下段",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        },
+        "preoperative": {
+          "atom": "preoperative",
+          "state": "PRESENT",
+          "evidence": "术前诊断食管癌。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "525_negative_0",
+      "profile_id": "525",
+      "text": "胃癌",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "esophageal": {
+          "atom": "esophageal",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "middle_lower": {
+          "atom": "middle_lower",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "preoperative": {
+          "atom": "preoperative",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "525_negative_1",
+      "profile_id": "525",
+      "text": "术前排除中下段食管癌",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "esophageal": {
+          "atom": "esophageal",
+          "state": "NEGATED",
+          "evidence": "术前排除中下段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "middle_lower": {
+          "atom": "middle_lower",
+          "state": "NEGATED",
+          "evidence": "术前排除中下段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "preoperative": {
+          "atom": "preoperative",
+          "state": "PRESENT",
+          "evidence": "术前排除中下段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "525_negative_2",
+      "profile_id": "525",
+      "text": "术前诊断上段食管癌",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 1,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "esophageal": {
+          "atom": "esophageal",
+          "state": "PRESENT",
+          "evidence": "术前诊断上段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "middle_lower": {
+          "atom": "middle_lower",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "preoperative": {
+          "atom": "preoperative",
+          "state": "PRESENT",
+          "evidence": "术前诊断上段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "525_negative_3",
+      "profile_id": "525",
+      "text": "术前疑似中段食管癌",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "esophageal": {
+          "atom": "esophageal",
+          "state": "UNCERTAIN",
+          "evidence": "术前疑似中段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "middle_lower": {
+          "atom": "middle_lower",
+          "state": "UNCERTAIN",
+          "evidence": "术前疑似中段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "preoperative": {
+          "atom": "preoperative",
+          "state": "PRESENT",
+          "evidence": "术前疑似中段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "525_negative_4",
+      "profile_id": "525",
+      "text": "术后病理中段食管癌",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 1,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "esophageal": {
+          "atom": "esophageal",
+          "state": "HISTORICAL",
+          "evidence": "术后病理中段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "middle_lower": {
+          "atom": "middle_lower",
+          "state": "HISTORICAL",
+          "evidence": "术后病理中段食管癌",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "preoperative": {
+          "atom": "preoperative",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "585_positive_0",
+      "profile_id": "585",
+      "text": "反复腰痛3个月",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "low_back_pain": {
+          "atom": "low_back_pain",
+          "state": "PRESENT",
+          "evidence": "反复腰痛3个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "反复腰痛3个月",
+          "report": 0,
+          "value": 3.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "585_positive_1",
+      "profile_id": "585",
+      "text": "下背痛半年余",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "low_back_pain": {
+          "atom": "low_back_pain",
+          "state": "PRESENT",
+          "evidence": "下背痛半年余",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "下背痛半年余",
+          "report": 0,
+          "value": 6.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "585_positive_2",
+      "profile_id": "585",
+      "text": "腰痛。\n疼痛持续1年",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "low_back_pain": {
+          "atom": "low_back_pain",
+          "state": "PRESENT",
+          "evidence": "腰痛。",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "疼痛持续1年",
+          "report": 1,
+          "value": 12.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "585_negative_0",
+      "profile_id": "585",
+      "text": "头痛半年",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "low_back_pain": {
+          "atom": "low_back_pain",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "585_negative_1",
+      "profile_id": "585",
+      "text": "否认腰痛3个月",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "low_back_pain": {
+          "atom": "low_back_pain",
+          "state": "NEGATED",
+          "evidence": "否认腰痛3个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "否认腰痛3个月",
+          "report": 0,
+          "value": 3.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "585_negative_2",
+      "profile_id": "585",
+      "text": "腰痛2个月",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "low_back_pain": {
+          "atom": "low_back_pain",
+          "state": "PRESENT",
+          "evidence": "腰痛2个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "NEGATED",
+          "evidence": "腰痛2个月",
+          "report": 0,
+          "value": 2.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "585_negative_3",
+      "profile_id": "585",
+      "text": "可能腰痛半年",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "low_back_pain": {
+          "atom": "low_back_pain",
+          "state": "UNCERTAIN",
+          "evidence": "可能腰痛半年",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "UNCERTAIN",
+          "evidence": "可能腰痛半年",
+          "report": 0,
+          "value": 6.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "585_negative_4",
+      "profile_id": "585",
+      "text": "腰痛已消失，曾持续半年",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "low_back_pain": {
+          "atom": "low_back_pain",
+          "state": "ABSENT",
+          "evidence": "腰痛已消失，曾持续半年",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "腰痛已消失，曾持续半年",
+          "report": 0,
+          "value": 6.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "585_negative_attack_8",
+      "profile_id": "585",
+      "text": "腰痛2个月。高血压5年",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "low_back_pain": {
+          "atom": "low_back_pain",
+          "state": "PRESENT",
+          "evidence": "腰痛2个月。高血压5年",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "NEGATED",
+          "evidence": "腰痛2个月",
+          "report": 0,
+          "value": 2.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "585_positive_attack_9",
+      "profile_id": "585",
+      "text": "反复腰痛三个月",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "low_back_pain": {
+          "atom": "low_back_pain",
+          "state": "PRESENT",
+          "evidence": "反复腰痛三个月",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "反复腰痛三个月",
+          "report": 0,
+          "value": 3.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "585_positive_attack_10",
+      "profile_id": "585",
+      "text": "腰痛数年",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "low_back_pain": {
+          "atom": "low_back_pain",
+          "state": "PRESENT",
+          "evidence": "腰痛数年",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "腰痛数年",
+          "report": 0,
+          "value": 24.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "585_positive_attack_11",
+      "profile_id": "585",
+      "text": "腰痛自去年起持续至今",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "low_back_pain": {
+          "atom": "low_back_pain",
+          "state": "PRESENT",
+          "evidence": "腰痛自去年起持续至今",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "duration": {
+          "atom": "duration",
+          "state": "PRESENT",
+          "evidence": "腰痛自去年起持续至今",
+          "report": 0,
+          "value": 10.0,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "625_positive_0",
+      "profile_id": "625",
+      "text": "TBIL 1.5 ULN ALT 3 ULN AST 2.9 ULN",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "PRESENT",
+          "evidence": "{\"total_bilirubin\": [{\"value\": 1.5, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"TBIL 1.5 ULN \", \"report\": 0}], \"alt\": [{\"value\": 3.0, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"ALT 3 ULN \", \"report\": 0}], \"ast\": [{\"value\": 2.9, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"AST 2.9 ULN\", \"report\": 0}]}",
+          "report": null,
+          "value": {
+            "encounter": "2026-10-09",
+            "labs": {
+              "total_bilirubin": {
+                "value": 1.5,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "TBIL 1.5 ULN ",
+                "report": 0
+              },
+              "alt": {
+                "value": 3.0,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "ALT 3 ULN ",
+                "report": 0
+              },
+              "ast": {
+                "value": 2.9,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "AST 2.9 ULN",
+                "report": 0
+              }
+            }
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 3
+    },
+    {
+      "case": "625_positive_1",
+      "profile_id": "625",
+      "text": "总胆红素1倍正常上限，ALT 2倍正常上限，AST 3倍正常上限",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "PRESENT",
+          "evidence": "{\"total_bilirubin\": [{\"value\": 1.0, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"总胆红素1倍正常上限\", \"report\": 0}], \"alt\": [{\"value\": 2.0, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"ALT 2倍正常上限\", \"report\": 0}], \"ast\": [{\"value\": 3.0, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"AST 3倍正常上限\", \"report\": 0}]}",
+          "report": null,
+          "value": {
+            "encounter": "2026-10-09",
+            "labs": {
+              "total_bilirubin": {
+                "value": 1.0,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "总胆红素1倍正常上限",
+                "report": 0
+              },
+              "alt": {
+                "value": 2.0,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "ALT 2倍正常上限",
+                "report": 0
+              },
+              "ast": {
+                "value": 3.0,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "AST 3倍正常上限",
+                "report": 0
+              }
+            }
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 3
+    },
+    {
+      "case": "625_positive_2",
+      "profile_id": "625",
+      "text": "TBIL 30上限20。\nALT 120上限40。\nAST 116上限40",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "PRESENT",
+          "evidence": "{\"total_bilirubin\": [{\"value\": 30.0, \"high\": 20.0, \"unit\": null, \"evidence\": \"TBIL 30上限20\", \"report\": 0}], \"alt\": [{\"value\": 120.0, \"high\": 40.0, \"unit\": null, \"evidence\": \"ALT 120上限40\", \"report\": 1}], \"ast\": [{\"value\": 116.0, \"high\": 40.0, \"unit\": null, \"evidence\": \"AST 116上限40\", \"report\": 2}]}",
+          "report": null,
+          "value": {
+            "encounter": "2026-10-09",
+            "labs": {
+              "total_bilirubin": {
+                "value": 30.0,
+                "high": 20.0,
+                "unit": null,
+                "evidence": "TBIL 30上限20",
+                "report": 0
+              },
+              "alt": {
+                "value": 120.0,
+                "high": 40.0,
+                "unit": null,
+                "evidence": "ALT 120上限40",
+                "report": 1
+              },
+              "ast": {
+                "value": 116.0,
+                "high": 40.0,
+                "unit": null,
+                "evidence": "AST 116上限40",
+                "report": 2
+              }
+            }
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 3
+    },
+    {
+      "case": "625_negative_0",
+      "profile_id": "625",
+      "text": "无检验",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "625_negative_1",
+      "profile_id": "625",
+      "text": "未查TBIL ALT AST",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "625_negative_2",
+      "profile_id": "625",
+      "text": "TBIL 1.51 ULN ALT 3 ULN AST 2 ULN",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "NEGATED",
+          "evidence": "{\"total_bilirubin\": [{\"value\": 1.51, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"TBIL 1.51 ULN \", \"report\": 0}], \"alt\": [{\"value\": 3.0, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"ALT 3 ULN \", \"report\": 0}], \"ast\": [{\"value\": 2.0, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"AST 2 ULN\", \"report\": 0}]}",
+          "report": null,
+          "value": {
+            "encounter": "2026-10-09",
+            "labs": {
+              "total_bilirubin": {
+                "value": 1.51,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "TBIL 1.51 ULN ",
+                "report": 0
+              },
+              "alt": {
+                "value": 3.0,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "ALT 3 ULN ",
+                "report": 0
+              },
+              "ast": {
+                "value": 2.0,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "AST 2 ULN",
+                "report": 0
+              }
+            }
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "625_negative_3",
+      "profile_id": "625",
+      "text": "拟查肝功能",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "625_negative_4",
+      "profile_id": "625",
+      "text": "ALT 2 ULN AST 2 ULN",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "625_positive_attack_18",
+      "profile_id": "625",
+      "text": "TBIL 30 umol/L参考范围0-20 ALT 120 U/L参考范围0-40 AST 120 U/L参考范围0-40",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "PRESENT",
+          "evidence": "{\"total_bilirubin\": [{\"value\": 30.0, \"high\": 20.0, \"unit\": \"umol/L\", \"evidence\": \"TBIL 30 umol/L参考范围0-20 \", \"report\": 0}], \"alt\": [{\"value\": 120.0, \"high\": 40.0, \"unit\": \"U/L\", \"evidence\": \"ALT 120 U/L参考范围0-40 \", \"report\": 0}], \"ast\": [{\"value\": 120.0, \"high\": 40.0, \"unit\": \"U/L\", \"evidence\": \"AST 120 U/L参考范围0-40\", \"report\": 0}]}",
+          "report": null,
+          "value": {
+            "encounter": "2026-10-09",
+            "labs": {
+              "total_bilirubin": {
+                "value": 30.0,
+                "high": 20.0,
+                "unit": "umol/L",
+                "evidence": "TBIL 30 umol/L参考范围0-20 ",
+                "report": 0
+              },
+              "alt": {
+                "value": 120.0,
+                "high": 40.0,
+                "unit": "U/L",
+                "evidence": "ALT 120 U/L参考范围0-40 ",
+                "report": 0
+              },
+              "ast": {
+                "value": 120.0,
+                "high": 40.0,
+                "unit": "U/L",
+                "evidence": "AST 120 U/L参考范围0-40",
+                "report": 0
+              }
+            }
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 3
+    },
+    {
+      "case": "625_positive_boundary_ALT_3",
+      "profile_id": "625",
+      "text": "TBIL 1.5 ULN ALT 3 ULN AST 3 ULN",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "PRESENT",
+          "evidence": "{\"total_bilirubin\": [{\"value\": 1.5, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"TBIL 1.5 ULN \", \"report\": 0}], \"alt\": [{\"value\": 3.0, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"ALT 3 ULN \", \"report\": 0}], \"ast\": [{\"value\": 3.0, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"AST 3 ULN\", \"report\": 0}]}",
+          "report": null,
+          "value": {
+            "encounter": "2026-10-09",
+            "labs": {
+              "total_bilirubin": {
+                "value": 1.5,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "TBIL 1.5 ULN ",
+                "report": 0
+              },
+              "alt": {
+                "value": 3.0,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "ALT 3 ULN ",
+                "report": 0
+              },
+              "ast": {
+                "value": 3.0,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "AST 3 ULN",
+                "report": 0
+              }
+            }
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 3
+    },
+    {
+      "case": "625_negative_boundary_ALT_3.01",
+      "profile_id": "625",
+      "text": "TBIL 1.5 ULN ALT 3.01 ULN AST 3 ULN",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "NEGATED",
+          "evidence": "{\"total_bilirubin\": [{\"value\": 1.5, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"TBIL 1.5 ULN \", \"report\": 0}], \"alt\": [{\"value\": 3.01, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"ALT 3.01 ULN \", \"report\": 0}], \"ast\": [{\"value\": 3.0, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"AST 3 ULN\", \"report\": 0}]}",
+          "report": null,
+          "value": {
+            "encounter": "2026-10-09",
+            "labs": {
+              "total_bilirubin": {
+                "value": 1.5,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "TBIL 1.5 ULN ",
+                "report": 0
+              },
+              "alt": {
+                "value": 3.01,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "ALT 3.01 ULN ",
+                "report": 0
+              },
+              "ast": {
+                "value": 3.0,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "AST 3 ULN",
+                "report": 0
+              }
+            }
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "625_positive_boundary_AST_3",
+      "profile_id": "625",
+      "text": "TBIL 1.5 ULN ALT 3 ULN AST 3 ULN",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "PRESENT",
+          "evidence": "{\"total_bilirubin\": [{\"value\": 1.5, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"TBIL 1.5 ULN \", \"report\": 0}], \"alt\": [{\"value\": 3.0, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"ALT 3 ULN \", \"report\": 0}], \"ast\": [{\"value\": 3.0, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"AST 3 ULN\", \"report\": 0}]}",
+          "report": null,
+          "value": {
+            "encounter": "2026-10-09",
+            "labs": {
+              "total_bilirubin": {
+                "value": 1.5,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "TBIL 1.5 ULN ",
+                "report": 0
+              },
+              "alt": {
+                "value": 3.0,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "ALT 3 ULN ",
+                "report": 0
+              },
+              "ast": {
+                "value": 3.0,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "AST 3 ULN",
+                "report": 0
+              }
+            }
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 3
+    },
+    {
+      "case": "625_negative_boundary_AST_3.01",
+      "profile_id": "625",
+      "text": "TBIL 1.5 ULN ALT 3 ULN AST 3.01 ULN",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "labs": {
+          "atom": "labs",
+          "state": "NEGATED",
+          "evidence": "{\"total_bilirubin\": [{\"value\": 1.5, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"TBIL 1.5 ULN \", \"report\": 0}], \"alt\": [{\"value\": 3.0, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"ALT 3 ULN \", \"report\": 0}], \"ast\": [{\"value\": 3.01, \"high\": 1.0, \"unit\": \"{ratio-to-ULN}\", \"evidence\": \"AST 3.01 ULN\", \"report\": 0}]}",
+          "report": null,
+          "value": {
+            "encounter": "2026-10-09",
+            "labs": {
+              "total_bilirubin": {
+                "value": 1.5,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "TBIL 1.5 ULN ",
+                "report": 0
+              },
+              "alt": {
+                "value": 3.0,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "ALT 3 ULN ",
+                "report": 0
+              },
+              "ast": {
+                "value": 3.01,
+                "high": 1.0,
+                "unit": "{ratio-to-ULN}",
+                "evidence": "AST 3.01 ULN",
+                "report": 0
+              }
+            }
+          },
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "695_positive_0",
+      "profile_id": "695",
+      "text": "证实有远处转移",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "distant": {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "证实有远处转移",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "695_positive_1",
+      "profile_id": "695",
+      "text": "肿瘤分期M1",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "distant": {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "肿瘤分期M1",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "695_positive_2",
+      "profile_id": "695",
+      "text": "影像确诊。\n肺癌伴骨转移",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "distant": {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "肺癌伴骨转移",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "695_negative_0",
+      "profile_id": "695",
+      "text": "M0",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "distant": {
+          "atom": "distant",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "695_negative_1",
+      "profile_id": "695",
+      "text": "无远处转移",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "distant": {
+          "atom": "distant",
+          "state": "NEGATED",
+          "evidence": "无远处转移",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "695_negative_2",
+      "profile_id": "695",
+      "text": "区域淋巴结转移",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "distant": {
+          "atom": "distant",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "695_negative_3",
+      "profile_id": "695",
+      "text": "不排除远处转移",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "distant": {
+          "atom": "distant",
+          "state": "UNCERTAIN",
+          "evidence": "不排除远处转移",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "695_negative_4",
+      "profile_id": "695",
+      "text": "拟排查骨转移",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "distant": {
+          "atom": "distant",
+          "state": "PLANNED",
+          "evidence": "拟排查骨转移",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "715_positive_0",
+      "profile_id": "715",
+      "text": "增强CT示下腔静脉及门静脉均未见肿瘤侵犯",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "ivc_clear": {
+          "atom": "ivc_clear",
+          "state": "PRESENT",
+          "evidence": "增强CT示下腔静脉及门静脉均未见肿瘤侵犯",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "portal_clear": {
+          "atom": "portal_clear",
+          "state": "PRESENT",
+          "evidence": "增强CT示下腔静脉及门静脉均未见肿瘤侵犯",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "715_positive_1",
+      "profile_id": "715",
+      "text": "未侵及下腔静脉、门静脉",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "ivc_clear": {
+          "atom": "ivc_clear",
+          "state": "PRESENT",
+          "evidence": "未侵及下腔静脉、门静脉",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "portal_clear": {
+          "atom": "portal_clear",
+          "state": "PRESENT",
+          "evidence": "未侵及下腔静脉、门静脉",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "715_positive_2",
+      "profile_id": "715",
+      "text": "下腔静脉未受侵。\n门静脉未受侵",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "ivc_clear": {
+          "atom": "ivc_clear",
+          "state": "PRESENT",
+          "evidence": "下腔静脉未受侵",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "portal_clear": {
+          "atom": "portal_clear",
+          "state": "PRESENT",
+          "evidence": "门静脉未受侵",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "715_negative_0",
+      "profile_id": "715",
+      "text": "门静脉可见癌栓，下腔静脉未受侵",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "ivc_clear": {
+          "atom": "ivc_clear",
+          "state": "PRESENT",
+          "evidence": "下腔静脉未受侵",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "portal_clear": {
+          "atom": "portal_clear",
+          "state": "NEGATED",
+          "evidence": "门静脉可见癌栓",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "715_negative_1",
+      "profile_id": "715",
+      "text": "下腔静脉受侵，门静脉未侵",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "ivc_clear": {
+          "atom": "ivc_clear",
+          "state": "NEGATED",
+          "evidence": "下腔静脉受侵",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "portal_clear": {
+          "atom": "portal_clear",
+          "state": "PRESENT",
+          "evidence": "门静脉未侵",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "715_negative_2",
+      "profile_id": "715",
+      "text": "未见血管侵犯",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "ivc_clear": {
+          "atom": "ivc_clear",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        },
+        "portal_clear": {
+          "atom": "portal_clear",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "715_negative_3",
+      "profile_id": "715",
+      "text": "考虑门静脉侵犯，下腔静脉未侵",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "ivc_clear": {
+          "atom": "ivc_clear",
+          "state": "PRESENT",
+          "evidence": "下腔静脉未侵",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "portal_clear": {
+          "atom": "portal_clear",
+          "state": "UNCERTAIN",
+          "evidence": "考虑门静脉侵犯",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "715_negative_4",
+      "profile_id": "715",
+      "text": "既往未侵及门静脉及下腔静脉，目前门静脉受侵",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "ivc_clear": {
+          "atom": "ivc_clear",
+          "state": "PRESENT",
+          "evidence": "既往未侵及门静脉及下腔静脉",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "portal_clear": {
+          "atom": "portal_clear",
+          "state": "NEGATED",
+          "evidence": "目前门静脉受侵",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "715_negative_attack_12",
+      "profile_id": "715",
+      "text": "未侵及下腔静脉，门静脉受侵",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "ivc_clear": {
+          "atom": "ivc_clear",
+          "state": "PRESENT",
+          "evidence": "未侵及下腔静脉",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "portal_clear": {
+          "atom": "portal_clear",
+          "state": "NEGATED",
+          "evidence": "门静脉受侵",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "715_positive_attack_13",
+      "profile_id": "715",
+      "text": "下腔静脉及门静脉均未受侵",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "NO_MATCH -> MATCH",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "ivc_clear": {
+          "atom": "ivc_clear",
+          "state": "PRESENT",
+          "evidence": "下腔静脉及门静脉均未受侵",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        },
+        "portal_clear": {
+          "atom": "portal_clear",
+          "state": "PRESENT",
+          "evidence": "下腔静脉及门静脉均未受侵",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 1
+    },
+    {
+      "case": "765_positive_0",
+      "profile_id": "765",
+      "text": "有窒息缺氧史",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "history_hypoxia": {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "有窒息缺氧史",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "765_positive_1",
+      "profile_id": "765",
+      "text": "曾发生窒息",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "history_hypoxia": {
+          "atom": "history_hypoxia",
+          "state": "HISTORICAL",
+          "evidence": "曾发生窒息",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "765_positive_2",
+      "profile_id": "765",
+      "text": "出生记录。\n新生儿缺氧病史",
+      "synthetic_expected": true,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "MATCH",
+      "candidate_service_hit": true,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "ALL_REQUIRED_FACTS",
+      "facts": {
+        "history_hypoxia": {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "新生儿缺氧病史",
+          "report": 1,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 1
+    },
+    {
+      "case": "765_negative_0",
+      "profile_id": "765",
+      "text": "SpO2 80%",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "history_hypoxia": {
+          "atom": "history_hypoxia",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "765_negative_1",
+      "profile_id": "765",
+      "text": "无窒息缺氧史",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "history_hypoxia": {
+          "atom": "history_hypoxia",
+          "state": "NEGATED",
+          "evidence": "无窒息缺氧史",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "765_negative_2",
+      "profile_id": "765",
+      "text": "目前低氧血症",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "NO_MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "UNCHANGED",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "history_hypoxia": {
+          "atom": "history_hypoxia",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 0,
+      "candidate_resources": 0
+    },
+    {
+      "case": "765_negative_3",
+      "profile_id": "765",
+      "text": "可能有窒息史",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "history_hypoxia": {
+          "atom": "history_hypoxia",
+          "state": "UNCERTAIN",
+          "evidence": "可能有窒息史",
+          "report": 0,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    },
+    {
+      "case": "765_negative_4",
+      "profile_id": "765",
+      "text": "拟评估缺氧风险",
+      "synthetic_expected": false,
+      "baseline_kind": "OFFICIAL_EXCEL_NLP_AND_SERVICE",
+      "baseline_decision": "MATCH",
+      "baseline_error": null,
+      "candidate_decision": "NO_MATCH",
+      "candidate_service_hit": false,
+      "candidate_service_error": null,
+      "semantic_calls": 0,
+      "delta": "MATCH -> NO_MATCH",
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "facts": {
+        "history_hypoxia": {
+          "atom": "history_hypoxia",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "baseline_resources": 1,
+      "candidate_resources": 0
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+Actual local HTTP, authored SYNTHETIC positive and adversarial cases. {"B6H": {"n": 43, "tp": 7, "fp": 0, "fn": 0, "tn": 36, "precision": 1.0, "recall": 1.0, "f1": 1.0}, "B7H": {"n": 43, "tp": 7, "fp": 0, "fn": 0, "tn": 36, "precision": 1.0, "recall": 1.0, "f1": 1.0}}
+Detailed original evidence/response/stages: rescue_results.json. Renal disease semantic spelling may pass extraction but builder cannot map unknown code: report as mapping failure, never success.

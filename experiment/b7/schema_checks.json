@@ -1,0 +1,70 @@
+[
+  {
+    "expected": true,
+    "actual": true
+  },
+  {
+    "expected": true,
+    "actual": true
+  },
+  {
+    "expected": true,
+    "actual": true
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  },
+  {
+    "expected": false,
+    "actual": false
+  }
+]

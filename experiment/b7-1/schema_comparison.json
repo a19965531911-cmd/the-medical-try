@@ -1,0 +1,32 @@
+[
+  {
+    "schema": "A",
+    "json_valid": true,
+    "grounded": true,
+    "facts": 1,
+    "utf8_output_bytes": 256,
+    "actual_token_usage": null,
+    "decoder_seconds": 9.949994273483753e-05,
+    "measurement": "MOCK"
+  },
+  {
+    "schema": "B",
+    "json_valid": true,
+    "grounded": true,
+    "facts": 1,
+    "utf8_output_bytes": 397,
+    "actual_token_usage": null,
+    "decoder_seconds": 7.489998824894428e-05,
+    "measurement": "MOCK"
+  },
+  {
+    "schema": "C",
+    "json_valid": true,
+    "grounded": true,
+    "facts": 1,
+    "utf8_output_bytes": 243,
+    "actual_token_usage": null,
+    "decoder_seconds": 4.1899969801306725e-05,
+    "measurement": "MOCK"
+  }
+]

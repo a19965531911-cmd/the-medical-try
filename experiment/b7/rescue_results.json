@@ -1,0 +1,3694 @@
+[
+  {
+    "variant": "B6H",
+    "case_id": "2_rescue",
+    "profile_id": "2",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 1,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 1,
+    "service_match": true,
+    "failure_reason": "B4_GROUNDED_FACTS",
+    "calls": 1,
+    "elapsed": 0.028311599977314472,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "2_family",
+    "profile_id": "2",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.002132300054654479,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "2_negative",
+    "profile_id": "2",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.026638399809598923,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "2_uncertain",
+    "profile_id": "2",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.004559200024232268,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "2_planned",
+    "profile_id": "2",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.02662180014885962,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "2_hallucination",
+    "profile_id": "2",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.014952499885112047,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "3_rescue",
+    "profile_id": "3",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 4,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 2,
+    "service_match": true,
+    "failure_reason": "B4_GROUNDED_FACTS",
+    "calls": 1,
+    "elapsed": 0.016611100174486637,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "3_family",
+    "profile_id": "3",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0020314999856054783,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "3_negative",
+    "profile_id": "3",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.02774000004865229,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "3_uncertain",
+    "profile_id": "3",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.01514919986948371,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "3_planned",
+    "profile_id": "3",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.015829599928110838,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "3_hallucination",
+    "profile_id": "3",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.030474500032141805,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "255_rescue",
+    "profile_id": "255",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": true,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 1,
+    "service_match": true,
+    "failure_reason": "ALL_REQUIRED_FACTS",
+    "calls": 0,
+    "elapsed": 0.002606400055810809,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "255_family",
+    "profile_id": "255",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0011279999744147062,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "255_negative",
+    "profile_id": "255",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.001245700055733323,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "255_uncertain",
+    "profile_id": "255",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0011316000018268824,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "255_planned",
+    "profile_id": "255",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0011696000583469868,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "255_hallucination",
+    "profile_id": "255",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.005870700115337968,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "465_rescue",
+    "profile_id": "465",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 1,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 2,
+    "service_match": true,
+    "failure_reason": "B4_GROUNDED_FACTS",
+    "calls": 1,
+    "elapsed": 0.017332299845293164,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "465_family",
+    "profile_id": "465",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0017285000067204237,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "465_negative",
+    "profile_id": "465",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.005157799925655127,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "465_uncertain",
+    "profile_id": "465",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.023224700009450316,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "465_planned",
+    "profile_id": "465",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.016583799850195646,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "465_hallucination",
+    "profile_id": "465",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.004635100020095706,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "495_rescue",
+    "profile_id": "495",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 1,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 1,
+    "service_match": true,
+    "failure_reason": "B4_GROUNDED_FACTS",
+    "calls": 1,
+    "elapsed": 0.006804100004956126,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "495_family",
+    "profile_id": "495",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0015913001261651516,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "495_negative",
+    "profile_id": "495",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0017505001742392778,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "495_uncertain",
+    "profile_id": "495",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.001661800080910325,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "495_planned",
+    "profile_id": "495",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0018623999785631895,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "495_hallucination",
+    "profile_id": "495",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.005467599956318736,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "695_rescue",
+    "profile_id": "695",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 1,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 1,
+    "service_match": true,
+    "failure_reason": "B4_GROUNDED_FACTS",
+    "calls": 1,
+    "elapsed": 0.020328399958088994,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "695_family",
+    "profile_id": "695",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0017232999671250582,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "695_negative",
+    "profile_id": "695",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.004354200093075633,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "695_uncertain",
+    "profile_id": "695",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.02474280004389584,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "695_planned",
+    "profile_id": "695",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.008034799946472049,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "695_hallucination",
+    "profile_id": "695",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.005191100062802434,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "765_rescue",
+    "profile_id": "765",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": true,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 1,
+    "service_match": true,
+    "failure_reason": "ALL_REQUIRED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0017717999871820211,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "765_family",
+    "profile_id": "765",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0013208999298512936,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "765_negative",
+    "profile_id": "765",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.001379600027576089,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "765_uncertain",
+    "profile_id": "765",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.001275199931114912,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "765_planned",
+    "profile_id": "765",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0013046001549810171,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "765_hallucination",
+    "profile_id": "765",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.02471920009702444,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B6H",
+    "case_id": "3_incomplete",
+    "profile_id": "3",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.01699819997884333,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "2_rescue",
+    "profile_id": "2",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 1,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 1,
+    "service_match": true,
+    "failure_reason": "B4_GROUNDED_FACTS",
+    "calls": 1,
+    "elapsed": 0.031031799968332052,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "2_family",
+    "profile_id": "2",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0021343000698834658,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "2_negative",
+    "profile_id": "2",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.006396800046786666,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "2_uncertain",
+    "profile_id": "2",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.005258399993181229,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "2_planned",
+    "profile_id": "2",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.005005799932405353,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "2_hallucination",
+    "profile_id": "2",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.005356800043955445,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "3_rescue",
+    "profile_id": "3",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 4,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 2,
+    "service_match": true,
+    "failure_reason": "B4_GROUNDED_FACTS",
+    "calls": 1,
+    "elapsed": 0.006219299975782633,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "3_family",
+    "profile_id": "3",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0021075999829918146,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "3_negative",
+    "profile_id": "3",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.027802800061181188,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "3_uncertain",
+    "profile_id": "3",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.015589999966323376,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "3_planned",
+    "profile_id": "3",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.005894999951124191,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "3_hallucination",
+    "profile_id": "3",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.004827599972486496,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "255_rescue",
+    "profile_id": "255",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": true,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 1,
+    "service_match": true,
+    "failure_reason": "ALL_REQUIRED_FACTS",
+    "calls": 0,
+    "elapsed": 0.001326400088146329,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "255_family",
+    "profile_id": "255",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0011454999912530184,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "255_negative",
+    "profile_id": "255",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0012123000342398882,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "255_uncertain",
+    "profile_id": "255",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0011344000231474638,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "255_planned",
+    "profile_id": "255",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0012972999829798937,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "255_hallucination",
+    "profile_id": "255",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.006126099964603782,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "465_rescue",
+    "profile_id": "465",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 1,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 2,
+    "service_match": true,
+    "failure_reason": "B4_GROUNDED_FACTS",
+    "calls": 1,
+    "elapsed": 0.021970100002363324,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "465_family",
+    "profile_id": "465",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0017973999492824078,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "465_negative",
+    "profile_id": "465",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.02912100008688867,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "465_uncertain",
+    "profile_id": "465",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.01596989994868636,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "465_planned",
+    "profile_id": "465",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.005393600091338158,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "465_hallucination",
+    "profile_id": "465",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.025027999887242913,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "495_rescue",
+    "profile_id": "495",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 1,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 1,
+    "service_match": true,
+    "failure_reason": "B4_GROUNDED_FACTS",
+    "calls": 1,
+    "elapsed": 0.031027300050482154,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "495_family",
+    "profile_id": "495",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0015869999770075083,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "495_negative",
+    "profile_id": "495",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0015094000846147537,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "495_uncertain",
+    "profile_id": "495",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0014991001226007938,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "495_planned",
+    "profile_id": "495",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0022509999107569456,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "495_hallucination",
+    "profile_id": "495",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.021724799880757928,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "695_rescue",
+    "profile_id": "695",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 1,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 1,
+    "service_match": true,
+    "failure_reason": "B4_GROUNDED_FACTS",
+    "calls": 1,
+    "elapsed": 0.0060368000995367765,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "695_family",
+    "profile_id": "695",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.002385699888691306,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "695_negative",
+    "profile_id": "695",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.022205400047823787,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "695_uncertain",
+    "profile_id": "695",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.005259299883618951,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "695_planned",
+    "profile_id": "695",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.02639230014756322,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "695_hallucination",
+    "profile_id": "695",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.0041732999961823225,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "765_rescue",
+    "profile_id": "765",
+    "expected_label": true,
+    "expected": true,
+    "baseline_match": true,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": true,
+    "predicted": true,
+    "fhir_emitted": 1,
+    "service_match": true,
+    "failure_reason": "ALL_REQUIRED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0015447998885065317,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "765_family",
+    "profile_id": "765",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0013832999393343925,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "765_negative",
+    "profile_id": "765",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0013842000626027584,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "765_uncertain",
+    "profile_id": "765",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0013091000728309155,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "765_planned",
+    "profile_id": "765",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 0,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 0,
+    "elapsed": 0.0014059001114219427,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "765_hallucination",
+    "profile_id": "765",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 0,
+    "evidence_grounded": 0,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.018925300100818276,
+    "r4_errors": [],
+    "fsh_violations": []
+  },
+  {
+    "variant": "B7H",
+    "case_id": "3_incomplete",
+    "profile_id": "3",
+    "expected_label": false,
+    "expected": false,
+    "baseline_match": false,
+    "model_response": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    },
+    "http_success": 1,
+    "json_valid": 1,
+    "evidence_grounded": 1,
+    "accepted_facts": 0,
+    "final_match": false,
+    "predicted": false,
+    "fhir_emitted": 0,
+    "service_match": false,
+    "failure_reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+    "calls": 1,
+    "elapsed": 0.015201300149783492,
+    "r4_errors": [],
+    "fsh_violations": []
+  }
+]

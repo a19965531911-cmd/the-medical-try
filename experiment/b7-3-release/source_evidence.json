@@ -1,0 +1,680 @@
+{
+  "workbook": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx",
+  "workbook_sha256": "0d6bbaa0ca0b1f3c5535ef7f3f59ed7032362f2ef5773b08ac0e8aa1e0fc232c",
+  "sample": "C:\\Users\\32433\\xwechat_files\\wxid_4r7tcofyke6922_c386\\msg\\file\\2026-10\\tccfile-one",
+  "sample_sha256": "ac320362548e20089566de8b18e53a01a781f2576911163232b1f596b374e20d",
+  "identities": [
+    {
+      "profile_id": "2",
+      "official_cells": {
+        "id": {
+          "coordinate": "D2",
+          "value": "tbd"
+        },
+        "index": {
+          "coordinate": "B2",
+          "value": null
+        },
+        "profile_id": {
+          "coordinate": "H2",
+          "value": 2
+        },
+        "deepquery_id": {
+          "coordinate": "G2",
+          "value": "750b6b4b-20dd-11f0-b2c3-4c5f7088cb2da"
+        }
+      },
+      "current": {
+        "id": "cnwqk2",
+        "name": "cnwqk2",
+        "identifier": [
+          {
+            "value": "profile-2"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "750b6b4b-20dd-11f0-b2c3-4c5f7088cb2da"
+          }
+        ]
+      },
+      "title": "2",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": false,
+      "routing_status": "UNVERIFIED"
+    },
+    {
+      "profile_id": "3",
+      "official_cells": {
+        "id": {
+          "coordinate": "D3",
+          "value": "tbd"
+        },
+        "index": {
+          "coordinate": "B3",
+          "value": null
+        },
+        "profile_id": {
+          "coordinate": "H3",
+          "value": 3
+        },
+        "deepquery_id": {
+          "coordinate": "G3",
+          "value": "7c395c5e-234c-11f0-8589-4c5f7088cb2da"
+        }
+      },
+      "current": {
+        "id": "cnwqk3",
+        "name": "cnwqk3",
+        "identifier": [
+          {
+            "value": "profile-3"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "7c395c5e-234c-11f0-8589-4c5f7088cb2da"
+          }
+        ]
+      },
+      "title": "3",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": false,
+      "routing_status": "UNVERIFIED"
+    },
+    {
+      "profile_id": "85",
+      "official_cells": {
+        "id": {
+          "coordinate": "D4",
+          "value": "s18398"
+        },
+        "index": {
+          "coordinate": "B4",
+          "value": 48
+        },
+        "profile_id": {
+          "coordinate": "H4",
+          "value": 85
+        },
+        "deepquery_id": {
+          "coordinate": "G4",
+          "value": "9dcac9a8759911f08f074c5f7088cb2d"
+        }
+      },
+      "current": {
+        "id": "s18398",
+        "name": "cnwqk85",
+        "identifier": [
+          {
+            "value": "48"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "9dcac9a8759911f08f074c5f7088cb2d"
+          }
+        ]
+      },
+      "title": "85",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "205",
+      "official_cells": {
+        "id": {
+          "coordinate": "D5",
+          "value": "s10672"
+        },
+        "index": {
+          "coordinate": "B5",
+          "value": 47
+        },
+        "profile_id": {
+          "coordinate": "H5",
+          "value": 205
+        },
+        "deepquery_id": {
+          "coordinate": "G5",
+          "value": "63ea991977ee11f09b454c5f7088cb2d"
+        }
+      },
+      "current": {
+        "id": "s10672",
+        "name": "cnwqk205",
+        "identifier": [
+          {
+            "value": "47"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "63ea991977ee11f09b454c5f7088cb2d"
+          }
+        ]
+      },
+      "title": "205",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "225",
+      "official_cells": {
+        "id": {
+          "coordinate": "D6",
+          "value": "s21004"
+        },
+        "index": {
+          "coordinate": "B6",
+          "value": 45
+        },
+        "profile_id": {
+          "coordinate": "H6",
+          "value": 225
+        },
+        "deepquery_id": {
+          "coordinate": "G6",
+          "value": "5e5ded5a77f511f0a9804c5f7088cb2d"
+        }
+      },
+      "current": {
+        "id": "s21004",
+        "name": "cnwqk225",
+        "identifier": [
+          {
+            "value": "45"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "5e5ded5a77f511f0a9804c5f7088cb2d"
+          }
+        ]
+      },
+      "title": "225",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "255",
+      "official_cells": {
+        "id": {
+          "coordinate": "D7",
+          "value": "s19884"
+        },
+        "index": {
+          "coordinate": "B7",
+          "value": 6
+        },
+        "profile_id": {
+          "coordinate": "H7",
+          "value": 255
+        },
+        "deepquery_id": {
+          "coordinate": "G7",
+          "value": "e61ff6c1784e11f0b0c74c5f7088cb2d"
+        }
+      },
+      "current": {
+        "id": "s19884",
+        "name": "cnwqk255",
+        "identifier": [
+          {
+            "value": "6"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "e61ff6c1784e11f0b0c74c5f7088cb2d"
+          }
+        ]
+      },
+      "title": "255",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "295",
+      "official_cells": {
+        "id": {
+          "coordinate": "D8",
+          "value": "s2760"
+        },
+        "index": {
+          "coordinate": "B8",
+          "value": 38
+        },
+        "profile_id": {
+          "coordinate": "H8",
+          "value": 295
+        },
+        "deepquery_id": {
+          "coordinate": "G8",
+          "value": "5659c0d878b311f0a13e4c5f7088cb2a"
+        }
+      },
+      "current": {
+        "id": "s2760",
+        "name": "cnwqk295",
+        "identifier": [
+          {
+            "value": "38"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "5659c0d878b311f0a13e4c5f7088cb2a"
+          }
+        ]
+      },
+      "title": "295",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "465",
+      "official_cells": {
+        "id": {
+          "coordinate": "D9",
+          "value": "s22395"
+        },
+        "index": {
+          "coordinate": "B9",
+          "value": 9
+        },
+        "profile_id": {
+          "coordinate": "H9",
+          "value": 465
+        },
+        "deepquery_id": {
+          "coordinate": "G9",
+          "value": "31b9f23a810611f085bb4c5f7088cb2a"
+        }
+      },
+      "current": {
+        "id": "s22395",
+        "name": "cnwqk465",
+        "identifier": [
+          {
+            "value": "9"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "31b9f23a810611f085bb4c5f7088cb2a"
+          }
+        ]
+      },
+      "title": "465",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "475",
+      "official_cells": {
+        "id": {
+          "coordinate": "D10",
+          "value": "s8213"
+        },
+        "index": {
+          "coordinate": "B10",
+          "value": 7
+        },
+        "profile_id": {
+          "coordinate": "H10",
+          "value": 475
+        },
+        "deepquery_id": {
+          "coordinate": "G10",
+          "value": "cbe62538816111f080a94c5f7088cb2a"
+        }
+      },
+      "current": {
+        "id": "s8213",
+        "name": "cnwqk475",
+        "identifier": [
+          {
+            "value": "7"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "cbe62538816111f080a94c5f7088cb2a"
+          }
+        ]
+      },
+      "title": "475",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "495",
+      "official_cells": {
+        "id": {
+          "coordinate": "D11",
+          "value": "s5149"
+        },
+        "index": {
+          "coordinate": "B11",
+          "value": 11
+        },
+        "profile_id": {
+          "coordinate": "H11",
+          "value": 495
+        },
+        "deepquery_id": {
+          "coordinate": "G11",
+          "value": "bbe075e7817d11f091ce4c5f7088cb2a"
+        }
+      },
+      "current": {
+        "id": "s5149",
+        "name": "cnwqk495",
+        "identifier": [
+          {
+            "value": "11"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "bbe075e7817d11f091ce4c5f7088cb2a"
+          }
+        ]
+      },
+      "title": "495",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "525",
+      "official_cells": {
+        "id": {
+          "coordinate": "D12",
+          "value": "s24663"
+        },
+        "index": {
+          "coordinate": "B12",
+          "value": 10
+        },
+        "profile_id": {
+          "coordinate": "H12",
+          "value": 525
+        },
+        "deepquery_id": {
+          "coordinate": "G12",
+          "value": "3f907149819111f0877e4c5f7088cb2a"
+        }
+      },
+      "current": {
+        "id": "s24663",
+        "name": "cnwqk525",
+        "identifier": [
+          {
+            "value": "10"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "3f907149819111f0877e4c5f7088cb2a"
+          }
+        ]
+      },
+      "title": "525",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "585",
+      "official_cells": {
+        "id": {
+          "coordinate": "D13",
+          "value": "s19402"
+        },
+        "index": {
+          "coordinate": "B13",
+          "value": 44
+        },
+        "profile_id": {
+          "coordinate": "H13",
+          "value": 585
+        },
+        "deepquery_id": {
+          "coordinate": "G13",
+          "value": "d96fc789835911f08c554c5f7088cb2a"
+        }
+      },
+      "current": {
+        "id": "s19402",
+        "name": "cnwqk585",
+        "identifier": [
+          {
+            "value": "44"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "d96fc789835911f08c554c5f7088cb2a"
+          }
+        ]
+      },
+      "title": "585",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "625",
+      "official_cells": {
+        "id": {
+          "coordinate": "D14",
+          "value": "s1876"
+        },
+        "index": {
+          "coordinate": "B14",
+          "value": 18
+        },
+        "profile_id": {
+          "coordinate": "H14",
+          "value": 625
+        },
+        "deepquery_id": {
+          "coordinate": "G14",
+          "value": "6b8a1698841111f098994c5f7088cb2a"
+        }
+      },
+      "current": {
+        "id": "s1876",
+        "name": "cnwqk625",
+        "identifier": [
+          {
+            "value": "18"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "6b8a1698841111f098994c5f7088cb2a"
+          }
+        ]
+      },
+      "title": "625",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "695",
+      "official_cells": {
+        "id": {
+          "coordinate": "D15",
+          "value": "s347"
+        },
+        "index": {
+          "coordinate": "B15",
+          "value": 28
+        },
+        "profile_id": {
+          "coordinate": "H15",
+          "value": 695
+        },
+        "deepquery_id": {
+          "coordinate": "G15",
+          "value": "7f26299084a911f092fa4c5f7088cb2a"
+        }
+      },
+      "current": {
+        "id": "s347",
+        "name": "cnwqk695",
+        "identifier": [
+          {
+            "value": "28"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "7f26299084a911f092fa4c5f7088cb2a"
+          }
+        ]
+      },
+      "title": "695",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "715",
+      "official_cells": {
+        "id": {
+          "coordinate": "D16",
+          "value": "s611"
+        },
+        "index": {
+          "coordinate": "B16",
+          "value": 27
+        },
+        "profile_id": {
+          "coordinate": "H16",
+          "value": 715
+        },
+        "deepquery_id": {
+          "coordinate": "G16",
+          "value": "d7820b9484da11f0824b4c5f7088cb2a"
+        }
+      },
+      "current": {
+        "id": "s611",
+        "name": "cnwqk715",
+        "identifier": [
+          {
+            "value": "27"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "d7820b9484da11f0824b4c5f7088cb2a"
+          }
+        ]
+      },
+      "title": "715",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    },
+    {
+      "profile_id": "765",
+      "official_cells": {
+        "id": {
+          "coordinate": "D17",
+          "value": "s16021"
+        },
+        "index": {
+          "coordinate": "B17",
+          "value": 43
+        },
+        "profile_id": {
+          "coordinate": "H17",
+          "value": 765
+        },
+        "deepquery_id": {
+          "coordinate": "G17",
+          "value": "b126a8a6858e11f0a1514c5f7088cb2a"
+        }
+      },
+      "current": {
+        "id": "s16021",
+        "name": "cnwqk765",
+        "identifier": [
+          {
+            "value": "43"
+          },
+          {
+            "system": "urn:chip:deepquery-id",
+            "value": "b126a8a6858e11f0a1514c5f7088cb2a"
+          }
+        ]
+      },
+      "title": "765",
+      "name_requirement": "Workbook has no verified Library.name publication requirement",
+      "consistent_known_id": true,
+      "routing_status": "MATCHES_SUPPLIED_WORKBOOK"
+    }
+  ],
+  "sample_header": {
+    "resource": {
+      "resourceType": "MessageHeader",
+      "id": "212d4d76-ee2d-4e09-9688-93b542fa1502",
+      "eventCoding": {
+        "system": "chip2025.cn.medcodegpt.www",
+        "code": "library-publish"
+      },
+      "source": {
+        "name": "ChooView2026",
+        "software": "CNWQK",
+        "version": "1.0",
+        "challenge_id": "test_a"
+      }
+    }
+  },
+  "sample_protocol_lines": [
+    {
+      "entry": 1,
+      "source": "# 2026-07-31 竞赛级 FHIR 资源生成器\n# 内部自动采用 LLM 优先 + 规则兜底策略，最大化 POP‑Q 分度提取性能\n# 依赖：requests, re, uuid, json, datetime, typing\n\nimport re\nimport uuid\nimport json\nimport requests\nfrom datetime import datetime\nfrom typing import Dict, Any, List, Optional\n\nclass FHIRResourceBundleGenerator:\n    \"\"\"POP‑Q 分度抽取与 FHIR Observation 生成器\"\"\"\n\n    def __init__(self, fhir_api_base: str):\n        self.fhir_api_base = fhir_api_base  # 预留，不上传\n\n        # ---------- 规则引擎 ----------\n        self.grade_pattern = re.compile(r'(POP-Q分度)?\\s*(III|IV|II|I|三|四|二|一)\\s*度')\n        self.negation_pattern = re.compile(r'无|未|不|否|没有|未见|排除|否认')\n\n        # ---------- 本地 LLM 配置 ----------\n        self.llm_url = \"http://127.0.0.1:1213/v1/chat/completions\"\n        self.llm_timeout = 30\n        self.llm_max_tokens = 256\n        self.llm_temperature = 0.0\n\n    # --------------------------------------------------------------\n    # NLP 规则提取\n    # --------------------------------------------------------------\n    def _extract_by_nlp(self, text: str) -> List[str]:\n        grades = []\n        for match in self.grade_pattern.finditer(text):\n            grade_text = match.group(2)\n            start, end = match.start(), match.end()\n            window = text[max(0, start - 10):min(len(text), end + 10)]\n            if self.negation_pattern.search(window):\n                continue\n            mapping = {\n                '一': 'I', '二': 'II', '三': 'III', '四': 'IV',\n                'I': 'I', 'II': 'II', 'III': 'III', 'IV': 'IV'\n            }\n            code = mapping.get(grade_text)\n            if code in ('III', 'IV'):\n                grades.append(code)\n        return grades\n\n    # --------------------------------------------------------------\n    # LLM 增强提取\n    # --------------------------------------------------------------\n    def _call_llm_extract(self, text: str, retry: int = 1) -> Optional[List[str]]:\n        system_prompt = (\n            \"你是一个专业的医学信息抽取助手。从临床文本中找出盆腔器官脱垂(POP-Q)分度，\"\n            \"可能取值为：0, I, II, III, IV。请注意文本中可能出现的多种表述：\\n\"\n            \"- “POP-Q分度III度”\\n\"\n            \"- “子宫脱垂IV度”\\n\"\n            \"- “三度脱垂”\\n\"\n            \"- “脱垂最远端超过处女膜缘＞1cm但＜阴道总长度-2cm”（对应III度）\\n\"\n            \"只输出一个JSON对象，格式严格为 {\\\"grades\\\": [\\\"III\\\", \\\"IV\\\"]}。\"\n            \"若未提及任何分度，输出 {\\\"grades\\\": []}。\\n\"\n            \"示例1: 文本：\\\"妇科检查：POP-Q分度III度。\\\" → {\\\"grades\\\": [\\\"III\\\"]}\\n\"\n            \"示例2: 文本：\\\"患者无脱垂。\\\" → {\\\"grades\\\": []}\\n\"\n            \"示例3: 文本：\\\"诊断：子宫脱垂IV度。\\\" → {\\\"grades\\\": [\\\"IV\\\"]}\"\n        )\n\n        user_prompt = f\"临床文本：\\n{text}\"\n        payload = {\n            \"model\": \"local-model\",\n            \"messages\": [\n                {\"role\": \"system\", \"content\": system_prompt},\n                {\"role\": \"user\", \"content\": user_prompt}\n            ],\n            \"temperature\": self.llm_temperature,\n            \"max_tokens\": self.llm_max_tokens,\n            \"stop\": None\n        }\n\n        for _ in range(retry + 1):\n            try:\n                resp = requests.post(self.llm_url, json=payload, timeout=self.llm_timeout)\n                resp.raise_for_status()\n                content = resp.json()[\"choices\"][0][\"message\"][\"content\"]\n\n                start = content.find('{')\n                end = content.rfind('}')\n                if start == -1 or end == -1:\n                    continue\n                json_str = content[start:end + 1]\n                parsed = json.loads(json_str)\n                grades = parsed.get(\"grades\", [])\n                if isinstance(grades, list):\n                    valid = [str(g) for g in grades if str(g) in (\"0\", \"I\", \"II\", \"III\", \"IV\")]\n                    return valid if valid else None\n            except Exception:\n                continue\n        return None\n\n    # --------------------------------------------------------------\n    # 主入口：生成 FHIR Bundle（自动使用 LLM+规则混合策略）\n    # --------------------------------------------------------------\n    def parse_clinical_text_to_fhir_bundle(\n        self,\n        patient_id: str,\n        case_reports: List[Dict[str, str]]\n    ) -> Dict[str, Any]:\n        \"\"\"\n        从临床文本中提取 POP‑Q 分度，生成符合 Cnwqk485POPQAssessment Profile 的 Bundle。\n        内部自动采用 LLM 优先、规则兜底的最优策略。\n        若报告缺少 topic 字段或 topic 不匹配，默认按“医学评估”处理。\n        \"\"\"\n        bundle = {\n            \"resourceType\": \"Bundle\",\n            \"type\": \"transaction\",\n            \"entry\": []\n        }\n        observations = []\n        # 放宽 topic 限制，但保留默认相关集合作为参考（仍可处理非列表中的 topic）\n        default_topic = \"医学评估\"\n\n        for report in case_reports:\n            text = report.get('text', '')\n            timestamp = report.get('timestamp', '')\n            topic = report.get('topic', '')  # 若缺失则空字符串\n\n            # 如果 topic 明确不属于相关集合，且不是空，可跳过（谨慎）\n            # 但为了兼容 Celery 中可能 topic 字段名不同的情况，我们选择不跳过任何报告，\n            # 仅当 text 为空时才跳过。\n            if not text:\n                continue\n\n            # 如果 topic 缺失或不符合预期，默认给予 default_topic，保证能通过后续处理\n            # （实际提取只依赖 text，topic 不参与提取逻辑）\n            \n            # 提取分度\n            extracted_grades: List[str] = []\n            llm_result = self._call_llm_extract(text, retry=1)\n            if llm_result is not None:\n                extracted_grades = [g for g in llm_result if g in ('III', 'IV')]\n            if not extracted_grades:\n                extracted_grades = self._extract_by_nlp(text)\n\n            # 生成 Observation\n            for grade in extracted_grades:\n                obs_id = str(uuid.uuid1())\n                observation = {\n                    \"resourceType\": \"Observation\",\n                    \"id\": obs_id,\n                    \"meta\": {\n                        \"profile\": [\n                            \"http://localhost:3456/api/terminology/Profile/cnwqk485-popq-assessment\"\n                        ]\n                    },\n                    \"text\": {\n                        \"status\": \"generated\",\n                        \"div\": f\"<div xmlns='http://www.w3.org/1999/xhtml'>从文本摘录: {text}</div>\"\n                    },\n                    \"status\": \"final\",\n                    \"code\": {\n                        \"coding\": [\n                            {\n                                \"system\": \"http://localhost:3456/api/terminology/CodeSystem/cnwqk485-observation-cs\",\n                                \"code\": \"popq-grade\",\n                                \"display\": \"POP-Q分度\"\n                            }\n                        ],\n                        \"text\": \"POP-Q分度\"\n                    },\n                    \"valueCodeableConcept\": {\n                        \"coding\": [\n                            {\n                                \"system\": \"http://localhost:3456/api/terminology/CodeSystem/cnwqk485-popq-grade-cs\",\n                                \"code\": grade,\n                                \"display\": f\"{grade}度\"\n                            }\n                        ],\n                        \"text\": f\"{grade}度\"\n                    },\n                    \"subject\": {\n                        \"reference\": f\"Patient/{patient_id}\"\n                    }\n                }\n                if timestamp:\n                    observation[\"effectiveDateTime\"] = timestamp\n                observations.append(observation)\n\n        for obs in observations:\n            bundle[\"entry\"].append({\n                \"resource\": obs,\n                \"request\": {\n                    \"method\": \"POST\",\n                    \"url\": \"Observation\"\n                }\n            })\n        bundle[\"total\"] = len(bundle[\"entry\"])\n        return bundle",
+      "lines": [
+        {
+          "line": 23,
+          "text": "        self.llm_url = \"http://127.0.0.1:1213/v1/chat/completions\""
+        },
+        {
+          "line": 24,
+          "text": "        self.llm_timeout = 30"
+        },
+        {
+          "line": 25,
+          "text": "        self.llm_max_tokens = 256"
+        },
+        {
+          "line": 26,
+          "text": "        self.llm_temperature = 0.0"
+        },
+        {
+          "line": 68,
+          "text": "            \"model\": \"local-model\","
+        },
+        {
+          "line": 73,
+          "text": "            \"temperature\": self.llm_temperature,"
+        },
+        {
+          "line": 74,
+          "text": "            \"max_tokens\": self.llm_max_tokens,"
+        },
+        {
+          "line": 78,
+          "text": "        for _ in range(retry + 1):"
+        },
+        {
+          "line": 80,
+          "text": "                resp = requests.post(self.llm_url, json=payload, timeout=self.llm_timeout)"
+        },
+        {
+          "line": 82,
+          "text": "                content = resp.json()[\"choices\"][0][\"message\"][\"content\"]"
+        }
+      ]
+    }
+  ]
+}

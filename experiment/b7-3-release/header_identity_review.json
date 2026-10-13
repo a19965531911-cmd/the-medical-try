@@ -1,0 +1,62 @@
+[
+  {
+    "field": "challenge_id",
+    "current": "train_set",
+    "official_B_requirement": "UNVERIFIED",
+    "source": "No local CP2 B release specification found",
+    "candidate_json_pointer": "/entry/0/resource/source/challenge_id",
+    "sample_json_pointer": "/entry/0/resource/source/challenge_id",
+    "sample_value": "test_a",
+    "needs_fix": "Cannot safely prescribe without official B requirement"
+  },
+  {
+    "field": "eventCoding.system",
+    "current": "chip2025.cn.medcodegpt.www",
+    "official_B_requirement": "UNVERIFIED",
+    "source": "No local CP2 B release specification found",
+    "candidate_json_pointer": "/entry/0/resource/eventCoding/system",
+    "sample_json_pointer": "/entry/0/resource/eventCoding/system",
+    "sample_value": "chip2025.cn.medcodegpt.www",
+    "needs_fix": "Cannot safely prescribe without official B requirement"
+  },
+  {
+    "field": "eventCoding.code",
+    "current": "library-publish",
+    "official_B_requirement": "UNVERIFIED",
+    "source": "No local CP2 B release specification found",
+    "candidate_json_pointer": "/entry/0/resource/eventCoding/code",
+    "sample_json_pointer": "/entry/0/resource/eventCoding/code",
+    "sample_value": "library-publish",
+    "needs_fix": "Cannot safely prescribe without official B requirement"
+  },
+  {
+    "field": "source.name",
+    "current": "ChooView2026",
+    "official_B_requirement": "UNVERIFIED",
+    "source": "No local CP2 B release specification found",
+    "candidate_json_pointer": "/entry/0/resource/source/name",
+    "sample_json_pointer": "/entry/0/resource/source/name",
+    "sample_value": "ChooView2026",
+    "needs_fix": "Cannot safely prescribe without official B requirement"
+  },
+  {
+    "field": "source.software",
+    "current": "CNWQK",
+    "official_B_requirement": "UNVERIFIED",
+    "source": "No local CP2 B release specification found",
+    "candidate_json_pointer": "/entry/0/resource/source/software",
+    "sample_json_pointer": "/entry/0/resource/source/software",
+    "sample_value": "CNWQK",
+    "needs_fix": "Cannot safely prescribe without official B requirement"
+  },
+  {
+    "field": "source.version",
+    "current": "1.0",
+    "official_B_requirement": "UNVERIFIED",
+    "source": "No local CP2 B release specification found",
+    "candidate_json_pointer": "/entry/0/resource/source/version",
+    "sample_json_pointer": "/entry/0/resource/source/version",
+    "sample_value": "1.0",
+    "needs_fix": "Cannot safely prescribe without official B requirement"
+  }
+]

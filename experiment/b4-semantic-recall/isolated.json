@@ -1,0 +1,770 @@
+[
+  {
+    "variant": "B4R",
+    "profile_id": "2",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "3",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "85",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "205",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "225",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "255",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "295",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "465",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "475",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "495",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "525",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "585",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "625",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "695",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "715",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "765",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "2",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "3",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "85",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "205",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "225",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "255",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "295",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "465",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "475",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "495",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "525",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "585",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "625",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "695",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "715",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "765",
+    "status": "PASS",
+    "service_hit": false,
+    "positive_output_expected": false,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "2",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "3",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "85",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "205",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "225",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "255",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "295",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "465",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "475",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "495",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "525",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "585",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "625",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "695",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "715",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "765",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "2",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "3",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "85",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "205",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "225",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "255",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "295",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "465",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "475",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "495",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "525",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "585",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "625",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "695",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "715",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "765",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "2",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "3",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "85",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "205",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "225",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "255",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "295",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "465",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "475",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "495",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "525",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "585",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "625",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "695",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "715",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "765",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "2",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "3",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "85",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "205",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "225",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "255",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "295",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "465",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "475",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "495",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "525",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "585",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "625",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "695",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "715",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "765",
+    "status": "PASS",
+    "service_hit": true,
+    "positive_output_expected": true,
+    "model_mode": "NO_STUB"
+  }
+]

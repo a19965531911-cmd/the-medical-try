@@ -1,0 +1,342 @@
+[
+  {
+    "case": "2_rescue",
+    "request_index": 0,
+    "category": "成功救援"
+  },
+  {
+    "case": "2_negative",
+    "request_index": 0,
+    "category": "事实本身不成立：上下文拒绝"
+  },
+  {
+    "case": "2_uncertain",
+    "request_index": 0,
+    "category": "事实本身不成立：上下文拒绝"
+  },
+  {
+    "case": "2_planned",
+    "request_index": 0,
+    "category": "事实本身不成立：上下文拒绝"
+  },
+  {
+    "case": "2_hallucination",
+    "request_index": 0,
+    "category": "来源绑定失败或Schema失败（旧计数无法拆分）"
+  },
+  {
+    "case": "3_rescue",
+    "request_index": 0,
+    "category": "成功救援"
+  },
+  {
+    "case": "3_negative",
+    "request_index": 0,
+    "category": "事实本身不成立：上下文拒绝"
+  },
+  {
+    "case": "3_uncertain",
+    "request_index": 0,
+    "category": "事实本身不成立：上下文拒绝"
+  },
+  {
+    "case": "3_planned",
+    "request_index": 0,
+    "category": "事实本身不成立：上下文拒绝"
+  },
+  {
+    "case": "3_hallucination",
+    "request_index": 0,
+    "category": "来源绑定失败或Schema失败（旧计数无法拆分）"
+  },
+  {
+    "case": "255_hallucination",
+    "request_index": 0,
+    "category": "来源绑定失败或Schema失败（旧计数无法拆分）"
+  },
+  {
+    "case": "465_rescue",
+    "request_index": 0,
+    "category": "成功救援"
+  },
+  {
+    "case": "465_negative",
+    "request_index": 0,
+    "category": "事实本身不成立：上下文拒绝"
+  },
+  {
+    "case": "465_uncertain",
+    "request_index": 0,
+    "category": "事实本身不成立：上下文拒绝"
+  },
+  {
+    "case": "465_planned",
+    "request_index": 0,
+    "category": "事实本身不成立：上下文拒绝"
+  },
+  {
+    "case": "465_hallucination",
+    "request_index": 0,
+    "category": "来源绑定失败或Schema失败（旧计数无法拆分）"
+  },
+  {
+    "case": "495_rescue",
+    "request_index": 0,
+    "category": "成功救援"
+  },
+  {
+    "case": "495_hallucination",
+    "request_index": 0,
+    "category": "来源绑定失败或Schema失败（旧计数无法拆分）"
+  },
+  {
+    "case": "695_rescue",
+    "request_index": 0,
+    "category": "成功救援"
+  },
+  {
+    "case": "695_negative",
+    "request_index": 0,
+    "category": "事实本身不成立：上下文拒绝"
+  },
+  {
+    "case": "695_uncertain",
+    "request_index": 0,
+    "category": "事实本身不成立：上下文拒绝"
+  },
+  {
+    "case": "695_planned",
+    "request_index": 0,
+    "category": "事实本身不成立：上下文拒绝"
+  },
+  {
+    "case": "695_hallucination",
+    "request_index": 0,
+    "category": "来源绑定失败或Schema失败（旧计数无法拆分）"
+  },
+  {
+    "case": "765_hallucination",
+    "request_index": 0,
+    "category": "来源绑定失败或Schema失败（旧计数无法拆分）"
+  },
+  {
+    "case": "3_incomplete",
+    "request_index": 0,
+    "category": "已有事实重复或无接受事实（旧记录无法唯一细分）"
+  },
+  {
+    "case": "2_false_hint",
+    "request_index": 0,
+    "category": "成功救援"
+  },
+  {
+    "case": "2_false_hint_否认",
+    "request_index": 0,
+    "category": "已有事实重复或无接受事实（旧记录无法唯一细分）"
+  },
+  {
+    "case": "2_false_hint_可能",
+    "request_index": 0,
+    "category": "已有事实重复或无接受事实（旧记录无法唯一细分）"
+  },
+  {
+    "case": "2_false_hint_拟评估",
+    "request_index": 0,
+    "category": "已有事实重复或无接受事实（旧记录无法唯一细分）"
+  },
+  {
+    "case": "3_false_hint",
+    "request_index": 0,
+    "category": "成功救援"
+  },
+  {
+    "case": "3_false_hint_否认",
+    "request_index": 0,
+    "category": "已有事实重复或无接受事实（旧记录无法唯一细分）"
+  },
+  {
+    "case": "3_false_hint_可能",
+    "request_index": 0,
+    "category": "已有事实重复或无接受事实（旧记录无法唯一细分）"
+  },
+  {
+    "case": "3_false_hint_拟评估",
+    "request_index": 0,
+    "category": "已有事实重复或无接受事实（旧记录无法唯一细分）"
+  },
+  {
+    "case": "495_false_hint",
+    "request_index": 0,
+    "category": "成功救援"
+  },
+  {
+    "case": "clear_negative_00",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_01",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_04",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_05",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_06",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_07",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_08",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_09",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_10",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_11",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_12",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_13",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_15",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_16",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_17",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_18",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "clear_negative_19",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "complex_synonym_00",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "complex_synonym_01",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "complex_synonym_02",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "complex_synonym_03",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "complex_synonym_07",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "complex_synonym_08",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "complex_synonym_12",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "complex_synonym_19",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "state_scope_00",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "state_scope_01",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "state_scope_09",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "state_scope_13",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "state_scope_15",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "cross_scope_08",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "cross_scope_09",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "cross_scope_11",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  },
+  {
+    "case": "cross_scope_19",
+    "request_index": 0,
+    "category": "无有效事实返回（不是已知无必要触发）"
+  }
+]

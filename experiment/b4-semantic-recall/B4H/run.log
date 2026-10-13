@@ -1,0 +1,11 @@
+{
+  "variant": "B4H",
+  "cases": 182,
+  "matches": 74,
+  "service_hits": 74,
+  "r4_invalid_cases": 0,
+  "fsh_invalid_cases": 18,
+  "stub_calls": 60,
+  "synthetic_safety_errors": 0,
+  "real_patient_metrics": "UNAVAILABLE"
+}

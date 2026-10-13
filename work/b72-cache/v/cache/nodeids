@@ -1,0 +1,18 @@
+[
+  "tests/b_board/test_b7_1.py::test_ambiguous_binding_rejected",
+  "tests/b_board/test_b7_1.py::test_false_hint_does_not_remove_safety[\\u53ef\\u80fd]",
+  "tests/b_board/test_b7_1.py::test_false_hint_does_not_remove_safety[\\u5426\\u8ba4]",
+  "tests/b_board/test_b7_1.py::test_false_hint_does_not_remove_safety[\\u62df\\u8bc4\\u4f30]",
+  "tests/b_board/test_b7_1.py::test_false_hint_does_not_remove_safety[\\u7236\\u4eb2]",
+  "tests/b_board/test_b7_1.py::test_false_overall_hint_retains_valid_fact",
+  "tests/b_board/test_b7_2.py::test_ambiguous_source_rejected_even_with_model_index[records0]",
+  "tests/b_board/test_b7_2.py::test_ambiguous_source_rejected_even_with_model_index[records1]",
+  "tests/b_board/test_b7_2.py::test_ambiguous_source_rejected_even_with_model_index[records2]",
+  "tests/b_board/test_b7_2.py::test_false_overall_hint_and_incomplete_and",
+  "tests/b_board/test_b7_2.py::test_protected_numeric_unknown_is_not_a_model_call",
+  "tests/b_board/test_b7_2.py::test_top_evidence_conflict_rejected",
+  "tests/b_board/test_b7_2.py::test_verified_facts_fill_missing_top_evidence[None]",
+  "tests/b_board/test_b7_2.py::test_verified_facts_fill_missing_top_evidence[top1]",
+  "tests/b_board/test_b7_schema.py::test_extended_provenance",
+  "tests/b_board/test_b7_schema.py::test_worker_capacity"
+]

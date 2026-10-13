@@ -1,0 +1,156 @@
+{
+  "selected": "B2E",
+  "final_regression": {
+    "focused_passed": 200,
+    "focused_seconds": 4.55,
+    "full_passed": 908,
+    "full_seconds": 111.90,
+    "full_exit_code": 0,
+    "junit_evidence": "analysis/B2_PYTEST_RESULTS.xml",
+    "actual_file_publication_gate_exit_code": 1
+  },
+  "candidate_generated": false,
+  "official_ready": false,
+  "reason": "Known unresolved identity and fixed-status/cardinality FSH contract conflicts; required checks not all pass",
+  "experimental_artifact": "C:\\Users\\32433\\Documents\\ChatGPT\\clip\\CHIP2026_CP2_A_baseline_v4_3_mvp\\experiment\\b2-official-contract\\B2E.json",
+  "sha256": "31cf9dc93cd2b63fbe54a26eaa115cf6233d939ee612fd351feed90d687ce45b",
+  "frozen_sources": [
+    {
+      "source": "submission/a_test_message_bundle_v5s2_expe_aggressive_candidate.json",
+      "sha256": "831385ec9deab93d19e54c8319027978eee4b6843c32ddbc5714795b50ad27e8"
+    },
+    {
+      "source": "submission/b_test_message_bundle_b1_candidate.json",
+      "sha256": "f7470f0e97d8348b10ab44f88515807e2b207d5369ad5506edc154bcdf0909a3"
+    },
+    {
+      "source": "submission/b_test_message_bundle_b1_candidate.manifest.json",
+      "sha256": "d96894d44a58b22b5ec5b4dd7ed48107b72d903d06f19caec33bb3de178ef2ea"
+    },
+    {
+      "source": "src/b_board/runtime.py",
+      "sha256": "71d68ce102a43c58e0d17e15b166ed6c6218082ce60b4719e1528a97a57f4a16"
+    },
+    {
+      "source": "scripts/build_b_submission.py",
+      "sha256": "6c96ea2c8fb3b44326fb004b5b912e19c192d95050329eb3d317d4aa91743b9a"
+    }
+  ],
+  "isolated": [
+    {
+      "profile_id": "2",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    },
+    {
+      "profile_id": "3",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    },
+    {
+      "profile_id": "85",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": [
+        "cnwqk85-lung-resection: status fixed=planned, actual=preparation"
+      ]
+    },
+    {
+      "profile_id": "205",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": [
+        "cnwqk205-thoracic-surgery: status fixed=planned, actual=preparation"
+      ]
+    },
+    {
+      "profile_id": "225",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    },
+    {
+      "profile_id": "255",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    },
+    {
+      "profile_id": "295",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": [
+        "cnwqk295-smokingstatus: required component",
+        "295 required slice smoking-cessation-guarantee"
+      ]
+    },
+    {
+      "profile_id": "465",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    },
+    {
+      "profile_id": "475",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    },
+    {
+      "profile_id": "495",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    },
+    {
+      "profile_id": "525",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    },
+    {
+      "profile_id": "585",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    },
+    {
+      "profile_id": "625",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    },
+    {
+      "profile_id": "695",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    },
+    {
+      "profile_id": "715",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    },
+    {
+      "profile_id": "765",
+      "isolated": "PASS",
+      "service_hit": true,
+      "fsh_violations": []
+    }
+  ],
+  "model": {
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "real_model": false,
+    "token_budget": 1024,
+    "timeout_seconds": 30,
+    "probe_timeout_seconds": 5,
+    "status": "UNAVAILABLE",
+    "error": "URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+    "elapsed_seconds": 2.1274377000518143
+  },
+  "publication_gate": "BLOCKED",
+  "publication_error": "Publication blocked: official tbd/null routing contract unverified"
+}

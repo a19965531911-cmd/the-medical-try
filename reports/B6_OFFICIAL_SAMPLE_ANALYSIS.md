@@ -1,0 +1,1 @@
+Official tccfile-one decoded to experiment/b6/official_sample_decoded.py. A485 test_a; requests.post, system/user messages, stop=null, local-model, 1213, temperature=0, max_tokens=256, timeout=30, retry once. No A identities or POP-Q rules copied. LOCAL_DEV connection refusal does not imply PLATFORM_RUNTIME unavailability.

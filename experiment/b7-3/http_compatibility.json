@@ -1,0 +1,221 @@
+[
+  {
+    "case": "UNKNOWN",
+    "expected": false,
+    "actual": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 1,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.020320000126957893
+      ]
+    }
+  },
+  {
+    "case": "empty_facts",
+    "expected": false,
+    "actual": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 1,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.015118799870833755
+      ]
+    }
+  },
+  {
+    "case": "positive_false_hint",
+    "expected": true,
+    "actual": true,
+    "metrics": {
+      "calls": 1,
+      "http_success": 1,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0031081000342965126
+      ]
+    }
+  },
+  {
+    "case": "Markdown",
+    "expected": false,
+    "actual": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 1,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.011969600105658174
+      ]
+    }
+  },
+  {
+    "case": "null",
+    "expected": false,
+    "actual": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 1,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [
+        {
+          "kind": "SCHEMA_OR_GROUNDING",
+          "message": "SCHEMA: facts list required"
+        }
+      ],
+      "latencies": [
+        0.01592409983277321
+      ]
+    }
+  },
+  {
+    "case": "empty",
+    "expected": false,
+    "actual": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 1,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [
+        {
+          "kind": "SCHEMA_OR_GROUNDING",
+          "message": "Expecting value: line 1 column 1 (char 0)"
+        }
+      ],
+      "latencies": [
+        0.014764099847525358
+      ]
+    }
+  },
+  {
+    "case": "truncated",
+    "expected": false,
+    "actual": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 1,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [
+        {
+          "kind": "SCHEMA_OR_GROUNDING",
+          "message": "Unterminated string starting at: line 1 column 226 (char 225)"
+        }
+      ],
+      "latencies": [
+        0.01590049988590181
+      ]
+    }
+  },
+  {
+    "case": "missing_fields",
+    "expected": false,
+    "actual": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 1,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [
+        {
+          "kind": "SCHEMA_OR_GROUNDING",
+          "message": "SCHEMA: facts list required"
+        }
+      ],
+      "latencies": [
+        0.014969399897381663
+      ]
+    }
+  },
+  {
+    "case": "HTTP429",
+    "actual": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [
+        {
+          "kind": "TIMEOUT_OR_RESPONSE_ERROR",
+          "message": "ValueError"
+        }
+      ],
+      "latencies": [
+        0.015373500064015388
+      ]
+    }
+  },
+  {
+    "case": "HTTP500",
+    "actual": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [
+        {
+          "kind": "TIMEOUT_OR_RESPONSE_ERROR",
+          "message": "ValueError"
+        }
+      ],
+      "latencies": [
+        0.01564710005186498
+      ]
+    }
+  },
+  {
+    "case": "HTTP503",
+    "actual": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [
+        {
+          "kind": "TIMEOUT_OR_RESPONSE_ERROR",
+          "message": "ValueError"
+        }
+      ],
+      "latencies": [
+        0.015099599957466125
+      ]
+    }
+  }
+]

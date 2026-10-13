@@ -1,0 +1,1430 @@
+[
+  {
+    "variant": "B6H",
+    "case": "2_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B6H",
+    "case": "2_negative",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B6H",
+    "case": "2_uncertain",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B6H",
+    "case": "2_planned",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B6H",
+    "case": "2_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B6H",
+    "case": "3_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B6H",
+    "case": "3_negative",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B6H",
+    "case": "3_uncertain",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B6H",
+    "case": "3_planned",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B6H",
+    "case": "3_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B6H",
+    "case": "255_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B6H",
+    "case": "465_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B6H",
+    "case": "465_negative",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B6H",
+    "case": "465_uncertain",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B6H",
+    "case": "465_planned",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B6H",
+    "case": "465_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B6H",
+    "case": "495_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B6H",
+    "case": "495_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B6H",
+    "case": "695_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B6H",
+    "case": "695_negative",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B6H",
+    "case": "695_uncertain",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B6H",
+    "case": "695_planned",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B6H",
+    "case": "695_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B6H",
+    "case": "765_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B6H",
+    "case": "3_incomplete",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "2_false_hint",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "2_false_hint_否认",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "2_false_hint_可能",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "2_false_hint_拟评估",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "3_false_hint",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "3_false_hint_否认",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "3_false_hint_可能",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "3_false_hint_拟评估",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "495_false_hint",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_00",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_01",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_04",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_05",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_06",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_07",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_08",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_09",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_10",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_11",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_12",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_13",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_15",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_16",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_17",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_18",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "clear_negative_19",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "complex_synonym_00",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "complex_synonym_01",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "complex_synonym_02",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "complex_synonym_03",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "complex_synonym_07",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "complex_synonym_08",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "complex_synonym_12",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "complex_synonym_19",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "state_scope_00",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "state_scope_01",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "state_scope_09",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "state_scope_13",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "state_scope_15",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "cross_scope_08",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "cross_scope_09",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "cross_scope_11",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B6H",
+    "case": "cross_scope_19",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "2_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7H",
+    "case": "2_negative",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7H",
+    "case": "2_uncertain",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7H",
+    "case": "2_planned",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7H",
+    "case": "2_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7H",
+    "case": "3_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7H",
+    "case": "3_negative",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7H",
+    "case": "3_uncertain",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7H",
+    "case": "3_planned",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7H",
+    "case": "3_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7H",
+    "case": "255_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7H",
+    "case": "465_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7H",
+    "case": "465_negative",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7H",
+    "case": "465_uncertain",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7H",
+    "case": "465_planned",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7H",
+    "case": "465_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7H",
+    "case": "495_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7H",
+    "case": "495_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7H",
+    "case": "695_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7H",
+    "case": "695_negative",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7H",
+    "case": "695_uncertain",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7H",
+    "case": "695_planned",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7H",
+    "case": "695_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7H",
+    "case": "765_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7H",
+    "case": "3_incomplete",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "2_false_hint",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "2_false_hint_否认",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "2_false_hint_可能",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "2_false_hint_拟评估",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "3_false_hint",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "3_false_hint_否认",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "3_false_hint_可能",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "3_false_hint_拟评估",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "495_false_hint",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_00",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_01",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_04",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_05",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_06",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_07",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_08",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_09",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_10",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_11",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_12",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_13",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_15",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_16",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_17",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_18",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "clear_negative_19",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "complex_synonym_00",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "complex_synonym_01",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "complex_synonym_02",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "complex_synonym_03",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "complex_synonym_07",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "complex_synonym_08",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "complex_synonym_12",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "complex_synonym_19",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "state_scope_00",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "state_scope_01",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "state_scope_09",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "state_scope_13",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "state_scope_15",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "cross_scope_08",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "cross_scope_09",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "cross_scope_11",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7H",
+    "case": "cross_scope_19",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "2_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "2_negative",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "2_uncertain",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "2_planned",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "2_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "3_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "3_negative",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "3_uncertain",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "3_planned",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "3_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "255_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "465_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "465_negative",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "465_uncertain",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "465_planned",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "465_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "495_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "495_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "695_rescue",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "695_negative",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "695_uncertain",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "695_planned",
+    "request_index": 0,
+    "category": "CONTEXT_REJECTED",
+    "explanation": "CONTEXT_REJECTED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "695_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "765_hallucination",
+    "request_index": 0,
+    "category": "SOURCE_LOCATION_FAILED",
+    "explanation": "SOURCE_LOCATION_FAILED"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "3_incomplete",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "2_false_hint",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "2_false_hint_否认",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "2_false_hint_可能",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "2_false_hint_拟评估",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "3_false_hint",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "3_false_hint_否认",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "3_false_hint_可能",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "3_false_hint_拟评估",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "495_false_hint",
+    "request_index": 0,
+    "category": "NEW_SERVICE_MATCH",
+    "explanation": "NEW_SERVICE_MATCH"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_00",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_01",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_04",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_05",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_06",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_07",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_08",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_09",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_10",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_11",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_12",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_13",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_15",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_16",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_17",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_18",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "clear_negative_19",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "complex_synonym_00",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "complex_synonym_01",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "complex_synonym_02",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "complex_synonym_03",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "complex_synonym_07",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "complex_synonym_08",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "complex_synonym_12",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "complex_synonym_19",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "state_scope_00",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "state_scope_01",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "state_scope_09",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "state_scope_13",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "state_scope_15",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "cross_scope_08",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "cross_scope_09",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "cross_scope_11",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  },
+  {
+    "variant": "B7_1H",
+    "case": "cross_scope_19",
+    "request_index": 0,
+    "category": "DUPLICATE_OR_OVERALL_HINT_DISCARDED",
+    "explanation": "Legacy combined schema/grounding counters prevent more precise attribution"
+  }
+]

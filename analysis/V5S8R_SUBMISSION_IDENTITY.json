@@ -1,0 +1,14 @@
+{
+  "candidate_path": "submission\\a_test_message_bundle_v5s8_expl_675_precision_guard_candidate.json",
+  "candidate_size": 706091,
+  "candidate_sha256": "8878029301445486e19df9b7db66927fcfb952d8ac952833e3e7c1a32d2c8e15",
+  "expected_size": 706091,
+  "expected_sha256": "8878029301445486e19df9b7db66927fcfb952d8ac952833e3e7c1a32d2c8e15",
+  "local_candidate_identity": true,
+  "current_head": "88e72cfc1f3a903c7de8ab87c0c041d71ae56ab4",
+  "current_branch": "codex/v5s3-expg-criterion-recall-main-based",
+  "candidate_tracked_by_git": false,
+  "server_side_uploaded_file_identity": "UNVERIFIED",
+  "server_side_submission_mapping": "UNVERIFIED",
+  "network_or_platform_failure": "UNVERIFIED"
+}

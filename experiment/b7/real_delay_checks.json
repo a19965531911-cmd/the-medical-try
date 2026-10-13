@@ -1,0 +1,23 @@
+[
+  {
+    "budget": 0.2,
+    "delay": 0.5,
+    "elapsed": 0.21307569998316467,
+    "matched": false,
+    "slots_available": 1
+  },
+  {
+    "budget": 1,
+    "delay": 0.5,
+    "elapsed": 0.5041662000585347,
+    "matched": true,
+    "slots_available": 2
+  },
+  {
+    "budget": 1,
+    "delay": 3,
+    "elapsed": 1.0051716999150813,
+    "matched": false,
+    "slots_available": 1
+  }
+]

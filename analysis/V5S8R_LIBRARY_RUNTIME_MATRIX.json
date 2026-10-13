@@ -1,0 +1,376 @@
+{
+  "python": "C:\\Users\\32433\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "e_reference": "6639cf7",
+  "rows": [
+    {
+      "artifact": "E",
+      "criterion": "485",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "615",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "265",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "635",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "675",
+      "case": "valid_675",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "735",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "745",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "755",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "855",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "835",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "875",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "805",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "565",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "555",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "185",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "E",
+      "criterion": "165",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "485",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "615",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "265",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "635",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "675",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "735",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "745",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "755",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "855",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "835",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "875",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "805",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "565",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "555",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "185",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "165",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "675",
+      "case": "negative",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "675",
+      "case": "valid",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "675",
+      "case": "below_age",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "675",
+      "case": "trunk",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    },
+    {
+      "artifact": "L",
+      "criterion": "675",
+      "case": "negated",
+      "import": true,
+      "constructor": true,
+      "entrypoint": true,
+      "signature": "(self, patient_id, case_reports, ai_algorithm_type='nlp')",
+      "bundle_contract": true
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Official B workbook read via load_rows; rows2/3 remain tbd/null, identifiers inherited fallback. A485 test_a cannot establish B header. Existing18 FSH conflicts remain; no official checker or runtime quota evidence in supplied local materials. Platform live inference unverified. No submission.
