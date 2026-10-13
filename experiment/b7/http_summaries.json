@@ -1,0 +1,267 @@
+[
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  },
+  {
+    "path": "/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048
+  }
+]

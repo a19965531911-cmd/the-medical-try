@@ -1,0 +1,16 @@
+{
+  "sha256": "3ed4db3e7ad69b33d7b90a4aef597a049fb902ee62c857ca7dc7a1c34d03e410",
+  "config": {
+    "variant": "B4S",
+    "mode": "hybrid",
+    "single_profile": true,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "model": "local-model",
+    "max_tokens": 2048,
+    "timeout_seconds": 5
+  },
+  "frozen_b2e_sha256": "31cf9dc93cd2b63fbe54a26eaa115cf6233d939ee612fd351feed90d687ce45b",
+  "model_enabled": true,
+  "model_policy": "LOCAL_ONLY_SYNTHETIC_AUDIT",
+  "publication": "BLOCKED"
+}

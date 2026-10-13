@@ -1,0 +1,38 @@
+........................................................................ [  6%]
+........................................................................ [ 12%]
+........................................................................ [ 19%]
+........................................................................ [ 25%]
+........................................................................ [ 31%]
+........................................................................ [ 38%]
+........................................................................ [ 44%]
+........................................................................ [ 50%]
+........................................................................ [ 57%]
+........................................................................ [ 63%]
+........................................................................ [ 70%]
+........................................................................ [ 76%]
+........................................................................ [ 82%]
+........................................................................ [ 89%]
+........................................................................ [ 95%]
+..................................................                       [100%]
+============================ slowest 20 durations =============================
+14.71s call     tests/v5s/test_v5s4_exph1_anchorfix.py::test_h1_negative_binding_set_stays_blocked
+8.75s call     tests/production/test_verified_engine_parity.py::test_production_source_is_verified_engine_not_parallel_runtime
+8.34s call     tests/v5s/test_v5s4_exph_macro_first.py::test_485_unbound_or_low_stage_is_blocked
+4.59s call     tests/v5s/test_v5s4_exph1_anchorfix.py::test_h1_preserves_h_decision_resource_and_service_on_existing_cases
+2.22s call     tests/production/test_library_runtime.py::test_each_library_decodes_compiles_constructs_and_runs_positive_and_negative[24]
+2.20s call     tests/v5s/test_v5s8_expl_675_precision_guard.py::test_l_match_set_is_subset_of_e_on_local_675_cases
+2.19s call     tests/v5s/test_v5s3_expg_criterion_recall.py::test_experiment_g_audit_reports_all_hard_gates
+2.17s call     tests/production/test_library_runtime.py::test_each_library_decodes_compiles_constructs_and_runs_positive_and_negative[31]
+2.17s call     tests/production/test_verified_engine_parity.py::test_production_hard_negative_matches_verified_engine[37]
+2.16s call     tests/b_board/test_b6_http.py::test_embedded_http[json-2]
+2.16s call     tests/production/test_library_runtime.py::test_each_library_decodes_compiles_constructs_and_runs_positive_and_negative[49]
+2.15s call     tests/production/test_verified_engine_parity.py::test_production_hard_negative_matches_verified_engine[49]
+2.15s call     tests/production/test_verified_engine_parity.py::test_production_hard_negative_matches_verified_engine[24]
+2.14s call     tests/production/test_library_runtime.py::test_each_library_decodes_compiles_constructs_and_runs_positive_and_negative[37]
+2.14s call     tests/production/test_verified_engine_parity.py::test_production_hard_negative_matches_verified_engine[31]
+2.09s call     tests/production/test_library_runtime.py::test_each_library_isolates_empty_and_malformed_reports[24]
+2.09s call     tests/production/test_library_runtime.py::test_each_library_isolates_empty_and_malformed_reports[31]
+2.08s call     tests/production/test_library_runtime.py::test_each_library_isolates_empty_and_malformed_reports[37]
+2.07s call     tests/production/test_library_runtime.py::test_each_library_isolates_empty_and_malformed_reports[49]
+1.49s call     tests/integration/test_expanded_criteria.py::test_block_a_numeric_and_temporal_criteria
+1130 passed in 187.87s (0:03:07)

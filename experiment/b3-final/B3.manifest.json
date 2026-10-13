@@ -1,0 +1,81 @@
+{
+  "artifact": "C:\\Users\\32433\\Documents\\ChatGPT\\clip\\CHIP2026_CP2_A_baseline_v4_3_mvp\\experiment\\b3-final\\B3.json",
+  "sha256": "ee39e779f48927b2a01b976d15b2c6eab32370d21ceae43a0f82cc4da4818119",
+  "base_b2e_sha256": "31cf9dc93cd2b63fbe54a26eaa115cf6233d939ee612fd351feed90d687ce45b",
+  "publication_ready": false,
+  "final_regression": {
+    "focused_passed": 227,
+    "focused_seconds": 4.97,
+    "full_passed": 935,
+    "full_seconds": 127.21,
+    "exit_code": 0,
+    "focused_evidence": "analysis/B3_FOCUSED_RESULTS.xml",
+    "full_evidence": "analysis/B3_PYTEST_RESULTS.xml",
+    "actual_file_publication_gate_exit_code": 1
+  },
+  "identity": "UNRESOLVED",
+  "header_policy": "unchanged frozen B2E; B-specific contract unverified",
+  "frozen": [
+    {
+      "source": "submission/a_test_message_bundle_v5s2_expe_aggressive_candidate.json",
+      "sha256": "831385ec9deab93d19e54c8319027978eee4b6843c32ddbc5714795b50ad27e8"
+    },
+    {
+      "source": "submission/b_test_message_bundle_b1_candidate.json",
+      "sha256": "f7470f0e97d8348b10ab44f88515807e2b207d5369ad5506edc154bcdf0909a3"
+    },
+    {
+      "source": "submission/b_test_message_bundle_b1_candidate.manifest.json",
+      "sha256": "d96894d44a58b22b5ec5b4dd7ed48107b72d903d06f19caec33bb3de178ef2ea"
+    },
+    {
+      "source": "src/b_board/runtime.py",
+      "sha256": "71d68ce102a43c58e0d17e15b166ed6c6218082ce60b4719e1528a97a57f4a16"
+    },
+    {
+      "source": "scripts/build_b_submission.py",
+      "sha256": "6c96ea2c8fb3b44326fb004b5b912e19c192d95050329eb3d317d4aa91743b9a"
+    },
+    {
+      "source": "experiment/b2-official-contract/B2E.json",
+      "sha256": "31cf9dc93cd2b63fbe54a26eaa115cf6233d939ee612fd351feed90d687ce45b"
+    },
+    {
+      "source": "experiment/b2-official-contract/results.json",
+      "sha256": "8877972305f7ffd371694dc637a3d7c9c5756997d33f3a79ca69191e8a9898e3"
+    },
+    {
+      "source": "submission/b2_candidate.manifest.json",
+      "sha256": "97693e2b14d324baac991b0087a97b18d6af392c9fecd5f7205d772389272e50"
+    },
+    {
+      "source": "src/b_board/b2_runtime.py",
+      "sha256": "d056738748385c0c2c8ca533a06f170c5a031f5d4533aa277d8452002675c047"
+    },
+    {
+      "source": "scripts/b2_experiments.py",
+      "sha256": "170e81bb4020f40f24b98fee5b5cb047be98f28802355f35ef42bc51378f87c6"
+    },
+    {
+      "source": "reports/B2_FINAL_VERDICT.md",
+      "sha256": "87f726ec429136c6f38ca484d1342c0f6e8ed62e35e8549939d0e209bb981b50"
+    }
+  ],
+  "summary": {
+    "synthetic_cases": 167,
+    "matches": 71,
+    "service_hits": 71,
+    "service_differences": 0,
+    "b2e_deterministic_decision_deltas": 0,
+    "fsh_violating_cases": 18,
+    "local_r4_subset_violations": 0,
+    "isolated_libraries": 16,
+    "concurrent_processes_passed": 16,
+    "concurrent_workers": 4,
+    "offline_model_stub_calls": 7,
+    "matrix_seconds": 0.3868923985864967,
+    "publication_gate": "BLOCKED: Publication blocked: official tbd/null routing contract unverified",
+    "formal_profile_validator": "UNAVAILABLE",
+    "gold_labels": "UNAVAILABLE"
+  }
+}

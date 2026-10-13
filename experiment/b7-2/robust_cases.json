@@ -1,0 +1,1123 @@
+[
+  {
+    "case": "2_false_hint_original",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "2_false_hint_reorder",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "2_false_hint_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "走动以后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "走动以后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "走动以后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "2_false_hint_sentence_split",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "2_false_hint_irrelevant_before",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "血压120/80"
+      },
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 1
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "2_false_hint_irrelevant_after",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09"
+      },
+      {
+        "text": "血压120/80"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "2_false_hint_ambiguous",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09"
+      },
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09",
+        "event_id": "other"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "2_false_hint_negated",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "否认活动后透不过气"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "2_false_hint_planned",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "拟评估活动后透不过气"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_original",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_reorder",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学提示肝细胞恶性肿瘤。已完整切除肝肿瘤。切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤。已完整切除肝肿瘤。切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤。已完整切除肝肿瘤。切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤。已完整切除肝肿瘤。切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤。已完整切除肝肿瘤。切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤。已完整切除肝肿瘤。切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_synonym",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学提示肝细胞恶性肿瘤，已彻底切除肝肿瘤，切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已彻底切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已彻底切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已彻底切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已彻底切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已彻底切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_sentence_split",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学提示肝细胞恶性肿瘤；已完整切除肝肿瘤；切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤；已完整切除肝肿瘤；切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤；已完整切除肝肿瘤；切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤；已完整切除肝肿瘤；切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤；已完整切除肝肿瘤；切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤；已完整切除肝肿瘤；切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_irrelevant_before",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "血压120/80"
+      },
+      {
+        "text": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 1
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 1
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 1
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 1
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_irrelevant_after",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      },
+      {
+        "text": "血压120/80"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_ambiguous",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      },
+      {
+        "text": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "timestamp": "2026-10-09",
+        "event_id": "other"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_negated",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "否认组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_planned",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "拟评估组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_distributed_False",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学提示肝细胞恶性肿瘤",
+        "event_id": "same_event",
+        "timestamp": "2026-10-09"
+      },
+      {
+        "text": "已完整切除肝肿瘤",
+        "event_id": "same_event",
+        "timestamp": "2026-10-09"
+      },
+      {
+        "text": "切缘未残留癌细胞",
+        "event_id": "same_event",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "已完整切除肝肿瘤",
+          "report": 1
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "切缘未残留癌细胞",
+          "report": 2
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤",
+        "已完整切除肝肿瘤",
+        "切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_distributed_True",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "切缘未残留癌细胞",
+        "event_id": "same_event",
+        "timestamp": "2026-10-09"
+      },
+      {
+        "text": "已完整切除肝肿瘤",
+        "event_id": "same_event",
+        "timestamp": "2026-10-09"
+      },
+      {
+        "text": "组织学提示肝细胞恶性肿瘤",
+        "event_id": "same_event",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤",
+          "report": 2
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤",
+          "report": 2
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "已完整切除肝肿瘤",
+          "report": 1
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤",
+        "已完整切除肝肿瘤",
+        "切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_original",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_reorder",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_synonym",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_sentence_split",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_irrelevant_before",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "血压120/80"
+      },
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 1
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_irrelevant_after",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      },
+      {
+        "text": "血压120/80"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_ambiguous",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      },
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09",
+        "event_id": "other"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_negated",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "否认病理报告。确诊弥漫性大细胞B淋巴瘤"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_planned",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "拟评估病理报告。确诊弥漫性大细胞B淋巴瘤"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  }
+]

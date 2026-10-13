@@ -1,0 +1,1458 @@
+[
+  {
+    "case": "2_positive_0",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "2_positive_1",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "2_positive_2",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "2_negative_0",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "2_negative_1",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "2_negative_2",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "2_negative_3",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "2_negative_4",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "3_positive_0",
+    "profile_id": "3",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "3_positive_1",
+    "profile_id": "3",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "3_positive_2",
+    "profile_id": "3",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "3_negative_0",
+    "profile_id": "3",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "3_negative_1",
+    "profile_id": "3",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "3_negative_2",
+    "profile_id": "3",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "3_negative_3",
+    "profile_id": "3",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "3_negative_4",
+    "profile_id": "3",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "85_positive_0",
+    "profile_id": "85",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "85_positive_1",
+    "profile_id": "85",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "85_positive_2",
+    "profile_id": "85",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "85_negative_0",
+    "profile_id": "85",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "85_negative_1",
+    "profile_id": "85",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "85_negative_2",
+    "profile_id": "85",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "85_negative_3",
+    "profile_id": "85",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "85_negative_4",
+    "profile_id": "85",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "205_positive_0",
+    "profile_id": "205",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "205_positive_1",
+    "profile_id": "205",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "205_positive_2",
+    "profile_id": "205",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "205_negative_0",
+    "profile_id": "205",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "205_negative_1",
+    "profile_id": "205",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "205_negative_2",
+    "profile_id": "205",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "205_negative_3",
+    "profile_id": "205",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "205_negative_4",
+    "profile_id": "205",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_positive_0",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_positive_1",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_positive_2",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_negative_0",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_negative_1",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_negative_2",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_negative_3",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_negative_4",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "255_positive_0",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "255_positive_1",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "255_positive_2",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "255_negative_0",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "255_negative_1",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "255_negative_2",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "255_negative_3",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "255_negative_4",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_positive_0",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_positive_1",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_positive_2",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_negative_0",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_negative_1",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_negative_2",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_negative_3",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_negative_4",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "465_positive_0",
+    "profile_id": "465",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "465_positive_1",
+    "profile_id": "465",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "465_positive_2",
+    "profile_id": "465",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "465_negative_0",
+    "profile_id": "465",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "465_negative_1",
+    "profile_id": "465",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "465_negative_2",
+    "profile_id": "465",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "465_negative_3",
+    "profile_id": "465",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "465_negative_4",
+    "profile_id": "465",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "475_positive_0",
+    "profile_id": "475",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "475_positive_1",
+    "profile_id": "475",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "475_positive_2",
+    "profile_id": "475",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "475_negative_0",
+    "profile_id": "475",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "475_negative_1",
+    "profile_id": "475",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "475_negative_2",
+    "profile_id": "475",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "475_negative_3",
+    "profile_id": "475",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "475_negative_4",
+    "profile_id": "475",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "495_positive_0",
+    "profile_id": "495",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "495_positive_1",
+    "profile_id": "495",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "495_positive_2",
+    "profile_id": "495",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "495_negative_0",
+    "profile_id": "495",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "495_negative_1",
+    "profile_id": "495",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "495_negative_2",
+    "profile_id": "495",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "495_negative_3",
+    "profile_id": "495",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "495_negative_4",
+    "profile_id": "495",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "525_positive_0",
+    "profile_id": "525",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "525_positive_1",
+    "profile_id": "525",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "525_positive_2",
+    "profile_id": "525",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "525_negative_0",
+    "profile_id": "525",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "525_negative_1",
+    "profile_id": "525",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "525_negative_2",
+    "profile_id": "525",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "525_negative_3",
+    "profile_id": "525",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "525_negative_4",
+    "profile_id": "525",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "585_positive_0",
+    "profile_id": "585",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "585_positive_1",
+    "profile_id": "585",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "585_positive_2",
+    "profile_id": "585",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "585_negative_0",
+    "profile_id": "585",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "585_negative_1",
+    "profile_id": "585",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "585_negative_2",
+    "profile_id": "585",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "585_negative_3",
+    "profile_id": "585",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "585_negative_4",
+    "profile_id": "585",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_positive_0",
+    "profile_id": "625",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_positive_1",
+    "profile_id": "625",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_positive_2",
+    "profile_id": "625",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_negative_0",
+    "profile_id": "625",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_negative_1",
+    "profile_id": "625",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_negative_2",
+    "profile_id": "625",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_negative_3",
+    "profile_id": "625",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_negative_4",
+    "profile_id": "625",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "695_positive_0",
+    "profile_id": "695",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "695_positive_1",
+    "profile_id": "695",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "695_positive_2",
+    "profile_id": "695",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "695_negative_0",
+    "profile_id": "695",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "695_negative_1",
+    "profile_id": "695",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "695_negative_2",
+    "profile_id": "695",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "695_negative_3",
+    "profile_id": "695",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "695_negative_4",
+    "profile_id": "695",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "715_positive_0",
+    "profile_id": "715",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "715_positive_1",
+    "profile_id": "715",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "715_positive_2",
+    "profile_id": "715",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "715_negative_0",
+    "profile_id": "715",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "715_negative_1",
+    "profile_id": "715",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "715_negative_2",
+    "profile_id": "715",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "715_negative_3",
+    "profile_id": "715",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "715_negative_4",
+    "profile_id": "715",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "765_positive_0",
+    "profile_id": "765",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "765_positive_1",
+    "profile_id": "765",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "765_positive_2",
+    "profile_id": "765",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "765_negative_0",
+    "profile_id": "765",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "765_negative_1",
+    "profile_id": "765",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "765_negative_2",
+    "profile_id": "765",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "765_negative_3",
+    "profile_id": "765",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "765_negative_4",
+    "profile_id": "765",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_full_normal",
+    "profile_id": "625",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_partial",
+    "profile_id": "625",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_good_then_bad",
+    "profile_id": "625",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_different_dates",
+    "profile_id": "625",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_alt_equal",
+    "profile_id": "625",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_tbil_equal",
+    "profile_id": "625",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_hospital_ranges",
+    "profile_id": "625",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_no_ranges",
+    "profile_id": "625",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_same_encounter_conflict",
+    "profile_id": "625",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_bad_then_good",
+    "profile_id": "625",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_encounter_outranks_date",
+    "profile_id": "625",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "625_same_day_different_encounter",
+    "profile_id": "625",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_quantity_only",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_refusal_only",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_both",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_neither",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_or_veto",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "295_old",
+    "profile_id": "295",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "85_completed",
+    "profile_id": "85",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "85_planned",
+    "profile_id": "85",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "85_cross_event",
+    "profile_id": "85",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "85_good_and_emergency",
+    "profile_id": "85",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "205_completed",
+    "profile_id": "205",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "205_planned",
+    "profile_id": "205",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "205_cross_event",
+    "profile_id": "205",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "205_good_and_emergency",
+    "profile_id": "205",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_ongoing",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_completed",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_planned",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_recommended",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "225_denied",
+    "profile_id": "225",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "3_cross_event",
+    "profile_id": "3",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "3_same_event",
+    "profile_id": "3",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "465_cross_event",
+    "profile_id": "465",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "465_same_event",
+    "profile_id": "465",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "495_cross_event",
+    "profile_id": "495",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "495_same_event",
+    "profile_id": "495",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "475_cross_event",
+    "profile_id": "475",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "475_same_event",
+    "profile_id": "475",
+    "generated": true,
+    "fsh_violations": [],
+    "service_hit": true,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_breath_positive",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_breath_family",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_breath_negative",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_breath_uncertain",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_breath_planned",
+    "profile_id": "2",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_lymphoma_positive",
+    "profile_id": "495",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_lymphoma_family",
+    "profile_id": "495",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_lymphoma_negative",
+    "profile_id": "495",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_lymphoma_uncertain",
+    "profile_id": "495",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_lymphoma_planned",
+    "profile_id": "495",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_diabetes_positive",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_diabetes_family",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_diabetes_negative",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_diabetes_uncertain",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  },
+  {
+    "case": "semantic_diabetes_planned",
+    "profile_id": "255",
+    "generated": false,
+    "fsh_violations": [],
+    "service_hit": false,
+    "true_label": "UNKNOWN"
+  }
+]

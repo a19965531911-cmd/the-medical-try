@@ -1,0 +1,7188 @@
+[
+  {
+    "case": "clear_positive_00",
+    "group": "clear_positive",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "患者咳嗽",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.018055099993944168
+  },
+  {
+    "case": "clear_negative_00",
+    "group": "clear_negative",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "头痛",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001721999142318964
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.006755500100553036
+  },
+  {
+    "case": "clear_positive_01",
+    "group": "clear_positive",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "病理证实肝细胞癌，已行肝癌根治性切除R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      },
+      {
+        "text": "病理证实肝细胞癌，已行肝癌根治性切除R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.014439400052651763
+  },
+  {
+    "case": "clear_negative_01",
+    "group": "clear_negative",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "肝细胞癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      },
+      {
+        "text": "肝细胞癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001776998396962881
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.007857500109821558
+  },
+  {
+    "case": "clear_positive_02",
+    "group": "clear_positive",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "拟择期行胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.013326900079846382
+  },
+  {
+    "case": "clear_negative_02",
+    "group": "clear_negative",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "急诊胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.009256400167942047
+  },
+  {
+    "case": "clear_positive_03",
+    "group": "clear_positive",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "拟择期全麻下胸部手术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.009469700045883656
+  },
+  {
+    "case": "clear_negative_03",
+    "group": "clear_negative",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "急诊全麻胸部手术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.007272300077602267
+  },
+  {
+    "case": "clear_positive_04",
+    "group": "clear_positive",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "已接受放疗",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.0049882999155670404
+  },
+  {
+    "case": "clear_negative_04",
+    "group": "clear_negative",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "仅化疗",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015639979392290115
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.004471800057217479
+  },
+  {
+    "case": "clear_positive_05",
+    "group": "clear_positive",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "确诊2型糖尿病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.006207899888977408
+  },
+  {
+    "case": "clear_negative_05",
+    "group": "clear_negative",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "1型糖尿病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015530013479292393
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.004082900006324053
+  },
+  {
+    "case": "clear_positive_06",
+    "group": "clear_positive",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "目前每天吸烟20支",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.013253400102257729
+  },
+  {
+    "case": "clear_negative_06",
+    "group": "clear_negative",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "从不吸烟",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015110010281205177
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.010412200121209025
+  },
+  {
+    "case": "clear_positive_07",
+    "group": "clear_positive",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "肾活检病理提示IgA肾病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.008221999974921346
+  },
+  {
+    "case": "clear_negative_07",
+    "group": "clear_negative",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "糖尿病肾病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015520001761615276
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.006649799877777696
+  },
+  {
+    "case": "clear_positive_08",
+    "group": "clear_positive",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "腰椎间盘突出导致腰痛3个月",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.011761700036004186
+  },
+  {
+    "case": "clear_negative_08",
+    "group": "clear_negative",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "膝痛半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00016589998267591
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.00871480000205338
+  },
+  {
+    "case": "clear_positive_09",
+    "group": "clear_positive",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理诊断弥漫大B细胞淋巴瘤",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.00687790010124445
+  },
+  {
+    "case": "clear_negative_09",
+    "group": "clear_negative",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "NHL",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015770015306770802
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.00557939987629652
+  },
+  {
+    "case": "clear_positive_10",
+    "group": "clear_positive",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "术前诊断胸中段食管癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "术前诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.00769550004042685
+  },
+  {
+    "case": "clear_negative_10",
+    "group": "clear_negative",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "胃癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "术前诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00019599986262619495
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.006368099944666028
+  },
+  {
+    "case": "clear_positive_11",
+    "group": "clear_positive",
+    "profile_id": "585",
+    "reports": [
+      {
+        "text": "反复腰痛3个月",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.007913299836218357
+  },
+  {
+    "case": "clear_negative_11",
+    "group": "clear_negative",
+    "profile_id": "585",
+    "reports": [
+      {
+        "text": "头痛半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015360000543296337
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.007189699914306402
+  },
+  {
+    "case": "clear_positive_12",
+    "group": "clear_positive",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1.5 ULN ALT 3 ULN AST 2.9 ULN",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.04622589983046055
+  },
+  {
+    "case": "clear_negative_12",
+    "group": "clear_negative",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "无检验",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00010559987276792526
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.005840199999511242
+  },
+  {
+    "case": "clear_positive_13",
+    "group": "clear_positive",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "证实有远处转移",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.005063400138169527
+  },
+  {
+    "case": "clear_negative_13",
+    "group": "clear_negative",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "M0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001066999975591898
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.004394900053739548
+  },
+  {
+    "case": "clear_positive_14",
+    "group": "clear_positive",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "增强CT示下腔静脉及门静脉均未见肿瘤侵犯",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.0065426998771727085
+  },
+  {
+    "case": "clear_negative_14",
+    "group": "clear_negative",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "门静脉可见癌栓，下腔静脉未受侵",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.0053946999832987785
+  },
+  {
+    "case": "clear_positive_15",
+    "group": "clear_positive",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "有窒息缺氧史",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.004086299799382687
+  },
+  {
+    "case": "clear_negative_15",
+    "group": "clear_negative",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "SpO2 80%",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00012949993833899498
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.002453399822115898
+  },
+  {
+    "case": "clear_positive_16",
+    "group": "clear_positive",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后喘憋",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit corroborated second positive expression; original numeric limits retained.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.0036047000903636217
+  },
+  {
+    "case": "clear_negative_16",
+    "group": "clear_negative",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "胸痛",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Near-miss alternative or threshold violation does not meet the criterion.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00011060014367103577
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.003097499953582883
+  },
+  {
+    "case": "clear_positive_17",
+    "group": "clear_positive",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "T2DM",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit corroborated second positive expression; original numeric limits retained.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.008795400150120258
+  },
+  {
+    "case": "clear_negative_17",
+    "group": "clear_negative",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "糖耐量异常",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Near-miss alternative or threshold violation does not meet the criterion.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00016469997353851795
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.008693299954757094
+  },
+  {
+    "case": "clear_positive_18",
+    "group": "clear_positive",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "活检证实DLBCL",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit corroborated second positive expression; original numeric limits retained.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.008371700067073107
+  },
+  {
+    "case": "clear_negative_18",
+    "group": "clear_negative",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "B细胞淋巴瘤NOS",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Near-miss alternative or threshold violation does not meet the criterion.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001764001790434122
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.005621100077405572
+  },
+  {
+    "case": "clear_positive_19",
+    "group": "clear_positive",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "总胆红素1倍正常上限，ALT 2倍正常上限，AST 3倍正常上限",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit corroborated second positive expression; original numeric limits retained.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.008235699962824583
+  },
+  {
+    "case": "clear_negative_19",
+    "group": "clear_negative",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1.51 ULN ALT 3 ULN AST 2 ULN",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Near-miss alternative or threshold violation does not meet the criterion.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001417999155819416
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.007759700063616037
+  },
+  {
+    "case": "complex_synonym_00",
+    "group": "complex_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00014450005255639553
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.006654100026935339
+  },
+  {
+    "case": "complex_synonym_01",
+    "group": "complex_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "走几步就觉得呼吸费力",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00012589991092681885
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.0066263999324291945
+  },
+  {
+    "case": "complex_synonym_02",
+    "group": "complex_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "持续干咳",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00013960013166069984
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.006473700050264597
+  },
+  {
+    "case": "complex_synonym_03",
+    "group": "complex_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "感觉胸口憋得慌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00012810016050934792
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.0062275000382214785
+  },
+  {
+    "case": "complex_synonym_04",
+    "group": "complex_synonym",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学证实HCC，已行hepatectomy，negative margins，R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      },
+      {
+        "text": "组织学证实HCC，已行hepatectomy，negative margins，R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.008539600064978004
+  },
+  {
+    "case": "complex_synonym_05",
+    "group": "complex_synonym",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "拟择期VATS肺段切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.010276499902829528
+  },
+  {
+    "case": "complex_synonym_06",
+    "group": "complex_synonym",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "择期肺切除，全身麻醉",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.012899599969387054
+  },
+  {
+    "case": "complex_synonym_07",
+    "group": "complex_synonym",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "外照射疗程已经结束",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00016589998267591
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.004670599941164255
+  },
+  {
+    "case": "complex_synonym_08",
+    "group": "complex_synonym",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "明确诊断成人发病型糖尿病，疾病分型为第二型",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00013720011338591576
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.004224099917337298
+  },
+  {
+    "case": "complex_synonym_09",
+    "group": "complex_synonym",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "现吸烟1包/日",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.009642799850553274
+  },
+  {
+    "case": "complex_synonym_10",
+    "group": "complex_synonym",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "renal biopsy证实IgA nephropathy",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.008951800176873803
+  },
+  {
+    "case": "complex_synonym_11",
+    "group": "complex_synonym",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "腰椎间盘突出所致腰背痛持续半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.022071100072935224
+  },
+  {
+    "case": "complex_synonym_12",
+    "group": "complex_synonym",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00010819989256560802
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.005844899918884039
+  },
+  {
+    "case": "complex_synonym_13",
+    "group": "complex_synonym",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "术前诊断下段食道癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "术前诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.006510999985039234
+  },
+  {
+    "case": "complex_synonym_14",
+    "group": "complex_synonym",
+    "profile_id": "585",
+    "reports": [
+      {
+        "text": "下背痛半年余",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.008778200019150972
+  },
+  {
+    "case": "complex_synonym_15",
+    "group": "complex_synonym",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "总胆红素30上限20，谷丙转氨酶90上限30，谷草转氨酶90上限30",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.009186499984934926
+  },
+  {
+    "case": "complex_synonym_16",
+    "group": "complex_synonym",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "肺癌患者影像证实骨转移",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.009137999964877963
+  },
+  {
+    "case": "complex_synonym_17",
+    "group": "complex_synonym",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "下腔静脉未受侵。门静脉未受侵",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.008800999959930778
+  },
+  {
+    "case": "complex_synonym_18",
+    "group": "complex_synonym",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "出生时发生窒息",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.005741799948737025
+  },
+  {
+    "case": "complex_synonym_19",
+    "group": "complex_synonym",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "仅区域淋巴结转移，M0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00016689999029040337
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.0064039998687803745
+  },
+  {
+    "case": "state_scope_00",
+    "group": "state_scope",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "否认活动后透不过气",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00014289980754256248
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.006520299939438701
+  },
+  {
+    "case": "state_scope_01",
+    "group": "state_scope",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气已完全消失",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00012660003267228603
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.006733199814334512
+  },
+  {
+    "case": "state_scope_02",
+    "group": "state_scope",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "病理疑似HCC，拟肝切除R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      },
+      {
+        "text": "病理疑似HCC，拟肝切除R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.007536699995398521
+  },
+  {
+    "case": "state_scope_03",
+    "group": "state_scope",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "拟择期胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.009146200027316809
+  },
+  {
+    "case": "state_scope_04",
+    "group": "state_scope",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "拟择期全麻下胸部手术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.0077454999554902315
+  },
+  {
+    "case": "state_scope_05",
+    "group": "state_scope",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "拟行放疗",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.004045499954372644
+  },
+  {
+    "case": "state_scope_06",
+    "group": "state_scope",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "正在接受放疗",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.0042195001151412725
+  },
+  {
+    "case": "state_scope_07",
+    "group": "state_scope",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "放疗已完成",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.004644300090149045
+  },
+  {
+    "case": "state_scope_08",
+    "group": "state_scope",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "疑似第二型糖尿病，尚未确诊",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.003750900039449334
+  },
+  {
+    "case": "state_scope_09",
+    "group": "state_scope",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "曾每天20支，戒烟5年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00017550005577504635
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.008906099945306778
+  },
+  {
+    "case": "state_scope_10",
+    "group": "state_scope",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "拟肾活检，诊断IgA肾病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.005504000000655651
+  },
+  {
+    "case": "state_scope_11",
+    "group": "state_scope",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "疑似脊柱源性疼痛半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.008233600063249469
+  },
+  {
+    "case": "state_scope_12",
+    "group": "state_scope",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理疑似DLBCL",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.0052349001634866
+  },
+  {
+    "case": "state_scope_13",
+    "group": "state_scope",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "术后病理中段食管癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "术前诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015709991566836834
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.0062142000533640385
+  },
+  {
+    "case": "state_scope_14",
+    "group": "state_scope",
+    "profile_id": "585",
+    "reports": [
+      {
+        "text": "腰痛已消失，曾持续半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.012326400028541684
+  },
+  {
+    "case": "state_scope_15",
+    "group": "state_scope",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "拟查TBIL ALT AST",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00012390012852847576
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.00732510001398623
+  },
+  {
+    "case": "state_scope_16",
+    "group": "state_scope",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "不排除远处转移",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.006455200025811791
+  },
+  {
+    "case": "state_scope_17",
+    "group": "state_scope",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "考虑门静脉侵犯，下腔静脉未侵",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.008384199813008308
+  },
+  {
+    "case": "state_scope_18",
+    "group": "state_scope",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "曾发生窒息",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.00523030012845993
+  },
+  {
+    "case": "state_scope_19",
+    "group": "state_scope",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "可能有窒息史",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.00440179998986423
+  },
+  {
+    "case": "cross_scope_00",
+    "group": "cross_scope",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "病理证实肝细胞癌",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "已行肝切除R0",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.008529399987310171
+  },
+  {
+    "case": "cross_scope_01",
+    "group": "cross_scope",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "病理证实肝细胞癌",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "已行肝切除R0",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.007489099865779281
+  },
+  {
+    "case": "cross_scope_02",
+    "group": "cross_scope",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "择期手术",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.008906299946829677
+  },
+  {
+    "case": "cross_scope_03",
+    "group": "cross_scope",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "择期手术",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "全麻下胸部手术",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.007193600060418248
+  },
+  {
+    "case": "cross_scope_04",
+    "group": "cross_scope",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "肾活检已完成",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "IgA肾病",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.005593700101599097
+  },
+  {
+    "case": "cross_scope_05",
+    "group": "cross_scope",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "DLBCL",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.005383400013670325
+  },
+  {
+    "case": "cross_scope_06",
+    "group": "cross_scope",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "DLBCL",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.005076500121504068
+  },
+  {
+    "case": "cross_scope_07",
+    "group": "cross_scope",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "腰椎间盘突出导致疼痛",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "疼痛持续半年",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.008428700035437942
+  },
+  {
+    "case": "cross_scope_08",
+    "group": "cross_scope",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1 ULN",
+        "timestamp": "2026-10-08"
+      },
+      {
+        "text": "ALT 2 ULN AST 2 ULN",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00014490005560219288
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.008168899919837713
+  },
+  {
+    "case": "cross_scope_09",
+    "group": "cross_scope",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1 ULN",
+        "timestamp": "2026-10-09",
+        "encounter_id": "A"
+      },
+      {
+        "text": "ALT 2 ULN AST 2 ULN",
+        "timestamp": "2026-10-09",
+        "encounter_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00012729992158710957
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.007773000048473477
+  },
+  {
+    "case": "cross_scope_10",
+    "group": "cross_scope",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1 ULN",
+        "timestamp": "2026-10-09",
+        "encounter_id": "A"
+      },
+      {
+        "text": "ALT 2 ULN AST 2 ULN",
+        "timestamp": "2026-10-09",
+        "encounter_id": "A"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": true,
+    "elapsed": 0.008152199909090996
+  },
+  {
+    "case": "cross_scope_11",
+    "group": "cross_scope",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "每天吸烟20支",
+        "timestamp": "2026-01-01"
+      },
+      {
+        "text": "当前评估",
+        "timestamp": "2026-10-09",
+        "evaluation_timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.002227099845185876
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.012757800053805113
+  },
+  {
+    "case": "cross_scope_12",
+    "group": "cross_scope",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "父亲活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.006530300015583634
+  },
+  {
+    "case": "cross_scope_13",
+    "group": "cross_scope",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "母亲确诊2型糖尿病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.004815799882635474
+  },
+  {
+    "case": "cross_scope_14",
+    "group": "cross_scope",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "家族病理确诊DLBCL",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.005196700105443597
+  },
+  {
+    "case": "cross_scope_15",
+    "group": "cross_scope",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "父亲放疗已完成",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.003929500002413988
+  },
+  {
+    "case": "cross_scope_16",
+    "group": "cross_scope",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "母亲证实远处转移",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.005570600042119622
+  },
+  {
+    "case": "cross_scope_17",
+    "group": "cross_scope",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "父亲有窒息缺氧史",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.004320300184190273
+  },
+  {
+    "case": "cross_scope_18",
+    "group": "cross_scope",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "父亲下腔静脉、门静脉均未受侵",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.007909300038591027
+  },
+  {
+    "case": "cross_scope_19",
+    "group": "cross_scope",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "术前食管癌",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "肿瘤中下段",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B6H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015510013327002525
+      ]
+    },
+    "stages": {},
+    "service_hit": false,
+    "elapsed": 0.007343299919739366
+  },
+  {
+    "case": "clear_positive_00",
+    "group": "clear_positive",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "患者咳嗽",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.006731299916282296
+  },
+  {
+    "case": "clear_negative_00",
+    "group": "clear_negative",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "头痛",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00016329996287822723
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006772299995645881
+  },
+  {
+    "case": "clear_positive_01",
+    "group": "clear_positive",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "病理证实肝细胞癌，已行肝癌根治性切除R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      },
+      {
+        "text": "病理证实肝细胞癌，已行肝癌根治性切除R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.008424000116065145
+  },
+  {
+    "case": "clear_negative_01",
+    "group": "clear_negative",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "肝细胞癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      },
+      {
+        "text": "肝细胞癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00018079997971653938
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.008023399859666824
+  },
+  {
+    "case": "clear_positive_02",
+    "group": "clear_positive",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "拟择期行胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.010261500021442771
+  },
+  {
+    "case": "clear_negative_02",
+    "group": "clear_negative",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "急诊胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.009977399837225676
+  },
+  {
+    "case": "clear_positive_03",
+    "group": "clear_positive",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "拟择期全麻下胸部手术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.008803800214082003
+  },
+  {
+    "case": "clear_negative_03",
+    "group": "clear_negative",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "急诊全麻胸部手术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.007909600157290697
+  },
+  {
+    "case": "clear_positive_04",
+    "group": "clear_positive",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "已接受放疗",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.0047716000117361546
+  },
+  {
+    "case": "clear_negative_04",
+    "group": "clear_negative",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "仅化疗",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001697998959571123
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.004443200072273612
+  },
+  {
+    "case": "clear_positive_05",
+    "group": "clear_positive",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "确诊2型糖尿病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.004359700018540025
+  },
+  {
+    "case": "clear_negative_05",
+    "group": "clear_negative",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "1型糖尿病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015549990348517895
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.004781299969181418
+  },
+  {
+    "case": "clear_positive_06",
+    "group": "clear_positive",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "目前每天吸烟20支",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.01046480005607009
+  },
+  {
+    "case": "clear_negative_06",
+    "group": "clear_negative",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "从不吸烟",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015879981219768524
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.009830399882048368
+  },
+  {
+    "case": "clear_positive_07",
+    "group": "clear_positive",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "肾活检病理提示IgA肾病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.006234199972823262
+  },
+  {
+    "case": "clear_negative_07",
+    "group": "clear_negative",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "糖尿病肾病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00038199988193809986
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006107299821451306
+  },
+  {
+    "case": "clear_positive_08",
+    "group": "clear_positive",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "腰椎间盘突出导致腰痛3个月",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.008351099910214543
+  },
+  {
+    "case": "clear_negative_08",
+    "group": "clear_negative",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "膝痛半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015219999477267265
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.008757000090554357
+  },
+  {
+    "case": "clear_positive_09",
+    "group": "clear_positive",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理诊断弥漫大B细胞淋巴瘤",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.005392200080677867
+  },
+  {
+    "case": "clear_negative_09",
+    "group": "clear_negative",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "NHL",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00016000005416572094
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.005510600050911307
+  },
+  {
+    "case": "clear_positive_10",
+    "group": "clear_positive",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "术前诊断胸中段食管癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "术前诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.007313200039789081
+  },
+  {
+    "case": "clear_negative_10",
+    "group": "clear_negative",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "胃癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "术前诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00016639987006783485
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006519900169223547
+  },
+  {
+    "case": "clear_positive_11",
+    "group": "clear_positive",
+    "profile_id": "585",
+    "reports": [
+      {
+        "text": "反复腰痛3个月",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.007878700038418174
+  },
+  {
+    "case": "clear_negative_11",
+    "group": "clear_negative",
+    "profile_id": "585",
+    "reports": [
+      {
+        "text": "头痛半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015899981372058392
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.007360199932008982
+  },
+  {
+    "case": "clear_positive_12",
+    "group": "clear_positive",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1.5 ULN ALT 3 ULN AST 2.9 ULN",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.00831319997087121
+  },
+  {
+    "case": "clear_negative_12",
+    "group": "clear_negative",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "无检验",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001462001819163561
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.007757999934256077
+  },
+  {
+    "case": "clear_positive_13",
+    "group": "clear_positive",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "证实有远处转移",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.006414400180801749
+  },
+  {
+    "case": "clear_negative_13",
+    "group": "clear_negative",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "M0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015259999781847
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.005916600115597248
+  },
+  {
+    "case": "clear_positive_14",
+    "group": "clear_positive",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "增强CT示下腔静脉及门静脉均未见肿瘤侵犯",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.008377900114282966
+  },
+  {
+    "case": "clear_negative_14",
+    "group": "clear_negative",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "门静脉可见癌栓，下腔静脉未受侵",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.008370300056412816
+  },
+  {
+    "case": "clear_positive_15",
+    "group": "clear_positive",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "有窒息缺氧史",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.0055195000022649765
+  },
+  {
+    "case": "clear_negative_15",
+    "group": "clear_negative",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "SpO2 80%",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015460001304745674
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.004898099927231669
+  },
+  {
+    "case": "clear_positive_16",
+    "group": "clear_positive",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后喘憋",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit corroborated second positive expression; original numeric limits retained.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.007234200136736035
+  },
+  {
+    "case": "clear_negative_16",
+    "group": "clear_negative",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "胸痛",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Near-miss alternative or threshold violation does not meet the criterion.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00021370011381804943
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.007025300059467554
+  },
+  {
+    "case": "clear_positive_17",
+    "group": "clear_positive",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "T2DM",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit corroborated second positive expression; original numeric limits retained.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.0046790000051259995
+  },
+  {
+    "case": "clear_negative_17",
+    "group": "clear_negative",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "糖耐量异常",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Near-miss alternative or threshold violation does not meet the criterion.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00015660002827644348
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.005169000010937452
+  },
+  {
+    "case": "clear_positive_18",
+    "group": "clear_positive",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "活检证实DLBCL",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit corroborated second positive expression; original numeric limits retained.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.006075100041925907
+  },
+  {
+    "case": "clear_negative_18",
+    "group": "clear_negative",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "B细胞淋巴瘤NOS",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Near-miss alternative or threshold violation does not meet the criterion.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.000174699816852808
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006135399919003248
+  },
+  {
+    "case": "clear_positive_19",
+    "group": "clear_positive",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "总胆红素1倍正常上限，ALT 2倍正常上限，AST 3倍正常上限",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit corroborated second positive expression; original numeric limits retained.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.010022300062701106
+  },
+  {
+    "case": "clear_negative_19",
+    "group": "clear_negative",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1.51 ULN ALT 3 ULN AST 2 ULN",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Near-miss alternative or threshold violation does not meet the criterion.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00014829984866082668
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.008650499861687422
+  },
+  {
+    "case": "complex_synonym_00",
+    "group": "complex_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00013770000077784061
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006691099843010306
+  },
+  {
+    "case": "complex_synonym_01",
+    "group": "complex_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "走几步就觉得呼吸费力",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001238000113517046
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006370099959895015
+  },
+  {
+    "case": "complex_synonym_02",
+    "group": "complex_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "持续干咳",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001221999991685152
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006527200108394027
+  },
+  {
+    "case": "complex_synonym_03",
+    "group": "complex_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "感觉胸口憋得慌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001221999991685152
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006555099971592426
+  },
+  {
+    "case": "complex_synonym_04",
+    "group": "complex_synonym",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学证实HCC，已行hepatectomy，negative margins，R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      },
+      {
+        "text": "组织学证实HCC，已行hepatectomy，negative margins，R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.008743199985474348
+  },
+  {
+    "case": "complex_synonym_05",
+    "group": "complex_synonym",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "拟择期VATS肺段切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.009513000026345253
+  },
+  {
+    "case": "complex_synonym_06",
+    "group": "complex_synonym",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "择期肺切除，全身麻醉",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.007876399904489517
+  },
+  {
+    "case": "complex_synonym_07",
+    "group": "complex_synonym",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "外照射疗程已经结束",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00017699995078146458
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.0044998000375926495
+  },
+  {
+    "case": "complex_synonym_08",
+    "group": "complex_synonym",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "明确诊断成人发病型糖尿病，疾病分型为第二型",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00013490021228790283
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.0047710000071674585
+  },
+  {
+    "case": "complex_synonym_09",
+    "group": "complex_synonym",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "现吸烟1包/日",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.01048090006224811
+  },
+  {
+    "case": "complex_synonym_10",
+    "group": "complex_synonym",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "renal biopsy证实IgA nephropathy",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.006944200024008751
+  },
+  {
+    "case": "complex_synonym_11",
+    "group": "complex_synonym",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "腰椎间盘突出所致腰背痛持续半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.009318799944594502
+  },
+  {
+    "case": "complex_synonym_12",
+    "group": "complex_synonym",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001493000891059637
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.009211899945512414
+  },
+  {
+    "case": "complex_synonym_13",
+    "group": "complex_synonym",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "术前诊断下段食道癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "术前诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.00680350000038743
+  },
+  {
+    "case": "complex_synonym_14",
+    "group": "complex_synonym",
+    "profile_id": "585",
+    "reports": [
+      {
+        "text": "下背痛半年余",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.007754400139674544
+  },
+  {
+    "case": "complex_synonym_15",
+    "group": "complex_synonym",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "总胆红素30上限20，谷丙转氨酶90上限30，谷草转氨酶90上限30",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.008235200075432658
+  },
+  {
+    "case": "complex_synonym_16",
+    "group": "complex_synonym",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "肺癌患者影像证实骨转移",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.006564699811860919
+  },
+  {
+    "case": "complex_synonym_17",
+    "group": "complex_synonym",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "下腔静脉未受侵。门静脉未受侵",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.009478399995714426
+  },
+  {
+    "case": "complex_synonym_18",
+    "group": "complex_synonym",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "出生时发生窒息",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.009762900182977319
+  },
+  {
+    "case": "complex_synonym_19",
+    "group": "complex_synonym",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "仅区域淋巴结转移，M0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001729999203234911
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.007171399891376495
+  },
+  {
+    "case": "state_scope_00",
+    "group": "state_scope",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "否认活动后透不过气",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00014629983343183994
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.0072858999483287334
+  },
+  {
+    "case": "state_scope_01",
+    "group": "state_scope",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气已完全消失",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        6.980006583034992e-05
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006422600010409951
+  },
+  {
+    "case": "state_scope_02",
+    "group": "state_scope",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "病理疑似HCC，拟肝切除R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      },
+      {
+        "text": "病理疑似HCC，拟肝切除R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.007643799996003509
+  },
+  {
+    "case": "state_scope_03",
+    "group": "state_scope",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "拟择期胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.009464000118896365
+  },
+  {
+    "case": "state_scope_04",
+    "group": "state_scope",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "拟择期全麻下胸部手术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.007630799897015095
+  },
+  {
+    "case": "state_scope_05",
+    "group": "state_scope",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "拟行放疗",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.0041235999669879675
+  },
+  {
+    "case": "state_scope_06",
+    "group": "state_scope",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "正在接受放疗",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.00426710001192987
+  },
+  {
+    "case": "state_scope_07",
+    "group": "state_scope",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "放疗已完成",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.004604700021445751
+  },
+  {
+    "case": "state_scope_08",
+    "group": "state_scope",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "疑似第二型糖尿病，尚未确诊",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.004155999980866909
+  },
+  {
+    "case": "state_scope_09",
+    "group": "state_scope",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "曾每天20支，戒烟5年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00016789999790489674
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.009024099912494421
+  },
+  {
+    "case": "state_scope_10",
+    "group": "state_scope",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "拟肾活检，诊断IgA肾病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.005853999871760607
+  },
+  {
+    "case": "state_scope_11",
+    "group": "state_scope",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "疑似脊柱源性疼痛半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.007925999816507101
+  },
+  {
+    "case": "state_scope_12",
+    "group": "state_scope",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理疑似DLBCL",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.005169500131160021
+  },
+  {
+    "case": "state_scope_13",
+    "group": "state_scope",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "术后病理中段食管癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "术前诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0001605998259037733
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.005851800087839365
+  },
+  {
+    "case": "state_scope_14",
+    "group": "state_scope",
+    "profile_id": "585",
+    "reports": [
+      {
+        "text": "腰痛已消失，曾持续半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006808300036936998
+  },
+  {
+    "case": "state_scope_15",
+    "group": "state_scope",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "拟查TBIL ALT AST",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00013410020619630814
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.00913969986140728
+  },
+  {
+    "case": "state_scope_16",
+    "group": "state_scope",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "不排除远处转移",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006365800043568015
+  },
+  {
+    "case": "state_scope_17",
+    "group": "state_scope",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "考虑门静脉侵犯，下腔静脉未侵",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.00864370004273951
+  },
+  {
+    "case": "state_scope_18",
+    "group": "state_scope",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "曾发生窒息",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.005286799976602197
+  },
+  {
+    "case": "state_scope_19",
+    "group": "state_scope",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "可能有窒息史",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.004385899985209107
+  },
+  {
+    "case": "cross_scope_00",
+    "group": "cross_scope",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "病理证实肝细胞癌",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "已行肝切除R0",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.010583400027826428
+  },
+  {
+    "case": "cross_scope_01",
+    "group": "cross_scope",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "病理证实肝细胞癌",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "已行肝切除R0",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.00770580000244081
+  },
+  {
+    "case": "cross_scope_02",
+    "group": "cross_scope",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "择期手术",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.009158300003036857
+  },
+  {
+    "case": "cross_scope_03",
+    "group": "cross_scope",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "择期手术",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "全麻下胸部手术",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.008031700039282441
+  },
+  {
+    "case": "cross_scope_04",
+    "group": "cross_scope",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "肾活检已完成",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "IgA肾病",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.005996099906042218
+  },
+  {
+    "case": "cross_scope_05",
+    "group": "cross_scope",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "DLBCL",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.005412400001659989
+  },
+  {
+    "case": "cross_scope_06",
+    "group": "cross_scope",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "DLBCL",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.005689600016921759
+  },
+  {
+    "case": "cross_scope_07",
+    "group": "cross_scope",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "腰椎间盘突出导致疼痛",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "疼痛持续半年",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.009186499984934926
+  },
+  {
+    "case": "cross_scope_08",
+    "group": "cross_scope",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1 ULN",
+        "timestamp": "2026-10-08"
+      },
+      {
+        "text": "ALT 2 ULN AST 2 ULN",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00014740019105374813
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.008024899987503886
+  },
+  {
+    "case": "cross_scope_09",
+    "group": "cross_scope",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1 ULN",
+        "timestamp": "2026-10-09",
+        "encounter_id": "A"
+      },
+      {
+        "text": "ALT 2 ULN AST 2 ULN",
+        "timestamp": "2026-10-09",
+        "encounter_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00013949978165328503
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.009227699832990766
+  },
+  {
+    "case": "cross_scope_10",
+    "group": "cross_scope",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1 ULN",
+        "timestamp": "2026-10-09",
+        "encounter_id": "A"
+      },
+      {
+        "text": "ALT 2 ULN AST 2 ULN",
+        "timestamp": "2026-10-09",
+        "encounter_id": "A"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": true,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": true,
+      "FALLBACK": false
+    },
+    "service_hit": true,
+    "elapsed": 0.009398499969393015
+  },
+  {
+    "case": "cross_scope_11",
+    "group": "cross_scope",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "每天吸烟20支",
+        "timestamp": "2026-01-01"
+      },
+      {
+        "text": "当前评估",
+        "timestamp": "2026-10-09",
+        "evaluation_timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.0002180000301450491
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.009531299816444516
+  },
+  {
+    "case": "cross_scope_12",
+    "group": "cross_scope",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "父亲活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006751700071617961
+  },
+  {
+    "case": "cross_scope_13",
+    "group": "cross_scope",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "母亲确诊2型糖尿病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.004360100021585822
+  },
+  {
+    "case": "cross_scope_14",
+    "group": "cross_scope",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "家族病理确诊DLBCL",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006477599963545799
+  },
+  {
+    "case": "cross_scope_15",
+    "group": "cross_scope",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "父亲放疗已完成",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.003961500013247132
+  },
+  {
+    "case": "cross_scope_16",
+    "group": "cross_scope",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "母亲证实远处转移",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.006106599932536483
+  },
+  {
+    "case": "cross_scope_17",
+    "group": "cross_scope",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "父亲有窒息缺氧史",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.004718400072306395
+  },
+  {
+    "case": "cross_scope_18",
+    "group": "cross_scope",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "父亲下腔静脉、门静脉均未受侵",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 0,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": []
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": true,
+      "CALL_TRIGGERED": false,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": false,
+      "GROUNDED": false,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.008533100131899118
+  },
+  {
+    "case": "cross_scope_19",
+    "group": "cross_scope",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "术前食管癌",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "肿瘤中下段",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "variant": "B7H",
+    "predicted": false,
+    "metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 1,
+      "json_valid": 1,
+      "grounded": 1,
+      "fact_rejections": 0,
+      "errors": [],
+      "latencies": [
+        0.00014979997649788857
+      ]
+    },
+    "stages": {
+      "NO_CALL_RULE_DECIDED": false,
+      "CALL_TRIGGERED": true,
+      "HTTP_SUCCESS": false,
+      "JSON_VALID": true,
+      "GROUNDED": true,
+      "FACT_ACCEPTED": 0,
+      "FHIR_EMITTED": false,
+      "FALLBACK": false
+    },
+    "service_hit": false,
+    "elapsed": 0.007239400176331401
+  }
+]

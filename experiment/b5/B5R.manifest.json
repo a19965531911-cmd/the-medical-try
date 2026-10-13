@@ -1,0 +1,11 @@
+{
+  "variant": "B5R",
+  "sha256": "51cbe539ca3798ac4a03fa0b02f04a2f29693ecc90a243d8f49d5f3bdc4d5871",
+  "mode": "rules",
+  "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+  "model": "local-model",
+  "total_model_budget_seconds": 4,
+  "max_calls": 1,
+  "baseline_source_sha256": "690690d3f4e52a6bcccad3d30f4b2c147b227a54d90a28fd2697a20e4e23096b",
+  "publication": "BLOCKED"
+}

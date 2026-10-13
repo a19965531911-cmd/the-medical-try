@@ -1,0 +1,12 @@
+{
+  "candidate": "B5R",
+  "regression": {
+    "status": "PASS",
+    "exit_code": 0,
+    "summary": [
+      "1017 passed in 182.74s (0:03:02)"
+    ]
+  },
+  "frozen_unchanged": true,
+  "model_success": false
+}

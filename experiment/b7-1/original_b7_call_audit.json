@@ -1,0 +1,807 @@
+[
+  {
+    "case": "2_rescue",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 1,
+    "final_match": true,
+    "service_match": true,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "2_negative",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "2_uncertain",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "2_planned",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "2_hallucination",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 0,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_rescue",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 4,
+    "final_match": true,
+    "service_match": true,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_negative",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_uncertain",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_planned",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_hallucination",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 0,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "255_hallucination",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 0,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "465_rescue",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 1,
+    "final_match": true,
+    "service_match": true,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "465_negative",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "465_uncertain",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "465_planned",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "465_hallucination",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 0,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "495_rescue",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 1,
+    "final_match": true,
+    "service_match": true,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "495_hallucination",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 0,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "695_rescue",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 1,
+    "final_match": true,
+    "service_match": true,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "695_negative",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "695_uncertain",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "695_planned",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "695_hallucination",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 0,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "765_hallucination",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 0,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_incomplete",
+    "calls": 1,
+    "http_success": 1,
+    "json_valid": 1,
+    "accepted": 0,
+    "final_match": false,
+    "service_match": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  }
+]

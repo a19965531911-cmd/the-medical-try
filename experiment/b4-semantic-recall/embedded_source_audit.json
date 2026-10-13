@@ -1,0 +1,1442 @@
+[
+  {
+    "variant": "B4R",
+    "profile_id": "2",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "3",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "85",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "205",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "225",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "255",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "295",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "465",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "475",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "495",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "525",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "585",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "625",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "695",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "715",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4R",
+    "profile_id": "765",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4R",
+      "mode": "rules",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": false
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "2",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "3",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "85",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "205",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "225",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "255",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "295",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "465",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "475",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "495",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "525",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "585",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "625",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "695",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "715",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4L",
+    "profile_id": "765",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4L",
+      "mode": "llm_first",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "2",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "3",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "85",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "205",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "225",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "255",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "295",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "465",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "475",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "495",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "525",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "585",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "625",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "695",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "715",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4H",
+    "profile_id": "765",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4H",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "2",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "3",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "85",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "205",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "225",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "255",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "295",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "465",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "475",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "495",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "525",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "585",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "625",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "695",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "715",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4I",
+    "profile_id": "765",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4I",
+      "mode": "item",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "2",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "3",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "85",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "205",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "225",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "255",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "295",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "465",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "475",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "495",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "525",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "585",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "625",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "695",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "715",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4S",
+    "profile_id": "765",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4S",
+      "mode": "hybrid",
+      "single_profile": true,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "2",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "3",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "85",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "205",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "225",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "255",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "295",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "465",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "475",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "495",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "525",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "585",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "625",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "695",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "715",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  },
+  {
+    "variant": "B4F",
+    "profile_id": "765",
+    "binding": "PASS",
+    "embedded_config": {
+      "variant": "B4F",
+      "mode": "hybrid",
+      "single_profile": false,
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "timeout_seconds": 5
+    },
+    "executable_model_route": true
+  }
+]

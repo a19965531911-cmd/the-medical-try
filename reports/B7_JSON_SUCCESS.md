@@ -1,0 +1,1 @@
+Closed legacy/extended schema tests and Markdown normalization verified. Output capacity of256/512/1024/2048 cannot be measured without Qwen; virtual token settings do not establish JSON success ratios.

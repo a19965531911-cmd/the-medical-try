@@ -1,0 +1,152 @@
+[
+  {
+    "file": "tests.unit.test_scaffold",
+    "test": "test_scaffold_does_not_generate_submission_artifacts",
+    "seconds": 2424.776
+  },
+  {
+    "file": "tests.v5s.test_v5s4_exph1_anchorfix",
+    "test": "test_h1_negative_binding_set_stays_blocked",
+    "seconds": 14.529
+  },
+  {
+    "file": "tests.production.test_verified_engine_parity",
+    "test": "test_production_source_is_verified_engine_not_parallel_runtime",
+    "seconds": 9.182
+  },
+  {
+    "file": "tests.v5s.test_v5s4_exph_macro_first",
+    "test": "test_485_unbound_or_low_stage_is_blocked",
+    "seconds": 8.296
+  },
+  {
+    "file": "tests.v5s.test_v5s4_exph1_anchorfix",
+    "test": "test_h1_preserves_h_decision_resource_and_service_on_existing_cases",
+    "seconds": 4.505
+  },
+  {
+    "file": "tests.integration.test_expanded_criteria",
+    "test": "test_block_a_numeric_and_temporal_criteria",
+    "seconds": 3.34
+  },
+  {
+    "file": "tests.production.test_library_runtime",
+    "test": "test_each_library_decodes_compiles_constructs_and_runs_positive_and_negative[24]",
+    "seconds": 2.363
+  },
+  {
+    "file": "tests.production.test_verified_engine_parity",
+    "test": "test_production_hard_negative_matches_verified_engine[24]",
+    "seconds": 2.269
+  },
+  {
+    "file": "tests.production.test_library_runtime",
+    "test": "test_each_library_decodes_compiles_constructs_and_runs_positive_and_negative[37]",
+    "seconds": 2.266
+  },
+  {
+    "file": "tests.production.test_library_runtime",
+    "test": "test_each_library_decodes_compiles_constructs_and_runs_positive_and_negative[31]",
+    "seconds": 2.262
+  },
+  {
+    "file": "tests.production.test_verified_engine_parity",
+    "test": "test_production_hard_negative_matches_verified_engine[37]",
+    "seconds": 2.255
+  },
+  {
+    "file": "tests.production.test_verified_engine_parity",
+    "test": "test_production_hard_negative_matches_verified_engine[31]",
+    "seconds": 2.254
+  },
+  {
+    "file": "tests.production.test_verified_engine_parity",
+    "test": "test_production_hard_negative_matches_verified_engine[49]",
+    "seconds": 2.244
+  },
+  {
+    "file": "tests.production.test_library_runtime",
+    "test": "test_each_library_decodes_compiles_constructs_and_runs_positive_and_negative[49]",
+    "seconds": 2.216
+  },
+  {
+    "file": "tests.v5s.test_v5s3_expg_criterion_recall",
+    "test": "test_experiment_g_audit_reports_all_hard_gates",
+    "seconds": 2.211
+  },
+  {
+    "file": "tests.b_board.test_b6_http",
+    "test": "test_embedded_http[json-2]",
+    "seconds": 2.177
+  },
+  {
+    "file": "tests.v5s.test_v5s8_expl_675_precision_guard",
+    "test": "test_l_match_set_is_subset_of_e_on_local_675_cases",
+    "seconds": 2.17
+  },
+  {
+    "file": "tests.production.test_library_runtime",
+    "test": "test_each_library_isolates_empty_and_malformed_reports[37]",
+    "seconds": 2.103
+  },
+  {
+    "file": "tests.production.test_library_runtime",
+    "test": "test_each_library_isolates_empty_and_malformed_reports[31]",
+    "seconds": 2.091
+  },
+  {
+    "file": "tests.production.test_library_runtime",
+    "test": "test_each_library_isolates_empty_and_malformed_reports[49]",
+    "seconds": 2.09
+  },
+  {
+    "file": "tests.production.test_library_runtime",
+    "test": "test_each_library_isolates_empty_and_malformed_reports[24]",
+    "seconds": 2.075
+  },
+  {
+    "file": "tests.b_board.test_b_board",
+    "test": "test_b_submission_routes_tbd_and_validates",
+    "seconds": 1.752
+  },
+  {
+    "file": "tests.b_board.test_b7_1",
+    "test": "test_false_overall_hint_retains_valid_fact",
+    "seconds": 1.495
+  },
+  {
+    "file": "tests.b_board.test_b7_schema",
+    "test": "test_extended_provenance",
+    "seconds": 1.445
+  },
+  {
+    "file": "tests.integration.test_expanded_criteria",
+    "test": "test_block_b_diagnosis_state_and_symptom_criteria",
+    "seconds": 1.354
+  },
+  {
+    "file": "tests.production.test_library_runtime",
+    "test": "test_sixteen_by_fifty_runtime_has_no_exceptions_or_semantic_calls",
+    "seconds": 1.27
+  },
+  {
+    "file": "tests.b_board.test_b_board",
+    "test": "test_embedded_entrypoint_and_official_service[2]",
+    "seconds": 1.245
+  },
+  {
+    "file": "tests.b_board.test_b4_semantic",
+    "test": "test_overall_yes_cannot_complete_labs_or_vessels",
+    "seconds": 1.235
+  },
+  {
+    "file": "tests.unit.test_ir",
+    "test": "test_converts_enums_and_rejects_invalid_values",
+    "seconds": 1.199
+  },
+  {
+    "file": "tests.v5s.test_expc_legacy_transport",
+    "test": "test_expc_audit_runs_as_a_script",
+    "seconds": 1.087
+  }
+]

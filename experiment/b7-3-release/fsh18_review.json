@@ -1,0 +1,3113 @@
+[
+  {
+    "case": "85_positive_0",
+    "profile_id": "85",
+    "classification": "FSH_CONSTRAINT_CONFLICT_WITH_R4",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I4",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id:         cnwqk85-procedure-priority"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-procedure-priority\""
+      },
+      {
+        "line": 12,
+        "text": "Id:         cnwqk85-surgical-approach"
+      },
+      {
+        "line": 15,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-surgical-approach\""
+      },
+      {
+        "line": 21,
+        "text": "Id:         cnwqk85-priority-values"
+      },
+      {
+        "line": 23,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-priority-values\""
+      },
+      {
+        "line": 28,
+        "text": "Id:         cnwqk85-approach-values"
+      },
+      {
+        "line": 30,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-approach-values\""
+      },
+      {
+        "line": 35,
+        "text": "Id:         cnwqk85-procedure-code-values"
+      },
+      {
+        "line": 37,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-procedure-code-values\""
+      },
+      {
+        "line": 42,
+        "text": "Id:         cnwqk85-body-site-values"
+      },
+      {
+        "line": 44,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-body-site-values\""
+      },
+      {
+        "line": 49,
+        "text": "Id:         cnwqk85-priority-codes"
+      },
+      {
+        "line": 51,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-priority-codes\""
+      },
+      {
+        "line": 56,
+        "text": "Id:         cnwqk85-approach-codes"
+      },
+      {
+        "line": 58,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-approach-codes\""
+      },
+      {
+        "line": 63,
+        "text": "Id:         cnwqk85-procedure-codes"
+      },
+      {
+        "line": 65,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-procedure-codes\""
+      },
+      {
+        "line": 70,
+        "text": "Id:         cnwqk85-body-site-codes"
+      },
+      {
+        "line": 72,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-body-site-codes\""
+      },
+      {
+        "line": 78,
+        "text": "Id:         cnwqk85-lung-resection"
+      },
+      {
+        "line": 80,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk85-lung-resection\""
+      },
+      {
+        "line": 81,
+        "text": "* status = #planned (exactly)"
+      }
+    ],
+    "violations": [
+      "cnwqk85-lung-resection: status fixed=planned, actual=preparation"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "2c6af9cf-d72f-4c78-bd7e-d573e7f8fc94",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk85-lung-resection"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-procedure-codes",
+                  "code": "pulmonary-lobectomy"
+                }
+              ]
+            },
+            "status": "preparation",
+            "extension": [
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-procedure-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-priority-codes",
+                      "code": "elective"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-surgical-approach",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-approach-codes",
+                      "code": "thoracoscopic"
+                    }
+                  ]
+                }
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">拟择期行胸腔镜肺叶切除术。拟择期行胸腔镜肺叶切除术。拟择期行胸腔镜肺叶切除术</div>"
+            },
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/procedure-category",
+                  "code": "surgery"
+                }
+              ]
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "拟择期行胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "85_positive_1",
+    "profile_id": "85",
+    "classification": "FSH_CONSTRAINT_CONFLICT_WITH_R4",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I4",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id:         cnwqk85-procedure-priority"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-procedure-priority\""
+      },
+      {
+        "line": 12,
+        "text": "Id:         cnwqk85-surgical-approach"
+      },
+      {
+        "line": 15,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-surgical-approach\""
+      },
+      {
+        "line": 21,
+        "text": "Id:         cnwqk85-priority-values"
+      },
+      {
+        "line": 23,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-priority-values\""
+      },
+      {
+        "line": 28,
+        "text": "Id:         cnwqk85-approach-values"
+      },
+      {
+        "line": 30,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-approach-values\""
+      },
+      {
+        "line": 35,
+        "text": "Id:         cnwqk85-procedure-code-values"
+      },
+      {
+        "line": 37,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-procedure-code-values\""
+      },
+      {
+        "line": 42,
+        "text": "Id:         cnwqk85-body-site-values"
+      },
+      {
+        "line": 44,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-body-site-values\""
+      },
+      {
+        "line": 49,
+        "text": "Id:         cnwqk85-priority-codes"
+      },
+      {
+        "line": 51,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-priority-codes\""
+      },
+      {
+        "line": 56,
+        "text": "Id:         cnwqk85-approach-codes"
+      },
+      {
+        "line": 58,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-approach-codes\""
+      },
+      {
+        "line": 63,
+        "text": "Id:         cnwqk85-procedure-codes"
+      },
+      {
+        "line": 65,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-procedure-codes\""
+      },
+      {
+        "line": 70,
+        "text": "Id:         cnwqk85-body-site-codes"
+      },
+      {
+        "line": 72,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-body-site-codes\""
+      },
+      {
+        "line": 78,
+        "text": "Id:         cnwqk85-lung-resection"
+      },
+      {
+        "line": 80,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk85-lung-resection\""
+      },
+      {
+        "line": 81,
+        "text": "* status = #planned (exactly)"
+      }
+    ],
+    "violations": [
+      "cnwqk85-lung-resection: status fixed=planned, actual=preparation"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "21c2ce8d-f352-4ced-aa31-17168cc882ef",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk85-lung-resection"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-procedure-codes",
+                  "code": "pulmonary-lobectomy"
+                }
+              ]
+            },
+            "status": "preparation",
+            "extension": [
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-procedure-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-priority-codes",
+                      "code": "elective"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-surgical-approach",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-approach-codes",
+                      "code": "thoracoscopic"
+                    }
+                  ]
+                }
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">计划VATS肺段切除术。计划VATS肺段切除术。计划VATS肺段切除术</div>"
+            },
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/procedure-category",
+                  "code": "surgery"
+                }
+              ]
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "计划VATS肺段切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "85_positive_2",
+    "profile_id": "85",
+    "classification": "FSH_CONSTRAINT_CONFLICT_WITH_R4",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I4",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id:         cnwqk85-procedure-priority"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-procedure-priority\""
+      },
+      {
+        "line": 12,
+        "text": "Id:         cnwqk85-surgical-approach"
+      },
+      {
+        "line": 15,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-surgical-approach\""
+      },
+      {
+        "line": 21,
+        "text": "Id:         cnwqk85-priority-values"
+      },
+      {
+        "line": 23,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-priority-values\""
+      },
+      {
+        "line": 28,
+        "text": "Id:         cnwqk85-approach-values"
+      },
+      {
+        "line": 30,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-approach-values\""
+      },
+      {
+        "line": 35,
+        "text": "Id:         cnwqk85-procedure-code-values"
+      },
+      {
+        "line": 37,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-procedure-code-values\""
+      },
+      {
+        "line": 42,
+        "text": "Id:         cnwqk85-body-site-values"
+      },
+      {
+        "line": 44,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-body-site-values\""
+      },
+      {
+        "line": 49,
+        "text": "Id:         cnwqk85-priority-codes"
+      },
+      {
+        "line": 51,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-priority-codes\""
+      },
+      {
+        "line": 56,
+        "text": "Id:         cnwqk85-approach-codes"
+      },
+      {
+        "line": 58,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-approach-codes\""
+      },
+      {
+        "line": 63,
+        "text": "Id:         cnwqk85-procedure-codes"
+      },
+      {
+        "line": 65,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-procedure-codes\""
+      },
+      {
+        "line": 70,
+        "text": "Id:         cnwqk85-body-site-codes"
+      },
+      {
+        "line": 72,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-body-site-codes\""
+      },
+      {
+        "line": 78,
+        "text": "Id:         cnwqk85-lung-resection"
+      },
+      {
+        "line": 80,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk85-lung-resection\""
+      },
+      {
+        "line": 81,
+        "text": "* status = #planned (exactly)"
+      }
+    ],
+    "violations": [
+      "cnwqk85-lung-resection: status fixed=planned, actual=preparation"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "fc27cbf2-f727-4cb0-9a08-557806ed8e72",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk85-lung-resection"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-procedure-codes",
+                  "code": "pulmonary-lobectomy"
+                }
+              ]
+            },
+            "status": "preparation",
+            "extension": [
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-procedure-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-priority-codes",
+                      "code": "elective"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-surgical-approach",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-approach-codes",
+                      "code": "thoracoscopic"
+                    }
+                  ]
+                }
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">拟择期手术。。胸腔镜入路。。肺叶切除术</div>"
+            },
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/procedure-category",
+                  "code": "surgery"
+                }
+              ]
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "拟择期手术。",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      },
+      {
+        "text": "胸腔镜入路。",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      },
+      {
+        "text": "肺叶切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "205_positive_0",
+    "profile_id": "205",
+    "classification": "FSH_CONSTRAINT_CONFLICT_WITH_R4",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I5",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id: cnwqk205-anesthesia-method-cs"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-method-cs\""
+      },
+      {
+        "line": 15,
+        "text": "Id: cnwqk205-anesthesia-method-vs"
+      },
+      {
+        "line": 18,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-anesthesia-method-vs\""
+      },
+      {
+        "line": 23,
+        "text": "Id: cnwqk205-anesthesia-depth-cs"
+      },
+      {
+        "line": 26,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-depth-cs\""
+      },
+      {
+        "line": 35,
+        "text": "Id: cnwqk205-anesthesia-depth-vs"
+      },
+      {
+        "line": 38,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-anesthesia-depth-vs\""
+      },
+      {
+        "line": 43,
+        "text": "Id: cnwqk205-thoracic-surgery-cs"
+      },
+      {
+        "line": 46,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-thoracic-surgery-cs\""
+      },
+      {
+        "line": 56,
+        "text": "Id: cnwqk205-thoracic-surgery-vs"
+      },
+      {
+        "line": 59,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-thoracic-surgery-vs\""
+      },
+      {
+        "line": 64,
+        "text": "Id: cnwqk205-body-site-cs"
+      },
+      {
+        "line": 67,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-body-site-cs\""
+      },
+      {
+        "line": 77,
+        "text": "Id: cnwqk205-body-site-vs"
+      },
+      {
+        "line": 80,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-body-site-vs\""
+      },
+      {
+        "line": 85,
+        "text": "Id:        anesthesia-method"
+      },
+      {
+        "line": 88,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/anesthesia-method\""
+      },
+      {
+        "line": 94,
+        "text": "Id:        anesthesia-depth"
+      },
+      {
+        "line": 97,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/anesthesia-depth\""
+      },
+      {
+        "line": 104,
+        "text": "Id:       cnwqk205-thoracic-surgery"
+      },
+      {
+        "line": 107,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk205-thoracic-surgery\""
+      },
+      {
+        "line": 109,
+        "text": "* status = #planned (exactly)  // 择期手术状态"
+      }
+    ],
+    "violations": [
+      "cnwqk205-thoracic-surgery: status fixed=planned, actual=preparation"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "4e0520a7-7400-4618-94dd-e26e3c3d8a74",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk205-thoracic-surgery"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-thoracic-surgery-cs",
+                  "code": "pulmonary"
+                }
+              ]
+            },
+            "status": "preparation",
+            "extension": [
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/anesthesia-method",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-method-cs",
+                      "code": "GA"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/anesthesia-depth",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-depth-cs",
+                      "code": "GA"
+                    }
+                  ]
+                }
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">拟择期全麻下胸部手术。拟择期全麻下胸部手术。拟择期全麻下胸部手术</div>"
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "拟择期全麻下胸部手术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "205_positive_1",
+    "profile_id": "205",
+    "classification": "FSH_CONSTRAINT_CONFLICT_WITH_R4",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I5",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id: cnwqk205-anesthesia-method-cs"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-method-cs\""
+      },
+      {
+        "line": 15,
+        "text": "Id: cnwqk205-anesthesia-method-vs"
+      },
+      {
+        "line": 18,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-anesthesia-method-vs\""
+      },
+      {
+        "line": 23,
+        "text": "Id: cnwqk205-anesthesia-depth-cs"
+      },
+      {
+        "line": 26,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-depth-cs\""
+      },
+      {
+        "line": 35,
+        "text": "Id: cnwqk205-anesthesia-depth-vs"
+      },
+      {
+        "line": 38,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-anesthesia-depth-vs\""
+      },
+      {
+        "line": 43,
+        "text": "Id: cnwqk205-thoracic-surgery-cs"
+      },
+      {
+        "line": 46,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-thoracic-surgery-cs\""
+      },
+      {
+        "line": 56,
+        "text": "Id: cnwqk205-thoracic-surgery-vs"
+      },
+      {
+        "line": 59,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-thoracic-surgery-vs\""
+      },
+      {
+        "line": 64,
+        "text": "Id: cnwqk205-body-site-cs"
+      },
+      {
+        "line": 67,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-body-site-cs\""
+      },
+      {
+        "line": 77,
+        "text": "Id: cnwqk205-body-site-vs"
+      },
+      {
+        "line": 80,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-body-site-vs\""
+      },
+      {
+        "line": 85,
+        "text": "Id:        anesthesia-method"
+      },
+      {
+        "line": 88,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/anesthesia-method\""
+      },
+      {
+        "line": 94,
+        "text": "Id:        anesthesia-depth"
+      },
+      {
+        "line": 97,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/anesthesia-depth\""
+      },
+      {
+        "line": 104,
+        "text": "Id:       cnwqk205-thoracic-surgery"
+      },
+      {
+        "line": 107,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk205-thoracic-surgery\""
+      },
+      {
+        "line": 109,
+        "text": "* status = #planned (exactly)  // 择期手术状态"
+      }
+    ],
+    "violations": [
+      "cnwqk205-thoracic-surgery: status fixed=planned, actual=preparation"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "051c7df8-a219-4289-be8b-1f828d74d299",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk205-thoracic-surgery"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-thoracic-surgery-cs",
+                  "code": "pulmonary"
+                }
+              ]
+            },
+            "status": "preparation",
+            "extension": [
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/anesthesia-method",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-method-cs",
+                      "code": "GA"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/anesthesia-depth",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-depth-cs",
+                      "code": "GA"
+                    }
+                  ]
+                }
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">计划全身麻醉下肺叶切除术。计划全身麻醉下肺叶切除术。计划全身麻醉下肺叶切除术</div>"
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "计划全身麻醉下肺叶切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "205_positive_2",
+    "profile_id": "205",
+    "classification": "FSH_CONSTRAINT_CONFLICT_WITH_R4",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I5",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id: cnwqk205-anesthesia-method-cs"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-method-cs\""
+      },
+      {
+        "line": 15,
+        "text": "Id: cnwqk205-anesthesia-method-vs"
+      },
+      {
+        "line": 18,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-anesthesia-method-vs\""
+      },
+      {
+        "line": 23,
+        "text": "Id: cnwqk205-anesthesia-depth-cs"
+      },
+      {
+        "line": 26,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-depth-cs\""
+      },
+      {
+        "line": 35,
+        "text": "Id: cnwqk205-anesthesia-depth-vs"
+      },
+      {
+        "line": 38,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-anesthesia-depth-vs\""
+      },
+      {
+        "line": 43,
+        "text": "Id: cnwqk205-thoracic-surgery-cs"
+      },
+      {
+        "line": 46,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-thoracic-surgery-cs\""
+      },
+      {
+        "line": 56,
+        "text": "Id: cnwqk205-thoracic-surgery-vs"
+      },
+      {
+        "line": 59,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-thoracic-surgery-vs\""
+      },
+      {
+        "line": 64,
+        "text": "Id: cnwqk205-body-site-cs"
+      },
+      {
+        "line": 67,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-body-site-cs\""
+      },
+      {
+        "line": 77,
+        "text": "Id: cnwqk205-body-site-vs"
+      },
+      {
+        "line": 80,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-body-site-vs\""
+      },
+      {
+        "line": 85,
+        "text": "Id:        anesthesia-method"
+      },
+      {
+        "line": 88,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/anesthesia-method\""
+      },
+      {
+        "line": 94,
+        "text": "Id:        anesthesia-depth"
+      },
+      {
+        "line": 97,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/anesthesia-depth\""
+      },
+      {
+        "line": 104,
+        "text": "Id:       cnwqk205-thoracic-surgery"
+      },
+      {
+        "line": 107,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk205-thoracic-surgery\""
+      },
+      {
+        "line": 109,
+        "text": "* status = #planned (exactly)  // 择期手术状态"
+      }
+    ],
+    "violations": [
+      "cnwqk205-thoracic-surgery: status fixed=planned, actual=completed"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "ae85f389-abeb-4eb4-bbec-e459609ea3aa",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk205-thoracic-surgery"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-thoracic-surgery-cs",
+                  "code": "pulmonary"
+                }
+              ]
+            },
+            "status": "completed",
+            "extension": [
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/anesthesia-method",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-method-cs",
+                      "code": "GA"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/anesthesia-depth",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-depth-cs",
+                      "code": "GA"
+                    }
+                  ]
+                }
+              }
+            ],
+            "performedDateTime": "2026-10-09T12:00:00+08:00",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">择期肺切除手术。。择期肺切除手术。。麻醉方式为全麻</div>"
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "择期肺切除手术。",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      },
+      {
+        "text": "麻醉方式为全麻",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "295_positive_0",
+    "profile_id": "295",
+    "classification": "FSH_CONSTRAINT_VS_EVIDENCED_CLINICAL_FACTS",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I8",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id: cnwqk295-smokingcs"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs\""
+      },
+      {
+        "line": 9,
+        "text": "* #number-of-cigarettes-per-day \"每天吸烟支数\""
+      },
+      {
+        "line": 10,
+        "text": "* #smoking-cessation-guarantee \"戒烟保证\""
+      },
+      {
+        "line": 14,
+        "text": "Id: cnwqk295-guaranteecs"
+      },
+      {
+        "line": 17,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk295-guaranteecs\""
+      },
+      {
+        "line": 24,
+        "text": "Id: cnwqk295-guaranteevs"
+      },
+      {
+        "line": 27,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk295-guaranteevs\""
+      },
+      {
+        "line": 33,
+        "text": "Id: cnwqk295-smokingstatus"
+      },
+      {
+        "line": 36,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk295-smokingstatus\""
+      },
+      {
+        "line": 42,
+        "text": "* component 2..*"
+      },
+      {
+        "line": 43,
+        "text": "* component ^slicing.discriminator.type = #pattern"
+      },
+      {
+        "line": 44,
+        "text": "* component ^slicing.discriminator.path = \"code\""
+      },
+      {
+        "line": 45,
+        "text": "* component ^slicing.rules = #open"
+      },
+      {
+        "line": 46,
+        "text": "* component ^slicing.ordered = false"
+      },
+      {
+        "line": 47,
+        "text": "* component contains"
+      },
+      {
+        "line": 51,
+        "text": "* component[cigarettesPerDay].code = CNWQK295SmokingCS#number-of-cigarettes-per-day \"每天吸烟支数\""
+      },
+      {
+        "line": 52,
+        "text": "* component[cigarettesPerDay].valueQuantity 1..1"
+      },
+      {
+        "line": 54,
+        "text": "* component[cessationGuarantee].code = CNWQK295SmokingCS#smoking-cessation-guarantee \"戒烟保证\""
+      },
+      {
+        "line": 55,
+        "text": "* component[cessationGuarantee].valueCodeableConcept 1..1"
+      },
+      {
+        "line": 56,
+        "text": "* component[cessationGuarantee].valueCodeableConcept from CNWQK295GuaranteeVS"
+      }
+    ],
+    "violations": [
+      "cnwqk295-smokingstatus: required component",
+      "295 required slice smoking-cessation-guarantee"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "6ee352c6-d024-433e-b98f-2c33158c40e4",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk295-smokingstatus"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs",
+                  "code": "smoking-status-detail"
+                }
+              ]
+            },
+            "status": "final",
+            "component": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs",
+                      "code": "number-of-cigarettes-per-day"
+                    }
+                  ]
+                },
+                "valueQuantity": {
+                  "value": 20.0,
+                  "unit": "支/日"
+                }
+              }
+            ],
+            "effectivePeriod": {
+              "start": "2026-10-09"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">目前每天吸烟20支</div>"
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Observation"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "目前每天吸烟20支",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "295_positive_1",
+    "profile_id": "295",
+    "classification": "FSH_CONSTRAINT_VS_EVIDENCED_CLINICAL_FACTS",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I8",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id: cnwqk295-smokingcs"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs\""
+      },
+      {
+        "line": 9,
+        "text": "* #number-of-cigarettes-per-day \"每天吸烟支数\""
+      },
+      {
+        "line": 10,
+        "text": "* #smoking-cessation-guarantee \"戒烟保证\""
+      },
+      {
+        "line": 14,
+        "text": "Id: cnwqk295-guaranteecs"
+      },
+      {
+        "line": 17,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk295-guaranteecs\""
+      },
+      {
+        "line": 24,
+        "text": "Id: cnwqk295-guaranteevs"
+      },
+      {
+        "line": 27,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk295-guaranteevs\""
+      },
+      {
+        "line": 33,
+        "text": "Id: cnwqk295-smokingstatus"
+      },
+      {
+        "line": 36,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk295-smokingstatus\""
+      },
+      {
+        "line": 42,
+        "text": "* component 2..*"
+      },
+      {
+        "line": 43,
+        "text": "* component ^slicing.discriminator.type = #pattern"
+      },
+      {
+        "line": 44,
+        "text": "* component ^slicing.discriminator.path = \"code\""
+      },
+      {
+        "line": 45,
+        "text": "* component ^slicing.rules = #open"
+      },
+      {
+        "line": 46,
+        "text": "* component ^slicing.ordered = false"
+      },
+      {
+        "line": 47,
+        "text": "* component contains"
+      },
+      {
+        "line": 51,
+        "text": "* component[cigarettesPerDay].code = CNWQK295SmokingCS#number-of-cigarettes-per-day \"每天吸烟支数\""
+      },
+      {
+        "line": 52,
+        "text": "* component[cigarettesPerDay].valueQuantity 1..1"
+      },
+      {
+        "line": 54,
+        "text": "* component[cessationGuarantee].code = CNWQK295SmokingCS#smoking-cessation-guarantee \"戒烟保证\""
+      },
+      {
+        "line": 55,
+        "text": "* component[cessationGuarantee].valueCodeableConcept 1..1"
+      },
+      {
+        "line": 56,
+        "text": "* component[cessationGuarantee].valueCodeableConcept from CNWQK295GuaranteeVS"
+      }
+    ],
+    "violations": [
+      "cnwqk295-smokingstatus: required component",
+      "295 required slice smoking-cessation-guarantee"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "2867375a-4827-430e-83e1-bdff46c683c1",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk295-smokingstatus"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs",
+                  "code": "smoking-status-detail"
+                }
+              ]
+            },
+            "status": "final",
+            "component": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs",
+                      "code": "number-of-cigarettes-per-day"
+                    }
+                  ]
+                },
+                "valueQuantity": {
+                  "value": 20.0,
+                  "unit": "支/日"
+                }
+              }
+            ],
+            "effectivePeriod": {
+              "start": "2026-10-09"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">现吸烟1包/日</div>"
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Observation"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "现吸烟1包/日",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "295_positive_2",
+    "profile_id": "295",
+    "classification": "FSH_CONSTRAINT_VS_EVIDENCED_CLINICAL_FACTS",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I8",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id: cnwqk295-smokingcs"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs\""
+      },
+      {
+        "line": 9,
+        "text": "* #number-of-cigarettes-per-day \"每天吸烟支数\""
+      },
+      {
+        "line": 10,
+        "text": "* #smoking-cessation-guarantee \"戒烟保证\""
+      },
+      {
+        "line": 14,
+        "text": "Id: cnwqk295-guaranteecs"
+      },
+      {
+        "line": 17,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk295-guaranteecs\""
+      },
+      {
+        "line": 24,
+        "text": "Id: cnwqk295-guaranteevs"
+      },
+      {
+        "line": 27,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk295-guaranteevs\""
+      },
+      {
+        "line": 33,
+        "text": "Id: cnwqk295-smokingstatus"
+      },
+      {
+        "line": 36,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk295-smokingstatus\""
+      },
+      {
+        "line": 42,
+        "text": "* component 2..*"
+      },
+      {
+        "line": 43,
+        "text": "* component ^slicing.discriminator.type = #pattern"
+      },
+      {
+        "line": 44,
+        "text": "* component ^slicing.discriminator.path = \"code\""
+      },
+      {
+        "line": 45,
+        "text": "* component ^slicing.rules = #open"
+      },
+      {
+        "line": 46,
+        "text": "* component ^slicing.ordered = false"
+      },
+      {
+        "line": 47,
+        "text": "* component contains"
+      },
+      {
+        "line": 51,
+        "text": "* component[cigarettesPerDay].code = CNWQK295SmokingCS#number-of-cigarettes-per-day \"每天吸烟支数\""
+      },
+      {
+        "line": 52,
+        "text": "* component[cigarettesPerDay].valueQuantity 1..1"
+      },
+      {
+        "line": 54,
+        "text": "* component[cessationGuarantee].code = CNWQK295SmokingCS#smoking-cessation-guarantee \"戒烟保证\""
+      },
+      {
+        "line": 55,
+        "text": "* component[cessationGuarantee].valueCodeableConcept 1..1"
+      },
+      {
+        "line": 56,
+        "text": "* component[cessationGuarantee].valueCodeableConcept from CNWQK295GuaranteeVS"
+      }
+    ],
+    "violations": [
+      "cnwqk295-smokingstatus: required component",
+      "295 required slice smoking-cessation-guarantee"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "6cad93e6-9758-433c-9605-09af7e82cda6",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk295-smokingstatus"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs",
+                  "code": "smoking-status-detail"
+                }
+              ]
+            },
+            "status": "final",
+            "component": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs",
+                      "code": "number-of-cigarettes-per-day"
+                    }
+                  ]
+                },
+                "valueQuantity": {
+                  "value": 20.0,
+                  "unit": "支/日"
+                }
+              }
+            ],
+            "effectivePeriod": {
+              "start": "2026-10-09"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">每日20支</div>"
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Observation"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "目前吸烟。",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      },
+      {
+        "text": "每日20支",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "295_quantity_only",
+    "profile_id": "295",
+    "classification": "FSH_CONSTRAINT_VS_EVIDENCED_CLINICAL_FACTS",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I8",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id: cnwqk295-smokingcs"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs\""
+      },
+      {
+        "line": 9,
+        "text": "* #number-of-cigarettes-per-day \"每天吸烟支数\""
+      },
+      {
+        "line": 10,
+        "text": "* #smoking-cessation-guarantee \"戒烟保证\""
+      },
+      {
+        "line": 14,
+        "text": "Id: cnwqk295-guaranteecs"
+      },
+      {
+        "line": 17,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk295-guaranteecs\""
+      },
+      {
+        "line": 24,
+        "text": "Id: cnwqk295-guaranteevs"
+      },
+      {
+        "line": 27,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk295-guaranteevs\""
+      },
+      {
+        "line": 33,
+        "text": "Id: cnwqk295-smokingstatus"
+      },
+      {
+        "line": 36,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk295-smokingstatus\""
+      },
+      {
+        "line": 42,
+        "text": "* component 2..*"
+      },
+      {
+        "line": 43,
+        "text": "* component ^slicing.discriminator.type = #pattern"
+      },
+      {
+        "line": 44,
+        "text": "* component ^slicing.discriminator.path = \"code\""
+      },
+      {
+        "line": 45,
+        "text": "* component ^slicing.rules = #open"
+      },
+      {
+        "line": 46,
+        "text": "* component ^slicing.ordered = false"
+      },
+      {
+        "line": 47,
+        "text": "* component contains"
+      },
+      {
+        "line": 51,
+        "text": "* component[cigarettesPerDay].code = CNWQK295SmokingCS#number-of-cigarettes-per-day \"每天吸烟支数\""
+      },
+      {
+        "line": 52,
+        "text": "* component[cigarettesPerDay].valueQuantity 1..1"
+      },
+      {
+        "line": 54,
+        "text": "* component[cessationGuarantee].code = CNWQK295SmokingCS#smoking-cessation-guarantee \"戒烟保证\""
+      },
+      {
+        "line": 55,
+        "text": "* component[cessationGuarantee].valueCodeableConcept 1..1"
+      },
+      {
+        "line": 56,
+        "text": "* component[cessationGuarantee].valueCodeableConcept from CNWQK295GuaranteeVS"
+      }
+    ],
+    "violations": [
+      "cnwqk295-smokingstatus: required component",
+      "295 required slice smoking-cessation-guarantee"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "9e5f094b-23d4-4fe4-9f31-8d252dbca36e",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk295-smokingstatus"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs",
+                  "code": "smoking-status-detail"
+                }
+              ]
+            },
+            "status": "final",
+            "component": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs",
+                      "code": "number-of-cigarettes-per-day"
+                    }
+                  ]
+                },
+                "valueQuantity": {
+                  "value": 20.0,
+                  "unit": "支/日"
+                }
+              }
+            ],
+            "effectivePeriod": {
+              "start": "2026-10-09"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">目前每天吸烟20支</div>"
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Observation"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "目前每天吸烟20支",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "295_refusal_only",
+    "profile_id": "295",
+    "classification": "FSH_CONSTRAINT_VS_EVIDENCED_CLINICAL_FACTS",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I8",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id: cnwqk295-smokingcs"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs\""
+      },
+      {
+        "line": 9,
+        "text": "* #number-of-cigarettes-per-day \"每天吸烟支数\""
+      },
+      {
+        "line": 10,
+        "text": "* #smoking-cessation-guarantee \"戒烟保证\""
+      },
+      {
+        "line": 14,
+        "text": "Id: cnwqk295-guaranteecs"
+      },
+      {
+        "line": 17,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk295-guaranteecs\""
+      },
+      {
+        "line": 24,
+        "text": "Id: cnwqk295-guaranteevs"
+      },
+      {
+        "line": 27,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk295-guaranteevs\""
+      },
+      {
+        "line": 33,
+        "text": "Id: cnwqk295-smokingstatus"
+      },
+      {
+        "line": 36,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk295-smokingstatus\""
+      },
+      {
+        "line": 42,
+        "text": "* component 2..*"
+      },
+      {
+        "line": 43,
+        "text": "* component ^slicing.discriminator.type = #pattern"
+      },
+      {
+        "line": 44,
+        "text": "* component ^slicing.discriminator.path = \"code\""
+      },
+      {
+        "line": 45,
+        "text": "* component ^slicing.rules = #open"
+      },
+      {
+        "line": 46,
+        "text": "* component ^slicing.ordered = false"
+      },
+      {
+        "line": 47,
+        "text": "* component contains"
+      },
+      {
+        "line": 51,
+        "text": "* component[cigarettesPerDay].code = CNWQK295SmokingCS#number-of-cigarettes-per-day \"每天吸烟支数\""
+      },
+      {
+        "line": 52,
+        "text": "* component[cigarettesPerDay].valueQuantity 1..1"
+      },
+      {
+        "line": 54,
+        "text": "* component[cessationGuarantee].code = CNWQK295SmokingCS#smoking-cessation-guarantee \"戒烟保证\""
+      },
+      {
+        "line": 55,
+        "text": "* component[cessationGuarantee].valueCodeableConcept 1..1"
+      },
+      {
+        "line": 56,
+        "text": "* component[cessationGuarantee].valueCodeableConcept from CNWQK295GuaranteeVS"
+      }
+    ],
+    "violations": [
+      "cnwqk295-smokingstatus: required component",
+      "295 required slice number-of-cigarettes-per-day"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "4e7727a5-a832-4c85-a8df-dd28eb3f7e62",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk295-smokingstatus"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs",
+                  "code": "smoking-status-detail"
+                }
+              ]
+            },
+            "status": "final",
+            "component": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk295-smokingcs",
+                      "code": "smoking-cessation-guarantee"
+                    }
+                  ]
+                },
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk295-guaranteecs",
+                      "code": "cannot-guarantee"
+                    }
+                  ]
+                }
+              }
+            ],
+            "effectivePeriod": {
+              "start": "2026-10-09"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">不能保证试验期间停止吸烟</div>"
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Observation"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "不能保证试验期间停止吸烟",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "85_completed",
+    "profile_id": "85",
+    "classification": "FSH_CONSTRAINT_CONFLICT_WITH_R4",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I4",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id:         cnwqk85-procedure-priority"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-procedure-priority\""
+      },
+      {
+        "line": 12,
+        "text": "Id:         cnwqk85-surgical-approach"
+      },
+      {
+        "line": 15,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-surgical-approach\""
+      },
+      {
+        "line": 21,
+        "text": "Id:         cnwqk85-priority-values"
+      },
+      {
+        "line": 23,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-priority-values\""
+      },
+      {
+        "line": 28,
+        "text": "Id:         cnwqk85-approach-values"
+      },
+      {
+        "line": 30,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-approach-values\""
+      },
+      {
+        "line": 35,
+        "text": "Id:         cnwqk85-procedure-code-values"
+      },
+      {
+        "line": 37,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-procedure-code-values\""
+      },
+      {
+        "line": 42,
+        "text": "Id:         cnwqk85-body-site-values"
+      },
+      {
+        "line": 44,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-body-site-values\""
+      },
+      {
+        "line": 49,
+        "text": "Id:         cnwqk85-priority-codes"
+      },
+      {
+        "line": 51,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-priority-codes\""
+      },
+      {
+        "line": 56,
+        "text": "Id:         cnwqk85-approach-codes"
+      },
+      {
+        "line": 58,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-approach-codes\""
+      },
+      {
+        "line": 63,
+        "text": "Id:         cnwqk85-procedure-codes"
+      },
+      {
+        "line": 65,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-procedure-codes\""
+      },
+      {
+        "line": 70,
+        "text": "Id:         cnwqk85-body-site-codes"
+      },
+      {
+        "line": 72,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-body-site-codes\""
+      },
+      {
+        "line": 78,
+        "text": "Id:         cnwqk85-lung-resection"
+      },
+      {
+        "line": 80,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk85-lung-resection\""
+      },
+      {
+        "line": 81,
+        "text": "* status = #planned (exactly)"
+      }
+    ],
+    "violations": [
+      "cnwqk85-lung-resection: status fixed=planned, actual=completed"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "83fe2601-83b5-4dd6-a19a-6a69ef30ae74",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk85-lung-resection"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-procedure-codes",
+                  "code": "pulmonary-lobectomy"
+                }
+              ]
+            },
+            "status": "completed",
+            "extension": [
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-procedure-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-priority-codes",
+                      "code": "elective"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-surgical-approach",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-approach-codes",
+                      "code": "thoracoscopic"
+                    }
+                  ]
+                }
+              }
+            ],
+            "performedDateTime": "2026-10-09",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">择期已完成胸腔镜肺叶切除术。择期已完成胸腔镜肺叶切除术。择期已完成胸腔镜肺叶切除术</div>"
+            },
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/procedure-category",
+                  "code": "surgery"
+                }
+              ]
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "择期已完成胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "85_planned",
+    "profile_id": "85",
+    "classification": "FSH_CONSTRAINT_CONFLICT_WITH_R4",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I4",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id:         cnwqk85-procedure-priority"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-procedure-priority\""
+      },
+      {
+        "line": 12,
+        "text": "Id:         cnwqk85-surgical-approach"
+      },
+      {
+        "line": 15,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-surgical-approach\""
+      },
+      {
+        "line": 21,
+        "text": "Id:         cnwqk85-priority-values"
+      },
+      {
+        "line": 23,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-priority-values\""
+      },
+      {
+        "line": 28,
+        "text": "Id:         cnwqk85-approach-values"
+      },
+      {
+        "line": 30,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-approach-values\""
+      },
+      {
+        "line": 35,
+        "text": "Id:         cnwqk85-procedure-code-values"
+      },
+      {
+        "line": 37,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-procedure-code-values\""
+      },
+      {
+        "line": 42,
+        "text": "Id:         cnwqk85-body-site-values"
+      },
+      {
+        "line": 44,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-body-site-values\""
+      },
+      {
+        "line": 49,
+        "text": "Id:         cnwqk85-priority-codes"
+      },
+      {
+        "line": 51,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-priority-codes\""
+      },
+      {
+        "line": 56,
+        "text": "Id:         cnwqk85-approach-codes"
+      },
+      {
+        "line": 58,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-approach-codes\""
+      },
+      {
+        "line": 63,
+        "text": "Id:         cnwqk85-procedure-codes"
+      },
+      {
+        "line": 65,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-procedure-codes\""
+      },
+      {
+        "line": 70,
+        "text": "Id:         cnwqk85-body-site-codes"
+      },
+      {
+        "line": 72,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-body-site-codes\""
+      },
+      {
+        "line": 78,
+        "text": "Id:         cnwqk85-lung-resection"
+      },
+      {
+        "line": 80,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk85-lung-resection\""
+      },
+      {
+        "line": 81,
+        "text": "* status = #planned (exactly)"
+      }
+    ],
+    "violations": [
+      "cnwqk85-lung-resection: status fixed=planned, actual=preparation"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "03365d9b-2fdb-45a1-a9a7-0129bbd03d84",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk85-lung-resection"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-procedure-codes",
+                  "code": "pulmonary-lobectomy"
+                }
+              ]
+            },
+            "status": "preparation",
+            "extension": [
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-procedure-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-priority-codes",
+                      "code": "elective"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-surgical-approach",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-approach-codes",
+                      "code": "thoracoscopic"
+                    }
+                  ]
+                }
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">拟择期胸腔镜肺叶切除术。拟择期胸腔镜肺叶切除术。拟择期胸腔镜肺叶切除术</div>"
+            },
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/procedure-category",
+                  "code": "surgery"
+                }
+              ]
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "拟择期胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "85_good_and_emergency",
+    "profile_id": "85",
+    "classification": "FSH_CONSTRAINT_CONFLICT_WITH_R4",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I4",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id:         cnwqk85-procedure-priority"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-procedure-priority\""
+      },
+      {
+        "line": 12,
+        "text": "Id:         cnwqk85-surgical-approach"
+      },
+      {
+        "line": 15,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-surgical-approach\""
+      },
+      {
+        "line": 21,
+        "text": "Id:         cnwqk85-priority-values"
+      },
+      {
+        "line": 23,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-priority-values\""
+      },
+      {
+        "line": 28,
+        "text": "Id:         cnwqk85-approach-values"
+      },
+      {
+        "line": 30,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-approach-values\""
+      },
+      {
+        "line": 35,
+        "text": "Id:         cnwqk85-procedure-code-values"
+      },
+      {
+        "line": 37,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-procedure-code-values\""
+      },
+      {
+        "line": 42,
+        "text": "Id:         cnwqk85-body-site-values"
+      },
+      {
+        "line": 44,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk85-body-site-values\""
+      },
+      {
+        "line": 49,
+        "text": "Id:         cnwqk85-priority-codes"
+      },
+      {
+        "line": 51,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-priority-codes\""
+      },
+      {
+        "line": 56,
+        "text": "Id:         cnwqk85-approach-codes"
+      },
+      {
+        "line": 58,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-approach-codes\""
+      },
+      {
+        "line": 63,
+        "text": "Id:         cnwqk85-procedure-codes"
+      },
+      {
+        "line": 65,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-procedure-codes\""
+      },
+      {
+        "line": 70,
+        "text": "Id:         cnwqk85-body-site-codes"
+      },
+      {
+        "line": 72,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk85-body-site-codes\""
+      },
+      {
+        "line": 78,
+        "text": "Id:         cnwqk85-lung-resection"
+      },
+      {
+        "line": 80,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk85-lung-resection\""
+      },
+      {
+        "line": 81,
+        "text": "* status = #planned (exactly)"
+      }
+    ],
+    "violations": [
+      "cnwqk85-lung-resection: status fixed=planned, actual=completed"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "2eb86c38-1889-43d9-bee0-c8156341328e",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk85-lung-resection"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-procedure-codes",
+                  "code": "pulmonary-lobectomy"
+                }
+              ]
+            },
+            "status": "completed",
+            "extension": [
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-procedure-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-priority-codes",
+                      "code": "elective"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/cnwqk85-surgical-approach",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk85-approach-codes",
+                      "code": "thoracoscopic"
+                    }
+                  ]
+                }
+              }
+            ],
+            "performedDateTime": "2026-10-09",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">择期已完成胸腔镜肺叶切除术。择期已完成胸腔镜肺叶切除术。择期已完成胸腔镜肺叶切除术</div>"
+            },
+            "category": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/procedure-category",
+                  "code": "surgery"
+                }
+              ]
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "择期已完成胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09",
+        "event_id": "a"
+      },
+      {
+        "text": "急诊开胸肺切除术全麻",
+        "timestamp": "2026-10-09",
+        "event_id": "b"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "205_completed",
+    "profile_id": "205",
+    "classification": "FSH_CONSTRAINT_CONFLICT_WITH_R4",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I5",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id: cnwqk205-anesthesia-method-cs"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-method-cs\""
+      },
+      {
+        "line": 15,
+        "text": "Id: cnwqk205-anesthesia-method-vs"
+      },
+      {
+        "line": 18,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-anesthesia-method-vs\""
+      },
+      {
+        "line": 23,
+        "text": "Id: cnwqk205-anesthesia-depth-cs"
+      },
+      {
+        "line": 26,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-depth-cs\""
+      },
+      {
+        "line": 35,
+        "text": "Id: cnwqk205-anesthesia-depth-vs"
+      },
+      {
+        "line": 38,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-anesthesia-depth-vs\""
+      },
+      {
+        "line": 43,
+        "text": "Id: cnwqk205-thoracic-surgery-cs"
+      },
+      {
+        "line": 46,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-thoracic-surgery-cs\""
+      },
+      {
+        "line": 56,
+        "text": "Id: cnwqk205-thoracic-surgery-vs"
+      },
+      {
+        "line": 59,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-thoracic-surgery-vs\""
+      },
+      {
+        "line": 64,
+        "text": "Id: cnwqk205-body-site-cs"
+      },
+      {
+        "line": 67,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-body-site-cs\""
+      },
+      {
+        "line": 77,
+        "text": "Id: cnwqk205-body-site-vs"
+      },
+      {
+        "line": 80,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-body-site-vs\""
+      },
+      {
+        "line": 85,
+        "text": "Id:        anesthesia-method"
+      },
+      {
+        "line": 88,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/anesthesia-method\""
+      },
+      {
+        "line": 94,
+        "text": "Id:        anesthesia-depth"
+      },
+      {
+        "line": 97,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/anesthesia-depth\""
+      },
+      {
+        "line": 104,
+        "text": "Id:       cnwqk205-thoracic-surgery"
+      },
+      {
+        "line": 107,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk205-thoracic-surgery\""
+      },
+      {
+        "line": 109,
+        "text": "* status = #planned (exactly)  // 择期手术状态"
+      }
+    ],
+    "violations": [
+      "cnwqk205-thoracic-surgery: status fixed=planned, actual=completed"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "335df109-0133-4b27-baef-045c1d785337",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk205-thoracic-surgery"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-thoracic-surgery-cs",
+                  "code": "pulmonary"
+                }
+              ]
+            },
+            "status": "completed",
+            "extension": [
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/anesthesia-method",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-method-cs",
+                      "code": "GA"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/anesthesia-depth",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-depth-cs",
+                      "code": "GA"
+                    }
+                  ]
+                }
+              }
+            ],
+            "performedDateTime": "2026-10-09",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">择期已完成全麻下胸部手术。择期已完成全麻下胸部手术。择期已完成全麻下胸部手术</div>"
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "择期已完成全麻下胸部手术",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "205_planned",
+    "profile_id": "205",
+    "classification": "FSH_CONSTRAINT_CONFLICT_WITH_R4",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I5",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id: cnwqk205-anesthesia-method-cs"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-method-cs\""
+      },
+      {
+        "line": 15,
+        "text": "Id: cnwqk205-anesthesia-method-vs"
+      },
+      {
+        "line": 18,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-anesthesia-method-vs\""
+      },
+      {
+        "line": 23,
+        "text": "Id: cnwqk205-anesthesia-depth-cs"
+      },
+      {
+        "line": 26,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-depth-cs\""
+      },
+      {
+        "line": 35,
+        "text": "Id: cnwqk205-anesthesia-depth-vs"
+      },
+      {
+        "line": 38,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-anesthesia-depth-vs\""
+      },
+      {
+        "line": 43,
+        "text": "Id: cnwqk205-thoracic-surgery-cs"
+      },
+      {
+        "line": 46,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-thoracic-surgery-cs\""
+      },
+      {
+        "line": 56,
+        "text": "Id: cnwqk205-thoracic-surgery-vs"
+      },
+      {
+        "line": 59,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-thoracic-surgery-vs\""
+      },
+      {
+        "line": 64,
+        "text": "Id: cnwqk205-body-site-cs"
+      },
+      {
+        "line": 67,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-body-site-cs\""
+      },
+      {
+        "line": 77,
+        "text": "Id: cnwqk205-body-site-vs"
+      },
+      {
+        "line": 80,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-body-site-vs\""
+      },
+      {
+        "line": 85,
+        "text": "Id:        anesthesia-method"
+      },
+      {
+        "line": 88,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/anesthesia-method\""
+      },
+      {
+        "line": 94,
+        "text": "Id:        anesthesia-depth"
+      },
+      {
+        "line": 97,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/anesthesia-depth\""
+      },
+      {
+        "line": 104,
+        "text": "Id:       cnwqk205-thoracic-surgery"
+      },
+      {
+        "line": 107,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk205-thoracic-surgery\""
+      },
+      {
+        "line": 109,
+        "text": "* status = #planned (exactly)  // 择期手术状态"
+      }
+    ],
+    "violations": [
+      "cnwqk205-thoracic-surgery: status fixed=planned, actual=preparation"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "aa679c5a-32da-4f16-a876-a2138961c883",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk205-thoracic-surgery"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-thoracic-surgery-cs",
+                  "code": "pulmonary"
+                }
+              ]
+            },
+            "status": "preparation",
+            "extension": [
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/anesthesia-method",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-method-cs",
+                      "code": "GA"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/anesthesia-depth",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-depth-cs",
+                      "code": "GA"
+                    }
+                  ]
+                }
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">拟择期全麻下胸部手术。拟择期全麻下胸部手术。拟择期全麻下胸部手术</div>"
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "拟择期全麻下胸部手术",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "205_good_and_emergency",
+    "profile_id": "205",
+    "classification": "FSH_CONSTRAINT_CONFLICT_WITH_R4",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I5",
+    "fsh_exact_lines": [
+      {
+        "line": 3,
+        "text": "Id: cnwqk205-anesthesia-method-cs"
+      },
+      {
+        "line": 6,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-method-cs\""
+      },
+      {
+        "line": 15,
+        "text": "Id: cnwqk205-anesthesia-method-vs"
+      },
+      {
+        "line": 18,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-anesthesia-method-vs\""
+      },
+      {
+        "line": 23,
+        "text": "Id: cnwqk205-anesthesia-depth-cs"
+      },
+      {
+        "line": 26,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-depth-cs\""
+      },
+      {
+        "line": 35,
+        "text": "Id: cnwqk205-anesthesia-depth-vs"
+      },
+      {
+        "line": 38,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-anesthesia-depth-vs\""
+      },
+      {
+        "line": 43,
+        "text": "Id: cnwqk205-thoracic-surgery-cs"
+      },
+      {
+        "line": 46,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-thoracic-surgery-cs\""
+      },
+      {
+        "line": 56,
+        "text": "Id: cnwqk205-thoracic-surgery-vs"
+      },
+      {
+        "line": 59,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-thoracic-surgery-vs\""
+      },
+      {
+        "line": 64,
+        "text": "Id: cnwqk205-body-site-cs"
+      },
+      {
+        "line": 67,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/CodeSystem/cnwqk205-body-site-cs\""
+      },
+      {
+        "line": 77,
+        "text": "Id: cnwqk205-body-site-vs"
+      },
+      {
+        "line": 80,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/ValueSet/cnwqk205-body-site-vs\""
+      },
+      {
+        "line": 85,
+        "text": "Id:        anesthesia-method"
+      },
+      {
+        "line": 88,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/anesthesia-method\""
+      },
+      {
+        "line": 94,
+        "text": "Id:        anesthesia-depth"
+      },
+      {
+        "line": 97,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/StructureDefinition/anesthesia-depth\""
+      },
+      {
+        "line": 104,
+        "text": "Id:       cnwqk205-thoracic-surgery"
+      },
+      {
+        "line": 107,
+        "text": "* ^url = \"http://localhost:3456/api/terminology/Profile/cnwqk205-thoracic-surgery\""
+      },
+      {
+        "line": 109,
+        "text": "* status = #planned (exactly)  // 择期手术状态"
+      }
+    ],
+    "violations": [
+      "cnwqk205-thoracic-surgery: status fixed=planned, actual=completed"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "aef05b24-be01-4b7b-9279-528105333b91",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk205-thoracic-surgery"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-thoracic-surgery-cs",
+                  "code": "pulmonary"
+                }
+              ]
+            },
+            "status": "completed",
+            "extension": [
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/anesthesia-method",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-method-cs",
+                      "code": "GA"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://localhost:3456/api/terminology/StructureDefinition/anesthesia-depth",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk205-anesthesia-depth-cs",
+                      "code": "GA"
+                    }
+                  ]
+                }
+              }
+            ],
+            "performedDateTime": "2026-10-09",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">择期已完成全麻下胸部手术。择期已完成全麻下胸部手术。择期已完成全麻下胸部手术</div>"
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "择期已完成全麻下胸部手术",
+        "timestamp": "2026-10-09",
+        "event_id": "a"
+      },
+      {
+        "text": "急诊开胸肺切除术全麻",
+        "timestamp": "2026-10-09",
+        "event_id": "b"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  },
+  {
+    "case": "225_ongoing",
+    "profile_id": "225",
+    "classification": "FSH_CONSTRAINT_VS_EVIDENCED_CLINICAL_FACTS",
+    "resource_structure_errors": [],
+    "profile_identity_error": "NOT_DETECTED_BY_SUBSET",
+    "terminology_error": "NOT_DETECTED_BY_SUBSET_FULL_VALIDATION_UNVERIFIED",
+    "official_fsh_source": "C:\\Users\\32433\\Desktop\\CHIP2026-CP2-data-test_b.xlsx#criterions!I6",
+    "fsh_exact_lines": [
+      {
+        "line": 2,
+        "text": "Id: cnwqk225-radiotherapy-cs"
+      },
+      {
+        "line": 8,
+        "text": "Id: cnwqk225-radiotherapy-vs"
+      },
+      {
+        "line": 14,
+        "text": "Id: cnwqk225-radiotherapy-procedure"
+      },
+      {
+        "line": 21,
+        "text": "* status = #completed (exactly)"
+      },
+      {
+        "line": 24,
+        "text": "* performedDateTime 1..1"
+      }
+    ],
+    "violations": [
+      "cnwqk225-radiotherapy-procedure: required performedDateTime",
+      "cnwqk225-radiotherapy-procedure: status fixed=completed, actual=in-progress"
+    ],
+    "current_resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "id": "fff89c88-1616-4141-afff-a228c6aca8c6",
+            "meta": {
+              "profile": [
+                "http://localhost:3456/api/terminology/Profile/cnwqk225-radiotherapy-procedure"
+              ]
+            },
+            "subject": {
+              "reference": "Patient/p1"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://localhost:3456/api/terminology/CodeSystem/cnwqk225-radiotherapy-cs",
+                  "code": "radiotherapy"
+                }
+              ]
+            },
+            "status": "in-progress",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">正在接受放疗</div>"
+            }
+          },
+          "request": {
+            "method": "POST",
+            "url": "Procedure"
+          }
+        }
+      ]
+    },
+    "reports": [
+      {
+        "text": "正在接受放疗",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "service_hit": true,
+    "safely_fixable_without_new_evidence": false,
+    "full_profile_validation": "UNVERIFIED"
+  }
+]

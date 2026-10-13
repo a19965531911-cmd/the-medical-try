@@ -1,0 +1,1 @@
+17 closed-schema checks passed. Extended criterion/profile_id and fact report_index/subject/event_identity verified, legacy schema remains compatible. No invented numeric/unit/date fields accepted. Top-level grounded counter combines schema+literal location; contextual rejection is later fact_rejections. No measured max_tokens JSON quality.

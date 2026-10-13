@@ -1,0 +1,46 @@
+[
+  {
+    "source": "submission/a_test_message_bundle_v5s2_expe_aggressive_candidate.json",
+    "sha256": "831385ec9deab93d19e54c8319027978eee4b6843c32ddbc5714795b50ad27e8"
+  },
+  {
+    "source": "submission/b_test_message_bundle_b1_candidate.json",
+    "sha256": "f7470f0e97d8348b10ab44f88515807e2b207d5369ad5506edc154bcdf0909a3"
+  },
+  {
+    "source": "submission/b_test_message_bundle_b1_candidate.manifest.json",
+    "sha256": "d96894d44a58b22b5ec5b4dd7ed48107b72d903d06f19caec33bb3de178ef2ea"
+  },
+  {
+    "source": "src/b_board/runtime.py",
+    "sha256": "71d68ce102a43c58e0d17e15b166ed6c6218082ce60b4719e1528a97a57f4a16"
+  },
+  {
+    "source": "scripts/build_b_submission.py",
+    "sha256": "6c96ea2c8fb3b44326fb004b5b912e19c192d95050329eb3d317d4aa91743b9a"
+  },
+  {
+    "source": "experiment/b2-official-contract/B2E.json",
+    "sha256": "31cf9dc93cd2b63fbe54a26eaa115cf6233d939ee612fd351feed90d687ce45b"
+  },
+  {
+    "source": "experiment/b2-official-contract/results.json",
+    "sha256": "8877972305f7ffd371694dc637a3d7c9c5756997d33f3a79ca69191e8a9898e3"
+  },
+  {
+    "source": "submission/b2_candidate.manifest.json",
+    "sha256": "97693e2b14d324baac991b0087a97b18d6af392c9fecd5f7205d772389272e50"
+  },
+  {
+    "source": "src/b_board/b2_runtime.py",
+    "sha256": "d056738748385c0c2c8ca533a06f170c5a031f5d4533aa277d8452002675c047"
+  },
+  {
+    "source": "scripts/b2_experiments.py",
+    "sha256": "170e81bb4020f40f24b98fee5b5cb047be98f28802355f35ef42bc51378f87c6"
+  },
+  {
+    "source": "reports/B2_FINAL_VERDICT.md",
+    "sha256": "87f726ec429136c6f38ca484d1342c0f6e8ed62e35e8549939d0e209bb981b50"
+  }
+]

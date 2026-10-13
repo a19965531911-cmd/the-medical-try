@@ -1,0 +1,9 @@
+{
+  "variant": "B4F",
+  "mode": "hybrid",
+  "single_profile": false,
+  "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+  "model": "local-model",
+  "max_tokens": 2048,
+  "timeout_seconds": 5
+}

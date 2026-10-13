@@ -1,0 +1,1699 @@
+common:
+  FHIR_contract_defaults:
+    required_sections:
+    - resource_type
+    - profiles
+    - required_fields
+    - optional_fields
+    - coding_systems
+    - coding_codes
+    - value_types
+    - subject_rules
+    - time_rules
+    - cardinality
+    - extensions
+  constraint_result:
+  - true
+  - false
+  - UNKNOWN
+  constraint_semantics:
+    algebra: conservative_kleene
+    leaves:
+    - required_present
+    - blocking_if_present
+    - must_be_absent
+    - explicit_absence_fact
+    - numeric_compare
+    - patient_subject
+    - temporal_required
+    - relation_required
+  contract_inheritance: Each criterion inherits empty optional_fields/extensions and
+    official fixed mappings for unresolved profile/code constants; no runtime guessing
+    is permitted.
+  decision:
+  - SATISFIED
+  - NOT_SATISFIED
+  - INSUFFICIENT_EVIDENCE
+  episode_policy:
+    full_admission_reconstruction: forbidden
+    scope: criterion_specific_only
+  event_schema:
+    ref: V43_IR_SCHEMA_REFERENCE.yaml#/event_schema
+  fact_schema:
+    ref: V43_IR_SCHEMA_REFERENCE.yaml#/fact_schema
+  fact_state:
+  - PRESENT
+  - ABSENT
+  - UNKNOWN
+  relation_schema:
+    ref: V43_IR_SCHEMA_REFERENCE.yaml#/relation_schema
+  retrieval_policy:
+    fallback_k: 3
+    hard_gate: false
+    max_per_report: 1
+    no_evidence_only_when: no_valid_patient_text
+    tiers:
+    - strong_aliases
+    - bm25_all_patient_spans
+    - high_information_fallback
+  service_query_contract_defaults:
+    required_sections:
+    - queried_resource_type
+    - required_profile_match
+    - query_parameters
+    - coding_paths
+    - systems
+    - codes
+    - value_paths
+    - extensions
+    - reference_behavior
+    - patient_identity_resolution
+    - JSON_assumptions
+  subject_constraints:
+    allowed:
+    - patient
+    rejected:
+    - family
+    - other
+  temporal_view:
+  - CURRENT
+  - HISTORICAL
+  - RESOLVED
+  - CONFLICT
+  - UNKNOWN
+criteria:
+- FHIR_contract:
+    cardinality: 1..*
+    profile: fixed_165_profile
+    required_fields:
+    - meta.profile
+    - subject
+    - medication
+    - status
+    - effective
+    resource_type: MedicationAdministration
+    value_type: CodeableConcept
+  aggregation_scope: patient_cross_report
+  clinical_domain: medication_history
+  constraint_semantics:
+    blocking_if_present:
+    - planned_only
+    must_be_absent: []
+    required_present:
+    - chemo_administration_event
+    - outside_hospital_relation
+  criterion_id: '165'
+  criterion_type: exclusion
+  entities:
+  - concepts:
+    - 化疗
+    id: chemo
+    type: treatment
+  episode_policy:
+    required: false
+  event_schema:
+    uses:
+    - MedicationAdministration
+  fact_schema:
+    uses: []
+  logical_expression: chemo_admin AND outside_hospital
+  negation_constraints:
+    exclude_negated: true
+    exclude_planned: true
+  numeric_constraints: []
+  original_text: 已经在外院接受过化疗者
+  prohibited_facts: []
+  relation_schema:
+    uses:
+    - OCCURRED_AT
+  relations:
+  - left: chemo_admin
+    right: outside_hospital
+    type: OCCURRED_AT
+  required_facts:
+  - chemo_admin
+  - outside_hospital
+  retrieval_policy:
+    bm25_query:
+    - 外院
+    - 化疗
+    - 接受
+    - 既往
+    expanded_terms:
+    - 当地医院
+    - 外地医院
+    - 化疗史
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - 外院化疗
+    - 外院接受化疗
+  service_query_contract:
+    query_resource: MedicationAdministration
+    required_match:
+    - profile
+    - subject
+    - medication
+    - status
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - fact: chemo_admin
+    temporality: historical_or_current
+  temporal_scope: historical_or_current
+  title: prior chemotherapy at outside hospital
+- FHIR_contract:
+    cardinality: 1..1
+    coding_codes:
+    - cnwqk185-drug-irinotecan
+    - cnwqk185-application-first
+    coding_systems:
+    - cnwqk185-custom-cs
+    extensions:
+    - cnwqk185-application-order
+    optional_fields:
+    - reasonReference
+    profiles:
+    - cnwqk185-chemotherapy-administration
+    required_fields:
+    - meta.profile
+    - subject
+    - medicationCodeableConcept
+    - status
+    - effectiveDateTime
+    - dosage.text
+    - applicationOrder_extension
+    resource_type: MedicationAdministration
+    subject_rules: patient_reference_required
+    time_rules: clinical_administration_time_required
+    value_types:
+    - CodeableConcept
+    - code
+  aggregation_scope: patient_timeline
+  clinical_domain: medication_administration
+  constraint_semantics:
+    blocking_if_present:
+    - planned_only
+    - previous_multiple_use
+    must_be_absent: []
+    required_present:
+    - irinotecan_administration_event
+    - first_use_attribute
+  criterion_id: '185'
+  criterion_type: eligibility
+  entities:
+  - concepts:
+    - 伊立替康
+    - irinotecan
+    - CPT-11
+    id: irinotecan
+    type: medication
+  episode_policy:
+    required: false
+  event_schema:
+    ownership:
+      attributes:
+      - first_use
+      - planned_only
+      - previous_multiple_use
+      concept: irinotecan
+      status: occurred
+    uses:
+    - MedicationAdministration
+  logical_expression: required_present(irinotecan_administration_event) AND required_present(first_use_attribute)
+    AND blocking_if_present(planned_only) AND blocking_if_present(previous_multiple_use)
+  negation_constraints:
+    exclude_negated: true
+    exclude_planned_only: true
+  numeric_constraints: []
+  original_text: 根据NCCN指南，首次应用包含伊立替康的化疗方案治疗
+  prohibited_facts:
+  - planned_only
+  - prior_irinotecan_administration
+  relation_schema:
+    uses:
+    - PART_OF
+    - FIRST_OCCURRENCE
+  relations:
+  - left: irinotecan
+    right: regimen
+    type: PART_OF
+  - left: administration
+    right: patient_timeline
+    type: FIRST_OCCURRENCE
+  required_facts:
+  - irinotecan_component
+  - actual_administration
+  - first_use
+  retrieval_policy:
+    bm25_query:
+    - 伊立替康
+    - 首次
+    - 应用
+    - 化疗
+    - 给药
+    expanded_terms:
+    - 首次
+    - 初次
+    - 首程
+    - 给药
+    - 化疗方案
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - 伊立替康
+    - irinotecan
+    - CPT-11
+  service_query_contract:
+    JSON_assumptions: resource_JSON_object
+    codes: []
+    coding_paths: []
+    extensions: []
+    patient_identity_resolution: FHIR_PATIENT_to_PAPERLESS_NGX_via_EMPI
+    queried_resource_type: MedicationAdministration
+    query_parameters:
+    - _profile
+    reference_behavior: subject.reference_Patient_id
+    required_profile_match: true
+    systems: []
+    value_paths: []
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - fact: administration
+    status: completed_or_in_progress
+  - event: administration
+    relation: FIRST_OCCURRENCE
+  temporal_scope: first_occurrence_on_patient_timeline
+  title: first irinotecan-containing chemotherapy administration
+- FHIR_contract:
+    cardinality: 1..*
+    profile: fixed_265_profile
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - valueQuantity
+    - effective
+    resource_type: Observation
+    value_type: Quantity
+  aggregation_scope: patient_measurements
+  clinical_domain: laboratory
+  constraint_semantics:
+    blocking_if_present: []
+    must_be_absent: []
+    numeric_compare:
+    - ctni_threshold
+    - ctnt_threshold
+    required_present:
+    - troponin_measurement
+  criterion_id: '265'
+  criterion_type: exclusion
+  entities:
+  - id: ctni
+    type: measurement
+  - id: ctnt
+    type: measurement
+  episode_policy:
+    required: false
+  event_schema:
+    uses: []
+  fact_schema:
+    uses:
+    - LaboratoryMeasurement
+  logical_expression: ctni>=0.06ug/L OR ctnt>=0.03ug/L
+  negation_constraints:
+    not_applicable_to_measurements: true
+  numeric_constraints:
+  - fact: ctni
+    op: '>='
+    unit: ug/L
+    value: 0.06
+  - fact: ctnt
+    op: '>='
+    unit: ug/L
+    value: 0.03
+  original_text: 术前血清cTnI>=0.06ug/L或cTnT>=0.03ug/L
+  prohibited_facts: []
+  relation_schema:
+    uses:
+    - BEFORE
+  relations:
+  - left: measurement
+    right: surgery
+    type: BEFORE
+  required_facts:
+  - ctni_or_ctnt_measurement
+  retrieval_policy:
+    bm25_query:
+    - 术前
+    - cTnI
+    - cTnT
+    - 肌钙蛋白
+    - 数值
+    expanded_terms:
+    - 术前
+    - 血清
+    - ug/L
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - cTnI
+    - cTnT
+    - 肌钙蛋白
+  service_query_contract:
+    query_resource: Observation
+    required_match:
+    - profile
+    - subject
+    - code
+    - value
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - anchor: surgery
+    facts:
+    - ctni
+    - ctnt
+    relation: BEFORE
+  temporal_scope: preoperative
+  title: elevated preoperative troponin
+- FHIR_contract:
+    cardinality: 1..1
+    profile: fixed_485_profile
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - stage
+    resource_type: Condition
+    value_type: CodeableConcept
+  aggregation_scope: latest_patient_assessment
+  clinical_domain: diagnosis_stage
+  constraint_semantics:
+    blocking_if_present: []
+    must_be_absent: []
+    required_present:
+    - prolapse_diagnosis
+    - popq_stage
+  criterion_id: '485'
+  criterion_type: eligibility
+  entities:
+  - id: popq
+    type: clinical_stage
+    values:
+    - III
+    - IV
+  episode_policy:
+    required: false
+  event_schema:
+    uses:
+    - Diagnosis
+  fact_schema:
+    uses:
+    - ClinicalStage
+  logical_expression: pelvic_organ_prolapse AND popq_stage IN [III,IV]
+  negation_constraints:
+    exclude_negated: true
+  numeric_constraints: []
+  original_text: 盆腔器官脱垂程度POP-Q分期为III-IV度
+  prohibited_facts: []
+  relation_schema:
+    uses:
+    - QUALIFIES
+  relations:
+  - left: popq_stage
+    right: pelvic_organ_prolapse
+    type: QUALIFIES
+  required_facts:
+  - pelvic_organ_prolapse
+  - popq_stage
+  retrieval_policy:
+    bm25_query:
+    - POP-Q
+    - 脱垂
+    - III
+    - IV
+    - 分期
+    expanded_terms:
+    - 盆腔器官脱垂
+    - 分期
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - POP-Q
+    - III度
+    - IV度
+  service_query_contract:
+    query_resource: Condition
+    required_match:
+    - profile
+    - subject
+    - code
+    - stage
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - fact: popq
+    temporality: current_or_latest
+  temporal_scope: latest_assessment
+  title: POP-Q stage III-IV prolapse
+- FHIR_contract:
+    cardinality: 1..*
+    profile: fixed_555_profile
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - status
+    - performed
+    resource_type: Procedure
+    value_type: CodeableConcept
+  aggregation_scope: patient_history
+  clinical_domain: procedure_history
+  constraint_semantics:
+    blocking_if_present:
+    - planned_only
+    must_be_absent: []
+    required_present:
+    - completed_surgery_event
+  criterion_id: '555'
+  criterion_type: eligibility
+  entities:
+  - id: surgery
+    type: procedure
+  episode_policy:
+    required: false
+  event_schema:
+    uses:
+    - Surgery
+    - Procedure
+  fact_schema:
+    uses: []
+  logical_expression: completed_surgery AND elapsed(surgery,index_date)<=6months
+  negation_constraints:
+    exclude_negated: true
+    exclude_planned: true
+  numeric_constraints: []
+  original_text: 半年内手术史
+  prohibited_facts: []
+  relation_schema:
+    uses: []
+  relations: []
+  required_facts:
+  - completed_surgery
+  retrieval_policy:
+    bm25_query:
+    - 既往
+    - 手术
+    - 术后
+    - 切除
+    expanded_terms:
+    - 术后
+    - 切除术
+    - 手术治疗
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - 手术史
+    - 曾行手术
+  service_query_contract:
+    query_resource: Procedure
+    required_match:
+    - profile
+    - subject
+    - status
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - fact: surgery
+    temporality: historical
+  temporal_scope: within_6_months_of_index_date
+  title: surgery history within six months
+- FHIR_contract:
+    cardinality: 1..*
+    profile: fixed_565_profile
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - clinicalStatus
+    - severity
+    resource_type: Condition
+    value_type: CodeableConcept
+  aggregation_scope: same_event_or_episode
+  clinical_domain: symptom
+  constraint_semantics:
+    blocking_if_present:
+    - resolved
+    must_be_absent: []
+    required_present:
+    - symptom_event
+    - severe_attribute
+  criterion_id: '565'
+  criterion_type: exclusion
+  entities:
+  - id: diarrhea
+    type: symptom
+  - id: constipation
+    type: symptom
+  - id: severity
+    type: qualifier
+  episode_policy:
+    required: true
+    type: symptom_episode
+  event_schema:
+    attributes:
+    - severity
+    - resolved
+    uses:
+    - Diagnosis
+  fact_schema:
+    uses: []
+  logical_expression: (diarrhea OR constipation) AND severity=severe
+  negation_constraints:
+    exclude_negated: true
+    exclude_resolved: true
+  numeric_constraints: []
+  original_text: 患有严重腹泻或便秘
+  prohibited_facts:
+  - resolved
+  relation_schema:
+    uses:
+    - QUALIFIES
+  relations:
+  - left: severe
+    right: symptom
+    type: QUALIFIES
+  required_facts:
+  - symptom
+  - severe
+  retrieval_policy:
+    bm25_query:
+    - 腹泻
+    - 便秘
+    - 严重
+    - 重度
+    expanded_terms:
+    - 重度
+    - 剧烈
+    - 顽固
+    - 频繁
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - 严重腹泻
+    - 严重便秘
+  service_query_contract:
+    query_resource: Condition
+    required_match:
+    - profile
+    - subject
+    - code
+    - severity
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - fact: symptom
+    temporality: current
+  temporal_scope: current_episode
+  title: severe diarrhea or constipation
+- FHIR_contract:
+    cardinality: 1..*
+    profile: fixed_615_profile
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - value
+    - effective
+    resource_type: Observation
+    value_type: Quantity_or_CodeableConcept
+  aggregation_scope: patient_cross_report_or
+  clinical_domain: oncology
+  constraint_semantics:
+    blocking_if_present: []
+    must_be_absent: []
+    numeric_compare:
+    - gs_threshold
+    - psa_threshold
+    required_present:
+    - one_oncology_branch
+  criterion_id: '615'
+  criterion_type: eligibility
+  entities:
+  - id: pathology
+    type: stage
+  - id: psa
+    type: measurement
+  episode_policy:
+    required: false
+  event_schema:
+    uses:
+    - Diagnosis
+  fact_schema:
+    uses:
+    - ClinicalStage
+    - LaboratoryMeasurement
+  logical_expression: pT3a_4 OR R1 OR pN1 OR GS>=8 OR PSA>0.1ng/mL
+  negation_constraints:
+    exclude_negated: true
+  numeric_constraints:
+  - fact: gleason_score
+    op: '>='
+    value: 8
+  - fact: psa
+    op: '>'
+    unit: ng/mL
+    value: 0.1
+  original_text: pT3a-4或R1或pN1或GS>=8或PSA>0.1ng/ml
+  prohibited_facts: []
+  relation_schema:
+    uses:
+    - PART_OF
+  relations:
+  - left: stage_or_grade
+    right: prostate_cancer
+    type: PART_OF
+  required_facts:
+  - one_branch
+  retrieval_policy:
+    bm25_query:
+    - pT3a
+    - pT4
+    - R1
+    - pN1
+    - GS
+    - PSA
+    expanded_terms:
+    - Gleason
+    - 病理分期
+    - 切缘阳性
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - pT3a
+    - pT4
+    - R1
+    - pN1
+    - GS
+    - PSA
+  service_query_contract:
+    query_resource: Observation
+    required_match:
+    - profile
+    - subject
+    - code
+    - value
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - facts:
+    - pathology
+    - psa
+    temporality: documented
+  temporal_scope: documented_disease_course
+  title: prostate adverse pathology or PSA threshold
+- FHIR_contract:
+    cardinality: 1..*
+    profile: fixed_635_profile
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - valueQuantity
+    - referenceRange
+    - effective
+    resource_type: Observation
+    value_type: Quantity
+  aggregation_scope: patient_measurements_all
+  clinical_domain: laboratory
+  constraint_semantics:
+    blocking_if_present: []
+    must_be_absent: []
+    numeric_compare:
+    - ast_lte_2x_uln
+    - alt_lte_2x_uln
+    - bun_lte_2x_uln
+    - cr_lte_2x_uln
+    required_present:
+    - all_four_lab_measurements
+    - matching_reference_highs
+  criterion_id: '635'
+  criterion_type: inclusion
+  entities:
+  - id: labs
+    members:
+    - AST
+    - ALT
+    - BUN
+    - Cr
+    type: measurement_set
+  episode_policy:
+    required: false
+  event_schema:
+    uses: []
+  fact_schema:
+    uses:
+    - LaboratoryMeasurement
+  logical_expression: AST<=2xULN AND ALT<=2xULN AND BUN<=2xULN AND Cr<=2xULN
+  negation_constraints:
+    not_applicable_to_measurements: true
+  numeric_constraints:
+  - fact: AST_ratio
+    op: <=
+    unit: ratio
+    value: 2
+  - fact: ALT_ratio
+    op: <=
+    unit: ratio
+    value: 2
+  - fact: BUN_ratio
+    op: <=
+    unit: ratio
+    value: 2
+  - fact: Cr_ratio
+    op: <=
+    unit: ratio
+    value: 2
+  original_text: 5)或AST、ALT、BUN、Cr不超过正常值一倍者；
+  prohibited_facts: []
+  relation_schema:
+    uses:
+    - HAS_REFERENCE_RANGE
+  relations:
+  - left: measurement
+    right: reference_high
+    type: HAS_REFERENCE_RANGE
+  required_facts:
+  - AST
+  - ALT
+  - BUN
+  - Cr
+  - matching_reference_highs
+  retrieval_policy:
+    bm25_query:
+    - AST
+    - ALT
+    - BUN
+    - Cr
+    - 升高
+    - 正常值
+    expanded_terms:
+    - 肌酐
+    - 尿素氮
+    - 转氨酶
+    - 高于正常
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - AST
+    - ALT
+    - BUN
+    - Cr
+  service_query_contract:
+    query_resource: Observation
+    required_match:
+    - profile
+    - subject
+    - code
+    - value
+    - reference_range
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - fact: each_lab
+    temporality: current_or_relevant
+  temporal_scope: current_or_relevant_laboratory_window
+  title: AST ALT BUN and creatinine not above twice ULN
+- FHIR_contract:
+    cardinality: 1..1
+    coding_codes:
+    - B02.9
+    - head
+    - face
+    - head_and_face
+    - active
+    - confirmed
+    coding_systems:
+    - icd10
+    - cnwqk675-head-facial-body-site-cs
+    - condition-clinical
+    - condition-ver-status
+    extensions: []
+    optional_fields:
+    - onsetDateTime
+    profiles:
+    - cnwqk675-head-facial-herpes-zoster-condition
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - bodySite
+    - clinicalStatus
+    - verificationStatus
+    resource_type: Condition
+    subject_rules: patient_reference_required
+    time_rules: relevant_episode_time_when_known
+    value_types:
+    - CodeableConcept
+  aggregation_scope: patient_cross_report_demographic_plus_event
+  clinical_domain: diagnosis_demographic
+  constraint_semantics:
+    blocking_if_present: []
+    must_be_absent: []
+    numeric_compare:
+    - age_gte_50
+    required_present:
+    - herpes_zoster_diagnosis
+    - head_face_location_relation
+  criterion_id: '675'
+  criterion_type: eligibility
+  entities:
+  - id: patient_age
+    type: demographic
+  - id: zoster
+    type: diagnosis
+  - id: site
+    type: body_site
+    values:
+    - head
+    - face
+  episode_policy:
+    cross_report_linking: allowed_with_provenance
+    required: true
+    type: diagnosis_episode
+  event_schema:
+    ownership:
+      concept: herpes_zoster
+      status: confirmed
+    uses:
+    - Diagnosis
+  fact_schema:
+    uses:
+    - Age
+    - BodySite
+  logical_expression: numeric_compare(age_gte_50) AND required_present(herpes_zoster_diagnosis)
+    AND relation_required(zoster_event,head_face_site,LOCATED_AT)
+  negation_constraints:
+    diagnosis_certainty: confirmed
+    exclude_negated: true
+  numeric_constraints:
+  - fact: patient_age
+    op: '>='
+    unit: year
+    value: 50
+  original_text: 年龄50岁以上并确诊头面部带状疱疹
+  prohibited_facts: []
+  relation_schema:
+    uses:
+    - LOCATED_AT
+    world_assumption: open
+  relations:
+  - left: zoster_event
+    right: head_face_site
+    type: LOCATED_AT
+  required_facts:
+  - patient_age
+  - herpes_zoster_diagnosis
+  - head_face_site
+  retrieval_policy:
+    bm25_query:
+    - 年龄
+    - 带状疱疹
+    - 头
+    - 面
+    - 确诊
+    expanded_terms:
+    - 头部
+    - 颜面
+    - 眼周
+    - 耳周
+    - 岁
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - 带状疱疹
+    - 头面部
+    - 面部
+  service_query_contract:
+    JSON_assumptions: coding_arrays_query_safe
+    codes:
+    - B02.9
+    - head
+    - face
+    - head_and_face
+    - active
+    - confirmed
+    coding_paths:
+    - code.coding
+    - bodySite.coding
+    - clinicalStatus.coding
+    - verificationStatus.coding
+    extensions: []
+    patient_identity_resolution: FHIR_PATIENT_to_PAPERLESS_NGX_via_EMPI
+    queried_resource_type: Condition
+    query_parameters:
+    - _profile
+    reference_behavior: subject.reference_Patient_id
+    required_profile_match: true
+    systems:
+    - icd10
+    - cnwqk675-head-facial-body-site-cs
+    - condition-clinical
+    - condition-ver-status
+    value_paths: []
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - fact: zoster
+    temporality: current_or_relevant_episode
+  temporal_scope: relevant_zoster_episode
+  title: age at least 50 and confirmed head-face herpes zoster
+- FHIR_contract:
+    cardinality: 1..*
+    profile: fixed_735_profile
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - clinicalStatus
+    resource_type: Condition
+    value_type: CodeableConcept
+  aggregation_scope: latest_disease_episode
+  clinical_domain: diagnosis_activity
+  constraint_semantics:
+    blocking_if_present:
+    - resolved_or_stable
+    must_be_absent: []
+    required_present:
+    - target_disease_event
+    - active_attribute
+  criterion_id: '735'
+  criterion_type: exclusion
+  entities:
+  - id: target_disease
+    type: diagnosis
+  - id: activity
+    type: clinical_state
+  episode_policy:
+    required: true
+    type: disease_episode
+  event_schema:
+    attributes:
+    - activity
+    - resolved_or_stable
+    uses:
+    - Diagnosis
+  fact_schema:
+    uses: []
+  logical_expression: target_disease AND state=active
+  negation_constraints:
+    exclude_negated: true
+    exclude_resolved_or_stable: true
+  numeric_constraints: []
+  original_text: 甲肝、乙肝、艾滋病、结核等传染性疾病或结缔组织病处于活动期
+  prohibited_facts:
+  - resolved
+  - stable
+  relation_schema:
+    uses:
+    - QUALIFIES
+  relations:
+  - left: active_state
+    right: target_disease
+    type: QUALIFIES
+  required_facts:
+  - target_disease
+  - active_state
+  retrieval_policy:
+    bm25_query:
+    - 活动期
+    - 活动性
+    - 感染
+    - 结缔组织病
+    expanded_terms:
+    - 甲肝
+    - 乙肝
+    - HIV
+    - 艾滋病
+    - 结核
+    - 结缔组织病
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - 活动期
+    - 活动性
+  service_query_contract:
+    query_resource: Condition
+    required_match:
+    - profile
+    - subject
+    - code
+    - clinicalStatus
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - fact: disease_activity
+    temporality: current
+  temporal_scope: current_activity
+  title: active target infectious or connective tissue disease
+- FHIR_contract:
+    cardinality: ventilation 1..*; surgery reference 1..1
+    coding_codes:
+    - invasive_mechanical_ventilation
+    coding_systems:
+    - cnwqk745-procedure-type-cs
+    extensions:
+    - cnwqk745-postoperative-relation-extension
+    optional_fields:
+    - cnwqk745-postoperative-relation-extension
+    profiles:
+    - cnwqk745-postop-mechanical-ventilation
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - status
+    - performedDateTime
+    - partOf
+    resource_type: Procedure
+    subject_rules: patient_reference_required
+    time_rules: ventilation_start_time_required
+    value_types:
+    - CodeableConcept
+    - Reference
+  aggregation_scope: patient_event_graph_same_episode
+  clinical_domain: procedure_relation
+  constraint_semantics:
+    blocking_if_present:
+    - noninvasive_only
+    - no_ventilation_required
+    must_be_absent: []
+    relation_required:
+    - postoperative_episode_relation
+    required_present:
+    - surgery_event
+    - invasive_ventilation_event
+  criterion_id: '745'
+  criterion_type: eligibility
+  entities:
+  - id: surgery_event
+    type: Surgery
+  - id: ventilation_event
+    invasive: true
+    type: MechanicalVentilation
+  episode_policy:
+    full_admission_reconstruction: forbidden
+    required: true
+    sources:
+    - same_report
+    - explicit_hospitalization
+    - shared_surgery_date
+    - explicit_postoperative_wording
+    - temporal_adjacency
+    - grounded_llm_relation
+    type: perioperative
+  event_schema:
+    attributes:
+    - invasive
+    uses:
+    - Surgery
+    - MechanicalVentilation
+  fact_schema:
+    uses: []
+  logical_expression: required_present(Surgery S) AND required_present(MechanicalVentilation
+    V) AND required_present(V.invasive) AND (relation_required(V,S,POSTOPERATIVE_TO)
+    OR (relation_required(V,S,AFTER) AND relation_required(V,S,SAME_EPISODE)))
+  negation_constraints:
+    exclude_negated: true
+    exclude_noninvasive: true
+    exclude_planned_only: true
+  numeric_constraints: []
+  original_text: 术后需要有创机械通气
+  prohibited_facts:
+  - noninvasive_only
+  - no_ventilation_required
+  relation_schema:
+    uses:
+    - POSTOPERATIVE_TO
+    - AFTER
+    - SAME_EPISODE
+    world_assumption: open
+  relations:
+  - left: ventilation_event
+    right: surgery_event
+    type: POSTOPERATIVE_TO
+  - left: ventilation_event
+    right: surgery_event
+    type: AFTER
+  - left: ventilation_event
+    right: surgery_event
+    type: SAME_EPISODE
+  required_facts:
+  - completed_surgery_event
+  - invasive_ventilation_event
+  retrieval_policy:
+    bm25_query:
+    - 术后
+    - 手术
+    - 有创
+    - 机械通气
+    - 气管插管
+    expanded_terms:
+    - 手术
+    - 呼吸机
+    - 自主呼吸
+    - ICU
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - 术后
+    - 有创机械通气
+    - 气管插管
+  service_query_contract:
+    JSON_assumptions: coding_array_and_reference_query_safe
+    codes:
+    - invasive_mechanical_ventilation
+    coding_paths:
+    - code.coding
+    extensions: []
+    patient_identity_resolution: FHIR_PATIENT_to_PAPERLESS_NGX_via_EMPI
+    queried_resource_type: Procedure
+    query_parameters:
+    - _profile
+    reference_behavior: partOf_must_resolve_to_Procedure_and_subject_to_Patient
+    required_profile_match: true
+    systems:
+    - cnwqk745-procedure-type-cs
+    value_paths:
+    - partOf.reference
+  subject_constraints:
+    same_subject:
+    - surgery_event
+    - ventilation_event
+    subject: patient
+  temporal_constraints:
+  - left: ventilation_event
+    relation: AFTER
+    right: surgery_event
+    tolerance: same_episode
+  temporal_scope: same_perioperative_episode
+  title: postoperative invasive mechanical ventilation
+- FHIR_contract:
+    cardinality: 1..*
+    profile: fixed_755_profile
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - status
+    - performedPeriod
+    resource_type: Procedure
+    value_type: Period
+  aggregation_scope: single_or_contiguous_event
+  clinical_domain: procedure_duration
+  constraint_semantics:
+    blocking_if_present:
+    - planned_only
+    must_be_absent: []
+    numeric_compare:
+    - duration_gte_24h
+    required_present:
+    - ventilation_event
+    - duration_attribute
+  criterion_id: '755'
+  criterion_type: eligibility
+  entities:
+  - id: ventilation
+    type: MechanicalVentilation
+  episode_policy:
+    required: true
+    type: ventilation_episode
+  event_schema:
+    attributes:
+    - duration
+    - planned_only
+    uses:
+    - MechanicalVentilation
+  fact_schema:
+    uses: []
+  logical_expression: ventilation.duration>=24h
+  negation_constraints:
+    exclude_negated: true
+    exclude_planned: true
+  numeric_constraints:
+  - fact: duration
+    op: '>='
+    unit: h
+    value: 24
+  original_text: 机械通气>=24h
+  prohibited_facts: []
+  relation_schema:
+    uses:
+    - HAS_DURATION
+  relations:
+  - left: ventilation
+    right: duration
+    type: HAS_DURATION
+  required_facts:
+  - ventilation_event
+  - duration
+  retrieval_policy:
+    bm25_query:
+    - 机械通气
+    - 时长
+    - 小时
+    - 24h
+    expanded_terms:
+    - 有创通气
+    - 气管插管
+    - 小时
+    - h
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - 机械通气
+    - 呼吸机
+  service_query_contract:
+    query_resource: Procedure
+    required_match:
+    - profile
+    - subject
+    - code
+    - performed
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - duration_from: period
+    event: ventilation
+  temporal_scope: contiguous_ventilation_event
+  title: mechanical ventilation at least 24 hours
+- FHIR_contract:
+    cardinality: 1..1
+    profile: fixed_805_profile
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - value
+    - effective
+    resource_type: Observation
+    value_type: CodeableConcept_or_date
+  aggregation_scope: latest_smoking_status
+  clinical_domain: social_history
+  constraint_semantics:
+    blocking_if_present: []
+    must_be_absent: []
+    numeric_compare:
+    - cessation_lt_2y
+    required_present:
+    - current_smoking_or_cessation_event
+  criterion_id: '805'
+  criterion_type: exclusion
+  entities:
+  - id: smoking
+    type: behavior
+  - id: cessation
+    type: event
+  episode_policy:
+    required: false
+  event_schema:
+    uses:
+    - Cessation
+  fact_schema:
+    uses:
+    - SmokingStatus
+  logical_expression: current_smoker OR elapsed(cessation,index_date)<2y
+  negation_constraints:
+    distinguish_never_smoker: true
+  numeric_constraints:
+  - fact: cessation_elapsed
+    op: <
+    unit: year
+    value: 2
+  original_text: 吸烟或戒烟<2年
+  prohibited_facts: []
+  relation_schema:
+    uses:
+    - BEFORE
+  relations:
+  - left: cessation
+    right: index_date
+    type: BEFORE
+  required_facts:
+  - current_smoking_or_recent_cessation
+  retrieval_policy:
+    bm25_query:
+    - 吸烟
+    - 戒烟
+    - 年
+    - 目前
+    expanded_terms:
+    - 烟龄
+    - 仍吸烟
+    - 停止吸烟
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - 吸烟
+    - 戒烟
+  service_query_contract:
+    query_resource: Observation
+    required_match:
+    - profile
+    - subject
+    - code
+    - value
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - event: cessation
+    relative_to: index_date
+  temporal_scope: current_status_relative_to_index_date
+  title: smoking or cessation under two years
+- FHIR_contract:
+    cardinality: 1..*
+    profile: fixed_835_profile
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - interpretation
+    - effective
+    resource_type: Observation
+    value_type: CodeableConcept_or_Quantity
+  aggregation_scope: latest_relevant_state
+  clinical_domain: diagnosis_or_laboratory
+  constraint_semantics:
+    blocking_if_present: []
+    must_be_absent: []
+    required_present:
+    - current_coagulation_abnormality
+  criterion_id: '835'
+  criterion_type: exclusion
+  entities:
+  - id: coagulation
+    type: clinical_finding
+  episode_policy:
+    required: false
+  event_schema:
+    uses: []
+  fact_schema:
+    uses:
+    - ClinicalState
+    - LaboratoryMeasurement
+  logical_expression: current(coagulation_abnormality)
+  negation_constraints:
+    exclude_negated: true
+    latest_normal_reconciles_by_time: true
+  numeric_constraints: []
+  original_text: 凝血功能异常
+  prohibited_facts: []
+  relation_schema:
+    uses: []
+  relations: []
+  required_facts:
+  - coagulation_abnormality
+  retrieval_policy:
+    bm25_query:
+    - 凝血
+    - 异常
+    - PT
+    - APTT
+    - INR
+    expanded_terms:
+    - 凝血紊乱
+    - PT
+    - APTT
+    - INR
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - 凝血功能异常
+    - 凝血障碍
+  service_query_contract:
+    query_resource: Observation
+    required_match:
+    - profile
+    - subject
+    - code
+    - interpretation
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - fact: coagulation
+    temporality: current_or_relevant
+  temporal_scope: latest_comparable_state
+  title: coagulation abnormality
+- FHIR_contract:
+    cardinality: 4..*
+    profile: fixed_855_profile
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - valueQuantity
+    - referenceRange
+    - effective
+    resource_type: Observation
+    value_type: Quantity
+  aggregation_scope: clinically_coherent_lab_window
+  clinical_domain: laboratory
+  constraint_semantics:
+    blocking_if_present: []
+    must_be_absent: []
+    numeric_compare:
+    - all_four_thresholds
+    required_present:
+    - Scr
+    - BUN
+    - ALT
+    - AST
+  criterion_id: '855'
+  criterion_type: inclusion
+  entities:
+  - id: labs
+    members:
+    - Scr
+    - BUN
+    - ALT
+    - AST
+    type: measurement_set
+  episode_policy:
+    required: false
+  event_schema:
+    uses: []
+  fact_schema:
+    uses:
+    - LaboratoryMeasurement
+  logical_expression: Scr<178 AND BUN<9 AND ALT<=ULN AND AST<=ULN
+  negation_constraints:
+    not_applicable_to_measurements: true
+  numeric_constraints:
+  - fact: Scr
+    op: <
+    unit: umol/L
+    value: 178
+  - fact: BUN
+    op: <
+    unit: mmol/L
+    value: 9
+  - fact: ALT
+    op: <=
+    value: reference_high
+  - fact: AST
+    op: <=
+    value: reference_high
+  original_text: 肝功能正常且Scr<178umol/L、BUN<9mmol/L、ALT和AST不升高
+  prohibited_facts: []
+  relation_schema:
+    uses:
+    - HAS_REFERENCE_RANGE
+  relations:
+  - left: each_measurement
+    right: reference_high
+    type: HAS_REFERENCE_RANGE
+  required_facts:
+  - Scr
+  - BUN
+  - ALT
+  - AST
+  retrieval_policy:
+    bm25_query:
+    - Scr
+    - BUN
+    - ALT
+    - AST
+    - 正常
+    - 数值
+    expanded_terms:
+    - 肌酐
+    - 尿素氮
+    - 肝功能
+    - 肾功能
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - Scr
+    - BUN
+    - ALT
+    - AST
+  service_query_contract:
+    query_resource: Observation
+    required_match:
+    - profile
+    - subject
+    - code
+    - value
+    - reference_range
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - facts:
+    - Scr
+    - BUN
+    - ALT
+    - AST
+    temporality: current_or_same_window
+  temporal_scope: clinically_coherent_lab_window
+  title: adequate hepatic and renal function
+- FHIR_contract:
+    cardinality: 1..*
+    coding_codes:
+    - intracranial-hypertension
+    - unconsciousness
+    - present
+    coding_systems:
+    - cnwqk875-intracranialhypertension-cs
+    - cnwqk875-unconsciousness-cs
+    - cnwqk875-presence-cs
+    extensions: []
+    optional_fields: []
+    profiles:
+    - cnwqk875-intracranialhypertension-profile
+    - cnwqk875-unconsciousness-profile
+    required_fields:
+    - meta.profile
+    - subject
+    - code
+    - valueCodeableConcept
+    - status
+    - effectiveDateTime
+    resource_type: Observation
+    subject_rules: Patient_reference_required
+    time_rules: preserve_source_clinical_time
+    value_types:
+    - CodeableConcept
+  aggregation_scope: patient_timeline_current_state
+  clinical_domain: neurologic_state
+  constraint_semantics:
+    blocking_if_present: []
+    logical_operator: OR
+    must_be_absent: []
+    required_present:
+    - intracranial_hypertension_or_consciousness_impairment
+  criterion_id: '875'
+  criterion_type: exclusion
+  entities:
+  - id: intracranial_hypertension
+    type: diagnosis
+  - id: consciousness_impairment
+    type: clinical_state
+  episode_policy:
+    preserve_historical_assertions: true
+    required: true
+    type: neurologic_state_episode
+  event_schema:
+    concepts:
+    - intracranial_hypertension
+    uses:
+    - Diagnosis
+  fact_schema:
+    uses:
+    - ConsciousnessState
+  logical_expression: required_present(intracranial_hypertension@REVIEW_REQUIRED)
+    OR required_present(consciousness_impairment@REVIEW_REQUIRED)
+  negation_constraints:
+    exclude_negated: true
+    resolved_is_not_current: true
+  numeric_constraints: []
+  original_text: 颅内高压或意识不清
+  prohibited_facts: []
+  relation_schema:
+    uses:
+    - TEMPORALLY_LINKED
+  relations:
+  - left: state
+    right: clinical_timepoint
+    type: TEMPORALLY_LINKED
+  required_facts:
+  - one_current_branch
+  retrieval_policy:
+    bm25_query:
+    - 颅内压
+    - 意识
+    - 神志
+    - 昏迷
+    - 清醒
+    expanded_terms:
+    - 颅内压升高
+    - ICP升高
+    - 神志朦胧
+    - 意识模糊
+    - 昏迷
+    - 嗜睡
+    - 呼之能应
+    fallback:
+      enabled: true
+      k: 3
+    primary_aliases:
+    - 颅内高压
+    - 意识不清
+  service_query_contract:
+    JSON_assumptions: json_valid_plus_JSON1_coding_array_execution_required
+    codes:
+    - present
+    coding_paths:
+    - valueCodeableConcept.coding
+    extensions: []
+    patient_identity_resolution: FHIR_PATIENT_to_PAPERLESS_NGX_via_EMPI
+    queried_resource_type: Observation
+    query_parameters:
+    - _profile
+    - value-concept
+    reference_behavior: subject.reference_starts_with_Patient_slash
+    required_profile_match: true
+    systems:
+    - cnwqk875-presence-cs
+    value_paths:
+    - valueCodeableConcept.coding
+  subject_constraints:
+    subject: patient
+  temporal_constraints:
+  - facts:
+    - intracranial_hypertension
+    - consciousness_impairment
+    temporality: current_at_index
+  - reconciliation: latest_state_with_episode_boundaries
+  temporal_scope: REVIEW_REQUIRED
+  temporal_scope_evidence: Official criterion and FHIR_SERVICE_CODE query present-valued
+    Observations but do not define current versus ever-present window.
+  title: intracranial hypertension or consciousness impairment
+criterion_ir_schema_version: v4.3-draft2
+status: DESIGN_FREEZE_CANDIDATE

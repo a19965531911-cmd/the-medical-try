@@ -1,0 +1,3283 @@
+........................................................................ [  6%]
+..................................................................FFFFFF [ 12%]
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF [ 19%]
+FFFFFFFFFFFFFFFFFF...................................................... [ 25%]
+........................................................................ [ 32%]
+........................................................................ [ 38%]
+........................................................................ [ 45%]
+........................................................................ [ 51%]
+........................................................................ [ 58%]
+........................................................................ [ 64%]
+........................................................................ [ 71%]
+........................................................................ [ 77%]
+........................................................................ [ 84%]
+........................................................................ [ 90%]
+........................................................................ [ 97%]
+.................................                                        [100%]
+================================== FAILURES ===================================
+_________________________ test_embedded_http[json-2] __________________________
+
+cid = '2', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[json-3] __________________________
+
+cid = '3', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[json-85] _________________________
+
+cid = '85', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-205] _________________________
+
+cid = '205', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-225] _________________________
+
+cid = '225', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-255] _________________________
+
+cid = '255', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-295] _________________________
+
+cid = '295', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-465] _________________________
+
+cid = '465', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-475] _________________________
+
+cid = '475', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-495] _________________________
+
+cid = '495', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-525] _________________________
+
+cid = '525', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-585] _________________________
+
+cid = '585', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-625] _________________________
+
+cid = '625', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-695] _________________________
+
+cid = '695', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-715] _________________________
+
+cid = '715', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[json-765] _________________________
+
+cid = '765', mode = 'json'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[markdown-2] ________________________
+
+cid = '2', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[markdown-3] ________________________
+
+cid = '3', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[markdown-85] _______________________
+
+cid = '85', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-205] _______________________
+
+cid = '205', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-225] _______________________
+
+cid = '225', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-255] _______________________
+
+cid = '255', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-295] _______________________
+
+cid = '295', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-465] _______________________
+
+cid = '465', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-475] _______________________
+
+cid = '475', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-495] _______________________
+
+cid = '495', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-525] _______________________
+
+cid = '525', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-585] _______________________
+
+cid = '585', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-625] _______________________
+
+cid = '625', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-695] _______________________
+
+cid = '695', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-715] _______________________
+
+cid = '715', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[markdown-765] _______________________
+
+cid = '765', mode = 'markdown'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[negative-2] ________________________
+
+cid = '2', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[negative-3] ________________________
+
+cid = '3', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[negative-85] _______________________
+
+cid = '85', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-205] _______________________
+
+cid = '205', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-225] _______________________
+
+cid = '225', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-255] _______________________
+
+cid = '255', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-295] _______________________
+
+cid = '295', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-465] _______________________
+
+cid = '465', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-475] _______________________
+
+cid = '475', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-495] _______________________
+
+cid = '495', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-525] _______________________
+
+cid = '525', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-585] _______________________
+
+cid = '585', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-625] _______________________
+
+cid = '625', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-695] _______________________
+
+cid = '695', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-715] _______________________
+
+cid = '715', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+______________________ test_embedded_http[negative-765] _______________________
+
+cid = '765', mode = 'negative'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[invalid-2] ________________________
+
+cid = '2', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[invalid-3] ________________________
+
+cid = '3', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-85] ________________________
+
+cid = '85', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-205] _______________________
+
+cid = '205', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-225] _______________________
+
+cid = '225', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-255] _______________________
+
+cid = '255', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-295] _______________________
+
+cid = '295', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-465] _______________________
+
+cid = '465', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-475] _______________________
+
+cid = '475', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-495] _______________________
+
+cid = '495', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-525] _______________________
+
+cid = '525', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-585] _______________________
+
+cid = '585', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-625] _______________________
+
+cid = '625', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-695] _______________________
+
+cid = '695', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-715] _______________________
+
+cid = '715', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[invalid-765] _______________________
+
+cid = '765', mode = 'invalid'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+__________________________ test_embedded_http[500-2] __________________________
+
+cid = '2', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+__________________________ test_embedded_http[500-3] __________________________
+
+cid = '3', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-85] __________________________
+
+cid = '85', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-205] _________________________
+
+cid = '205', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-225] _________________________
+
+cid = '225', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-255] _________________________
+
+cid = '255', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-295] _________________________
+
+cid = '295', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-465] _________________________
+
+cid = '465', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-475] _________________________
+
+cid = '475', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-495] _________________________
+
+cid = '495', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-525] _________________________
+
+cid = '525', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-585] _________________________
+
+cid = '585', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-625] _________________________
+
+cid = '625', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-695] _________________________
+
+cid = '695', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-715] _________________________
+
+cid = '715', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_________________________ test_embedded_http[500-765] _________________________
+
+cid = '765', mode = '500'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[missing-2] ________________________
+
+cid = '2', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+________________________ test_embedded_http[missing-3] ________________________
+
+cid = '3', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-85] ________________________
+
+cid = '85', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-205] _______________________
+
+cid = '205', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-225] _______________________
+
+cid = '225', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-255] _______________________
+
+cid = '255', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-295] _______________________
+
+cid = '295', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-465] _______________________
+
+cid = '465', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-475] _______________________
+
+cid = '475', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-495] _______________________
+
+cid = '495', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-525] _______________________
+
+cid = '525', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-585] _______________________
+
+cid = '585', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-625] _______________________
+
+cid = '625', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-695] _______________________
+
+cid = '695', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-715] _______________________
+
+cid = '715', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+_______________________ test_embedded_http[missing-765] _______________________
+
+cid = '765', mode = 'missing'
+
+    @pytest.mark.parametrize('cid',['2','3','85','205','225','255','295','465','475','495','525','585','625','695','715','765'])
+    @pytest.mark.parametrize('mode',['json','markdown','negative','invalid','500','missing'])
+    def test_embedded_http(cid,mode):
+        seen=[]
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args): pass
+            def do_POST(self):
+                payload=json.loads(self.rfile.read(int(self.headers['Content-Length'])))
+                seen.append((self.path,payload))
+                value=dict(match=False,facts=[],subject='patient',negated=False,planned=False,uncertain=False,evidence=[],reason='synthetic negative')
+                content=json.dumps(value)
+                if mode=='markdown':content='```json\n'+content+'\n```'
+                if mode=='invalid':content='malicious unrelated output'
+                self.send_response(500 if mode=='500' else 200);self.end_headers()
+                self.wfile.write(json.dumps({} if mode=='missing' else {'choices':[{'message':{'content':content}}]}).encode())
+        server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            bundle=build('B6H');scope={}
+            entry=next(e['resource'] for e in bundle['entry'][1:] if e['resource']['content'][0]['title']==cid)
+>           exec(base64.b64decode(entry['content'][0]['data']),scope)
+
+tests\b_board\test_b6_http.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'requests'
+
+<string>:1130: ModuleNotFoundError
+=========================== short test summary info ===========================
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-2] - ModuleNotF...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-3] - ModuleNotF...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-85] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-205] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-225] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-255] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-295] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-465] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-475] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-495] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-525] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-585] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-625] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-695] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-715] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[json-765] - ModuleNo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-2] - Module...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-3] - Module...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-85] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-205] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-225] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-255] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-295] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-465] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-475] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-495] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-525] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-585] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-625] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-695] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-715] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[markdown-765] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-2] - Module...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-3] - Module...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-85] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-205] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-225] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-255] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-295] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-465] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-475] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-495] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-525] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-585] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-625] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-695] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-715] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[negative-765] - Modu...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-2] - ModuleN...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-3] - ModuleN...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-85] - Module...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-205] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-225] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-255] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-295] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-465] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-475] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-495] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-525] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-585] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-625] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-695] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-715] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[invalid-765] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-2] - ModuleNotFo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-3] - ModuleNotFo...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-85] - ModuleNotF...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-205] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-225] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-255] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-295] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-465] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-475] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-495] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-525] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-585] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-625] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-695] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-715] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[500-765] - ModuleNot...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-2] - ModuleN...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-3] - ModuleN...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-85] - Module...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-205] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-225] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-255] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-295] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-465] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-475] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-495] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-525] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-585] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-625] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-695] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-715] - Modul...
+FAILED tests/b_board/test_b6_http.py::test_embedded_http[missing-765] - Modul...
+96 failed, 1017 passed in 364.41s (0:06:04)

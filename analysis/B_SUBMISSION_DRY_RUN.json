@@ -1,0 +1,116 @@
+{
+  "sha256": "f7470f0e97d8348b10ab44f88515807e2b207d5369ad5506edc154bcdf0909a3",
+  "package": {
+    "libraries": 16,
+    "unique_ids": 16,
+    "deepquery_ids": 16,
+    "local_schema": "PASS",
+    "platform_mapping": "UNVERIFIED_FOR_TBD"
+  },
+  "libraries": [
+    {
+      "profile_id": "2",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    },
+    {
+      "profile_id": "3",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 2
+    },
+    {
+      "profile_id": "85",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    },
+    {
+      "profile_id": "205",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    },
+    {
+      "profile_id": "225",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    },
+    {
+      "profile_id": "255",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    },
+    {
+      "profile_id": "295",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    },
+    {
+      "profile_id": "465",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 2
+    },
+    {
+      "profile_id": "475",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    },
+    {
+      "profile_id": "495",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    },
+    {
+      "profile_id": "525",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    },
+    {
+      "profile_id": "585",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    },
+    {
+      "profile_id": "625",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 3
+    },
+    {
+      "profile_id": "695",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    },
+    {
+      "profile_id": "715",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    },
+    {
+      "profile_id": "765",
+      "isolated_import_constructor_entrypoint": "PASS",
+      "official_mock_service_hit": true,
+      "resources": 1
+    }
+  ],
+  "publication": "BLOCKED",
+  "publication_blocker": "Publication blocked: official tbd/null routing contract unverified",
+  "additional_blockers": [
+    "Official platform checker and B patient/query data unavailable",
+    "Full FSH validation unresolved for partial OR evidence in 295 and in-progress radiotherapy in 225",
+    "Real local-model structured JSON not exercised",
+    "Official 625 service conflicts with requested encounter-scoped complete-panel semantics"
+  ]
+}

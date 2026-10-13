@@ -1,0 +1,28 @@
+{
+  "candidate_sha256": "74e165387d4fb972b3bc707d1295de32ef3b990981ef56b3488d334a6ed8f450",
+  "regression": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "1144",
+    "time": "190.320",
+    "timestamp": "2026-10-13T19:58:28.343162+08:00",
+    "hostname": "LAPTOP-124VDJ82"
+  },
+  "fast": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "14",
+    "time": "2.634",
+    "timestamp": "2026-10-13T19:57:59.328450+08:00",
+    "hostname": "LAPTOP-124VDJ82"
+  },
+  "isolated_libraries": 16,
+  "unchanged_frozen_files": 165,
+  "case_differences": 0,
+  "platform_live": false,
+  "publication_ready": false
+}

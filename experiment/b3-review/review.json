@@ -1,0 +1,1529 @@
+{
+  "summary": {
+    "submitted_b3_sha256": "ee39e779f48927b2a01b976d15b2c6eab32370d21ceae43a0f82cc4da4818119",
+    "b3_unchanged": true,
+    "b3r_sha256": "15a0539fc15bc18cad923dde77a371c57379420f2a1060ee89d38d5a246774b6",
+    "reproduced_input_errors": 32,
+    "boundary_cases_after_pass": 64,
+    "existing_cases_unchanged": 167,
+    "isolated_mixed_input_pass": 16,
+    "publication_gate": "Publication blocked: official tbd/null routing contract unverified",
+    "proven_online_zero_root_cause": false,
+    "fsh_remaining": 18
+  },
+  "boundary_cases": [
+    {
+      "profile_id": "2",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "2",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "2",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "2",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "3",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "3",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "3",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "3",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "85",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "85",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "85",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "85",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "205",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "205",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "205",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "205",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "225",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "225",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "225",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "225",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "255",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "255",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "255",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "255",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "295",
+      "case": "null_text",
+      "before_error": "TypeError: sequence item 0: expected str instance, NoneType found",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "295",
+      "case": "number_text",
+      "before_error": "TypeError: sequence item 0: expected str instance, int found",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "295",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "295",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "465",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "465",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "465",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "465",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "475",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "475",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "475",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "475",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "495",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "495",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "495",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "495",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "525",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "525",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "525",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "525",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "585",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "585",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "585",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "585",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "625",
+      "case": "null_text",
+      "before_error": "TypeError: expected string or bytes-like object, got 'NoneType'",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "625",
+      "case": "number_text",
+      "before_error": "TypeError: expected string or bytes-like object, got 'int'",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "625",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "625",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "695",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "695",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "695",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "695",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "715",
+      "case": "null_text",
+      "before_error": "TypeError: expected string or bytes-like object, got 'NoneType'",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "715",
+      "case": "number_text",
+      "before_error": "TypeError: expected string or bytes-like object, got 'int'",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "715",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "715",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "765",
+      "case": "null_text",
+      "before_error": "TypeError: argument of type 'NoneType' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "765",
+      "case": "number_text",
+      "before_error": "TypeError: argument of type 'int' is not iterable",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "765",
+      "case": "null_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    },
+    {
+      "profile_id": "765",
+      "case": "empty_record",
+      "before": "PASS",
+      "after": "VALID_EMPTY_TRANSACTION"
+    }
+  ],
+  "python_grammar": [
+    {
+      "profile_id": "2",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "3",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "85",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "205",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "225",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "255",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "295",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "465",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "475",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "495",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "525",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "585",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "625",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "695",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "715",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    },
+    {
+      "profile_id": "765",
+      "grammar": {
+        "7": {
+          "line": 593,
+          "error": "Assignment expressions are only supported in Python 3.8 and greater"
+        },
+        "8": "PASS",
+        "9": "PASS",
+        "10": "PASS",
+        "11": "PASS"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "2_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "2_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "2_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "2_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "2_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "2_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "2_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "2_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "3_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "3_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "3_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "3_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "3_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "3_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "3_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "3_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "85_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "85_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "85_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "85_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "85_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "85_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "85_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "85_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "205_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "205_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "205_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "205_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "205_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "205_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "205_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "205_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "255_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "255_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "255_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "255_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "255_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "255_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "255_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "255_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "465_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "465_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "465_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "465_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "465_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "465_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "465_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "465_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "475_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "475_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "475_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "475_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "475_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "475_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "475_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "475_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "495_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "495_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "495_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "495_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "495_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "495_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "495_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "495_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "525_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "525_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "525_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "525_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "525_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "525_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "525_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "525_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "585_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "585_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "585_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "585_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "585_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "585_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "585_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "585_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "695_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "695_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "695_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "695_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "695_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "695_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "695_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "695_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "715_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "715_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "715_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "715_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "715_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "715_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "715_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "715_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "765_positive_0",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "765_positive_1",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "765_positive_2",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "765_negative_0",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "765_negative_1",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "765_negative_2",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "765_negative_3",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "765_negative_4",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_full_normal",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_partial",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_good_then_bad",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_different_dates",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_alt_equal",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_tbil_equal",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_hospital_ranges",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_no_ranges",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_same_encounter_conflict",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_bad_then_good",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_encounter_outranks_date",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "625_same_day_different_encounter",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_quantity_only",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_refusal_only",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_both",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_neither",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_or_veto",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "295_old",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "85_completed",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "85_planned",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "85_cross_event",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "85_good_and_emergency",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "205_completed",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "205_planned",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "205_cross_event",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "205_good_and_emergency",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_ongoing",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_completed",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_planned",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_recommended",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "225_denied",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "3_cross_event",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "3_same_event",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "465_cross_event",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "465_same_event",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "495_cross_event",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "495_same_event",
+      "decision": "MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "475_cross_event",
+      "decision": "NO_MATCH",
+      "unchanged": true
+    },
+    {
+      "case": "475_same_event",
+      "decision": "MATCH",
+      "unchanged": true
+    }
+  ],
+  "isolated": [
+    {
+      "profile_id": "2",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "3",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "85",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "205",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "225",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "255",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "295",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "465",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "475",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "495",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "525",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "585",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "625",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "695",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "715",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    },
+    {
+      "profile_id": "765",
+      "null_plus_positive": "PASS",
+      "empty": "PASS"
+    }
+  ]
+}

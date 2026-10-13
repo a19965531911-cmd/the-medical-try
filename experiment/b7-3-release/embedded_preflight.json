@@ -1,0 +1,290 @@
+[
+  {
+    "profile_id": "2",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "3",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "85",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "205",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "225",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "255",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "295",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "465",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "475",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "495",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "525",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "585",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "625",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "695",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "715",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  },
+  {
+    "profile_id": "765",
+    "bound_entry": "_b7_entry",
+    "bound_transport": "_b7_transport",
+    "decoder_line": 1345,
+    "prompt_line": 1338,
+    "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+    "config": {
+      "variant": "B6H",
+      "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+      "model": "local-model",
+      "max_tokens": 2048,
+      "request_timeout_seconds": 8,
+      "total_model_budget_seconds": 8,
+      "max_calls": 1
+    },
+    "unknown_empty": "PASS"
+  }
+]

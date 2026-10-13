@@ -1,0 +1,4521 @@
+[
+  {
+    "case": "2_rescue",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "2_family",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "父亲活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "2_negative",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "否认活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "2_uncertain",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "可能活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "2_planned",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "拟评估活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "2_hallucination",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "患者无相关病史",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_rescue",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_family",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "父亲组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_negative",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "否认组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_uncertain",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "可能组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_planned",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "拟评估组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_hallucination",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "患者无相关病史",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "255_rescue",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "已确诊第二型糖尿病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "255_family",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "父亲已确诊第二型糖尿病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "255_negative",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "否认已确诊第二型糖尿病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "255_uncertain",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "可能已确诊第二型糖尿病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "255_planned",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "拟评估已确诊第二型糖尿病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "255_hallucination",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "患者无相关病史",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "t2dm",
+          "state": "PRESENT",
+          "evidence": "已确诊第二型糖尿病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "已确诊第二型糖尿病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "465_rescue",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "肾标本取样完成，病理IgA肾病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "465_family",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "父亲肾标本取样完成，病理IgA肾病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "465_negative",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "否认肾标本取样完成，病理IgA肾病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "465_uncertain",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "可能肾标本取样完成，病理IgA肾病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "465_planned",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "拟评估肾标本取样完成，病理IgA肾病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "465_hallucination",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "患者无相关病史",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "renal_biopsy",
+          "state": "PRESENT",
+          "evidence": "肾标本取样完成，病理IgA肾病",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "肾标本取样完成，病理IgA肾病"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "495_rescue",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "495_family",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "父亲病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "495_negative",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "否认病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "495_uncertain",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "可能病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "495_planned",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "拟评估病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "495_hallucination",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "患者无相关病史",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "695_rescue",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "影像明确癌细胞播散至远隔器官",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "695_family",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "父亲影像明确癌细胞播散至远隔器官",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "695_negative",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "否认影像明确癌细胞播散至远隔器官",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "695_uncertain",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "可能影像明确癌细胞播散至远隔器官",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "695_planned",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "拟评估影像明确癌细胞播散至远隔器官",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "695_hallucination",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "患者无相关病史",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "distant",
+          "state": "PRESENT",
+          "evidence": "影像明确癌细胞播散至远隔器官",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "影像明确癌细胞播散至远隔器官"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "765_rescue",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "出生记录记载曾发生严重缺氧事件",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "765_family",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "父亲出生记录记载曾发生严重缺氧事件",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "765_negative",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "否认出生记录记载曾发生严重缺氧事件",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "765_uncertain",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "可能出生记录记载曾发生严重缺氧事件",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "765_planned",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "拟评估出生记录记载曾发生严重缺氧事件",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "765_hallucination",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "患者无相关病史",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "history_hypoxia",
+          "state": "PRESENT",
+          "evidence": "出生记录记载曾发生严重缺氧事件",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "出生记录记载曾发生严重缺氧事件"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "3_incomplete",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学提示肝细胞恶性肿瘤",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": true,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤"
+      ],
+      "reason": "SYNTHETIC author-defined evidence"
+    }
+  },
+  {
+    "case": "2_false_hint",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "2_false_hint_父亲",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "父亲活动后透不过气"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "2_false_hint_否认",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "否认活动后透不过气"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "2_false_hint_可能",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "可能活动后透不过气"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "2_false_hint_拟评估",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "拟评估活动后透不过气"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "respiratory",
+          "state": "PRESENT",
+          "evidence": "活动后透不过气",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "活动后透不过气"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_父亲",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "父亲组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_否认",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "否认组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_可能",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "可能组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "3_false_hint_拟评估",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "拟评估组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "hcc",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "pathology",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "resection",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        },
+        {
+          "atom": "r0",
+          "state": "PRESENT",
+          "evidence": "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "组织学提示肝细胞恶性肿瘤，已完整切除肝肿瘤，切缘未残留癌细胞"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": true,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_父亲",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "父亲病理报告。确诊弥漫性大细胞B淋巴瘤"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_否认",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "否认病理报告。确诊弥漫性大细胞B淋巴瘤"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_可能",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "可能病理报告。确诊弥漫性大细胞B淋巴瘤"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "495_false_hint_拟评估",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "拟评估病理报告。确诊弥漫性大细胞B淋巴瘤"
+      }
+    ],
+    "expected": false,
+    "raw": {
+      "match": false,
+      "facts": [
+        {
+          "atom": "dlbcl",
+          "state": "PRESENT",
+          "evidence": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+          "report": 0
+        }
+      ],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [
+        "病理报告。确诊弥漫性大细胞B淋巴瘤"
+      ],
+      "reason": "Overall hint false despite independently supported facts; MOCK"
+    }
+  },
+  {
+    "case": "clear_positive_00",
+    "group": "clear_positive",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "患者咳嗽",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_00",
+    "group": "clear_negative",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "头痛",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_01",
+    "group": "clear_positive",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "病理证实肝细胞癌，已行肝癌根治性切除R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      },
+      {
+        "text": "病理证实肝细胞癌，已行肝癌根治性切除R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_01",
+    "group": "clear_negative",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "肝细胞癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      },
+      {
+        "text": "肝细胞癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_02",
+    "group": "clear_positive",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "拟择期行胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_02",
+    "group": "clear_negative",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "急诊胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_03",
+    "group": "clear_positive",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "拟择期全麻下胸部手术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_03",
+    "group": "clear_negative",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "急诊全麻胸部手术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_04",
+    "group": "clear_positive",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "已接受放疗",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_04",
+    "group": "clear_negative",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "仅化疗",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_05",
+    "group": "clear_positive",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "确诊2型糖尿病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_05",
+    "group": "clear_negative",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "1型糖尿病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_06",
+    "group": "clear_positive",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "目前每天吸烟20支",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_06",
+    "group": "clear_negative",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "从不吸烟",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_07",
+    "group": "clear_positive",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "肾活检病理提示IgA肾病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_07",
+    "group": "clear_negative",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "糖尿病肾病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_08",
+    "group": "clear_positive",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "腰椎间盘突出导致腰痛3个月",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_08",
+    "group": "clear_negative",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "膝痛半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_09",
+    "group": "clear_positive",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理诊断弥漫大B细胞淋巴瘤",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_09",
+    "group": "clear_negative",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "NHL",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_10",
+    "group": "clear_positive",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "术前诊断胸中段食管癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "术前诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_10",
+    "group": "clear_negative",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "胃癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "术前诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_11",
+    "group": "clear_positive",
+    "profile_id": "585",
+    "reports": [
+      {
+        "text": "反复腰痛3个月",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_11",
+    "group": "clear_negative",
+    "profile_id": "585",
+    "reports": [
+      {
+        "text": "头痛半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_12",
+    "group": "clear_positive",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1.5 ULN ALT 3 ULN AST 2.9 ULN",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_12",
+    "group": "clear_negative",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "无检验",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_13",
+    "group": "clear_positive",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "证实有远处转移",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_13",
+    "group": "clear_negative",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "M0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_14",
+    "group": "clear_positive",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "增强CT示下腔静脉及门静脉均未见肿瘤侵犯",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_14",
+    "group": "clear_negative",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "门静脉可见癌栓，下腔静脉未受侵",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_15",
+    "group": "clear_positive",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "有窒息缺氧史",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit evidence satisfies the criterion's required conjunction/threshold.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_15",
+    "group": "clear_negative",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "SpO2 80%",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required criterion evidence is absent or belongs to an excluded alternative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_16",
+    "group": "clear_positive",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后喘憋",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit corroborated second positive expression; original numeric limits retained.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_16",
+    "group": "clear_negative",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "胸痛",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Near-miss alternative or threshold violation does not meet the criterion.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_17",
+    "group": "clear_positive",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "T2DM",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit corroborated second positive expression; original numeric limits retained.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_17",
+    "group": "clear_negative",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "糖耐量异常",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Near-miss alternative or threshold violation does not meet the criterion.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_18",
+    "group": "clear_positive",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "活检证实DLBCL",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit corroborated second positive expression; original numeric limits retained.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_18",
+    "group": "clear_negative",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "B细胞淋巴瘤NOS",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Near-miss alternative or threshold violation does not meet the criterion.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_positive_19",
+    "group": "clear_positive",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "总胆红素1倍正常上限，ALT 2倍正常上限，AST 3倍正常上限",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Explicit corroborated second positive expression; original numeric limits retained.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "clear_negative_19",
+    "group": "clear_negative",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1.51 ULN ALT 3 ULN AST 2 ULN",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Near-miss alternative or threshold violation does not meet the criterion.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_00",
+    "group": "complex_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_01",
+    "group": "complex_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "走几步就觉得呼吸费力",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_02",
+    "group": "complex_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "持续干咳",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_03",
+    "group": "complex_synonym",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "感觉胸口憋得慌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_04",
+    "group": "complex_synonym",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "组织学证实HCC，已行hepatectomy，negative margins，R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      },
+      {
+        "text": "组织学证实HCC，已行hepatectomy，negative margins，R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_05",
+    "group": "complex_synonym",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "拟择期VATS肺段切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_06",
+    "group": "complex_synonym",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "择期肺切除，全身麻醉",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_07",
+    "group": "complex_synonym",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "外照射疗程已经结束",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_08",
+    "group": "complex_synonym",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "明确诊断成人发病型糖尿病，疾病分型为第二型",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_09",
+    "group": "complex_synonym",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "现吸烟1包/日",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_10",
+    "group": "complex_synonym",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "renal biopsy证实IgA nephropathy",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_11",
+    "group": "complex_synonym",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "腰椎间盘突出所致腰背痛持续半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_12",
+    "group": "complex_synonym",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告。确诊弥漫性大细胞B淋巴瘤",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_13",
+    "group": "complex_synonym",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "术前诊断下段食道癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "术前诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_14",
+    "group": "complex_synonym",
+    "profile_id": "585",
+    "reports": [
+      {
+        "text": "下背痛半年余",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_15",
+    "group": "complex_synonym",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "总胆红素30上限20，谷丙转氨酶90上限30，谷草转氨酶90上限30",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_16",
+    "group": "complex_synonym",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "肺癌患者影像证实骨转移",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_17",
+    "group": "complex_synonym",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "下腔静脉未受侵。门静脉未受侵",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_18",
+    "group": "complex_synonym",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "出生时发生窒息",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "complex_synonym_19",
+    "group": "complex_synonym",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "仅区域淋巴结转移，M0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Authored synonym preserves clinical meaning; regional nodes without distant spread remain negative.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_00",
+    "group": "state_scope",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "否认活动后透不过气",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_01",
+    "group": "state_scope",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气已完全消失",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_02",
+    "group": "state_scope",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "病理疑似HCC，拟肝切除R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      },
+      {
+        "text": "病理疑似HCC，拟肝切除R0",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_03",
+    "group": "state_scope",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "拟择期胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_04",
+    "group": "state_scope",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "拟择期全麻下胸部手术",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "手术记录"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_05",
+    "group": "state_scope",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "拟行放疗",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_06",
+    "group": "state_scope",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "正在接受放疗",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_07",
+    "group": "state_scope",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "放疗已完成",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "放射治疗"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_08",
+    "group": "state_scope",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "疑似第二型糖尿病，尚未确诊",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_09",
+    "group": "state_scope",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "曾每天20支，戒烟5年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "个人史"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_10",
+    "group": "state_scope",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "拟肾活检，诊断IgA肾病",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_11",
+    "group": "state_scope",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "疑似脊柱源性疼痛半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_12",
+    "group": "state_scope",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理疑似DLBCL",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查 病理"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_13",
+    "group": "state_scope",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "术后病理中段食管癌",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "术前诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_14",
+    "group": "state_scope",
+    "profile_id": "585",
+    "reports": [
+      {
+        "text": "腰痛已消失，曾持续半年",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "主诉"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_15",
+    "group": "state_scope",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "拟查TBIL ALT AST",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "实验室检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_16",
+    "group": "state_scope",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "不排除远处转移",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "医学诊断"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_17",
+    "group": "state_scope",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "考虑门静脉侵犯，下腔静脉未侵",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "辅助检查"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_18",
+    "group": "state_scope",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "曾发生窒息",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "state_scope_19",
+    "group": "state_scope",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "可能有窒息史",
+        "timestamp": "2026-10-09T12:00:00+08:00",
+        "topic": "既往史"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Criterion-specific plan/history policy: elective plans and occurred hypoxia permitted; unsupported/uncertain facts excluded.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_00",
+    "group": "cross_scope",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "病理证实肝细胞癌",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "已行肝切除R0",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_01",
+    "group": "cross_scope",
+    "profile_id": "3",
+    "reports": [
+      {
+        "text": "病理证实肝细胞癌",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "已行肝切除R0",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_02",
+    "group": "cross_scope",
+    "profile_id": "85",
+    "reports": [
+      {
+        "text": "择期手术",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "胸腔镜肺叶切除术",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_03",
+    "group": "cross_scope",
+    "profile_id": "205",
+    "reports": [
+      {
+        "text": "择期手术",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "全麻下胸部手术",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_04",
+    "group": "cross_scope",
+    "profile_id": "465",
+    "reports": [
+      {
+        "text": "肾活检已完成",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "IgA肾病",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_05",
+    "group": "cross_scope",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "DLBCL",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_06",
+    "group": "cross_scope",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "病理报告",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "DLBCL",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_07",
+    "group": "cross_scope",
+    "profile_id": "475",
+    "reports": [
+      {
+        "text": "腰椎间盘突出导致疼痛",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "疼痛持续半年",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_08",
+    "group": "cross_scope",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1 ULN",
+        "timestamp": "2026-10-08"
+      },
+      {
+        "text": "ALT 2 ULN AST 2 ULN",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_09",
+    "group": "cross_scope",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1 ULN",
+        "timestamp": "2026-10-09",
+        "encounter_id": "A"
+      },
+      {
+        "text": "ALT 2 ULN AST 2 ULN",
+        "timestamp": "2026-10-09",
+        "encounter_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_10",
+    "group": "cross_scope",
+    "profile_id": "625",
+    "reports": [
+      {
+        "text": "TBIL 1 ULN",
+        "timestamp": "2026-10-09",
+        "encounter_id": "A"
+      },
+      {
+        "text": "ALT 2 ULN AST 2 ULN",
+        "timestamp": "2026-10-09",
+        "encounter_id": "A"
+      }
+    ],
+    "expected": true,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_11",
+    "group": "cross_scope",
+    "profile_id": "295",
+    "reports": [
+      {
+        "text": "每天吸烟20支",
+        "timestamp": "2026-01-01"
+      },
+      {
+        "text": "当前评估",
+        "timestamp": "2026-10-09",
+        "evaluation_timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_12",
+    "group": "cross_scope",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "父亲活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_13",
+    "group": "cross_scope",
+    "profile_id": "255",
+    "reports": [
+      {
+        "text": "母亲确诊2型糖尿病",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_14",
+    "group": "cross_scope",
+    "profile_id": "495",
+    "reports": [
+      {
+        "text": "家族病理确诊DLBCL",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_15",
+    "group": "cross_scope",
+    "profile_id": "225",
+    "reports": [
+      {
+        "text": "父亲放疗已完成",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_16",
+    "group": "cross_scope",
+    "profile_id": "695",
+    "reports": [
+      {
+        "text": "母亲证实远处转移",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_17",
+    "group": "cross_scope",
+    "profile_id": "765",
+    "reports": [
+      {
+        "text": "父亲有窒息缺氧史",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_18",
+    "group": "cross_scope",
+    "profile_id": "715",
+    "reports": [
+      {
+        "text": "父亲下腔静脉、门静脉均未受侵",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  },
+  {
+    "case": "cross_scope_19",
+    "group": "cross_scope",
+    "profile_id": "525",
+    "reports": [
+      {
+        "text": "术前食管癌",
+        "timestamp": "2026-10-09",
+        "event_id": "A"
+      },
+      {
+        "text": "肿瘤中下段",
+        "timestamp": "2026-10-09",
+        "event_id": "B"
+      }
+    ],
+    "expected": false,
+    "label_rationale": "Required facts must share patient/event/encounter; stale smoking and relatives are not patient evidence.",
+    "label_source": "AUTHORED_CRITERION_LOGIC_SYNTHETIC_NOT_PATIENT_GOLD",
+    "raw": {
+      "match": null,
+      "facts": [],
+      "subject": "patient",
+      "negated": false,
+      "planned": false,
+      "uncertain": false,
+      "evidence": [],
+      "reason": "MOCK empty control"
+    }
+  }
+]

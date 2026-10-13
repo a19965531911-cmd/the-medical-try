@@ -1,0 +1,82 @@
+[
+  {
+    "profile_id": "2",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "3",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "85",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "205",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "225",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "255",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "295",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "465",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "475",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "495",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "525",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "585",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "625",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "695",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "715",
+    "exit_code": 0,
+    "service_hit": true
+  },
+  {
+    "profile_id": "765",
+    "exit_code": 0,
+    "service_hit": true
+  }
+]

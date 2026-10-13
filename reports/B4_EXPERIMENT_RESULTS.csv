@@ -1,0 +1,7 @@
+variant,cases,matches,service_hits,r4_invalid_cases,fsh_invalid_cases,stub_calls,synthetic_safety_errors,real_patient_metrics
+B4R,182,71,71,0,18,0,3,UNAVAILABLE
+B4L,182,3,3,0,0,131,0,UNAVAILABLE
+B4H,182,74,74,0,18,60,0,UNAVAILABLE
+B4I,182,74,74,0,18,114,0,UNAVAILABLE
+B4S,182,74,74,0,18,60,0,UNAVAILABLE
+B4F,182,74,74,0,18,60,0,UNAVAILABLE

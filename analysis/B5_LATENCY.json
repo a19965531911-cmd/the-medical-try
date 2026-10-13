@@ -1,0 +1,72 @@
+{
+  "B5R": {
+    "cases": 100,
+    "calls": 0,
+    "http_success": 0,
+    "json_valid": 0,
+    "grounded": 0,
+    "request_success_rate": null,
+    "json_success_rate": null,
+    "grounding_success_rate": null,
+    "pipeline_mean_seconds": 0.0014800949930213391,
+    "pipeline_p95_seconds": 0.0035610999912023544,
+    "successful_model_latency_p95": null,
+    "fallback_cases": 0,
+    "exceptions": 0,
+    "error_kinds": {}
+  },
+  "B5H": {
+    "cases": 100,
+    "calls": 34,
+    "http_success": 0,
+    "json_valid": 0,
+    "grounded": 0,
+    "request_success_rate": 0.0,
+    "json_success_rate": 0.0,
+    "grounding_success_rate": 0.0,
+    "pipeline_mean_seconds": 0.7884013810078614,
+    "pipeline_p95_seconds": 2.332667399896309,
+    "successful_model_latency_p95": null,
+    "fallback_cases": 34,
+    "exceptions": 0,
+    "error_kinds": {
+      "CONNECTION_FAILED": 34
+    }
+  },
+  "B5L": {
+    "cases": 100,
+    "calls": 74,
+    "http_success": 0,
+    "json_valid": 0,
+    "grounded": 0,
+    "request_success_rate": 0.0,
+    "json_success_rate": 0.0,
+    "grounding_success_rate": 0.0,
+    "pipeline_mean_seconds": 1.7070746259973384,
+    "pipeline_p95_seconds": 2.338137699989602,
+    "successful_model_latency_p95": null,
+    "fallback_cases": 74,
+    "exceptions": 0,
+    "error_kinds": {
+      "CONNECTION_FAILED": 74
+    }
+  },
+  "B4F_REFERENCE": {
+    "cases": 100,
+    "calls": 34,
+    "http_success": 0,
+    "json_valid": 0,
+    "grounded": 0,
+    "request_success_rate": 0.0,
+    "json_success_rate": 0.0,
+    "grounding_success_rate": 0.0,
+    "pipeline_mean_seconds": 0.7160262819984928,
+    "pipeline_p95_seconds": 2.1146685001440346,
+    "successful_model_latency_p95": null,
+    "fallback_cases": 0,
+    "exceptions": 0,
+    "error_kinds": {
+      "CONNECTION_FAILED": 34
+    }
+  }
+}

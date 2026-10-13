@@ -1,0 +1,16 @@
+[
+  "tests/b_board/test_b7_3.py::test_legacy_extended_unknown_is_safe",
+  "tests/b_board/test_b7_3.py::test_markdown_false_hint_grounded_fact",
+  "tests/b_board/test_b7_3.py::test_mixed_unknown_preserves_grounded_present",
+  "tests/b_board/test_b7_3.py::test_null_empty_truncated_content_falls_back[None]",
+  "tests/b_board/test_b7_3.py::test_null_empty_truncated_content_falls_back[]",
+  "tests/b_board/test_b7_3.py::test_null_empty_truncated_content_falls_back[{\"facts\":]",
+  "tests/b_board/test_b7_3.py::test_null_empty_truncated_content_falls_back[{}]",
+  "tests/b_board/test_b7_3.py::test_positive_needs_literal_evidence[\\u4e0d\\u5728\\u539f\\u6587\\u7684\\u4e8b\\u5b9e]",
+  "tests/b_board/test_b7_3.py::test_positive_needs_literal_evidence[]",
+  "tests/b_board/test_b7_3.py::test_prompt_omits_unknown_fact_templates",
+  "tests/b_board/test_b7_3.py::test_source_and_top_contract_stays_strict",
+  "tests/b_board/test_b7_3.py::test_unknown_empty_safely_omitted[facts0]",
+  "tests/b_board/test_b7_3.py::test_unknown_empty_safely_omitted[facts1]",
+  "tests/b_board/test_b7_3.py::test_unknown_empty_safely_omitted[facts2]"
+]

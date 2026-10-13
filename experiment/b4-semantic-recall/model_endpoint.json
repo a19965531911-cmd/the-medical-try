@@ -1,0 +1,72 @@
+{
+  "status": "LIVE_MODEL_UNAVAILABLE",
+  "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+  "real_calls": 1,
+  "error": "URLError: <urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>",
+  "http_success": 0,
+  "json_valid": 0,
+  "grounded": 0,
+  "results": [
+    {
+      "case": "semantic_breath_positive",
+      "profile_id": "2",
+      "reports": [
+        {
+          "text": "活动后透不过气",
+          "timestamp": "2026-10-09"
+        }
+      ],
+      "decision": "NO_MATCH",
+      "extraction": {
+        "match": false,
+        "decision": "NO_MATCH",
+        "facts": {
+          "respiratory": {
+            "atom": "respiratory",
+            "state": "UNKNOWN",
+            "evidence": "",
+            "report": null,
+            "value": null,
+            "source": "deterministic"
+          }
+        },
+        "evidence": [],
+        "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+        "emitted_resources": 0,
+        "variant": "B4H"
+      },
+      "resources": {
+        "resourceType": "Bundle",
+        "type": "transaction",
+        "entry": []
+      },
+      "r4_errors": [],
+      "fsh_violations": [],
+      "service_hit": false,
+      "model_metrics": {
+        "calls": 1,
+        "http_success": 0,
+        "responses": 0,
+        "json_valid": 0,
+        "grounded": 0,
+        "fact_rejections": 0,
+        "errors": [
+          {
+            "kind": "CONNECTION_FAILED",
+            "message": "URLError: <urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>"
+          }
+        ],
+        "latencies": [
+          0.0009445999749004841
+        ]
+      },
+      "transport": "live",
+      "synthetic_expected": true,
+      "elapsed_seconds": 0.004594499943777919,
+      "true_patient_label": "UNKNOWN",
+      "stage_status": "NLP_NO_RESOURCE"
+    }
+  ],
+  "mean_seconds": 0.0009445999749004841,
+  "p95_seconds": 0.0009445999749004841
+}

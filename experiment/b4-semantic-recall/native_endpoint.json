@@ -1,0 +1,66 @@
+{
+  "execution_context": "NATIVE_WINDOWS_LOOPBACK",
+  "status": "LIVE_MODEL_UNAVAILABLE",
+  "synthetic_only": true,
+  "endpoint": "http://127.0.0.1:1213/v1/chat/completions",
+  "models_error": "URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+  "embedded_probe": {
+    "case": "semantic_breath_positive",
+    "profile_id": "2",
+    "reports": [
+      {
+        "text": "活动后透不过气",
+        "timestamp": "2026-10-09"
+      }
+    ],
+    "decision": "NO_MATCH",
+    "extraction": {
+      "match": false,
+      "decision": "NO_MATCH",
+      "facts": {
+        "respiratory": {
+          "atom": "respiratory",
+          "state": "UNKNOWN",
+          "evidence": "",
+          "report": null,
+          "value": null,
+          "source": "deterministic"
+        }
+      },
+      "evidence": [],
+      "reason": "INCOMPLETE_OR_BLOCKED_FACTS",
+      "emitted_resources": 0,
+      "variant": "B4H"
+    },
+    "resources": {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": []
+    },
+    "r4_errors": [],
+    "fsh_violations": [],
+    "service_hit": false,
+    "model_metrics": {
+      "calls": 1,
+      "http_success": 0,
+      "responses": 0,
+      "json_valid": 0,
+      "grounded": 0,
+      "fact_rejections": 0,
+      "errors": [
+        {
+          "kind": "CONNECTION_FAILED",
+          "message": "URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+        }
+      ],
+      "latencies": [
+        2.042098500067368
+      ]
+    },
+    "transport": "live",
+    "synthetic_expected": true,
+    "elapsed_seconds": 2.0468619999010116,
+    "true_patient_label": "UNKNOWN",
+    "stage_status": "NLP_NO_RESOURCE"
+  }
+}
